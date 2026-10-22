@@ -98,3 +98,18 @@ Append entries; do not rewrite history to hide failures.
 - Connector publication tree `4d46652efa594aed864305ec671483fe87624853`
   equals local committed tree (local checkpoint 81f75d0). No scientific validation claimed.
 - This acceptance-only state commit must pass its own CI before S003 implementation.
+
+## E-S002-03 — Acceptance-state recovery checks (2026-10-22)
+- Recovered main at da78022f53ed157f35fdd79d4852b93b21cb8986; acceptance-state
+  commit has no workflow runs or combined statuses in GitHub connector queries.
+- Reconfirmed implementation be95738cda892134c75c8a7cbf878580e01c91be has
+  completed/success PR run 39708732669. S001/S002 are not reimplemented.
+- Linux x86_64, Python 3.11.15: python -m unittest discover -s tests -v
+  exit 0 (12 tests); python scripts/validate_project_docs.py exit 0;
+  python scripts/validate_repository_boundary.py exit 0 (130 approved artifacts).
+- Existing untracked S003 drafts preserved in a named Git stash before checks;
+  no S003 implementation started. Source/physical/simulator/Windows validation
+  NOT RUN and outside this documentation-only recovery scope.
+- gh auth status exit 1 (invalid local credential); GitHub connector remains usable.
+- This focused recovery PR requests CI on the acceptance-state tree plus this log.
+  No green exact-head CI or merge is claimed by this entry. S003 remains next.
