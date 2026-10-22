@@ -1,7 +1,8 @@
 # Project Charter
 
-Status: Proposed S001 scope freeze; independent approval pending. This charter
-specifies intended outcomes, not implemented or scientifically validated behavior.
+Status: Proposed S001 scope freeze, eligible for owner-authorized single-maintainer
+acceptance after tests and exact-head CI. This charter specifies intended outcomes,
+not implemented or scientifically validated behavior.
 
 ## Purpose
 Build a clean-room, cross-platform research environment for reproducible waste-management simulations. Researchers configure scenarios through versioned files/UI rather than editing source. The environment separates domain models, SUMO mobility, ns-3 network simulation, collection policies, raw outputs, and independent statistical analysis.
@@ -77,5 +78,7 @@ control, and claims of universal physical accuracy. A plausible plot or passing
 software test does not establish empirical validation. Statistical association
 does not establish causality; causal claims require a defined estimand and justified
 design. Scientific acceptance and final release require their independent gates.
-S001 acceptance requires independent review of this charter and scope map plus its
-recorded WB/BB/adversarial checks. Until then, S002 remains ineligible.
+S001 acceptance requires recorded WB/BB/adversarial tests, a charter comprehension
+self-audit, exact-head CI success, and truthful acceptance evidence. The sole
+maintainer has waived the second-person review requirement. S002 remains ineligible
+until S001's technical gate and integration are complete.

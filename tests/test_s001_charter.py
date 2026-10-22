@@ -1,4 +1,4 @@
-"""Bounded charter contract checks; these do not substitute for independent review."""
+"""Bounded charter contract checks; acceptance also requires exact-head CI and self-audit."""
 import re
 import unittest
 from pathlib import Path
@@ -55,7 +55,7 @@ class CharterContract(unittest.TestCase):
                         'Exclusions and approval boundary'):
             self.assertIn('## ' + heading + '\n', self.text)
         for obligation in ('units', 'simulation time', 'fail closed',
-                           'configuration hashes', 'independent review'):
+                           'configuration hashes', 'self-audit'):
             self.assertIn(obligation, self.text)
 
     def test_required_attack_has_explicit_correction(self):
