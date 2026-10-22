@@ -1,7 +1,7 @@
 # Blockers and Open Dependencies
 
 ## Current blockers
-- No open governance blocker for S008. Exact-head CI/integration pending.
+- S008 passed exact-head CI and merged. S009 must verify designated legacy source before intake.
 - Local GitHub CLI credential is invalid; connector works, so publication is not blocked.
 
 ## Resolved blockers

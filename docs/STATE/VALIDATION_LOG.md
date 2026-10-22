@@ -230,3 +230,12 @@ Append entries; do not rewrite history to hide failures.
 - python scripts/validate_change_control.py: exit 0.
 - python scripts/validate_risk_protocol.py and git diff --check: exit 0.
 - Failure/NOT RUN/residual limitations in S008 report; exact-head CI/merge pending.
+
+## E-S008-02 — Accepted integration
+- PR #14 exact head 87d26f2c10b9616dcb70d264a77962b07bda300d passed CI run
+  39712069254, completed/success; normal merge cd5a5ce51e67885f35db3939478d8b6af8171969.
+- Published tree 265f2e41e09e7dd7787492665c6cc59df863ac2b equals local checkpoint
+  59aa7fa tree, preserved branch. 48 tests/five validators pass.
+- Author self-audit accepted S008 under ADR-0005 (8/88); S009 next.
+- No model/runtime/scientific acceptance. Legacy source not designated in records;
+  S009 must check source availability and stop if required evidence unavailable.
