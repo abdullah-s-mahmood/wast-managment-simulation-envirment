@@ -1,0 +1,893 @@
+{
+  "project": "wast-managment-simulation-envirment",
+  "display_name": "Waste Management Simulation Environment",
+  "state_version": 1,
+  "updated_at": "2026-10-22",
+  "current_phase": "P0 — Governance and scientific controls",
+  "total_sprints": 88,
+  "completed_sprints": 0,
+  "current_sprint_id": "S001",
+  "next_sprint_id": "S001",
+  "last_completed_sprint_id": null,
+  "rule": "Strict sequential execution; complete and verify one sprint before starting the next.",
+  "sprints": [
+    {
+      "id": "S001",
+      "title": "Project charter and non-goals",
+      "file": "docs/sprints/S001-project-charter-and-non-goals.md",
+      "phase": "P0 — Governance and scientific controls",
+      "status": "not_started",
+      "depends_on": []
+    },
+    {
+      "id": "S002",
+      "title": "Clean-room repository boundary",
+      "file": "docs/sprints/S002-clean-room-repository-boundary.md",
+      "phase": "P0 — Governance and scientific controls",
+      "status": "not_started",
+      "depends_on": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "title": "Scientific evidence ledger",
+      "file": "docs/sprints/S003-scientific-evidence-ledger.md",
+      "phase": "P0 — Governance and scientific controls",
+      "status": "not_started",
+      "depends_on": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S004",
+      "title": "Hypotheses versus experiment settings",
+      "file": "docs/sprints/S004-hypotheses-versus-experiment-settings.md",
+      "phase": "P0 — Governance and scientific controls",
+      "status": "not_started",
+      "depends_on": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "title": "Terminology, units, and identifier conventions",
+      "file": "docs/sprints/S005-terminology-units-and-identifier-conventions.md",
+      "phase": "P0 — Governance and scientific controls",
+      "status": "not_started",
+      "depends_on": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "title": "Quality gates and definition of done",
+      "file": "docs/sprints/S006-quality-gates-and-definition-of-done.md",
+      "phase": "P0 — Governance and scientific controls",
+      "status": "not_started",
+      "depends_on": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "title": "Change control and architecture decisions",
+      "file": "docs/sprints/S007-change-control-and-architecture-decisions.md",
+      "phase": "P0 — Governance and scientific controls",
+      "status": "not_started",
+      "depends_on": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S008",
+      "title": "Risk register and escalation rules",
+      "file": "docs/sprints/S008-risk-register-and-escalation-rules.md",
+      "phase": "P0 — Governance and scientific controls",
+      "status": "not_started",
+      "depends_on": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "title": "Legacy source inventory protocol",
+      "file": "docs/sprints/S009-legacy-source-inventory-protocol.md",
+      "phase": "P1 — Legacy audit and evidence extraction",
+      "status": "not_started",
+      "depends_on": [
+        "S008"
+      ]
+    },
+    {
+      "id": "S010",
+      "title": "Legacy module and dependency graph",
+      "file": "docs/sprints/S010-legacy-module-and-dependency-graph.md",
+      "phase": "P1 — Legacy audit and evidence extraction",
+      "status": "not_started",
+      "depends_on": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "title": "Legacy execution path and data flow",
+      "file": "docs/sprints/S011-legacy-execution-path-and-data-flow.md",
+      "phase": "P1 — Legacy audit and evidence extraction",
+      "status": "not_started",
+      "depends_on": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S012",
+      "title": "Legacy baseline reproduction",
+      "file": "docs/sprints/S012-legacy-baseline-reproduction.md",
+      "phase": "P1 — Legacy audit and evidence extraction",
+      "status": "not_started",
+      "depends_on": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "title": "Legacy tests and results inventory",
+      "file": "docs/sprints/S013-legacy-tests-and-results-inventory.md",
+      "phase": "P1 — Legacy audit and evidence extraction",
+      "status": "not_started",
+      "depends_on": [
+        "S012"
+      ]
+    },
+    {
+      "id": "S014",
+      "title": "Legacy model and parameter extraction",
+      "file": "docs/sprints/S014-legacy-model-and-parameter-extraction.md",
+      "phase": "P1 — Legacy audit and evidence extraction",
+      "status": "not_started",
+      "depends_on": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "title": "Legacy discrepancy and defect register",
+      "file": "docs/sprints/S015-legacy-discrepancy-and-defect-register.md",
+      "phase": "P1 — Legacy audit and evidence extraction",
+      "status": "not_started",
+      "depends_on": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "title": "Legacy audit freeze",
+      "file": "docs/sprints/S016-legacy-audit-freeze.md",
+      "phase": "P1 — Legacy audit and evidence extraction",
+      "status": "not_started",
+      "depends_on": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S017",
+      "title": "Supported platform matrix",
+      "file": "docs/sprints/S017-supported-platform-matrix.md",
+      "phase": "P2 — Runtime and simulator integration",
+      "status": "not_started",
+      "depends_on": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S018",
+      "title": "Python tooling and environment lock",
+      "file": "docs/sprints/S018-python-tooling-and-environment-lock.md",
+      "phase": "P2 — Runtime and simulator integration",
+      "status": "not_started",
+      "depends_on": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "title": "SUMO installation and version smoke test",
+      "file": "docs/sprints/S019-sumo-installation-and-version-smoke-test.md",
+      "phase": "P2 — Runtime and simulator integration",
+      "status": "not_started",
+      "depends_on": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "title": "ns-3 installation and version smoke test",
+      "file": "docs/sprints/S020-ns3-installation-and-version-smoke-test.md",
+      "phase": "P2 — Runtime and simulator integration",
+      "status": "not_started",
+      "depends_on": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "title": "SUMO headless deterministic smoke",
+      "file": "docs/sprints/S021-sumo-headless-deterministic-smoke.md",
+      "phase": "P2 — Runtime and simulator integration",
+      "status": "not_started",
+      "depends_on": [
+        "S020"
+      ]
+    },
+    {
+      "id": "S022",
+      "title": "ns-3 minimal packet smoke",
+      "file": "docs/sprints/S022-ns3-minimal-packet-smoke.md",
+      "phase": "P2 — Runtime and simulator integration",
+      "status": "not_started",
+      "depends_on": [
+        "S021"
+      ]
+    },
+    {
+      "id": "S023",
+      "title": "Simulator adapter boundary",
+      "file": "docs/sprints/S023-simulator-adapter-boundary.md",
+      "phase": "P2 — Runtime and simulator integration",
+      "status": "not_started",
+      "depends_on": [
+        "S022"
+      ]
+    },
+    {
+      "id": "S024",
+      "title": "Environment reproducibility smoke",
+      "file": "docs/sprints/S024-environment-reproducibility-smoke.md",
+      "phase": "P2 — Runtime and simulator integration",
+      "status": "not_started",
+      "depends_on": [
+        "S023"
+      ]
+    },
+    {
+      "id": "S025",
+      "title": "JSON naming, units, and versioning conventions",
+      "file": "docs/sprints/S025-json-naming-units-and-versioning-conventions.md",
+      "phase": "P3 — JSON contracts and configuration",
+      "status": "not_started",
+      "depends_on": [
+        "S024"
+      ]
+    },
+    {
+      "id": "S026",
+      "title": "Run manifest schema",
+      "file": "docs/sprints/S026-run-manifest-schema.md",
+      "phase": "P3 — JSON contracts and configuration",
+      "status": "not_started",
+      "depends_on": [
+        "S025"
+      ]
+    },
+    {
+      "id": "S027",
+      "title": "City and road-map schema",
+      "file": "docs/sprints/S027-city-and-road-map-schema.md",
+      "phase": "P3 — JSON contracts and configuration",
+      "status": "not_started",
+      "depends_on": [
+        "S026"
+      ]
+    },
+    {
+      "id": "S028",
+      "title": "Population-grid schema",
+      "file": "docs/sprints/S028-population-grid-schema.md",
+      "phase": "P3 — JSON contracts and configuration",
+      "status": "not_started",
+      "depends_on": [
+        "S027"
+      ]
+    },
+    {
+      "id": "S029",
+      "title": "Temperature and humidity schema",
+      "file": "docs/sprints/S029-temperature-and-humidity-schema.md",
+      "phase": "P3 — JSON contracts and configuration",
+      "status": "not_started",
+      "depends_on": [
+        "S028"
+      ]
+    },
+    {
+      "id": "S030",
+      "title": "Bin physical-model schema",
+      "file": "docs/sprints/S030-bin-physical-model-schema.md",
+      "phase": "P3 — JSON contracts and configuration",
+      "status": "not_started",
+      "depends_on": [
+        "S029"
+      ]
+    },
+    {
+      "id": "S031",
+      "title": "Vehicle model schema",
+      "file": "docs/sprints/S031-vehicle-model-schema.md",
+      "phase": "P3 — JSON contracts and configuration",
+      "status": "not_started",
+      "depends_on": [
+        "S030"
+      ]
+    },
+    {
+      "id": "S032",
+      "title": "Depot and coverage schema",
+      "file": "docs/sprints/S032-depot-and-coverage-schema.md",
+      "phase": "P3 — JSON contracts and configuration",
+      "status": "not_started",
+      "depends_on": [
+        "S031"
+      ]
+    },
+    {
+      "id": "S033",
+      "title": "Communication and PLC schema",
+      "file": "docs/sprints/S033-communication-and-plc-schema.md",
+      "phase": "P3 — JSON contracts and configuration",
+      "status": "not_started",
+      "depends_on": [
+        "S032"
+      ]
+    },
+    {
+      "id": "S034",
+      "title": "Collection policy schema",
+      "file": "docs/sprints/S034-collection-policy-schema.md",
+      "phase": "P3 — JSON contracts and configuration",
+      "status": "not_started",
+      "depends_on": [
+        "S033"
+      ]
+    },
+    {
+      "id": "S035",
+      "title": "Seeds, repetitions, and experiment matrix schema",
+      "file": "docs/sprints/S035-seeds-repetitions-and-experiment-matrix-schema.md",
+      "phase": "P3 — JSON contracts and configuration",
+      "status": "not_started",
+      "depends_on": [
+        "S034"
+      ]
+    },
+    {
+      "id": "S036",
+      "title": "Schema validation and negative tests",
+      "file": "docs/sprints/S036-schema-validation-and-negative-tests.md",
+      "phase": "P3 — JSON contracts and configuration",
+      "status": "not_started",
+      "depends_on": [
+        "S035"
+      ]
+    },
+    {
+      "id": "S037",
+      "title": "Road-network import and coordinate reference",
+      "file": "docs/sprints/S037-road-network-import-and-coordinate-reference.md",
+      "phase": "P4 — City, population, and climate",
+      "status": "not_started",
+      "depends_on": [
+        "S036"
+      ]
+    },
+    {
+      "id": "S038",
+      "title": "Road graph integrity and legal locations",
+      "file": "docs/sprints/S038-road-graph-integrity-and-legal-locations.md",
+      "phase": "P4 — City, population, and climate",
+      "status": "not_started",
+      "depends_on": [
+        "S037"
+      ]
+    },
+    {
+      "id": "S039",
+      "title": "Population-density generation interface",
+      "file": "docs/sprints/S039-population-density-generation-interface.md",
+      "phase": "P4 — City, population, and climate",
+      "status": "not_started",
+      "depends_on": [
+        "S038"
+      ]
+    },
+    {
+      "id": "S040",
+      "title": "Manual heatmap and block editor contract",
+      "file": "docs/sprints/S040-manual-heatmap-and-block-editor-contract.md",
+      "phase": "P4 — City, population, and climate",
+      "status": "not_started",
+      "depends_on": [
+        "S039"
+      ]
+    },
+    {
+      "id": "S041",
+      "title": "Automatic population distribution contract",
+      "file": "docs/sprints/S041-automatic-population-distribution-contract.md",
+      "phase": "P4 — City, population, and climate",
+      "status": "not_started",
+      "depends_on": [
+        "S040"
+      ]
+    },
+    {
+      "id": "S042",
+      "title": "Climate spatial interpolation and source",
+      "file": "docs/sprints/S042-climate-spatial-interpolation-and-source.md",
+      "phase": "P4 — City, population, and climate",
+      "status": "not_started",
+      "depends_on": [
+        "S041"
+      ]
+    },
+    {
+      "id": "S043",
+      "title": "Time-varying environmental context",
+      "file": "docs/sprints/S043-time-varying-environmental-context.md",
+      "phase": "P4 — City, population, and climate",
+      "status": "not_started",
+      "depends_on": [
+        "S042"
+      ]
+    },
+    {
+      "id": "S044",
+      "title": "Map-population-climate integration",
+      "file": "docs/sprints/S044-map-population-climate-integration.md",
+      "phase": "P4 — City, population, and climate",
+      "status": "not_started",
+      "depends_on": [
+        "S043"
+      ]
+    },
+    {
+      "id": "S045",
+      "title": "Bin model evidence dossier",
+      "file": "docs/sprints/S045-bin-model-evidence-dossier.md",
+      "phase": "P5 — Bin physical/environmental models",
+      "status": "not_started",
+      "depends_on": [
+        "S044"
+      ]
+    },
+    {
+      "id": "S046",
+      "title": "Bin state lifecycle contract",
+      "file": "docs/sprints/S046-bin-state-lifecycle-contract.md",
+      "phase": "P5 — Bin physical/environmental models",
+      "status": "not_started",
+      "depends_on": [
+        "S045"
+      ]
+    },
+    {
+      "id": "S047",
+      "title": "Fill and waste accumulation model",
+      "file": "docs/sprints/S047-fill-and-waste-accumulation-model.md",
+      "phase": "P5 — Bin physical/environmental models",
+      "status": "not_started",
+      "depends_on": [
+        "S046"
+      ]
+    },
+    {
+      "id": "S048",
+      "title": "Waste properties, moisture, and composition",
+      "file": "docs/sprints/S048-waste-properties-moisture-and-composition.md",
+      "phase": "P5 — Bin physical/environmental models",
+      "status": "not_started",
+      "depends_on": [
+        "S047"
+      ]
+    },
+    {
+      "id": "S049",
+      "title": "Pollutant, odor, and leachate model",
+      "file": "docs/sprints/S049-pollutant-odor-and-leachate-model.md",
+      "phase": "P5 — Bin physical/environmental models",
+      "status": "not_started",
+      "depends_on": [
+        "S048"
+      ]
+    },
+    {
+      "id": "S050",
+      "title": "Rollover, tilt, and liquid-event model",
+      "file": "docs/sprints/S050-rollover-tilt-and-liquid-event-model.md",
+      "phase": "P5 — Bin physical/environmental models",
+      "status": "not_started",
+      "depends_on": [
+        "S049"
+      ]
+    },
+    {
+      "id": "S051",
+      "title": "Sensor inventory and telemetry separation",
+      "file": "docs/sprints/S051-sensor-inventory-and-telemetry-separation.md",
+      "phase": "P5 — Bin physical/environmental models",
+      "status": "not_started",
+      "depends_on": [
+        "S050"
+      ]
+    },
+    {
+      "id": "S052",
+      "title": "Time-step bin state transition",
+      "file": "docs/sprints/S052-time-step-bin-state-transition.md",
+      "phase": "P5 — Bin physical/environmental models",
+      "status": "not_started",
+      "depends_on": [
+        "S051"
+      ]
+    },
+    {
+      "id": "S053",
+      "title": "Stochastic process and uncertainty",
+      "file": "docs/sprints/S053-stochastic-process-and-uncertainty.md",
+      "phase": "P5 — Bin physical/environmental models",
+      "status": "not_started",
+      "depends_on": [
+        "S052"
+      ]
+    },
+    {
+      "id": "S054",
+      "title": "Bin physics and environmental validation tests",
+      "file": "docs/sprints/S054-bin-physics-and-environmental-validation-tests.md",
+      "phase": "P5 — Bin physical/environmental models",
+      "status": "not_started",
+      "depends_on": [
+        "S053"
+      ]
+    },
+    {
+      "id": "S055",
+      "title": "Vehicle model evidence dossier",
+      "file": "docs/sprints/S055-vehicle-model-evidence-dossier.md",
+      "phase": "P6 — Vehicles, fuel, routing, and depots",
+      "status": "not_started",
+      "depends_on": [
+        "S054"
+      ]
+    },
+    {
+      "id": "S056",
+      "title": "Payload and loading invariants",
+      "file": "docs/sprints/S056-payload-and-loading-invariants.md",
+      "phase": "P6 — Vehicles, fuel, routing, and depots",
+      "status": "not_started",
+      "depends_on": [
+        "S055"
+      ]
+    },
+    {
+      "id": "S057",
+      "title": "Fuel tank and consumption components",
+      "file": "docs/sprints/S057-fuel-tank-and-consumption-components.md",
+      "phase": "P6 — Vehicles, fuel, routing, and depots",
+      "status": "not_started",
+      "depends_on": [
+        "S056"
+      ]
+    },
+    {
+      "id": "S058",
+      "title": "Traffic-dependent speed and consumption",
+      "file": "docs/sprints/S058-traffic-dependent-speed-and-consumption.md",
+      "phase": "P6 — Vehicles, fuel, routing, and depots",
+      "status": "not_started",
+      "depends_on": [
+        "S057"
+      ]
+    },
+    {
+      "id": "S059",
+      "title": "Safe-return fuel and reachable-service logic",
+      "file": "docs/sprints/S059-safe-return-fuel-and-reachable-service-logic.md",
+      "phase": "P6 — Vehicles, fuel, routing, and depots",
+      "status": "not_started",
+      "depends_on": [
+        "S058"
+      ]
+    },
+    {
+      "id": "S060",
+      "title": "Road-constrained routing interface",
+      "file": "docs/sprints/S060-road-constrained-routing-interface.md",
+      "phase": "P6 — Vehicles, fuel, routing, and depots",
+      "status": "not_started",
+      "depends_on": [
+        "S059"
+      ]
+    },
+    {
+      "id": "S061",
+      "title": "Vehicle state and trip lifecycle",
+      "file": "docs/sprints/S061-vehicle-state-and-trip-lifecycle.md",
+      "phase": "P6 — Vehicles, fuel, routing, and depots",
+      "status": "not_started",
+      "depends_on": [
+        "S060"
+      ]
+    },
+    {
+      "id": "S062",
+      "title": "Depot reachability and coverage",
+      "file": "docs/sprints/S062-depot-reachability-and-coverage.md",
+      "phase": "P6 — Vehicles, fuel, routing, and depots",
+      "status": "not_started",
+      "depends_on": [
+        "S061"
+      ]
+    },
+    {
+      "id": "S063",
+      "title": "Fleet-size estimation policy",
+      "file": "docs/sprints/S063-fleet-size-estimation-policy.md",
+      "phase": "P6 — Vehicles, fuel, routing, and depots",
+      "status": "not_started",
+      "depends_on": [
+        "S062"
+      ]
+    },
+    {
+      "id": "S064",
+      "title": "Vehicle and fleet adversarial tests",
+      "file": "docs/sprints/S064-vehicle-and-fleet-adversarial-tests.md",
+      "phase": "P6 — Vehicles, fuel, routing, and depots",
+      "status": "not_started",
+      "depends_on": [
+        "S063"
+      ]
+    },
+    {
+      "id": "S065",
+      "title": "Communication evidence inventory",
+      "file": "docs/sprints/S065-communication-evidence-inventory.md",
+      "phase": "P7 — Communications and PLC",
+      "status": "not_started",
+      "depends_on": [
+        "S064"
+      ]
+    },
+    {
+      "id": "S066",
+      "title": "PLC source and parameter freeze",
+      "file": "docs/sprints/S066-plc-source-and-parameter-freeze.md",
+      "phase": "P7 — Communications and PLC",
+      "status": "not_started",
+      "depends_on": [
+        "S065"
+      ]
+    },
+    {
+      "id": "S067",
+      "title": "Communication technology abstraction",
+      "file": "docs/sprints/S067-communication-technology-abstraction.md",
+      "phase": "P7 — Communications and PLC",
+      "status": "not_started",
+      "depends_on": [
+        "S066"
+      ]
+    },
+    {
+      "id": "S068",
+      "title": "Delay, loss, bandwidth, and range model",
+      "file": "docs/sprints/S068-delay-loss-bandwidth-and-range-model.md",
+      "phase": "P7 — Communications and PLC",
+      "status": "not_started",
+      "depends_on": [
+        "S067"
+      ]
+    },
+    {
+      "id": "S069",
+      "title": "Telemetry sampling and payload construction",
+      "file": "docs/sprints/S069-telemetry-sampling-and-payload-construction.md",
+      "phase": "P7 — Communications and PLC",
+      "status": "not_started",
+      "depends_on": [
+        "S068"
+      ]
+    },
+    {
+      "id": "S070",
+      "title": "Network versus collection-only mode",
+      "file": "docs/sprints/S070-network-versus-collection-only-mode.md",
+      "phase": "P7 — Communications and PLC",
+      "status": "not_started",
+      "depends_on": [
+        "S069"
+      ]
+    },
+    {
+      "id": "S071",
+      "title": "ns-3 trace integration and time alignment",
+      "file": "docs/sprints/S071-ns3-trace-integration-and-time-alignment.md",
+      "phase": "P7 — Communications and PLC",
+      "status": "not_started",
+      "depends_on": [
+        "S070"
+      ]
+    },
+    {
+      "id": "S072",
+      "title": "Communication adversarial tests",
+      "file": "docs/sprints/S072-communication-adversarial-tests.md",
+      "phase": "P7 — Communications and PLC",
+      "status": "not_started",
+      "depends_on": [
+        "S071"
+      ]
+    },
+    {
+      "id": "S073",
+      "title": "Collection-policy interface",
+      "file": "docs/sprints/S073-collection-policy-interface.md",
+      "phase": "P8 — Collection policies and orchestration",
+      "status": "not_started",
+      "depends_on": [
+        "S072"
+      ]
+    },
+    {
+      "id": "S074",
+      "title": "Collection eligibility constraints",
+      "file": "docs/sprints/S074-collection-eligibility-constraints.md",
+      "phase": "P8 — Collection policies and orchestration",
+      "status": "not_started",
+      "depends_on": [
+        "S073"
+      ]
+    },
+    {
+      "id": "S075",
+      "title": "Safety constraints and priority rules",
+      "file": "docs/sprints/S075-safety-constraints-and-priority-rules.md",
+      "phase": "P8 — Collection policies and orchestration",
+      "status": "not_started",
+      "depends_on": [
+        "S074"
+      ]
+    },
+    {
+      "id": "S076",
+      "title": "Baseline collection policies",
+      "file": "docs/sprints/S076-baseline-collection-policies.md",
+      "phase": "P8 — Collection policies and orchestration",
+      "status": "not_started",
+      "depends_on": [
+        "S075"
+      ]
+    },
+    {
+      "id": "S077",
+      "title": "User-defined policy extension contract",
+      "file": "docs/sprints/S077-user-defined-policy-extension-contract.md",
+      "phase": "P8 — Collection policies and orchestration",
+      "status": "not_started",
+      "depends_on": [
+        "S076"
+      ]
+    },
+    {
+      "id": "S078",
+      "title": "Experiment matrix and replication",
+      "file": "docs/sprints/S078-experiment-matrix-and-replication.md",
+      "phase": "P8 — Collection policies and orchestration",
+      "status": "not_started",
+      "depends_on": [
+        "S077"
+      ]
+    },
+    {
+      "id": "S079",
+      "title": "Deterministic time-step scheduler",
+      "file": "docs/sprints/S079-deterministic-time-step-scheduler.md",
+      "phase": "P8 — Collection policies and orchestration",
+      "status": "not_started",
+      "depends_on": [
+        "S078"
+      ]
+    },
+    {
+      "id": "S080",
+      "title": "Integrated one-run multi-scenario executor",
+      "file": "docs/sprints/S080-integrated-one-run-multi-scenario-executor.md",
+      "phase": "P8 — Collection policies and orchestration",
+      "status": "not_started",
+      "depends_on": [
+        "S079"
+      ]
+    },
+    {
+      "id": "S081",
+      "title": "Raw event log and time-series schema",
+      "file": "docs/sprints/S081-raw-event-log-and-time-series-schema.md",
+      "phase": "P9 — Data, statistics, UI, and release",
+      "status": "not_started",
+      "depends_on": [
+        "S080"
+      ]
+    },
+    {
+      "id": "S082",
+      "title": "Run provenance and recovery",
+      "file": "docs/sprints/S082-run-provenance-and-recovery.md",
+      "phase": "P9 — Data, statistics, UI, and release",
+      "status": "not_started",
+      "depends_on": [
+        "S081"
+      ]
+    },
+    {
+      "id": "S083",
+      "title": "Metric catalogue and unit-tested derivations",
+      "file": "docs/sprints/S083-metric-catalogue-and-unit-tested-derivations.md",
+      "phase": "P9 — Data, statistics, UI, and release",
+      "status": "not_started",
+      "depends_on": [
+        "S082"
+      ]
+    },
+    {
+      "id": "S084",
+      "title": "Descriptive statistics and independent analysis",
+      "file": "docs/sprints/S084-descriptive-statistics-and-independent-analysis.md",
+      "phase": "P9 — Data, statistics, UI, and release",
+      "status": "not_started",
+      "depends_on": [
+        "S083"
+      ]
+    },
+    {
+      "id": "S085",
+      "title": "Inferential model selection and preregistration",
+      "file": "docs/sprints/S085-inferential-model-selection-and-preregistration.md",
+      "phase": "P9 — Data, statistics, UI, and release",
+      "status": "not_started",
+      "depends_on": [
+        "S084"
+      ]
+    },
+    {
+      "id": "S086",
+      "title": "Plots, CSV export, and report provenance",
+      "file": "docs/sprints/S086-plots-csv-export-and-report-provenance.md",
+      "phase": "P9 — Data, statistics, UI, and release",
+      "status": "not_started",
+      "depends_on": [
+        "S085"
+      ]
+    },
+    {
+      "id": "S087",
+      "title": "Frontend workflow and cross-platform packaging",
+      "file": "docs/sprints/S087-frontend-workflow-and-cross-platform-packaging.md",
+      "phase": "P9 — Data, statistics, UI, and release",
+      "status": "not_started",
+      "depends_on": [
+        "S086"
+      ]
+    },
+    {
+      "id": "S088",
+      "title": "End-to-end acceptance and release gate",
+      "file": "docs/sprints/S088-end-to-end-acceptance-and-release-gate.md",
+      "phase": "P9 — Data, statistics, UI, and release",
+      "status": "not_started",
+      "depends_on": [
+        "S087"
+      ]
+    }
+  ]
+}
