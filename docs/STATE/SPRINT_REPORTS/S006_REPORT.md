@@ -32,3 +32,11 @@ NOT RUN: physical/empirical, Windows, simulators and runtime integration; no mod
 runtime or advertised platform is introduced. Limits: checker cannot prove a run
 occurred, a source is real, or N/A rationale is valid; author audit/API checks must.
 Next eligible after accepted integration: S007.
+
+## E-S006-02 — Accepted integration
+- PR #10 exact head 98c77038423f834970f74dea8db2c0bab7e67e0d passed CI run
+  39711264161, completed/success. Permitted merge 6119885cfa11b44acdf49e4cde5f1f30793f59ab.
+- Published tree a365286d5b3bd211db33601850277951d65fc151 matches local checkpoint
+  9b89e31 tree, preserved branch. 39 tests/three validators pass.
+- Author self-audit under ADR-0005 accepted S006 (6/88); S007 next.
+- No scientific/model/runtime validity claim; completeness checks do not authenticate evidence.

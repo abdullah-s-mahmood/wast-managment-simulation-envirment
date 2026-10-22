@@ -189,3 +189,11 @@ Append entries; do not rewrite history to hide failures.
 - python scripts/validate_repository_boundary.py: exit 0, 153 approved artifacts.
 - git diff --check: exit 0. Failures/NOT RUN/limits documented in S006 report.
 - Actual GitHub exact-head CI and normal integration pending; S007 not started.
+
+## E-S006-02 — Accepted integration
+- PR #10 exact head 98c77038423f834970f74dea8db2c0bab7e67e0d passed CI run
+  39711264161, completed/success. Permitted merge 6119885cfa11b44acdf49e4cde5f1f30793f59ab.
+- Published tree a365286d5b3bd211db33601850277951d65fc151 matches local checkpoint
+  9b89e31 tree, preserved branch. 39 tests/three validators pass.
+- Author self-audit under ADR-0005 accepted S006 (6/88); S007 next.
+- No scientific/model/runtime validity claim; completeness checks do not authenticate evidence.
