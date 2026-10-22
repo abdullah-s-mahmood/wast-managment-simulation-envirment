@@ -209,3 +209,11 @@ Append entries; do not rewrite history to hide failures.
 - python scripts/validate_repository_boundary.py: exit 0, 157 approved artifacts.
 - python scripts/validate_change_control.py and git diff --check: exit 0.
 - Actual failures/limits/NOT RUN rationale in S007 report. Exact-head CI/merge pending.
+
+## E-S007-02 — Accepted integration
+- PR #12 exact head 0fa70fb0d21b4fced9239fe87dda5c8e2cb21503 passed CI run
+  39711665684, completed/success; permitted merge 86326c298ccadd19bf2df3e78aec407db5ce5d6d.
+- Published tree 62af707d8f1388c797b0ab93759a67f96a43e51b equals local checkpoint
+  ecf99e9 tree, preserved branch. 44 tests/four validators pass.
+- Author self-audit accepted S007 under ADR-0005 (7/88); S008 next.
+- No change to prior accepted decisions or scientific/runtime validity claim.
