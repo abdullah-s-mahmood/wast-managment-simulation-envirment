@@ -1,15 +1,15 @@
 # Agent Handoff — Authoritative Resume Point
 
 ## Current checkpoint (2026-10-22)
-- S001/S002 completed; S003 in_review on sprint/S003-evidence-ledger.
-- S002 recovery PR #3 merged b591b2339f3e5b2b87bc26f01abd52312403ffde;
-  exact head aadb9b332f16e7bc42ec3e2ee0462048ba5afc45 passed CI run 39709574639.
-- S003 ledger contract/checklist/validator and synthetic tracing tests implemented.
-  Local 23 tests and documentation/evidence validators pass. Initial bad-hash
-  acceptance failure fixed and retained as regression. See S003 report/E-S003-01.
-- Next: verify S003 exact-head CI, self-audit and merge through GitHub; only then
-  record completed and start S004. No second-person review required (ADR-0005).
-- Pre-existing S003 drafts preserved in stash named Preserve pre-existing S003
-  ledger drafts before S002 CI recovery; restored with apply, stash retained.
-- Local gh credential invalid; use functioning GitHub connector for publication.
-- No scientific models accepted, legacy audited, or Windows/SUMO/ns-3 validated.
+- S003 accepted, 3/88 completed; S004 next (not_started).
+- PR #4 exact head ec4296b6deb1e7b7c4a27913ccc4f6df13a632d1 passed run
+  39709929916; merged f7ee3973d59aef5469d6d29bc108dfeb7416b492.
+- Evidence contract/checklist/validator tested: 23 tests, 3 validators pass.
+  Bad source hash acceptance fixed; see S003 report/E-S003-01 and E-S003-02.
+- S002 recovery PR #3 passed exact-head CI and merged before S003 started.
+- Next: read full S004 and implement classification rules/table and its tests.
+- Local checkpoint checkpoint/S003-local-a59f5ba preserves identical published tree.
+  Original untracked drafts preserved in named Git stash, restored with apply.
+- Use GitHub connector: local gh credential invalid. No second human required.
+- No model/legacy/Windows/SUMO/ns-3 validity claimed. Scientific source review
+  cannot be automated by the structural ledger validator.
