@@ -54,7 +54,7 @@
       "title": "Terminology, units, and identifier conventions",
       "file": "docs/sprints/S005-terminology-units-and-identifier-conventions.md",
       "phase": "P0 — Governance and scientific controls",
-      "status": "not_started",
+      "status": "in_review",
       "depends_on": [
         "S004"
       ]
