@@ -217,3 +217,16 @@ Append entries; do not rewrite history to hide failures.
   ecf99e9 tree, preserved branch. 44 tests/four validators pass.
 - Author self-audit accepted S007 under ADR-0005 (7/88); S008 next.
 - No change to prior accepted decisions or scientific/runtime validity claim.
+
+## E-S008-01 — Risks and escalation attacks (2026-10-22)
+- Branch sprint/S008-risks, base 5f6e0130afe6e241dba6730b13930ed7812cd68f.
+- Linux x86_64/Python 3.11.15. python -m unittest discover -s tests -p
+  test_risk_protocol.py -v: exit 1 test-first missing module; then exit 0, 4 tests.
+- python -m unittest discover -s tests -v: exit 0, 48 tests, including exhaustive
+  64-combination explicit-fact escalation checks and no-guess/authorization attacks.
+- python scripts/validate_project_docs.py: exit 0, 88 consistent contracts.
+- python scripts/validate_evidence_ledger.py: exit 0, no scientific records accepted.
+- python scripts/validate_repository_boundary.py: exit 0, 162 approved artifacts.
+- python scripts/validate_change_control.py: exit 0.
+- python scripts/validate_risk_protocol.py and git diff --check: exit 0.
+- Failure/NOT RUN/residual limitations in S008 report; exact-head CI/merge pending.

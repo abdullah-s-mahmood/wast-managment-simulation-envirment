@@ -84,7 +84,7 @@
       "title": "Risk register and escalation rules",
       "file": "docs/sprints/S008-risk-register-and-escalation-rules.md",
       "phase": "P0 — Governance and scientific controls",
-      "status": "not_started",
+      "status": "in_review",
       "depends_on": [
         "S007"
       ]
