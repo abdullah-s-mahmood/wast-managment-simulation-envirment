@@ -9,3 +9,4 @@
 | D-0005 | Preserve currently approved PLC source set. | Accepted constraint | No silent substitution. | Evidence-backed ADR and explicit review. |
 | D-0006 | No scientific equations or statistical models locked in bootstrap. | Accepted | Evidence/design precedes method choice. | Evidence and analysis gates pass. |
 | D-0007 | Preserve raw observations and analyze independently. | Accepted | Enables audit and alternative analysis. | Refine output contracts in S081–S086. |
+| D-0008 | Risk-based routine acceptance proposal in ADR-0005. | Proposed; inactive | Owner requested an autonomous workflow proposal; independent review and protection requirements remain effective. | Independent adoption and verified enforcement before use. |

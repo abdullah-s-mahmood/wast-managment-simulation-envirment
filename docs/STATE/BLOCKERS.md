@@ -1,7 +1,12 @@
 # Blockers and Open Dependencies
 
 ## Current blockers
-- None for S001.
+- B-S001-01 — Independent acceptance pending. S001's charter/scope gate requires
+  accepted review under AGENTS.md sections 3–4; author tests and audit cannot
+  substitute. Evidence: S001 report and proposed ADR-0005. Owner/action: an
+  independent authorized reviewer inspects the focused PR, checks and charter
+  comprehension. Resume S002 only after accepted review is recorded and S001
+  transitions to completed. No recurring permission request is needed.
 
 ## Future evidence gates
 1. Legacy source bundle required for S009–S016; do not infer code behavior from chat summaries.
