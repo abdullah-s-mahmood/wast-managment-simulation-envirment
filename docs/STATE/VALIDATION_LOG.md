@@ -178,3 +178,14 @@ Append entries; do not rewrite history to hide failures.
   4d746d7 tree, preserved branch. 34 tests/all three validators pass.
 - Author self-audit accepted under ADR-0005: S005 completed (5/88), S006 next.
 - No scientific/empirical/runtime/Windows/simulator or geodesy validity claim.
+
+## E-S006-01 — Definition of Done/evidence attacks (2026-10-22)
+- Branch sprint/S006-quality-gates, base 583adb7d6583368585230672065b82730beccb7c.
+- Linux x86_64/Python 3.11.15. python -m unittest discover -s tests -p
+  test_quality_gates.py -v: exit 1 test-first missing module; then exit 0, 5 tests.
+- python -m unittest discover -s tests -v: exit 0, 39 tests.
+- python scripts/validate_project_docs.py: exit 0, 88 contracts consistent.
+- python scripts/validate_evidence_ledger.py: exit 0, empty production ledger.
+- python scripts/validate_repository_boundary.py: exit 0, 153 approved artifacts.
+- git diff --check: exit 0. Failures/NOT RUN/limits documented in S006 report.
+- Actual GitHub exact-head CI and normal integration pending; S007 not started.

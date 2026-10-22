@@ -1,0 +1,15 @@
+{
+  "WB": {"allows_not_applicable": false},
+  "BB": {"allows_not_applicable": false},
+  "ADVERSARIAL": {"allows_not_applicable": false},
+  "REGRESSION": {"allows_not_applicable": false},
+  "DOCS": {"allows_not_applicable": false},
+  "INTEGRITY": {"allows_not_applicable": false},
+  "SELF_AUDIT": {"allows_not_applicable": false},
+  "CI": {"allows_not_applicable": false},
+  "CONFIGURATION": {"allows_not_applicable": true},
+  "SCIENCE": {"allows_not_applicable": true},
+  "REFERENCE_PROPERTY": {"allows_not_applicable": true},
+  "INTEGRATION_PLATFORM": {"allows_not_applicable": true},
+  "DATA_STATISTICS": {"allows_not_applicable": true}
+}
