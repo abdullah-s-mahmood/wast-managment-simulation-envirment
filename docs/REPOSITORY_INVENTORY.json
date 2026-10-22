@@ -29,6 +29,7 @@
       "docs/STATE/SPRINT_REPORTS/S003_REPORT.md",
       "docs/STATE/SPRINT_REPORTS/S004_REPORT.md",
       "docs/STATE/SPRINT_REPORTS/S005_REPORT.md",
+      "docs/STATE/SPRINT_REPORTS/S006_REPORT.md",
       "docs/STATE/VALIDATION_LOG.md",
       "docs/STATISTICAL_ANALYSIS_PLAN.md",
       "docs/TESTING_STRATEGY.md",
@@ -42,6 +43,8 @@
       "docs/evidence/README.md",
       "docs/evidence/ledger.json",
       "docs/evidence/record_contract.json",
+      "docs/quality/DEFINITION_OF_DONE.md",
+      "docs/quality/gates.json",
       "docs/sprints/S001-project-charter-and-non-goals.md",
       "docs/sprints/S002-clean-room-repository-boundary.md",
       "docs/sprints/S003-scientific-evidence-ledger.md",
@@ -137,6 +140,7 @@
       "scripts/check_conventions.py",
       "scripts/validate_evidence_ledger.py",
       "scripts/validate_project_docs.py",
+      "scripts/validate_quality_gates.py",
       "scripts/validate_repository_boundary.py",
       "scripts/validate_study_separation.py"
     ],
@@ -146,6 +150,7 @@
       "tests/fixtures/evidence/synthetic_source.json",
       "tests/test_conventions.py",
       "tests/test_evidence_ledger.py",
+      "tests/test_quality_gates.py",
       "tests/test_repository_boundary.py",
       "tests/test_s001_charter.py",
       "tests/test_study_separation.py"

@@ -64,7 +64,7 @@
       "title": "Quality gates and definition of done",
       "file": "docs/sprints/S006-quality-gates-and-definition-of-done.md",
       "phase": "P0 — Governance and scientific controls",
-      "status": "not_started",
+      "status": "in_review",
       "depends_on": [
         "S005"
       ]
