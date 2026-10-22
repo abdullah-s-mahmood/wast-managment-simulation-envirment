@@ -1,8 +1,10 @@
 # ADR-NNNN — Decision title
 
-- Status: Proposed | Accepted | Rejected | Superseded
+- Status: Proposed | Provisional | Accepted | Rejected | Superseded
 - Date:
 - Related sprint(s):
+- Decision authority/method: author self-audit under ADR-0005 or explicit owner decision
+- Replaces / superseded by (if applicable):
 
 ## Context
 Problem, constraints, and evidence.
@@ -11,7 +13,7 @@ Problem, constraints, and evidence.
 Alternatives, including deferral.
 
 ## Decision
-Exact choice and scope.
+Exact choice, scope and rationale; qualified/provisional details remain explicit.
 
 ## Evidence and assumptions
 Sources, applicability, units, and provisional assumptions.
