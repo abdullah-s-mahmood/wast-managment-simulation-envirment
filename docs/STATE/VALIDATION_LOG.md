@@ -55,3 +55,22 @@ Append entries; do not rewrite history to hide failures.
 - Exact-head GitHub CI for the amended PR is still required before integration;
   this entry does NOT claim the amended commit's checks have passed.
 - This governance change does not verify scientific models, SUMO, ns-3 or Windows.
+
+## E-S001-04 — Final single-maintainer S001 acceptance (2026-10-22)
+
+- Scope: S001 charter, C01–C10 map, document-only tests and owner governance amendment.
+- Exact PR head: `8687c54551d16684cdaf95988aa5f840621a1b27`.
+- GitHub Actions run: https://github.com/abdullah-s-mahmood/wast-managment-simulation-envirment/actions/runs/39707882302 — completed/success.
+- CI steps: documentation and 88-sprint progress validation PASSED;
+  `python -m unittest discover -s tests -p test_s001_charter.py -v` PASSED (5 charter tests).
+- Self-audit: charter C01–C10 maps to S002–S088, clear distinction between
+  hypothesis vs scenario settings, explicit invalid-input and provenance semantics,
+  test mutation cases documented; no physical model or baseline-result claim.
+- Owner explicitly waived second-person review via ADR-0005. No GitHub APPROVE
+  review was invented. PR #1 merged successfully through authorized GitHub API.
+- Merge commit: `7aaa0b8ee76fb276506bbaf0a97b65101583901b`.
+- Acceptance status: **S001 COMPLETED, 1/88**. S002 becomes next eligible.
+- Not run: Windows, SUMO/ns-3, physical/empirical scientific validation; not
+  applicable to S001 charter. Future required gates remain open.
+- This progress-record update requires its own GitHub CI; a failing post-merge
+  state check must reopen S001 rather than be ignored.

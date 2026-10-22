@@ -1,7 +1,10 @@
 # Blockers and Open Dependencies
 
 ## Current blockers
-- B-S001-01 — RESOLVED BY OWNER (2026-10-22): independent-person acceptance is no longer mandatory. Accepted ADR-0005 and AGENTS.md §4A permit a single-maintainer self-audit, exact-head CI and permitted merge. S001 now awaits the updated PR's required checks and integration only; S002 remains ineligible until S001 is marked completed.
+- No open governance blocker for S002.
+
+## Resolved blockers
+- B-S001-01 — CLOSED 2026-10-22. Sole owner waived independent-person review by accepted ADR-0005. Exact-head GitHub Actions passed for PR #1; PR #1 merged as `7aaa0b8ee76fb276506bbaf0a97b65101583901b`. S001 technical gate accepted. This does not waive later scientific/technical gates.
 
 ## Future evidence gates
 1. Legacy source bundle required for S009–S016; do not infer code behavior from chat summaries.

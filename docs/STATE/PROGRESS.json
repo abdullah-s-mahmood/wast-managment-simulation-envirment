@@ -5,10 +5,10 @@
   "updated_at": "2026-10-22",
   "current_phase": "P0 — Governance and scientific controls",
   "total_sprints": 88,
-  "completed_sprints": 0,
-  "current_sprint_id": "S001",
-  "next_sprint_id": "S001",
-  "last_completed_sprint_id": null,
+  "completed_sprints": 1,
+  "current_sprint_id": "S002",
+  "next_sprint_id": "S002",
+  "last_completed_sprint_id": "S001",
   "rule": "Strict sequential execution; complete and verify one sprint before starting the next.",
   "sprints": [
     {
@@ -16,7 +16,7 @@
       "title": "Project charter and non-goals",
       "file": "docs/sprints/S001-project-charter-and-non-goals.md",
       "phase": "P0 — Governance and scientific controls",
-      "status": "in_review",
+      "status": "completed",
       "depends_on": []
     },
     {

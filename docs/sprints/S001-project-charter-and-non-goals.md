@@ -1,6 +1,6 @@
 # S001 — Project charter and non-goals
 
-- **Status:** NOT_STARTED
+- **Status:** COMPLETED — see authoritative `docs/STATE/PROGRESS.json` and S001 evidence report.
 - **Phase:** P0 — Governance and scientific controls
 - **Risk:** MEDIUM
 - **Prerequisite:** Bootstrap files exist; no prior sprint is required.

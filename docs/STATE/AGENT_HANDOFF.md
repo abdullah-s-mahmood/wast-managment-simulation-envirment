@@ -1,39 +1,36 @@
 # Agent Handoff — Authoritative Resume Point
 
-- Date: 2026-10-22; branch `sprint/S001-charter`.
-- Base verified locally and through GitHub: `5bbfff0b4a72a03d2e7ab0cd15259126bbefe22d`.
-- Completed sprints: 0/88.
-- Current/next unfinished sprint: **S001 — Project charter and non-goals**, in_review.
-- No simulation implementation, physical equation, parameter set, PLC replacement, or statistical model is approved by bootstrap.
-- Legacy source has not yet been audited here.
+## Verified state (2026-10-22)
 
-## Resume
-Read authoritative files in required order. Inspect `git status --short --branch`
-and `git log -3 --oneline`. Inspect PR #1 and exact-head checks/reviews through
-GitHub connector. PR: https://github.com/abdullah-s-mahmood/wast-managment-simulation-envirment/pull/1
-Owner waived mandatory independent-person review on 2026-10-22 under accepted ADR-0005 and AGENTS.md §4A. Complete S001 by checking the exact PR head CI, recording the self-audit and acceptance evidence, merging via permitted GitHub operation, then updating state to completed. No second GitHub reviewer is required. S002 remains blocked until S001 is fully accepted.
+- Project: `wast-managment-simulation-envirment`.
+- **S001: completed and integrated.**
+- **Accepted: 1 / 88.**
+- **Next eligible sprint: S002 — Clean-room repository boundary.**
+- PR #1 merged: https://github.com/abdullah-s-mahmood/wast-managment-simulation-envirment/pull/1
+- S001 tested PR head: `8687c54551d16684cdaf95988aa5f840621a1b27`.
+- Exact-head CI: https://github.com/abdullah-s-mahmood/wast-managment-simulation-envirment/actions/runs/39707882302 — completed/success.
+- Merge commit: `7aaa0b8ee76fb276506bbaf0a97b65101583901b`.
+- Owner decision: ADR-0005 accepted. **No second-person reviewer required.**
+- No simulation models, scientific equations, SUMO/ns-3 integrations or Windows support have been validated by S001.
 
-## Last verified operation
-Charter scope map, user definitions, failure conventions and acceptance criteria
-added. Five bounded structural/negative tests pass. First attempt failed due to an
-unsupported test-length assertion; corrected specification and preserved reproducer.
-Documentation validator and diff check pass. CI includes charter tests. ADR-0005
-is proposed/inactive. Evidence: `SPRINT_REPORTS/S001_REPORT.md`, E-S001-01.
-Linux x86_64/Python 3.11.15. Independent reader comprehension/review, Windows,
-simulator integration and scientific validation NOT RUN. Restricted shell namespace
-failed before some commands; permissioned retries worked. Local gh returns 401;
-GitHub connector metadata/file/commit reads work. Use connector where sufficient.
+## Resume autonomously
 
-## Do not assume
-SUMO/ns-3 are installed; legacy results reproduce; PLC sources are revalidated; any physical model is accepted; or public visibility implies scientific validation.
+1. Read `README.md`, `AGENTS.md`, `docs/STATE/PROGRESS.json`, this handoff, blockers, decision log, validation log, sprint index and S002 specification.
+2. Fetch `origin/main` and confirm S001's merged status. If local S001 branch has work, preserve any uncommitted changes rather than resetting or cleaning destructively.
+3. Begin S002 only. Complete its documented WB/BB/adversarial tests and exact-head CI.
+4. Under accepted ADR-0005, an authorized agent may merge its own PR after all mandatory checks pass if GitHub permits. Do not request an unavailable second reviewer.
+5. After passing and integrating S002, update progress to 2/88 and hand off S003. Continue automatically under the same rule.
 
-## Publication and review checkpoint
-- Implementation commit: `8f24dd20cb4628d976949acebfafd842d19ff8b1`.
-- Original local commit: `5a57529200a47b7f9688057ea2163734dd965426`, preserved on
-  `sprint/S001-local-checkpoint`; identical tree `41095acb3ad9d0e60ec3f80d4393a40ffd7bf67f`.
-- Shell push failed (exit 128, no username credential); authenticated GitHub connector
-  published identical files. Fetch succeeded, canonical local branch tracks remote.
-- PR #1 open; implementation PR CI run 39706731111 completed successfully.
-- Reviews queried: empty (historical finding). Owner has accepted ADR-0005, so this is no longer a blocker. S001 remains in_review until the updated PR head CI and integration are verified.
-- Handoff commit is the commit introducing this section; use `git log -1 --format=%H`.
-  Recheck CI at the current exact PR head before acceptance; earlier green checks do not cover later commits. Next action: merge PR #1 after checks, record S001 completion and begin S002.
+## Historical evidence
+
+- S001 report: `docs/STATE/SPRINT_REPORTS/S001_REPORT.md`.
+- S001 commands and failures: `docs/STATE/VALIDATION_LOG.md`.
+- Decision: `docs/adr/ADR-0005-risk-based-sprint-review.md`.
+- Previous reviewer blocker B-S001-01 resolved by owner policy; no open S001 reviewer blocker.
+
+## Scientific and operational limits
+
+- Legacy source is not yet audited in this repository.
+- SUMO/ns-3 installation, numerical physics and statistical models are future gates.
+- Do not invent values or mark missing evidence as tested.
+- CI after this progress-record commit should also pass; if it fails, reopen S001, document the error and correct it before continuing.
