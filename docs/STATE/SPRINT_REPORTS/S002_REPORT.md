@@ -59,3 +59,17 @@ Linux x86_64; Python 3.11.15 (same session verified environment as S001).
 - No legacy intake executed; source bundle remains a future S009 prerequisite.
 - Current verdict: locally verified implementation; CI/integration gate open.
 - Next eligible after acceptance: S003. Do not start before S002 integration/state record.
+
+## E-S002-02 — Accepted integration
+- PR #2: https://github.com/abdullah-s-mahmood/wast-managment-simulation-envirment/pull/2
+- Exact head: `be95738cda892134c75c8a7cbf878580e01c91be`.
+- Both exact-head validate checks completed/success: runs 39708732669 (PR) and
+  39708729229 (push). Original main acceptance record e2ba34a also has green CI,
+  run 39708111039. No mandatory check failed or remained unavailable.
+- GitHub permitted normal merge, commit `c96fd0b3a114d3c6088adab481e94177edc884cc`.
+- Self-audit verdict: S002 accepted under ADR-0005; 2/88 accepted; S003 next.
+- Protection-detail read returned 403 (integration lacks administration scope).
+  No protection/settings changes attempted; normal merge API enforced permissions.
+- Connector publication tree `4d46652efa594aed864305ec671483fe87624853`
+  equals local committed tree (local checkpoint 81f75d0). No scientific validation claimed.
+- This acceptance-only state commit must pass its own CI before S003 implementation.

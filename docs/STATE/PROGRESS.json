@@ -5,10 +5,10 @@
   "updated_at": "2026-10-22",
   "current_phase": "P0 — Governance and scientific controls",
   "total_sprints": 88,
-  "completed_sprints": 1,
-  "current_sprint_id": "S002",
-  "next_sprint_id": "S002",
-  "last_completed_sprint_id": "S001",
+  "completed_sprints": 2,
+  "current_sprint_id": "S003",
+  "next_sprint_id": "S003",
+  "last_completed_sprint_id": "S002",
   "rule": "Strict sequential execution; complete and verify one sprint before starting the next.",
   "sprints": [
     {
@@ -24,7 +24,7 @@
       "title": "Clean-room repository boundary",
       "file": "docs/sprints/S002-clean-room-repository-boundary.md",
       "phase": "P0 — Governance and scientific controls",
-      "status": "in_review",
+      "status": "completed",
       "depends_on": [
         "S001"
       ]
