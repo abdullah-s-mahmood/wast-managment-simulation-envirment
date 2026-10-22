@@ -1,0 +1,7 @@
+{
+  "notice": "SYNTHETIC governance fixture; no physical model accepted",
+  "model_id": "MODEL-SYNTHETIC-IDENTITY",
+  "version": "1",
+  "hypotheses": ["Synthetic identity leaves its input unchanged; software property only"],
+  "evidence_status": "synthetic"
+}
