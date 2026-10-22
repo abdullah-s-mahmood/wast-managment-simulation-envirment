@@ -2,7 +2,7 @@
 
 ## Status and provenance
 - Date: 2026-10-22 (session timezone Asia/Baghdad).
-- Initial status: not_started; execution transition: in_progress.
+- Initial status: not_started; execution transitions: in_progress -> in_review after publication.
 - Final acceptance: pending independent charter/scope review; not completed.
 - Branch: `sprint/S001-charter`.
 - Accepted base verified locally and through GitHub: `5bbfff0b4a72a03d2e7ab0cd15259126bbefe22d`.
@@ -91,3 +91,23 @@ requirement. The first failure is retained here rather than reported as a pass.
 - Semantic quality needs independent review; string tests establish bounded structure.
 - Next action: publish focused S001 PR, inspect exact-head CI and independent review.
   Next sprint is S002 only after S001 accepted; currently S001 remains earliest unfinished.
+
+## Publication checkpoint (E-S001-02)
+- Published implementation: `8f24dd20cb4628d976949acebfafd842d19ff8b1`.
+- Local implementation `5a57529200a47b7f9688057ea2163734dd965426` preserved on
+  `sprint/S001-local-checkpoint`. Tree equality verified with `git rev-parse 'HEAD^{tree}'`
+  (exit 0): `41095acb3ad9d0e60ec3f80d4393a40ffd7bf67f`.
+- `git add docs/PROJECT_CHARTER.md docs/STATE docs/adr/ADR-0005-risk-based-sprint-review.md tests/test_s001_charter.py .github/workflows/docs-validation.yml`: exit 0.
+- `git diff --cached --stat`: exit 0, 10 scoped files.
+- `git commit -m 'S001: define reviewable charter scope and acceptance evidence'`: exit 0.
+- `git push -u origin sprint/S001-charter`: exit 128, no HTTPS username available.
+  Connector create_tree/create_commit/create_branch succeeded; no credentials exposed.
+- `git fetch origin sprint/S001-charter`: exit 0; `git branch -m sprint/S001-local-checkpoint`
+  and `git switch -c sprint/S001-charter --track origin/sprint/S001-charter`: exit 0.
+- PR: https://github.com/abdullah-s-mahmood/wast-managment-simulation-envirment/pull/1
+- PR CI run 39706731111: completed/success for implementation SHA above.
+- Connector review listing returned zero reviews. Final status: in_review, not accepted.
+- This record update requires its own exact-head CI; inspect GitHub checks before
+  acceptance. No self-approval/self-merge performed. B-S001-01 remains open.
+- Patch attempt before interruption was rejected for duplicate operations on one
+  path; no partial patch relied on. Corrected single-update patch applied successfully.

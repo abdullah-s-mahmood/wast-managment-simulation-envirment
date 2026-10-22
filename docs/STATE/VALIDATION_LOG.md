@@ -37,3 +37,13 @@ Append entries; do not rewrite history to hide failures.
 - Evidence and exact command outcomes: [S001 report](SPRINT_REPORTS/S001_REPORT.md).
 - CI/PR outcomes will be recorded separately after publication; local checks do
   not establish independent acceptance. ADR-0005 remains proposed.
+
+## E-S001-02 — Publication and review gate
+- Published implementation `8f24dd20cb4628d976949acebfafd842d19ff8b1`, PR #1:
+  https://github.com/abdullah-s-mahmood/wast-managment-simulation-envirment/pull/1
+- GitHub Actions PR run 39706731111 completed/success at that implementation SHA.
+- Local/published tree equality verified: `41095acb3ad9d0e60ec3f80d4393a40ffd7bf67f`.
+- Connector review listing: zero reviews; S001 transitions in_progress -> in_review.
+- Shell push exit 128 (no HTTPS username); connector publication succeeded.
+- Check the record-update commit's own CI before acceptance. Independent review
+  remains pending; complete publication provenance is in the S001 report.
