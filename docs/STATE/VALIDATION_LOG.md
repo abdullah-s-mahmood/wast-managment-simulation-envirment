@@ -1,5 +1,15 @@
 # Validation Log
 
+## E-S002-01 — Clean-room boundary (2026-10-22)
+- Linux x86_64 / Python 3.11.15; branch sprint/S002-boundary, base e2ba34a.
+- `python -m unittest discover -s tests -v`: exit 0; 12 tests passed,
+  including 7 boundary tests and 5 charter regressions.
+- Scope/provenance, exact commands and not-run limits: [S002 report](SPRINT_REPORTS/S002_REPORT.md).
+- `python scripts/validate_repository_boundary.py`: exit 0, 130 approved artifacts;
+  `python scripts/validate_project_docs.py` and `git diff --check`: exit 0.
+- Actual legacy audit, scientific validation and simulator/platform integration NOT RUN;
+  not applicable to this governance sprint. Exact-head CI/integration still required.
+
 Append entries; do not rewrite history to hide failures.
 
 ## Bootstrap
