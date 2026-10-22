@@ -5,10 +5,10 @@
   "updated_at": "2026-10-22",
   "current_phase": "P0 — Governance and scientific controls",
   "total_sprints": 88,
-  "completed_sprints": 5,
-  "current_sprint_id": "S006",
-  "next_sprint_id": "S006",
-  "last_completed_sprint_id": "S005",
+  "completed_sprints": 6,
+  "current_sprint_id": "S007",
+  "next_sprint_id": "S007",
+  "last_completed_sprint_id": "S006",
   "rule": "Strict sequential execution; complete and verify one sprint before starting the next.",
   "sprints": [
     {
@@ -64,7 +64,7 @@
       "title": "Quality gates and definition of done",
       "file": "docs/sprints/S006-quality-gates-and-definition-of-done.md",
       "phase": "P0 — Governance and scientific controls",
-      "status": "in_review",
+      "status": "completed",
       "depends_on": [
         "S005"
       ]
