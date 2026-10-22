@@ -111,3 +111,13 @@ requirement. The first failure is retained here rather than reported as a pass.
   acceptance. No self-approval/self-merge performed. B-S001-01 remains open.
 - Patch attempt before interruption was rejected for duplicate operations on one
   path; no partial patch relied on. Corrected single-update patch applied successfully.
+
+## E-S001-03 — Owner-approved single-maintainer acceptance path (2026-10-22)
+The sole owner directly cancelled the independent-human-review requirement.
+The previous independent-review-pending entries above are retained as historical
+facts from before this policy amendment, not live sprint acceptance rules.
+ADR-0005 is accepted; AGENTS.md §4A permits documented self-audit and authorized
+same-author PR merge AFTER mandatory checks and exact-head GitHub CI.
+The scope map, tests, and code/commit provenance remain unchanged in meaning.
+The final acceptance outcome must be recorded after the amended PR is integrated.
+Tests not run (Windows, simulator, scientific validation) remain not run.

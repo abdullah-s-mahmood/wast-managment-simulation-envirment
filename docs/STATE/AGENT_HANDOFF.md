@@ -11,8 +11,7 @@
 Read authoritative files in required order. Inspect `git status --short --branch`
 and `git log -3 --oneline`. Inspect PR #1 and exact-head checks/reviews through
 GitHub connector. PR: https://github.com/abdullah-s-mahmood/wast-managment-simulation-envirment/pull/1
-Independent accepted review is required by B-S001-01; do not self-approve/merge.
-S002 becomes eligible only after accepted S001 review is recorded.
+Owner waived mandatory independent-person review on 2026-10-22 under accepted ADR-0005 and AGENTS.md §4A. Complete S001 by checking the exact PR head CI, recording the self-audit and acceptance evidence, merging via permitted GitHub operation, then updating state to completed. No second GitHub reviewer is required. S002 remains blocked until S001 is fully accepted.
 
 ## Last verified operation
 Charter scope map, user definitions, failure conventions and acceptance criteria
@@ -35,7 +34,6 @@ SUMO/ns-3 are installed; legacy results reproduce; PLC sources are revalidated; 
 - Shell push failed (exit 128, no username credential); authenticated GitHub connector
   published identical files. Fetch succeeded, canonical local branch tracks remote.
 - PR #1 open; implementation PR CI run 39706731111 completed successfully.
-- Reviews queried: empty. S001 in_review; 0 accepted. ADR-0005 remains inactive.
+- Reviews queried: empty (historical finding). Owner has accepted ADR-0005, so this is no longer a blocker. S001 remains in_review until the updated PR head CI and integration are verified.
 - Handoff commit is the commit introducing this section; use `git log -1 --format=%H`.
-  Recheck CI at that exact head before acceptance; earlier green checks do not cover
-  later commits. Next safe action: inspect PR #1 independent review and exact-head CI.
+  Recheck CI at the current exact PR head before acceptance; earlier green checks do not cover later commits. Next action: merge PR #1 after checks, record S001 completion and begin S002.

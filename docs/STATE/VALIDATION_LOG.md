@@ -47,3 +47,11 @@ Append entries; do not rewrite history to hide failures.
 - Shell push exit 128 (no HTTPS username); connector publication succeeded.
 - Check the record-update commit's own CI before acceptance. Independent review
   remains pending; complete publication provenance is in the S001 report.
+
+## E-S001-03 — Sole-maintainer policy amendment (2026-10-22)
+- Owner explicitly removed mandatory independent-person sprint reviews.
+- ADR-0005 accepted, AGENTS.md §4A updated, charter and bounded charter tests updated.
+- Historical test runs, review requests and failed commands are preserved above.
+- Exact-head GitHub CI for the amended PR is still required before integration;
+  this entry does NOT claim the amended commit's checks have passed.
+- This governance change does not verify scientific models, SUMO, ns-3 or Windows.
