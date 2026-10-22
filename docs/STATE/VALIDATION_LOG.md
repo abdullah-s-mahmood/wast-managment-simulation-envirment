@@ -126,3 +126,13 @@ Append entries; do not rewrite history to hide failures.
 - Scope, exact failure reproducer, source trace and NOT RUN rationale: S003 report.
 - python scripts/validate_repository_boundary.py: exit 0, 138 approved artifacts.
 - CI and merge pending; S003 in_review, S004 not started.
+
+## E-S003-02 — Accepted integration
+- PR #4: https://github.com/abdullah-s-mahmood/wast-managment-simulation-envirment/pull/4
+- Exact head ec4296b6deb1e7b7c4a27913ccc4f6df13a632d1 passed CI run 39709929916.
+- GitHub permitted merge f7ee3973d59aef5469d6d29bc108dfeb7416b492.
+- Published tree 7861823613f8fa9c6de1564d03c9b517f96ee225 equals local checkpoint
+  a59f5ba tree; checkpoint branch preserved. 23 tests/all three validators passed.
+- Author self-audit accepted under ADR-0005. S003 completed (3/88), S004 eligible.
+- No scientific model accepted. External citation authenticity, Windows and
+  simulator/scientific validation remain future gates, not claimed passes.

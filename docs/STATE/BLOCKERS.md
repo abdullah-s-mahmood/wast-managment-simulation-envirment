@@ -1,7 +1,7 @@
 # Blockers and Open Dependencies
 
 ## Current blockers
-- No open scientific blocker for S003. Exact-head CI/integration pending.
+- No open governance blocker for S004. S003 passed CI and merged.
 - Local GitHub CLI credential is invalid; connector works, so publication is not blocked.
 
 ## Resolved blockers
