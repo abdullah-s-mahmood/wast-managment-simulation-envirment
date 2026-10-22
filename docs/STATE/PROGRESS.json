@@ -74,7 +74,7 @@
       "title": "Change control and architecture decisions",
       "file": "docs/sprints/S007-change-control-and-architecture-decisions.md",
       "phase": "P0 — Governance and scientific controls",
-      "status": "not_started",
+      "status": "in_review",
       "depends_on": [
         "S006"
       ]

@@ -36,3 +36,16 @@ instead of inventing parameters or bypassing protections.
 S001 no longer needs an external reviewer; existing tests and exact-head CI are
 still mandatory. No routine questions are required between completed sprints.
 If a team is formed later, governance can change through a new ADR.
+
+S007 clarification addendum (2026-10-22): supplements record structure without
+changing the accepted choice. Alternatives below are present review options, not
+claims of undocumented historical evaluations.
+
+## Options considered
+Current alternatives: sole-maintainer self-audit with exact-head CI; require unavailable second person; remove technical gates. Owner explicitly selected the first; technical/scientific gates remain. No fake GitHub approval is an option.
+
+## Evidence and assumptions
+Owner authorization dated 2026-10-22 in AGENTS.md section 4A and D-0008. Accepted PR reports retain actual exact-head CI and merge evidence. This is author review, not independent-person review.
+
+## Validation and revisit conditions
+Verify mandatory sprint tests, report completeness, exact-head GitHub checks and normal merge permission. Revisit if collaborators join or repository/owner policy changes; never change protections to bypass a failed gate.

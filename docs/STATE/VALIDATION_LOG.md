@@ -197,3 +197,15 @@ Append entries; do not rewrite history to hide failures.
   9b89e31 tree, preserved branch. 39 tests/three validators pass.
 - Author self-audit under ADR-0005 accepted S006 (6/88); S007 next.
 - No scientific/model/runtime validity claim; completeness checks do not authenticate evidence.
+
+## E-S007-01 — ADR and change-control verification (2026-10-22)
+- Branch sprint/S007-change-control; base bd86e49e69e93f8d7e2a2ca527f962d22e180326.
+- Linux x86_64/Python 3.11.15. python -m unittest discover -s tests -p
+  test_change_control.py -v: exit 1 missing module; exit 1 two tests/24 missing
+  ADR sections; dated clarifications preserve choices; exit 0, 5 focused tests.
+- python -m unittest discover -s tests -v: exit 0, 44 tests.
+- python scripts/validate_project_docs.py: exit 0, 88 contracts.
+- python scripts/validate_evidence_ledger.py: exit 0, empty production ledger.
+- python scripts/validate_repository_boundary.py: exit 0, 157 approved artifacts.
+- python scripts/validate_change_control.py and git diff --check: exit 0.
+- Actual failures/limits/NOT RUN rationale in S007 report. Exact-head CI/merge pending.
