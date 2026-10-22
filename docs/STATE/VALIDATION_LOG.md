@@ -170,3 +170,11 @@ Append entries; do not rewrite history to hide failures.
 - python scripts/validate_repository_boundary.py: exit 0, 148 approved artifacts.
 - git diff --check: exit 0. S005 report records failures and NOT RUN rationale.
 - Exact-head CI and permitted integration pending; S006 not started.
+
+## E-S005-02 — Accepted integration
+- PR #8 exact head 6053e6eb463d2474191c7eb20022953232739d3a passed CI run
+  39710844432 (completed/success), merged dcaefcfc7ab19d07898dfc8a83ec8b1cd53ef0e0.
+- Published tree e9d2dfffacafa68f61f8242f8a4ed9edffc55165 equals local checkpoint
+  4d746d7 tree, preserved branch. 34 tests/all three validators pass.
+- Author self-audit accepted under ADR-0005: S005 completed (5/88), S006 next.
+- No scientific/empirical/runtime/Windows/simulator or geodesy validity claim.
