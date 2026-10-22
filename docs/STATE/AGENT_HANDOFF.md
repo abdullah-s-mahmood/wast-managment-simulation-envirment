@@ -1,15 +1,12 @@
 # Agent Handoff — Authoritative Resume Point
 
 ## Current checkpoint (2026-10-22)
-- S001–S003 completed (3/88); S004 in_review on sprint/S004-classification.
-- S003 implementation PR #4 exact head ec4296b6deb1e7b7c4a27913ccc4f6df13a632d1
-  passed run 39709929916, merged f7ee3973d59aef5469d6d29bc108dfeb7416b492.
-- S003 acceptance PR #5 exact head 12f8a5c9f4ba1ee90241493151f8130852a040d2
-  passed run 39710062508, merged e1c0f3dc7309950341df4001647ad37eebde8fce.
-- S004 classification table and read-only synthetic governance checker implemented.
-  Five focused tests pass; module import error corrected with CLI regression.
-  See S004 report and E-S004-01 for final regression results.
-- Next: verify exact-head CI and integrate S004, then accept/update and start S005.
-- Local gh credential invalid; GitHub connector works. Use honest author self-audit.
-- Original S003 drafts retained in named stash and checkpoint branch; no models,
-  legacy audit, Windows or simulator validity claimed. Future schemas stay gated.
+- S004 accepted, 4/88 completed; S005 next, not_started.
+- PR #6 exact head 62f6de561540d7ef07a3bfb2c9173775745f0b02 passed CI run
+  39710355019; merged as 707e7a37cfd36752b382665c9926e4f095198454. See S004 report.
+- 28 tests and three validators pass. Synthetic governance boundary only;
+  classification table defines roles, failure semantics and future evidence gates.
+- Next: full S005 contract; establish glossary/units/time/coordinate/ID policy and
+  independent reference/negative tests. No second human needed (ADR-0005).
+- Local gh credential invalid, connector works. Checkpoint branches and named
+  S003 original-drafts stash preserved. No scientific model or runtime accepted.

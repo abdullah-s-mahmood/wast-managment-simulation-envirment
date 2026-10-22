@@ -148,3 +148,11 @@ Append entries; do not rewrite history to hide failures.
 - python scripts/validate_repository_boundary.py: exit 0, 143 approved artifacts.
 - git diff --check: exit 0. S004 report records scopes, failures and NOT RUN tests.
 - S004 local acceptance gates pass; exact-head CI and merge still pending.
+
+## E-S004-02 — Accepted integration
+- PR #6 exact head 62f6de561540d7ef07a3bfb2c9173775745f0b02 passed CI run
+  39710355019 (completed/success). Normal merge permitted: 707e7a37cfd36752b382665c9926e4f095198454.
+- Published tree 0ec78ca2c5b8abfc5b91f07815dc0e473ba0d52b equals local checkpoint
+  b8d8f8f tree; preserved branch. 28 tests and all three validators passed.
+- Author self-audit accepted under ADR-0005: S004 completed (4/88); S005 next.
+- Scope remains governance-only; no scientific/causal or runtime validity claim.

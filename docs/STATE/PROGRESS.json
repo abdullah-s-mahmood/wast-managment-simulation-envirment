@@ -5,10 +5,10 @@
   "updated_at": "2026-10-22",
   "current_phase": "P0 — Governance and scientific controls",
   "total_sprints": 88,
-  "completed_sprints": 3,
-  "current_sprint_id": "S004",
-  "next_sprint_id": "S004",
-  "last_completed_sprint_id": "S003",
+  "completed_sprints": 4,
+  "current_sprint_id": "S005",
+  "next_sprint_id": "S005",
+  "last_completed_sprint_id": "S004",
   "rule": "Strict sequential execution; complete and verify one sprint before starting the next.",
   "sprints": [
     {
@@ -44,7 +44,7 @@
       "title": "Hypotheses versus experiment settings",
       "file": "docs/sprints/S004-hypotheses-versus-experiment-settings.md",
       "phase": "P0 — Governance and scientific controls",
-      "status": "in_review",
+      "status": "completed",
       "depends_on": [
         "S003"
       ]
