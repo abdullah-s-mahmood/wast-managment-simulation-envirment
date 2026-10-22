@@ -391,3 +391,12 @@ python scripts/validate_project_docs.py, python scripts/validate_repository_boun
 (169 approved artifacts), python scripts/validate_evidence_ledger.py,
 python scripts/validate_change_control.py, python scripts/validate_risk_protocol.py,
 and git diff --check. Exact-head GitHub CI and permitted integration pending.
+
+## E-S009-06 — Accepted technical inventory integration
+PR #19 head 0c42f4300c62d7870b2b60caa7f382e880e4da6f passed CI run
+39743742012, completed/success; permitted merge 6ad9e513bcfa239b702eac10f74773702e52076b.
+Local checkpoint ac9fd71 tree equals published f20b55ab3ff297acbe372d52668dcf47e6ceabab.
+Author self-audit under ADR-0005: S009 technical inventory/protocol criteria met;
+9/88 completed, S010 next. Full inventory/replay, 63 tests and five validators pass.
+No archive safety, execution, reuse, licensing or scientific validation is accepted.
+B-S009-02 resolved; security findings and quarantine dispositions remain recorded.
