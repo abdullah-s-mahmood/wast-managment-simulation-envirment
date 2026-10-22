@@ -2,7 +2,8 @@
 
 ## Current blockers
 - B-S009-02 — OPEN S009. Owner-designated archive identity verified, but bounded
-  private scan rejects a link/special member after 1282 entries; executables,
+  private scan rejects a symlink whose target lexically escapes the bundle root
+  after 1282 entries; executables,
   binaries and nested archives also flagged. Partial manifest under Git common
   metadata private-evidence/S009. Stop intake: no extraction/execution/redistribution.
   Action: resolve prohibited-member handling while retaining designated baseline,
