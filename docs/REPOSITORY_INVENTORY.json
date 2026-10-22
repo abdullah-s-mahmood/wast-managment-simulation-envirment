@@ -25,6 +25,7 @@
       "docs/STATE/PROGRESS.json",
       "docs/STATE/SPRINT_REPORTS/S001_REPORT.md",
       "docs/STATE/SPRINT_REPORTS/S002_REPORT.md",
+      "docs/STATE/SPRINT_REPORTS/S003_REPORT.md",
       "docs/STATE/VALIDATION_LOG.md",
       "docs/STATISTICAL_ANALYSIS_PLAN.md",
       "docs/TESTING_STRATEGY.md",
@@ -33,6 +34,9 @@
       "docs/adr/ADR-0003-hypotheses-vs-scenarios.md",
       "docs/adr/ADR-0004-no-model-without-evidence.md",
       "docs/adr/ADR-0005-risk-based-sprint-review.md",
+      "docs/evidence/README.md",
+      "docs/evidence/ledger.json",
+      "docs/evidence/record_contract.json",
       "docs/sprints/S001-project-charter-and-non-goals.md",
       "docs/sprints/S002-clean-room-repository-boundary.md",
       "docs/sprints/S003-scientific-evidence-ledger.md",
@@ -125,10 +129,14 @@
       "docs/templates/SPRINT_TEMPLATE.md"
     ],
     "governance_source": [
+      "scripts/validate_evidence_ledger.py",
       "scripts/validate_project_docs.py",
       "scripts/validate_repository_boundary.py"
     ],
     "test_source": [
+      "tests/fixtures/evidence/synthetic_config.json",
+      "tests/fixtures/evidence/synthetic_source.json",
+      "tests/test_evidence_ledger.py",
       "tests/test_repository_boundary.py",
       "tests/test_s001_charter.py"
     ],

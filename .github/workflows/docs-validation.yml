@@ -21,3 +21,5 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Validate clean-room inventory boundary
         run: python scripts/validate_repository_boundary.py
+      - name: Validate scientific evidence ledger structure
+        run: python scripts/validate_evidence_ledger.py

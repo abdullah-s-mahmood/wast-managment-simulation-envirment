@@ -113,3 +113,16 @@ Append entries; do not rewrite history to hide failures.
 - gh auth status exit 1 (invalid local credential); GitHub connector remains usable.
 - This focused recovery PR requests CI on the acceptance-state tree plus this log.
   No green exact-head CI or merge is claimed by this entry. S003 remains next.
+
+## E-S003-01 — Evidence contract local verification (2026-10-22)
+- Branch sprint/S003-evidence-ledger; base b591b2339f3e5b2b87bc26f01abd52312403ffde.
+- Linux x86_64 / Python 3.11.15. S002 acceptance-state recovery PR #3 exact head
+  aadb9b332f16e7bc42ec3e2ee0462048ba5afc45 passed CI run 39709574639 and merged.
+- python -m unittest discover -s tests -p test_evidence_ledger.py -v: initially
+  exit 1 (bad hash accepted); retained regression, added source-byte hash check.
+- python -m unittest discover -s tests -v: exit 0, 23 tests after correction.
+- python scripts/validate_evidence_ledger.py: exit 0, empty production ledger.
+- python scripts/validate_project_docs.py and git diff --check: exit 0.
+- Scope, exact failure reproducer, source trace and NOT RUN rationale: S003 report.
+- python scripts/validate_repository_boundary.py: exit 0, 138 approved artifacts.
+- CI and merge pending; S003 in_review, S004 not started.

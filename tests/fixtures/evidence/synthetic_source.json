@@ -1,0 +1,5 @@
+{
+  "notice": "SYNTHETIC software fixture, no publication or physical measurement",
+  "source_location": "parameters.scale_factor",
+  "parameters": {"scale_factor": {"value": 1, "units": "1", "valid_range": "exactly 1"}}
+}
