@@ -17,3 +17,5 @@ jobs:
           python-version: "3.12"
       - name: Validate sprint documents and progress state
         run: python scripts/validate_project_docs.py
+      - name: Verify charter traceability and negative fixtures
+        run: python -m unittest discover -s tests -p test_s001_charter.py -v

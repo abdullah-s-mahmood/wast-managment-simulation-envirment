@@ -11,7 +11,7 @@ Freeze project scope, users, measurable outcomes, and exclusions before implemen
 
 ## Scope
 **In scope**
-- Approved charter and scope map.
+- Owner-authorized charter and scope map, accepted through tests, self-audit and exact-head CI.
 - Define observable contracts, units, identifiers, failure semantics, and evidence where relevant.
 - Keep changes narrow and update dependent documentation only when required.
 
@@ -50,7 +50,7 @@ Bootstrap files exist; no prior sprint is required.
 - For stochastic behavior, test seed/replay separately from empirical distribution validity.
 
 ## Black-box tests
-- **Sprint-specific observable check:** A new contributor explains scope and non-goals from the charter alone.
+- **Sprint-specific observable check:** Using the charter alone, write and validate an explicit self-contained explanation of users, scope, exclusions and acceptance boundaries; retain the self-audit.
 - Exercise a small deterministic fixture through the public boundary.
 - Verify output IDs, units, status, and errors are observable and traceable.
 - Do not depend on undocumented chat context.
@@ -90,4 +90,4 @@ Record commit, changed files, source/evidence IDs and exact locations, commands/
 ## Handoff
 Before closing, update `docs/STATE/AGENT_HANDOFF.md` with changes, tests/results, blockers, limitations, and next sprint ID: S002.
 
-**Sprint-specific gate:** Approved charter and scope map. Gate passes only with recorded evidence, not merely file existence.
+**Sprint-specific gate:** Owner-authorized charter and scope map, passing WB/BB/adversarial tests, comprehension self-audit, and exact-head CI; second-person review is not required. Gate passes only with recorded evidence.

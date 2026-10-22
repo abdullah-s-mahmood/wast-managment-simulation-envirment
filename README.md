@@ -25,7 +25,7 @@ A clean-room, research-oriented environment for reproducible waste-management si
 4. Check [progress state](docs/STATE/PROGRESS.json), [agent handoff](docs/STATE/AGENT_HANDOFF.md), and [blockers](docs/STATE/BLOCKERS.md).
 5. Complete exactly the next eligible sprint unless the sprint explicitly authorizes a tightly coupled set.
 6. Run the sprint's tests and the repository documentation validator. Record actual commands, exit codes, evidence, and failures.
-7. Update state only after verification. Open a pull request; do not self-approve or merge your own unreviewed work.
+7. Update state only after verification. Under the owner's sole-maintainer policy, an authorized agent may merge its own PR after required exact-head CI and all sprint gates pass; no second reviewer is required. Never bypass GitHub protections or falsify evidence.
 
 ## Repository map
 
@@ -45,4 +45,4 @@ A clean-room, research-oriented environment for reproducible waste-management si
 
 ## Current status
 
-The initial deliverable is the governance and verification plan. All implementation sprints begin as **not started**. See `docs/STATE/PROGRESS.json` for the authoritative state.
+The initial deliverable is the governance and verification plan. See `docs/STATE/PROGRESS.json` for actual sprint state; a PR or passing code alone is not proof of completion.

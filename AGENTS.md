@@ -36,8 +36,8 @@ Do not depend on chat history. The repository must contain enough state to resum
 8. Record exact commands, exit codes, platform, versions, outputs, artifacts, and tests not run.
 9. Review the diff for scope creep, hard-coded settings, undocumented units, secrets, and false claims.
 10. Update progress, handoff, validation log, and blockers to match actual state.
-11. Open a focused PR with the sprint ID. Do not self-approve or self-merge.
-12. Mark complete only after every mandatory gate passes and evidence is linked.
+11. Open a focused PR with the sprint ID when possible. A second human reviewer is not required. The owner's authorized agent may merge its own PR after every mandatory sprint gate and the required GitHub CI checks pass on the exact head commit, if repository protections permit. Do not impersonate an independent reviewer.
+12. Mark complete only after verified checks, permitted integration and durable evidence; if GitHub blocks a merge, record a precise blocker without circumventing its protections.
 
 ## 4. Allowed statuses
 
@@ -47,10 +47,34 @@ Permitted transitions:
 - `not_started -> in_progress`
 - `in_progress -> blocked | in_review`
 - `blocked -> in_progress` only after blocker resolution is evidenced
-- `in_review -> in_progress` when changes are requested, or `completed` after accepted review
+- `in_review -> in_progress` on failure/required changes, or `completed` after the documented owner-authorized acceptance gate and permitted integration
 - `completed -> in_progress` only through a documented regression/reopen decision
 
 Never edit progress merely to make a dashboard look green.
+
+## 4A. Sole-maintainer autonomous acceptance (owner authorization, 2026-10-22)
+
+The owner explicitly removed **mandatory independent human review** because this
+project has no other human maintainer. This rule covers S001 through S088.
+
+- The agent may self-audit, accept and merge a focused PR without a separate
+  reviewer, **provided** all mandatory sprint tests, quality gates, and required
+  GitHub CI checks have passed on the **exact commit SHA** being integrated.
+- Record real command results, test failures/not-run status, source evidence,
+  changed-file scope, limitations and acceptance rationale in sprint reports.
+- Do not submit a fake GitHub APPROVE review, bypass actual branch protections,
+  fabricate scientific evidence, or call a self-audit an independent review.
+- Scientific model acceptance still requires the source/units/domain/calibration/
+  reproducibility and empirical validation evidence specified by its sprint.
+- The authorized agent may continue to the next eligible sprint automatically
+  after acceptance and progress/handoff update, without asking the owner.
+- If a mandatory check fails or cannot run, **do not mark the sprint completed**.
+  Investigate or record a precise blocker. Existing GitHub permissions and branch
+  rules remain in force.
+- No approval is required from a second human for routine or high-risk sprints;
+  high-risk work must meet its **stronger scientific and technical evidence gates**.
+  Irreversible/destructive, paid, privacy-sensitive, or externally restricted
+  actions still require the appropriate explicit authorization.
 
 ## 5. Scientific integrity gates
 
