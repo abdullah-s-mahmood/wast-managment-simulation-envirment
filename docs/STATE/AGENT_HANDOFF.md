@@ -1,15 +1,15 @@
 # Agent Handoff — Authoritative Resume Point
 
 ## Current checkpoint (2026-10-22)
-- S003 accepted, 3/88 completed; S004 next (not_started).
-- PR #4 exact head ec4296b6deb1e7b7c4a27913ccc4f6df13a632d1 passed run
-  39709929916; merged f7ee3973d59aef5469d6d29bc108dfeb7416b492.
-- Evidence contract/checklist/validator tested: 23 tests, 3 validators pass.
-  Bad source hash acceptance fixed; see S003 report/E-S003-01 and E-S003-02.
-- S002 recovery PR #3 passed exact-head CI and merged before S003 started.
-- Next: read full S004 and implement classification rules/table and its tests.
-- Local checkpoint checkpoint/S003-local-a59f5ba preserves identical published tree.
-  Original untracked drafts preserved in named Git stash, restored with apply.
-- Use GitHub connector: local gh credential invalid. No second human required.
-- No model/legacy/Windows/SUMO/ns-3 validity claimed. Scientific source review
-  cannot be automated by the structural ledger validator.
+- S001–S003 completed (3/88); S004 in_review on sprint/S004-classification.
+- S003 implementation PR #4 exact head ec4296b6deb1e7b7c4a27913ccc4f6df13a632d1
+  passed run 39709929916, merged f7ee3973d59aef5469d6d29bc108dfeb7416b492.
+- S003 acceptance PR #5 exact head 12f8a5c9f4ba1ee90241493151f8130852a040d2
+  passed run 39710062508, merged e1c0f3dc7309950341df4001647ad37eebde8fce.
+- S004 classification table and read-only synthetic governance checker implemented.
+  Five focused tests pass; module import error corrected with CLI regression.
+  See S004 report and E-S004-01 for final regression results.
+- Next: verify exact-head CI and integrate S004, then accept/update and start S005.
+- Local gh credential invalid; GitHub connector works. Use honest author self-audit.
+- Original S003 drafts retained in named stash and checkpoint branch; no models,
+  legacy audit, Windows or simulator validity claimed. Future schemas stay gated.

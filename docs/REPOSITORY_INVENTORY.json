@@ -12,6 +12,7 @@
       "README.md",
       "docs/ARCHITECTURE.md",
       "docs/CLEAN_ROOM_BOUNDARY.md",
+      "docs/HYPOTHESES_AND_SETTINGS.md",
       "docs/JSON_DATA_CONTRACTS.md",
       "docs/PROJECT_CHARTER.md",
       "docs/RELEASE_GATES.md",
@@ -26,6 +27,7 @@
       "docs/STATE/SPRINT_REPORTS/S001_REPORT.md",
       "docs/STATE/SPRINT_REPORTS/S002_REPORT.md",
       "docs/STATE/SPRINT_REPORTS/S003_REPORT.md",
+      "docs/STATE/SPRINT_REPORTS/S004_REPORT.md",
       "docs/STATE/VALIDATION_LOG.md",
       "docs/STATISTICAL_ANALYSIS_PLAN.md",
       "docs/TESTING_STRATEGY.md",
@@ -131,14 +133,17 @@
     "governance_source": [
       "scripts/validate_evidence_ledger.py",
       "scripts/validate_project_docs.py",
-      "scripts/validate_repository_boundary.py"
+      "scripts/validate_repository_boundary.py",
+      "scripts/validate_study_separation.py"
     ],
     "test_source": [
+      "tests/fixtures/classification/model.json",
       "tests/fixtures/evidence/synthetic_config.json",
       "tests/fixtures/evidence/synthetic_source.json",
       "tests/test_evidence_ledger.py",
       "tests/test_repository_boundary.py",
-      "tests/test_s001_charter.py"
+      "tests/test_s001_charter.py",
+      "tests/test_study_separation.py"
     ],
     "reserved_layout": [
       "examples/README.md",

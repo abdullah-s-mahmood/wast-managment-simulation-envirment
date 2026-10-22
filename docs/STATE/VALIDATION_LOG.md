@@ -136,3 +136,15 @@ Append entries; do not rewrite history to hide failures.
 - Author self-audit accepted under ADR-0005. S003 completed (3/88), S004 eligible.
 - No scientific model accepted. External citation authenticity, Windows and
   simulator/scientific validation remain future gates, not claimed passes.
+
+## E-S004-01 — Classification and separation verification (2026-10-22)
+- Branch sprint/S004-classification; base e1c0f3dc7309950341df4001647ad37eebde8fce.
+- Linux x86_64 / Python 3.11.15. ADR-0003/ADR-0005; synthetic fixture only.
+- python -m unittest discover -s tests -p test_study_separation.py -v:
+  exit 1 missing module (test-first); exit 1 sibling import; fixed import; exit 0, 5 tests.
+- python -m unittest discover -s tests -v: exit 0, 28 tests.
+- python scripts/validate_project_docs.py: exit 0, 88 sprint contracts.
+- python scripts/validate_evidence_ledger.py: exit 0, empty production ledger.
+- python scripts/validate_repository_boundary.py: exit 0, 143 approved artifacts.
+- git diff --check: exit 0. S004 report records scopes, failures and NOT RUN tests.
+- S004 local acceptance gates pass; exact-head CI and merge still pending.
