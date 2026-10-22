@@ -1,0 +1,4 @@
+{
+  "notice": "SYNTHETIC traceability fixture, not a scenario or physical model",
+  "scale_factor": {"value": 1, "units": "1", "evidence_id": "EV-SYNTHETIC-001"}
+}

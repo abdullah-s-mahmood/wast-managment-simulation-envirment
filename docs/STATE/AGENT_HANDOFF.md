@@ -1,13 +1,15 @@
 # Agent Handoff — Authoritative Resume Point
 
 ## Current checkpoint (2026-10-22)
-- S002 accepted and merged; 2/88 completed. S003 next, not_started.
-- Accepted S002 head be95738cda892134c75c8a7cbf878580e01c91be; PR #2.
-- Merge c96fd0b3a114d3c6088adab481e94177edc884cc; exact-head CI runs
-  39708732669 and 39708729229 success. ADR-0005 author self-audit used honestly.
-- Local S002 checkpoint 81f75d0 has identical published tree; preserve its branch.
-- Next: fetch origin/main, verify this acceptance-record commit CI, then read full
-  S003 and execute it. Run all unit tests, both governance validators and diff check.
-- Limits: no legacy bundle audited, no physical model accepted, no simulator or
-  Windows verification. See S002 report/E-S002-02 for tested domain and scanner limits.
-- No open blocker for S003. Do not request a second-person review.
+- S001/S002 completed; S003 in_review on sprint/S003-evidence-ledger.
+- S002 recovery PR #3 merged b591b2339f3e5b2b87bc26f01abd52312403ffde;
+  exact head aadb9b332f16e7bc42ec3e2ee0462048ba5afc45 passed CI run 39709574639.
+- S003 ledger contract/checklist/validator and synthetic tracing tests implemented.
+  Local 23 tests and documentation/evidence validators pass. Initial bad-hash
+  acceptance failure fixed and retained as regression. See S003 report/E-S003-01.
+- Next: verify S003 exact-head CI, self-audit and merge through GitHub; only then
+  record completed and start S004. No second-person review required (ADR-0005).
+- Pre-existing S003 drafts preserved in stash named Preserve pre-existing S003
+  ledger drafts before S002 CI recovery; restored with apply, stash retained.
+- Local gh credential invalid; use functioning GitHub connector for publication.
+- No scientific models accepted, legacy audited, or Windows/SUMO/ns-3 validated.

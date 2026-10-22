@@ -34,7 +34,7 @@
       "title": "Scientific evidence ledger",
       "file": "docs/sprints/S003-scientific-evidence-ledger.md",
       "phase": "P0 — Governance and scientific controls",
-      "status": "not_started",
+      "status": "in_review",
       "depends_on": [
         "S002"
       ]

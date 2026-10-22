@@ -1,7 +1,8 @@
 # Blockers and Open Dependencies
 
 ## Current blockers
-- No open governance blocker for S002.
+- No open scientific blocker for S003. Exact-head CI/integration pending.
+- Local GitHub CLI credential is invalid; connector works, so publication is not blocked.
 
 ## Resolved blockers
 - B-S001-01 — CLOSED 2026-10-22. Sole owner waived independent-person review by accepted ADR-0005. Exact-head GitHub Actions passed for PR #1; PR #1 merged as `7aaa0b8ee76fb276506bbaf0a97b65101583901b`. S001 technical gate accepted. This does not waive later scientific/technical gates.

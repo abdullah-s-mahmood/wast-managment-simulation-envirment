@@ -1,0 +1,79 @@
+{
+  "contract_version": 1,
+  "ledger_keys": [
+    "schema_version",
+    "records"
+  ],
+  "record_string_fields": [
+    "id",
+    "kind",
+    "evidence_class",
+    "claim",
+    "equation",
+    "citation",
+    "doi",
+    "source_url",
+    "source_version",
+    "access_date",
+    "source_location",
+    "source_path",
+    "source_sha256",
+    "verification_status",
+    "verification_artifact",
+    "applicability_domain",
+    "source_conditions",
+    "transfer_rationale",
+    "initial_conditions",
+    "time_update",
+    "boundary_behavior",
+    "randomness",
+    "assumptions",
+    "limitations",
+    "uncertainty",
+    "calibration_plan",
+    "independent_validation_plan",
+    "sensitivity_plan",
+    "module",
+    "config_path",
+    "config_pointer",
+    "reference_test",
+    "decision",
+    "decision_rationale"
+  ],
+  "record_boolean_fields": [
+    "domain_transfer_required"
+  ],
+  "variable_fields": [
+    "symbol",
+    "definition",
+    "units",
+    "valid_range"
+  ],
+  "enums": {
+    "kind": [
+      "equation",
+      "parameter",
+      "distribution",
+      "protocol_behavior",
+      "scientific_claim"
+    ],
+    "evidence_class": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5"
+    ],
+    "verification_status": [
+      "unverified",
+      "verified",
+      "synthetic"
+    ],
+    "decision": [
+      "proposed",
+      "accepted_for_implementation",
+      "unavailable",
+      "synthetic"
+    ]
+  }
+}
