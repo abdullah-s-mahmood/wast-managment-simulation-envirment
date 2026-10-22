@@ -24,7 +24,7 @@
       "title": "Clean-room repository boundary",
       "file": "docs/sprints/S002-clean-room-repository-boundary.md",
       "phase": "P0 — Governance and scientific controls",
-      "status": "not_started",
+      "status": "in_review",
       "depends_on": [
         "S001"
       ]

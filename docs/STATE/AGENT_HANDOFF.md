@@ -1,5 +1,14 @@
 # Agent Handoff — Authoritative Resume Point
 
+## Active S002 execution (supersedes earlier resume instructions)
+- Branch sprint/S002-boundary, accepted base e2ba34a; S002 in_review, 1/88 accepted.
+- Added clean-room intake protocol, inventory checker and seven boundary tests;
+  all 12 tests including S001 regressions pass. ADR-0005 governs self-audit/acceptance.
+- Boundary CLI: 130 approved text artifacts; documentation validator/diff check pass.
+- Next: publish focused PR, inspect exact-head
+  CI and merge if permitted, then record acceptance and continue S003.
+- Evidence: S002_REPORT.md and E-S002-01. No legacy bundle inspected or model accepted.
+
 ## Verified state (2026-10-22)
 
 - Project: `wast-managment-simulation-envirment`.
