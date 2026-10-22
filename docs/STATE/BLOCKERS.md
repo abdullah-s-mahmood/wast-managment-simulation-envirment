@@ -1,16 +1,15 @@
 # Blockers and Open Dependencies
 
 ## Current blockers
-- B-S009-02 — OPEN S009. Owner-designated archive identity verified, but bounded
-  private scan rejects a symlink whose target lexically escapes the bundle root
-  after 1282 entries; executables,
-  binaries and nested archives also flagged. Partial manifest under Git common
-  metadata private-evidence/S009. Stop intake: no extraction/execution/redistribution.
-  Action: resolve prohibited-member handling while retaining designated baseline,
-  then full safe inventory/provenance checks. No source acceptance or S010 yet.
+- No current S009 technical blocker: full quarantining inventory completed; exact-head CI/integration pending.
 - Local GitHub CLI credential is invalid; connector works, so publication is not blocked.
 
 ## Resolved blockers
+- B-S009-02 CLOSED by explicit owner quarantine-only policy amendment (ADR-0006),
+  tested continuation and complete 11049-member private inventory. Unsafe entries
+  remain quarantined; no archive safety, reuse, license or scientific approval.
+  Earlier per-member/CPU exhaustion runs are retained in E-S009-04.
+
 - B-S009-01 CLOSED: owner designation/read-only handling authorization plus exact
   size/SHA-256 verification resolve original selection ambiguity. B-S009-02 is new.
 - B-S001-01 — CLOSED 2026-10-22. Sole owner waived independent-person review by accepted ADR-0005. Exact-head GitHub Actions passed for PR #1; PR #1 merged as `7aaa0b8ee76fb276506bbaf0a97b65101583901b`. S001 technical gate accepted. This does not waive later scientific/technical gates.

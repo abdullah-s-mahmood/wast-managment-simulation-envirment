@@ -19,7 +19,7 @@
       "owner_action": "Owner supplies designated source; agent verifies read-only intake.",
       "unblock_condition": "Accessible authorized revision, provenance/license decision and input hashes.",
       "source": "docs/CLEAN_ROOM_BOUNDARY.md",
-      "status": "triggered"
+      "status": "monitored"
     },
     {
       "id": "R-SCIENCE",

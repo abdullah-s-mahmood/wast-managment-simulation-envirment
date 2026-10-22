@@ -63,3 +63,10 @@ reserved layout. Synthetic attacks cover legacy source, generated results,
 credentials, machine paths, binary artifacts, corrupt manifests and symlinks.
 CI checks an actual checkout. All tests are author-run software checks under
 ADR-0005; no independent-person review or empirical validation is claimed.
+
+## S009 inventory-only amendment (ADR-0006)
+Owner-authorized quarantine-and-continue supersedes stop-on-suspicious-metadata
+for private inventory only. No extraction is performed; links/special members and
+suspicious paths remain quarantined, never dereferenced or materialized. Corrupt
+parsing/resource exhaustion still stops incomplete. No code reuse, redistribution,
+security clearance or scientific acceptance follows from completed inventory.
