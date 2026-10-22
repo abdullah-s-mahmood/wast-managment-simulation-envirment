@@ -3,12 +3,12 @@
   "display_name": "Waste Management Simulation Environment",
   "state_version": 1,
   "updated_at": "2026-10-22",
-  "current_phase": "P0 — Governance and scientific controls",
+  "current_phase": "P1 — Legacy audit and evidence extraction",
   "total_sprints": 88,
-  "completed_sprints": 7,
-  "current_sprint_id": "S008",
-  "next_sprint_id": "S008",
-  "last_completed_sprint_id": "S007",
+  "completed_sprints": 8,
+  "current_sprint_id": "S009",
+  "next_sprint_id": "S009",
+  "last_completed_sprint_id": "S008",
   "rule": "Strict sequential execution; complete and verify one sprint before starting the next.",
   "sprints": [
     {
@@ -84,7 +84,7 @@
       "title": "Risk register and escalation rules",
       "file": "docs/sprints/S008-risk-register-and-escalation-rules.md",
       "phase": "P0 — Governance and scientific controls",
-      "status": "in_review",
+      "status": "completed",
       "depends_on": [
         "S007"
       ]
