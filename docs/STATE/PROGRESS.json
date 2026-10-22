@@ -94,7 +94,7 @@
       "title": "Legacy source inventory protocol",
       "file": "docs/sprints/S009-legacy-source-inventory-protocol.md",
       "phase": "P1 — Legacy audit and evidence extraction",
-      "status": "not_started",
+      "status": "blocked",
       "depends_on": [
         "S008"
       ]

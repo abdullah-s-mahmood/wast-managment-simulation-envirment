@@ -239,3 +239,29 @@ Append entries; do not rewrite history to hide failures.
 - Author self-audit accepted S008 under ADR-0005 (8/88); S009 next.
 - No model/runtime/scientific acceptance. Legacy source not designated in records;
   S009 must check source availability and stop if required evidence unavailable.
+
+## E-S009-01 — Source-candidate check and blocked intake (2026-10-22)
+- Branch sprint/S009-legacy-intake, base 072c6d55ea4979a0c263edc61a0efcdbf827abbe.
+- Linux x86_64/Python 3.11.15. Read full S009 contract and clean-room intake policy.
+- rg -n -i 'legacy.*(https|zip|tar|path|location|commit|bundle)|source.bundle|intake.id'
+  README.md docs/STATE docs/CLEAN_ROOM_BOUNDARY.md docs/adr: exit 0; no designated
+  immutable source reference. git remote -v and git branch --all: exit 0, current
+  implementation/governance refs only. Tracked archives list empty; sibling-name
+  metadata probe located candidate archives/trees (exit 0); no contents published.
+- Read-only hashlib/tarfile metadata probe: exit 0, LEGACY-CANDIDATE-001 bytes
+  487062036; SHA-256 da08e1a78e73215ddf9d165e32a07f262a0b8379b3b04f4b17b27d5b6b525da8
+  matches sidecar. Header scan limited to 1000 members/512 MiB declared total,
+  stopped at member cap; console output truncated. Exact safe repro/report in S009.
+- No extraction, execution, source copying, deletion or scientific interpretation.
+  Full source manifest/hash/secret/license/binary/traversal checks NOT RUN.
+- python -m unittest discover -s tests -v: exit 0, 48 prior governance tests.
+- python scripts/validate_project_docs.py: exit 0, 88 contracts consistent.
+- python scripts/validate_evidence_ledger.py: exit 0, no scientific models accepted.
+- python scripts/validate_repository_boundary.py: exit 0, 163 approved artifacts.
+- python scripts/validate_change_control.py and python scripts/validate_risk_protocol.py:
+  exit 0. git diff --check: exit 0.
+- B-S009-01/R-LEGACY triggered: candidate available but intended immutable baseline,
+  provenance/handling not resolved. Owner asked for source designation/restrictions.
+  S009 in_progress -> blocked; S010+ untouched. No completion or archive safety claim.
+- This blocked-state PR must pass its own exact-head CI before normal integration;
+  integrating recovery records does not accept S009. Resume only with resolving evidence.
