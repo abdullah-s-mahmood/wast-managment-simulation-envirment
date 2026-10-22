@@ -1,14 +1,11 @@
 # Agent Handoff — Authoritative Resume Point
 
 ## Current checkpoint (2026-10-22)
-- S001–S006 completed (6/88); S007 in_review on sprint/S007-change-control.
-- S006 PR #10 exact-head run 39711264161 passed; acceptance PR #11 head
-  72aea471874ba30ed7dec1c44f9df1a26b8f7f6d passed run 39711358693,
-  merged bd86e49e69e93f8d7e2a2ca527f962d22e180326.
-- S007 policy/validator/tests and dated ADR completeness addenda implemented.
-  Original choices/qualifiers preserved. Five focused tests pass after detecting
-  24 missing ADR sections; see S007 report/E-S007-01 for final regression.
-- Next: exact-head CI, normal merge and acceptance records, then S008.
-- No second human required; declared material changes still need substantive
-  diff/source review. No science/runtime/Windows/simulator validity claimed.
-- Connector works, local gh invalid. Preserve checkpoints/original-drafts stash.
+- S007 accepted, 7/88 completed; S008 next, not_started.
+- PR #12 head 0fa70fb0d21b4fced9239fe87dda5c8e2cb21503 passed CI run
+  39711665684; merged 86326c298ccadd19bf2df3e78aec407db5ce5d6d.
+- 44 tests/four validators pass. Dated ADR addenda preserve original choices.
+- Next: full S008, risk register/escalation protocol and required guess/irreversible
+  bypass attacks. Next safe action must be visible in durable records.
+- ADR-0005 permits honest author acceptance. Connector works, local gh invalid.
+  Preserve checkpoints/stash. No scientific/runtime/platform validity claim.
