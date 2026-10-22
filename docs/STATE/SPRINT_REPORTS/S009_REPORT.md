@@ -1,4 +1,7 @@
-# S009 — Legacy source inventory protocol (BLOCKED)
+# S009 — Legacy source inventory protocol
+
+Current: in_review; full quarantine inventory completed, replay/CI/integration
+recorded below. Earlier blocked reports are historical evidence, retained intact.
 
 Date 2026-10-22 Asia/Baghdad. Branch sprint/S009-legacy-intake.
 Base 072c6d55ea4979a0c263edc61a0efcdbf827abbe. Evidence E-S009-01;
@@ -123,3 +126,76 @@ S009 remains blocked/B-S009-02; full inventory NOT RUN. S010+ untouched.
 Action: resolve unsafe baseline handling without silent substitution; preserve
 archive, private manifest and rejected-link metadata. No extraction or execution.
 No licensing, source reuse, archive safety or scientific acceptance claimed.
+
+## E-S009-04 — Quarantine-only inventory policy and full run
+- Owner expressly authorizes quarantine-and-continue for private metadata inventory.
+  ADR-0006/D-0010 document the contract change; no extraction/execution/reuse or
+  redistribution permission. B-S009-02 blocked -> in_progress with this evidence.
+- Branch sprint/S009-quarantine-continue, base 6df64debe48469726c2e6ee5ea4f67d221eb0676.
+- Linux x86_64, Python 3.11.15; no new third-party dependency.
+- `python -m unittest discover -s tests -p test_inventory_quarantine.py -v`:
+  first exit 1, 7 tests with 16 failing subcases/2 errors (version-1 stop semantics
+  and absent v2 states). Private test-first transcript retained; assertions not
+  weakened. New compressed-budget fixture checks hash only when hashing is within
+  its explicit compressed-byte budget, rather than requiring a prohibited read.
+- `python -m unittest discover -s tests -p '*inventory*.py' -v`: exit 0, 15 tests.
+  Includes beginning/middle/end links, relative/absolute targets, hard links,
+  traversal, duplicates/case collisions, 64 generated consecutive-quarantine
+  sequences, later valid files, truncated/corrupt payload/header/footer/CRC,
+  memory/size/count/time exhaustion, baseline mismatch, manifest tampering,
+  split secret signatures, non-UTF-8 binary and public CLI no-extraction checks.
+- `python -m unittest discover -s tests -v`: exit 0, 63 tests; original 54 retained.
+- Real run 1 CLI exit 1: member-size limit after 3367 entries, complete=false.
+  Private header check exit 0: generated-output entry declares 730476900 bytes.
+  External per-member cap raised 128 MiB -> 1 GiB for chunk hashing; memory 256 MiB,
+  expanded 4 GiB, CPU/wall 120 seconds unchanged; exhaustion tests still pass.
+- Real run 2 child exit -9/no manifest; shortly before, process CPU time observed
+  at 114 seconds under 120-second hard CPU cap. Failure artifacts retained. Added
+  byte-prefix guard before signature regex; signature detection tests retained.
+- Real run 3 CLI exit 0, 35.878 seconds, inventory completed, identity_verified=true.
+  11049 members; 3545374720 expanded bytes (headers/padding included); 1130 entries
+  quarantined. Findings: executable permissions 73, binary content 831, executable
+  signatures 731, nested archives 58, links 281, unsafe-link-target flags 235.
+  No potential-secret pattern observed; this is not evidence that secrets are absent.
+- Roles (heuristics, not verified ownership): document/unknown 2131, tests 45,
+  generated outputs 5650, configuration 56, source 279, binary 163, headers 2725.
+  Synthetic fixtures separately exercise dataset/cache/dependency categories.
+- Archive hashes before/after both equal designated
+  da08e1a78e73215ddf9d165e32a07f262a0b8379b3b04f4b17b27d5b6b525da8;
+  compressed bytes 487062036. No source archive/member written or reconstructed.
+- Canonical v2 manifest SHA-256:
+  61b494e1d921464f980714d0a916dff12856acc2058421da091ce959751c2daf.
+  Private evidence: Git common metadata private-evidence/S009/quarantine-v2-run3.json;
+  failed runs 1/2 preserved. Run commands: Linux CLI with --limits
+  docs/audit/intake_limits.json --expected-sha256 <designated hash> --expected-size
+  487062036; archive locator resolved privately, stdout/stderr redirected to
+  restricted mode-0600 files. Library/CLI contains no source execution.
+- Software-tested property: complete inventory with findings is distinct from
+  clearance. security_clearance=not_granted, source_reuse_authorization=prohibited,
+  scientific_model_validation=unvalidated. Unknown license/source commit and
+  uncertain ownership remain limitations; neither blocks private technical inventory.
+- Windows/source execution/physical reference and empirical validation NOT RUN:
+  no supported Windows hostile-input CLI or physical model introduced by S009.
+- Self-audit: every logical entry hashed or typed metadata-only; duplicate prior
+  records also quarantined; parser/CRC/termination/identity/resource failures stay
+  incomplete. No target access, nested expansion, source/data upload or partial-run
+  acceptance. Standard-library parser is bounded by metadata and OS process limits;
+  unsupported sparse encoding stops incomplete. Manifest digest is not authenticity.
+- Exact-head CI/integration and actual replay results are recorded separately below.
+
+## E-S009-05 — Real replay and final local gates
+Repeat CLI run 4 exit 0: byte-for-byte identical private JSON to run 3.
+verify_manifest=true; both designated archive hashes unchanged; complete=true.
+Private JSON artifact SHA-256 8ef06f34a5538fcbcb7b884f1c9e25c1c752d3e9634773fec60e6e2c2682ebbb;
+canonical manifest digest 61b494e1d921464f980714d0a916dff12856acc2058421da091ce959751c2daf.
+This verifies reproducible inventory/immutability, not source or scientific safety.
+
+Current amendment file scope: scripts/inventory_legacy.py;
+tests/test_inventory_quarantine.py; docs/audit/INTAKE_PROTOCOL.md and
+intake_limits.json; docs/adr/ADR-0006-quarantine-only-inventory.md;
+docs/CLEAN_ROOM_BOUNDARY.md; docs/REPOSITORY_INVENTORY.json;
+docs/quality/risks.json; STATE/PROGRESS.json, AGENT_HANDOFF.md, BLOCKERS.md,
+DECISION_LOG.md, VALIDATION_LOG.md and this report. No legacy content included.
+Final local suite 63 tests, all five validators (169 inventory artifacts), and
+whitespace check exit 0. Author verdict: local S009 technical gates satisfied;
+exact-head CI and permitted integration required before completed. Next: S010.
