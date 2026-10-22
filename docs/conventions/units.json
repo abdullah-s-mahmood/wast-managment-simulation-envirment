@@ -1,0 +1,205 @@
+{
+  "schema_version": 1,
+  "quantities": {
+    "distance": {
+      "canonical_unit": "m",
+      "dimension": "L",
+      "minimum": "0",
+      "maximum": null,
+      "units": {
+        "m": {
+          "scale": "1",
+          "offset": "0"
+        },
+        "km": {
+          "scale": "1000",
+          "offset": "0"
+        }
+      }
+    },
+    "mass": {
+      "canonical_unit": "kg",
+      "dimension": "M",
+      "minimum": "0",
+      "maximum": null,
+      "units": {
+        "kg": {
+          "scale": "1",
+          "offset": "0"
+        },
+        "g": {
+          "scale": "1/1000",
+          "offset": "0"
+        }
+      }
+    },
+    "volume": {
+      "canonical_unit": "m3",
+      "dimension": "L^3",
+      "minimum": "0",
+      "maximum": null,
+      "units": {
+        "m3": {
+          "scale": "1",
+          "offset": "0"
+        },
+        "L": {
+          "scale": "1/1000",
+          "offset": "0"
+        }
+      }
+    },
+    "fuel_volume": {
+      "canonical_unit": "m3",
+      "dimension": "L^3",
+      "minimum": "0",
+      "maximum": null,
+      "units": {
+        "m3": {
+          "scale": "1",
+          "offset": "0"
+        },
+        "L": {
+          "scale": "1/1000",
+          "offset": "0"
+        }
+      }
+    },
+    "temperature": {
+      "canonical_unit": "K",
+      "dimension": "Theta",
+      "minimum": "0",
+      "maximum": null,
+      "units": {
+        "K": {
+          "scale": "1",
+          "offset": "0"
+        },
+        "degC": {
+          "scale": "1",
+          "offset": "273.15"
+        }
+      }
+    },
+    "temperature_interval": {
+      "canonical_unit": "K",
+      "dimension": "Theta",
+      "minimum": null,
+      "maximum": null,
+      "units": {
+        "K": {
+          "scale": "1",
+          "offset": "0"
+        },
+        "degC": {
+          "scale": "1",
+          "offset": "0"
+        }
+      }
+    },
+    "humidity": {
+      "canonical_unit": "1",
+      "dimension": "1",
+      "minimum": "0",
+      "maximum": "1",
+      "units": {
+        "1": {
+          "scale": "1",
+          "offset": "0"
+        },
+        "%": {
+          "scale": "1/100",
+          "offset": "0"
+        }
+      }
+    },
+    "speed": {
+      "canonical_unit": "m/s",
+      "dimension": "L/T",
+      "minimum": "0",
+      "maximum": null,
+      "units": {
+        "m/s": {
+          "scale": "1",
+          "offset": "0"
+        },
+        "km/h": {
+          "scale": "5/18",
+          "offset": "0"
+        }
+      }
+    },
+    "emission_mass": {
+      "canonical_unit": "kg",
+      "dimension": "M",
+      "minimum": "0",
+      "maximum": null,
+      "units": {
+        "kg": {
+          "scale": "1",
+          "offset": "0"
+        },
+        "g": {
+          "scale": "1/1000",
+          "offset": "0"
+        },
+        "mg": {
+          "scale": "1/1000000",
+          "offset": "0"
+        }
+      }
+    },
+    "emission_rate": {
+      "canonical_unit": "kg/s",
+      "dimension": "M/T",
+      "minimum": "0",
+      "maximum": null,
+      "units": {
+        "kg/s": {
+          "scale": "1",
+          "offset": "0"
+        },
+        "g/s": {
+          "scale": "1/1000",
+          "offset": "0"
+        }
+      }
+    },
+    "latency": {
+      "canonical_unit": "s",
+      "dimension": "T",
+      "minimum": "0",
+      "maximum": null,
+      "units": {
+        "s": {
+          "scale": "1",
+          "offset": "0"
+        },
+        "ms": {
+          "scale": "1/1000",
+          "offset": "0"
+        }
+      }
+    },
+    "elapsed_time": {
+      "canonical_unit": "s",
+      "dimension": "T",
+      "minimum": "0",
+      "maximum": null,
+      "units": {
+        "s": {
+          "scale": "1",
+          "offset": "0"
+        },
+        "min": {
+          "scale": "60",
+          "offset": "0"
+        },
+        "h": {
+          "scale": "3600",
+          "offset": "0"
+        }
+      }
+    }
+  }
+}

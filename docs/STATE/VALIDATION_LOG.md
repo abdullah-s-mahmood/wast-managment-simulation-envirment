@@ -156,3 +156,17 @@ Append entries; do not rewrite history to hide failures.
   b8d8f8f tree; preserved branch. 28 tests and all three validators passed.
 - Author self-audit accepted under ADR-0005: S004 completed (4/88); S005 next.
 - Scope remains governance-only; no scientific/causal or runtime validity claim.
+
+## E-S005-01 — Unit/time/ID conventions verification (2026-10-22)
+- Branch sprint/S005-conventions, base 3799b5cdf9a2e5355885d93a86c492490cb1aced.
+- Linux x86_64 / Python 3.11.15. Primary source locations in S005 report/policy.
+- python -m unittest discover -s tests -p test_conventions.py -v: exit 1 test-first
+  missing module; exit 0 implemented; exit 1 added +01:99 attack; fixed strict
+  offset validation; exit 0 with all six tests and retained attack.
+- python -m unittest discover -s tests -v: exit 0, 34 tests, including 101-value
+  exact-rational equivalent-unit sweeps and independent reference conversions.
+- python scripts/validate_project_docs.py: exit 0, 88 sprint contracts consistent.
+- python scripts/validate_evidence_ledger.py: exit 0, no scientific records accepted.
+- python scripts/validate_repository_boundary.py: exit 0, 148 approved artifacts.
+- git diff --check: exit 0. S005 report records failures and NOT RUN rationale.
+- Exact-head CI and permitted integration pending; S006 not started.
