@@ -265,3 +265,44 @@ Append entries; do not rewrite history to hide failures.
   S009 in_progress -> blocked; S010+ untouched. No completion or archive safety claim.
 - This blocked-state PR must pass its own exact-head CI before normal integration;
   integrating recovery records does not accept S009. Resume only with resolving evidence.
+
+## E-S009-02 — Authorized candidate, bounded scanner and safety stop
+Owner now explicitly designates candidate 001 for read-only local audit only;
+no archive/source/data redistribution, copying or unknown-code execution.
+Size/hash verified exactly against expected values (exit 0). B-S009-01 source
+selection resolved; blocked -> in_progress. A new safety stop then requires
+in_progress -> blocked, B-S009-02. No later sprint started.
+
+Independent tooling: scripts/inventory_legacy.py, external resource policy,
+private intake checklist and six synthetic test groups. Scanner never extracts
+filesystem objects, follows links or opens nested archives. Per-member private
+paths/hashes/size/role/language hints/binary/signature flags preserve provenance.
+Full manifest is restricted to Git common metadata private-evidence/S009; never
+committed. Process wrapper set RLIMIT_AS=268435456 bytes and RLIMIT_CPU=120 seconds.
+Actual bounded scan: complete=false, 1282 members, 504463360 expanded bytes read;
+17 executable permissions, 20 executable signatures, 78 binary-content findings,
+44 nested archives, then one rejected link/special member. Inspection stopped;
+source not accepted. No potential-secret signature found in inspected prefix;
+uninspected bytes remain unchecked. No claim of absent secrets or license clearance.
+Original archive and prior evidence preserved. Resolve prohibited member handling
+without altering baseline or executing/extracting it; full safe inventory remains
+mandatory. Licensing/provenance permits no code reuse. B-S009-02 is a content-
+safety blocker, not a request for routine continuation or second-person review.
+
+Linux x86_64/Python 3.11.15. Test-first focused unittest initially exit 1 missing
+module; after implementation six tests pass. python -m unittest discover -s tests
+-v exit 0, 54 tests. WB/BB/negative tests cover classification/hash/replay, limits,
+corruption, traversal, duplicates, case collisions, links/special files, executable,
+binary/nested archive/secret signatures and public CLI no-extraction failure.
+Independent SHA-256 fixture references pass. Actual scan wrapper exit 0 means
+manifest saved, NOT source accepted: manifest complete=false records rejection.
+Windows, full source inventory, legacy execution and scientific validation NOT RUN.
+New implementation is partial S009 work, not completion. Mandatory gates stay open.
+
+Boundary check initially exit 1: docs/legacy is prohibited by the clean-room path
+policy. Moved independently authored protocol/policy to docs/audit (no exemption).
+Final local verification: python -m unittest discover -s tests -v exit 0 (54);
+python scripts/validate_project_docs.py, validate_repository_boundary.py (167
+approved artifacts), validate_evidence_ledger.py, validate_change_control.py,
+validate_risk_protocol.py and git diff --check each exit 0. All ran under Python
+3.11.15/Linux x86_64. No mandatory full-intake check is represented as passed.

@@ -1,0 +1,7 @@
+{
+  "max_members": 100000,
+  "max_member_bytes": 134217728,
+  "max_expanded_bytes": 4294967296,
+  "max_compressed_bytes": 1073741824,
+  "max_seconds": 120
+}

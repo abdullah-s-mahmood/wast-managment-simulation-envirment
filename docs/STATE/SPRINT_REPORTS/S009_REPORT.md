@@ -73,3 +73,36 @@ E-S009-01. WB/BB/attack/reference/integration tests for actual S009 inventory:
 NOT RUN — no implementation or designated/cleared source intake. Gate remains
 open. Existing governance regression is not proof of archive safety or license.
 Linux x86_64/Python 3.11.15; no Windows/simulator/scientific validation run.
+
+## E-S009-02 — Authorized candidate, bounded scanner and safety stop
+Owner now explicitly designates candidate 001 for read-only local audit only;
+no archive/source/data redistribution, copying or unknown-code execution.
+Size/hash verified exactly against expected values (exit 0). B-S009-01 source
+selection resolved; blocked -> in_progress. A new safety stop then requires
+in_progress -> blocked, B-S009-02. No later sprint started.
+
+Independent tooling: scripts/inventory_legacy.py, external resource policy,
+private intake checklist and six synthetic test groups. Scanner never extracts
+filesystem objects, follows links or opens nested archives. Per-member private
+paths/hashes/size/role/language hints/binary/signature flags preserve provenance.
+Full manifest is restricted to Git common metadata private-evidence/S009; never
+committed. Process wrapper set RLIMIT_AS=268435456 bytes and RLIMIT_CPU=120 seconds.
+Actual bounded scan: complete=false, 1282 members, 504463360 expanded bytes read;
+17 executable permissions, 20 executable signatures, 78 binary-content findings,
+44 nested archives, then one rejected link/special member. Inspection stopped;
+source not accepted. No potential-secret signature found in inspected prefix;
+uninspected bytes remain unchecked. No claim of absent secrets or license clearance.
+Original archive and prior evidence preserved. Resolve prohibited member handling
+without altering baseline or executing/extracting it; full safe inventory remains
+mandatory. Licensing/provenance permits no code reuse. B-S009-02 is a content-
+safety blocker, not a request for routine continuation or second-person review.
+
+Linux x86_64/Python 3.11.15. Test-first focused unittest initially exit 1 missing
+module; after implementation six tests pass. python -m unittest discover -s tests
+-v exit 0, 54 tests. WB/BB/negative tests cover classification/hash/replay, limits,
+corruption, traversal, duplicates, case collisions, links/special files, executable,
+binary/nested archive/secret signatures and public CLI no-extraction failure.
+Independent SHA-256 fixture references pass. Actual scan wrapper exit 0 means
+manifest saved, NOT source accepted: manifest complete=false records rejection.
+Windows, full source inventory, legacy execution and scientific validation NOT RUN.
+New implementation is partial S009 work, not completion. Mandatory gates stay open.

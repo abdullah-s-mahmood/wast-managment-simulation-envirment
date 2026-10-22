@@ -1,20 +1,17 @@
 # Blockers and Open Dependencies
 
 ## Current blockers
-- B-S009-01 — OPEN (S009). Located legacy candidates, but no owner-designated
-  immutable baseline or verified handling/publication record. LEGACY-CANDIDATE-001
-  is locally readable; SHA-256 da08e1a78e73215ddf9d165e32a07f262a0b8379b3b04f4b17b27d5b6b525da8
-  matches sidecar. Bounded 1000-member metadata scan is incomplete, not intake acceptance.
-  Source owner/license/secret/unknown-binary status unverified; do not guess, extract,
-  execute, copy or publish source. Owner/action: designate intended revision/archive
-  and handling restrictions; agent verifies provenance/license and bounded safe intake.
-  Resume condition: designation/handling evidence recorded, then S009 blocked ->
-  in_progress with resolving evidence. Exact commands and private locator mechanism
-  in S009 report. Risk if guessed: wrong source, invalid provenance or unauthorized
-  publication/reuse. No second-human review is requested; ADR-0005 remains in force.
+- B-S009-02 — OPEN S009. Owner-designated archive identity verified, but bounded
+  private scan rejects a link/special member after 1282 entries; executables,
+  binaries and nested archives also flagged. Partial manifest under Git common
+  metadata private-evidence/S009. Stop intake: no extraction/execution/redistribution.
+  Action: resolve prohibited-member handling while retaining designated baseline,
+  then full safe inventory/provenance checks. No source acceptance or S010 yet.
 - Local GitHub CLI credential is invalid; connector works, so publication is not blocked.
 
 ## Resolved blockers
+- B-S009-01 CLOSED: owner designation/read-only handling authorization plus exact
+  size/SHA-256 verification resolve original selection ambiguity. B-S009-02 is new.
 - B-S001-01 — CLOSED 2026-10-22. Sole owner waived independent-person review by accepted ADR-0005. Exact-head GitHub Actions passed for PR #1; PR #1 merged as `7aaa0b8ee76fb276506bbaf0a97b65101583901b`. S001 technical gate accepted. This does not waive later scientific/technical gates.
 
 ## Future evidence gates
