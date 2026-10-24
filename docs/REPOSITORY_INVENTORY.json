@@ -34,6 +34,7 @@
       "docs/STATE/SPRINT_REPORTS/S007_REPORT.md",
       "docs/STATE/SPRINT_REPORTS/S008_REPORT.md",
       "docs/STATE/SPRINT_REPORTS/S009_REPORT.md",
+      "docs/STATE/SPRINT_REPORTS/S010_REPORT.md",
       "docs/STATE/VALIDATION_LOG.md",
       "docs/STATISTICAL_ANALYSIS_PLAN.md",
       "docs/TESTING_STRATEGY.md",
@@ -44,7 +45,9 @@
       "docs/adr/ADR-0005-risk-based-sprint-review.md",
       "docs/adr/ADR-0006-quarantine-only-inventory.md",
       "docs/audit/INTAKE_PROTOCOL.md",
+      "docs/audit/STATIC_MODULE_GRAPH.md",
       "docs/audit/intake_limits.json",
+      "docs/audit/static_graph_policy.json",
       "docs/conventions/README.md",
       "docs/conventions/units.json",
       "docs/evidence/README.md",
@@ -146,6 +149,7 @@
       "docs/templates/SPRINT_TEMPLATE.md"
     ],
     "governance_source": [
+      "scripts/audit_source_graph.py",
       "scripts/check_conventions.py",
       "scripts/inventory_legacy.py",
       "scripts/validate_change_control.py",
@@ -169,6 +173,7 @@
       "tests/test_repository_boundary.py",
       "tests/test_risk_protocol.py",
       "tests/test_s001_charter.py",
+      "tests/test_source_graph.py",
       "tests/test_study_separation.py"
     ],
     "reserved_layout": [

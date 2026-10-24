@@ -400,3 +400,29 @@ Author self-audit under ADR-0005: S009 technical inventory/protocol criteria met
 9/88 completed, S010 next. Full inventory/replay, 63 tests and five validators pass.
 No archive safety, execution, reuse, licensing or scientific validation is accepted.
 B-S009-02 resolved; security findings and quarantine dispositions remain recorded.
+
+## E-S010-01 — Static source module/dependency graph (2026-10-24)
+- Branch sprint/S010-static-module-graph, base 969eec59de95a5efa7b9dedc396a7a282c53b7e6.
+  Fetch verified no competing/newer sprint completion before implementation/publication.
+- Linux x86_64/Python 3.11.15. python -m unittest discover -s tests -p
+  test_source_graph.py -v initially exit 1 (test-first missing module); final focused
+  nine tests pass. python -m unittest discover -s tests -v exit 0, 72 tests.
+- Public Linux CLI: python scripts/audit_source_graph.py <private-archive> --inventory
+  <private S009 manifest> --policy docs/audit/static_graph_policy.json
+  --expected-manifest-sha256 61b494e1d921464f980714d0a916dff12856acc2058421da091ce959751c2daf:
+  exit 0; full archive before/after hash and selected payload hashes match S009.
+  3752 nodes/79509 syntax edges; 2 explicit unparsed/quarantined unknowns. Graph
+  canonical digest 01f0a10ce7059aa732f754bd47e492f9cac4b36b542492af5c0d119812730b62.
+- Independent source-line check exit 0: four entry ID/hash/line anchors for import,
+  include, dynamic loading syntax and build declaration. No source code executed.
+  Private graph/cross-check under Git common metadata private-evidence/S010.
+- python scripts/validate_project_docs.py, python scripts/validate_repository_boundary.py
+  (174 approved artifacts), python scripts/validate_evidence_ledger.py,
+  python scripts/validate_change_control.py, python scripts/validate_risk_protocol.py
+  and git diff --check: each exit 0.
+- Scope/commands/failure evidence and NOT RUN rationale: S010 report and static
+  graph policy. Native lexical calls/import/build resolution remain unverified;
+  no installed dependency, active-runtime or physical/causal validity claim.
+- Exact-head CI and permitted merge pending; S011 not started.
+- Final real CLI replay exit 0, byte-identical graph JSON. Private graph artifact
+  SHA-256 6c593ea9b766f642162e56e493bf316eb3dba91588b17e8e82bb26e527e33ec3.

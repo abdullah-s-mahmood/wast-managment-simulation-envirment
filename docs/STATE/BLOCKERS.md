@@ -1,7 +1,7 @@
 # Blockers and Open Dependencies
 
 ## Current blockers
-- No current S010 technical blocker. S009 full technical inventory accepted after exact-head CI and permitted merge.
+- No current S010 technical blocker; static graph and unknowns recorded. Exact-head CI/integration pending.
 - Local GitHub CLI credential is invalid; connector works, so publication is not blocked.
 
 ## Resolved blockers

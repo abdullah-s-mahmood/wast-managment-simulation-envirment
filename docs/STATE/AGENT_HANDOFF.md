@@ -1,25 +1,16 @@
-# Agent Handoff — S009 accepted technical inventory
+# Agent Handoff — S010 static graph review
 
-S001–S009 completed (9/88); S010 next, not_started. S009 PR #19 exact head
-0c42f4300c62d7870b2b60caa7f382e880e4da6f passed run 39743742012 and merged;
-merge SHA in S009 report/E-S009-06. No source clearance/execution/reuse or model
-validation follows. ADR-0006 authorizes quarantine-only private continuation.
-11049 members, 1130 quarantined. Replay byte-identical; archive hashes match
-owner designation. Private inventory run3/run4 under Git common metadata
-private-evidence/S009; canonical manifest digest
-61b494e1d921464f980714d0a916dff12856acc2058421da091ce959751c2daf.
-63 tests/five validators pass; failed member/CPU runs and earlier blockers retained.
-Next: fetch, read full S010, source-backed static module/dependency graph with
-unknowns labeled. No source execution or unsafe target access. Do not upload raw
-manifest/member paths/source/private campaign data. Licensing/reuse prohibited.
-Original worktree and .vscode preserved; work remains isolated. Owner policy and
-ADR-0005 allow self-audit/permitted merge after exact-head CI, no second human.
-
-## E-S009-06 — Accepted technical inventory integration
-PR #19 head 0c42f4300c62d7870b2b60caa7f382e880e4da6f passed CI run
-39743742012, completed/success; permitted merge 6ad9e513bcfa239b702eac10f74773702e52076b.
-Local checkpoint ac9fd71 tree equals published f20b55ab3ff297acbe372d52668dcf47e6ceabab.
-Author self-audit under ADR-0005: S009 technical inventory/protocol criteria met;
-9/88 completed, S010 next. Full inventory/replay, 63 tests and five validators pass.
-No archive safety, execution, reuse, licensing or scientific validation is accepted.
-B-S009-02 resolved; security findings and quarantine dispositions remain recorded.
+S001–S009 completed (9/88), S010 in_review; S011+ not_started.
+Branch sprint/S010-static-module-graph, base 969eec59de95a5efa7b9dedc396a7a282c53b7e6.
+S009 acceptance PR #20 head 129f3b9b63d7903291b31825c4aeb10afb7d381d passed
+CI run 39743979463 and merged before S010 started. No source clearance granted.
+S010 private graph: Git common metadata private-evidence/S010/static-module-graph.json,
+source anchors in cross-check.json; canonical digest
+01f0a10ce7059aa732f754bd47e492f9cac4b36b542492af5c0d119812730b62.
+3752 nodes, 79509 syntax edges; 2 unknown/unparsed/quarantined entries explicitly
+labeled. Four real source-line/hash checks pass; 72 regression tests pass.
+No source execution or archive extraction; source is data. Native calls/build/
+imports are unresolved static observations, not verified runtime dependencies.
+Next: full governance gates/exact-head CI/normal merge, then acceptance records
+and S011 contract. Private evidence/locator remain outside tracked files. Keep
+original worktree/.vscode and checkpoints intact; licensing/reuse prohibited.
