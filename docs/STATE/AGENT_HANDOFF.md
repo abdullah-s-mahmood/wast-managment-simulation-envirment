@@ -1,24 +1,23 @@
-# Agent Handoff — S010 accepted static map
+# Agent Handoff — S011 runtime authorization boundary
 
-S001–S010 completed (10/88); S011 next, not_started. S010 PR #21 exact head
-6326d61fcc8e64bbc869e6394810184026bb9937 passed CI run 40105464672, merged;
-exact merge SHA in E-S010-02/report. Private graph/cross-check/replay in Git common
-metadata private-evidence/S010. Canonical graph digest
-01f0a10ce7059aa732f754bd47e492f9cac4b36b542492af5c0d119812730b62.
-3752 nodes/79509 syntax edges; two explicit unknowns. 72 tests/five validators pass.
-S009 full immutable inventory complete with quarantine; no source safety, reuse,
-execution or scientific clearance. Owner authorizes read-only local auditing only.
-Next: fetch, read full S011 contract and trace source inputs/state/simulator/output
-paths with source anchors. Actual legacy execution remains prohibited: do not
-claim working-directory/optional-input runtime attacks ran. If a mandatory gate
-needs execution, record exact NOT RUN/authorization blocker, not fabricated pass.
-Original worktree/.vscode/checkpoints unchanged. Static tools never execute source.
-
-## E-S010-02 — Accepted static-map integration (2026-10-24)
-PR #21 exact head 6326d61fcc8e64bbc869e6394810184026bb9937 passed CI run
-40105464672, completed/success; normal merge 1c56b13d66cd68bca6a7763846a0916fae7026ff.
-Published tree ee2f5297fca09457e8a1715162791c17e65d9169 equals local checkpoint
-8199633 tree, preserved branch. 72 tests and five validators pass. Real graph
-replay byte-identical; independent source anchors verified. Author self-audit
-under ADR-0005 accepts S010 source-backed static graph with explicit unknowns;
-10/88 completed, S011 next. No runtime/dependency/license/scientific acceptance.
+S001–S010 completed (10/88). S011 blocked, B-S011-01; S012+ not_started.
+S010 acceptance PR #22 head 2a1c2fdf8558bed0c8f2457fb95504e74bfe8b2a passed
+CI run 40105633489 and merged cd8c4445024efff28ef2be79faf1de624cccdf58.
+Active worktree branch sprint/S011-readonly-flow; original worktree/.vscode and
+checkpoint branches preserved. No legacy source/code/archive execution permitted.
+S009 inventory completed/replayed unchanged: 11049 members, 1130 quarantined;
+S010 graph 3752 nodes/79509 syntax edges, explicit unknowns and no runtime claim.
+Private inventory/graphs in Git common metadata private-evidence/S009 and S010.
+S011 three native main candidates/source hashes and lexical navigation anchors
+retained privately under private-evidence/S011/static-flow-candidates.json;
+raw artifact digest 0e9e1e28ab6b3987e001983de37a9a8f26b41a97116d61924db9eec364a2e8be.
+No completed execution flow is claimed. Required different-CWD/omitted-input
+legacy runtime attack is NOT RUN under explicit owner execution prohibition.
+Next safe action: finish detailed source-bound command/input/stage/output/seed
+plan using private anchors, then seek specific execution/preparation authority or
+verifiable external evidence meeting the gate. See full S011 report recovery plan.
+Do not ask routine continuation approval, execute legacy code, extract/reconstruct
+source or substitute a different tree. Do not advance S012 or call static audit
+checks proof of runtime behavior. Licensing/reuse/science remain unvalidated.
+Governance regression/CI can pass for these blocked-state records without accepting
+S011. No second human required under ADR-0005; preserve failed/not-run evidence.

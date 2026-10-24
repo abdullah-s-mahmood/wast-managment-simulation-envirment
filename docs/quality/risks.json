@@ -299,7 +299,7 @@
       "owner_action": "Owner or external authority authorizes specific action; agent preserves state.",
       "unblock_condition": "Explicit applicable authorization and external permission verified.",
       "source": "AGENTS.md",
-      "status": "monitored"
+      "status": "triggered"
     },
     {
       "id": "R-CI",
