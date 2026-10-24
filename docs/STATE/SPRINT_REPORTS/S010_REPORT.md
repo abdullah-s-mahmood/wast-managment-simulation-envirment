@@ -61,3 +61,12 @@ Final real CLI replay exit 0, byte-identical private graph; raw artifact SHA-256
 All five governance validators and diff checks exit 0; 174 approved artifacts.
 Author verdict: static source graph and explicit-unknown contract locally met;
 exact-head CI/permitted integration still required. No runtime graph claimed.
+
+## E-S010-02 — Accepted static-map integration (2026-10-24)
+PR #21 exact head 6326d61fcc8e64bbc869e6394810184026bb9937 passed CI run
+40105464672, completed/success; normal merge 1c56b13d66cd68bca6a7763846a0916fae7026ff.
+Published tree ee2f5297fca09457e8a1715162791c17e65d9169 equals local checkpoint
+8199633 tree, preserved branch. 72 tests and five validators pass. Real graph
+replay byte-identical; independent source anchors verified. Author self-audit
+under ADR-0005 accepts S010 source-backed static graph with explicit unknowns;
+10/88 completed, S011 next. No runtime/dependency/license/scientific acceptance.

@@ -1,16 +1,24 @@
-# Agent Handoff — S010 static graph review
+# Agent Handoff — S010 accepted static map
 
-S001–S009 completed (9/88), S010 in_review; S011+ not_started.
-Branch sprint/S010-static-module-graph, base 969eec59de95a5efa7b9dedc396a7a282c53b7e6.
-S009 acceptance PR #20 head 129f3b9b63d7903291b31825c4aeb10afb7d381d passed
-CI run 39743979463 and merged before S010 started. No source clearance granted.
-S010 private graph: Git common metadata private-evidence/S010/static-module-graph.json,
-source anchors in cross-check.json; canonical digest
+S001–S010 completed (10/88); S011 next, not_started. S010 PR #21 exact head
+6326d61fcc8e64bbc869e6394810184026bb9937 passed CI run 40105464672, merged;
+exact merge SHA in E-S010-02/report. Private graph/cross-check/replay in Git common
+metadata private-evidence/S010. Canonical graph digest
 01f0a10ce7059aa732f754bd47e492f9cac4b36b542492af5c0d119812730b62.
-3752 nodes, 79509 syntax edges; 2 unknown/unparsed/quarantined entries explicitly
-labeled. Four real source-line/hash checks pass; 72 regression tests pass.
-No source execution or archive extraction; source is data. Native calls/build/
-imports are unresolved static observations, not verified runtime dependencies.
-Next: full governance gates/exact-head CI/normal merge, then acceptance records
-and S011 contract. Private evidence/locator remain outside tracked files. Keep
-original worktree/.vscode and checkpoints intact; licensing/reuse prohibited.
+3752 nodes/79509 syntax edges; two explicit unknowns. 72 tests/five validators pass.
+S009 full immutable inventory complete with quarantine; no source safety, reuse,
+execution or scientific clearance. Owner authorizes read-only local auditing only.
+Next: fetch, read full S011 contract and trace source inputs/state/simulator/output
+paths with source anchors. Actual legacy execution remains prohibited: do not
+claim working-directory/optional-input runtime attacks ran. If a mandatory gate
+needs execution, record exact NOT RUN/authorization blocker, not fabricated pass.
+Original worktree/.vscode/checkpoints unchanged. Static tools never execute source.
+
+## E-S010-02 — Accepted static-map integration (2026-10-24)
+PR #21 exact head 6326d61fcc8e64bbc869e6394810184026bb9937 passed CI run
+40105464672, completed/success; normal merge 1c56b13d66cd68bca6a7763846a0916fae7026ff.
+Published tree ee2f5297fca09457e8a1715162791c17e65d9169 equals local checkpoint
+8199633 tree, preserved branch. 72 tests and five validators pass. Real graph
+replay byte-identical; independent source anchors verified. Author self-audit
+under ADR-0005 accepts S010 source-backed static graph with explicit unknowns;
+10/88 completed, S011 next. No runtime/dependency/license/scientific acceptance.

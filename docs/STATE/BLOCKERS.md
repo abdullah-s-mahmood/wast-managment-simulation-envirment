@@ -1,7 +1,7 @@
 # Blockers and Open Dependencies
 
 ## Current blockers
-- No current S010 technical blocker; static graph and unknowns recorded. Exact-head CI/integration pending.
+- S010 accepted after exact-head CI/merge. S011 must retain the owner prohibition on archive/code execution while assessing runtime-dependent gates.
 - Local GitHub CLI credential is invalid; connector works, so publication is not blocked.
 
 ## Resolved blockers

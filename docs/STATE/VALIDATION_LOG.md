@@ -426,3 +426,12 @@ B-S009-02 resolved; security findings and quarantine dispositions remain recorde
 - Exact-head CI and permitted merge pending; S011 not started.
 - Final real CLI replay exit 0, byte-identical graph JSON. Private graph artifact
   SHA-256 6c593ea9b766f642162e56e493bf316eb3dba91588b17e8e82bb26e527e33ec3.
+
+## E-S010-02 — Accepted static-map integration (2026-10-24)
+PR #21 exact head 6326d61fcc8e64bbc869e6394810184026bb9937 passed CI run
+40105464672, completed/success; normal merge 1c56b13d66cd68bca6a7763846a0916fae7026ff.
+Published tree ee2f5297fca09457e8a1715162791c17e65d9169 equals local checkpoint
+8199633 tree, preserved branch. 72 tests and five validators pass. Real graph
+replay byte-identical; independent source anchors verified. Author self-audit
+under ADR-0005 accepts S010 source-backed static graph with explicit unknowns;
+10/88 completed, S011 next. No runtime/dependency/license/scientific acceptance.
