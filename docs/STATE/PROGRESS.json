@@ -2,7 +2,7 @@
   "project": "wast-managment-simulation-envirment",
   "display_name": "Waste Management Simulation Environment",
   "state_version": 1,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "current_phase": "P1 — Legacy audit and evidence extraction",
   "total_sprints": 88,
   "completed_sprints": 9,
@@ -104,7 +104,7 @@
       "title": "Legacy module and dependency graph",
       "file": "docs/sprints/S010-legacy-module-and-dependency-graph.md",
       "phase": "P1 — Legacy audit and evidence extraction",
-      "status": "not_started",
+      "status": "in_review",
       "depends_on": [
         "S009"
       ]
