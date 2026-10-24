@@ -435,3 +435,27 @@ Published tree ee2f5297fca09457e8a1715162791c17e65d9169 equals local checkpoint
 replay byte-identical; independent source anchors verified. Author self-audit
 under ADR-0005 accepts S010 source-backed static graph with explicit unknowns;
 10/88 completed, S011 next. No runtime/dependency/license/scientific acceptance.
+
+## E-S011-01 — Read-only source leads and runtime boundary (2026-10-24)
+- Branch sprint/S011-readonly-flow, base cd8c4445024efff28ef2be79faf1de624cccdf58.
+  S010 acceptance PR #22 exact head 2a1c2fdf8558bed0c8f2457fb95504e74bfe8b2a
+  passed run 40105633489 and merged before S011 entered in_progress.
+- Read full S011 contract and owner restrictions. Read-only source-anchor probe
+  exit 0: three regular native main candidates, payload hashes match S009, private
+  lexical leads saved. No source execution/extraction, target access or dataflow claim.
+- Independent full current archive size/SHA-256 check exit 0: designated identity
+  unchanged. Private source-lead artifact SHA-256
+  0e9e1e28ab6b3987e001983de37a9a8f26b41a97116d61924db9eec364a2e8be.
+- Linux x86_64/Python 3.11.15. python -m unittest discover -s tests -v exit 0,
+  72 existing regression tests. python scripts/validate_project_docs.py,
+  python scripts/validate_repository_boundary.py (175 approved artifacts),
+  python scripts/validate_evidence_ledger.py, python scripts/validate_change_control.py,
+  python scripts/validate_risk_protocol.py and git diff --check each exit 0.
+- Actual legacy working-directory/omitted-input attack NOT RUN: explicit owner
+  execution prohibition. Static flow/seed/clock/serializer/outputs not yet verified;
+  no synthetic or audit-tool execution substituted. S011 report states missing gates.
+- S011 in_progress -> blocked, B-S011-01/R-AUTH triggered. Further static planning
+  can be prepared in this sprint, but completion needs the mandatory runtime gate
+  with resolving authority/evidence. S012+ untouched. No routine approval requested.
+- Blocked-state PR CI/integration does not accept S011. Exact PR/head/merge evidence
+  remains available through focused GitHub recovery record. Original worktree intact.

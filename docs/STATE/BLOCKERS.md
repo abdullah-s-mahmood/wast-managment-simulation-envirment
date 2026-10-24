@@ -1,7 +1,14 @@
 # Blockers and Open Dependencies
 
 ## Current blockers
-- S010 accepted after exact-head CI/merge. S011 must retain the owner prohibition on archive/code execution while assessing runtime-dependent gates.
+- B-S011-01 OPEN — S011 mandatory different-CWD/omitted-input runtime test is
+  NOT RUN: owner authorizes read-only audit, explicitly prohibits legacy execution.
+  Static source candidates/plan retained in S011 report and private evidence.
+  Action: finish source-bound entrypoint/input/stage/artifact plan, then obtain
+  specific authority for any required isolated source preparation/execution or
+  provenance-verified external evidence satisfying the gate. Do not substitute
+  another source tree or run audit-tool tests as proof of legacy runtime behavior.
+  Resume with resolving authorization/evidence; no S012 until S011 accepted.
 - Local GitHub CLI credential is invalid; connector works, so publication is not blocked.
 
 ## Resolved blockers
