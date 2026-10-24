@@ -5,10 +5,10 @@
   "updated_at": "2026-10-24",
   "current_phase": "P1 — Legacy audit and evidence extraction",
   "total_sprints": 88,
-  "completed_sprints": 9,
-  "current_sprint_id": "S010",
-  "next_sprint_id": "S010",
-  "last_completed_sprint_id": "S009",
+  "completed_sprints": 10,
+  "current_sprint_id": "S011",
+  "next_sprint_id": "S011",
+  "last_completed_sprint_id": "S010",
   "rule": "Strict sequential execution; complete and verify one sprint before starting the next.",
   "sprints": [
     {
@@ -104,7 +104,7 @@
       "title": "Legacy module and dependency graph",
       "file": "docs/sprints/S010-legacy-module-and-dependency-graph.md",
       "phase": "P1 — Legacy audit and evidence extraction",
-      "status": "in_review",
+      "status": "completed",
       "depends_on": [
         "S009"
       ]
