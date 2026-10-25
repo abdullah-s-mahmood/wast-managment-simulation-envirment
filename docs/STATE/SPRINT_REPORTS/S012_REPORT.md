@@ -71,3 +71,13 @@ Final local governance checks: `python scripts/validate_project_docs.py`,
 `python scripts/validate_change_control.py`, `python scripts/validate_risk_protocol.py`
 all exit 0; `git diff --check` exit 0. Scope audit found only S012 preparation,
 synthetic tests and governance records; no private material or claimed normal run.
+
+## E-S012-02 — Review/checker CI provenance
+PR #31 initial exact head 5879de1f9fc2d301da70a2701248bca7566a9865 passed
+GitHub Actions run 40225369631 (completed/success), including 116 tests. Local
+checkpoint 5be922133fb64bb3395c382a898d45d21954c215 and published tree
+9688dd4915026d6f330a57a918710fee27af4f54 match. Owner scope question was
+presented for the exact plan, but no owner answer at this checkpoint; a queued
+question is not approval. ADR-0009 remains Proposed and all normal runs NOT_RUN.
+This receipt needs its own exact-head CI before integration; final status/merge
+SHA is recorded on PR #31. Integrating preparation does not accept S012.
