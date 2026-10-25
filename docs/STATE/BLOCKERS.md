@@ -1,8 +1,15 @@
 # Blockers and Open Dependencies
 
 ## Current blockers
-- No open S011 blocker. E-S011-08 records actual gates, exact-head CI and permitted
-  integration. Next eligible S012 must be inspected before any broader execution.
+- B-S012-01 OPEN — normal baseline simulation is outside ADR-0007's exact
+  validation-only execution exception. Owner administrator authentication resolves
+  sandbox setup, not simulation scope. Two bounded same-input runs and failure
+  policy are concretely proposed in docs/audit/S012_BASELINE_REVIEW.md and JSON
+  plan (SHA-256 5a8ef0be672f616bd9c40e68db4ea431e82dbb54c7dcea3ac31dd18bfb893187).
+  Action: explicit owner scope authority for proposed ADR-0009. Before actual
+  execution, also implement/test bounded output export and baseline-limit probes;
+  plan approval alone is not readiness. No normal baseline attempted; NOT_RUN
+  is neither failure evidence nor success. S012 blocked, S013 not_started.
 - Local GitHub CLI credential is invalid; connector works, so publication is not blocked.
 
 ## Resolved blockers
