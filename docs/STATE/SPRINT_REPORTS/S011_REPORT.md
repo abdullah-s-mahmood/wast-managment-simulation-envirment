@@ -1,4 +1,7 @@
-# S011 — Legacy execution path and data flow (BLOCKED)
+# S011 — Legacy execution path and data flow (IN_REVIEW)
+
+Current checkpoint: E-S011-07 technical gates pass; exact-head CI/integration pending.
+Earlier dated sections below retain their historical status and failures.
 
 Date 2026-10-24, Asia/Baghdad. Branch sprint/S011-readonly-flow.
 Base cd8c4445024efff28ef2be79faf1de624cccdf58; E-S011-01, B-S011-01.
@@ -296,3 +299,122 @@ preflight tooling only. This evidence update requires its own exact-head CI befo
 merge. Integration status and final merge SHA are recorded by PR #28 on GitHub.
 B-S011-02 remains OPEN; next required action is a namespace-enabled execution host
 and the remaining ADR-0007 prerequisite checks. Do not repeat owner authorization.
+
+## E-S011-07 — Isolated private build and actual validation (2026-10-25)
+
+Base 7440183035c154f79a8a89556f2e1a46bf94876d, branch
+sprint/S011-privileged-isolation. Original worktree/settings untouched. State:
+blocked -> in_progress after B-S011-02 resolution -> in_review after technical
+checks; completed count remains 10 pending exact-head CI/integration/acceptance.
+
+Owner supplied administrator authentication for the disclosed sandbox blocker.
+Only sudo/timeout/Bubblewrap setup is privileged; setpriv drops to the owner's
+nonzero UID, clears groups/capabilities and sets no-new-privileges before any
+compiler/legacy target. No password is saved; no host security settings, services,
+sudoers or installed SUMO packages changed. ADR-0008 records this implementation.
+Existing policy still blocks the old unprivileged helper; it is not the runner.
+
+Trusted prerequisites:
+- `apt-get download sumo=1.28.0-1 sumo-dev=1.28.0-1 nlohmann-json3-dev=3.11.3-1`:
+  exit 0, package-index SHA-256 verified; `dpkg-deb --extract` each into a private
+  dependency prefix: exit 0. No maintainer scripts or archived dependency binaries.
+- Package digests: sumo 53f808c42bd001337de22914a6802117d9dccacda20c1be94ddda2ef919011af;
+  sumo-dev 62615b2e9502ec14db5b7e1e7498c12fade4364510f535886d45bd941ae7e78b;
+  JSON 85e4e95dc4bdc6034d593e1933ee88e085319fee36cae83c178e8ddc1a66e8fd.
+  Configured sources: SUMO stable Launchpad PPA and Ubuntu noble archive; no
+  unauthenticated override. Package copyright metadata retained privately (SUMO
+  EPL-2.0; JSON MIT metadata). Existing Catch2 3.4.0/OpenSSL 3.0.13 system packages
+  supply separate dependencies. Third-party/legacy provenance remains unapproved
+  for redistribution/reuse; private owner-authorized audit is the only purpose.
+- `python scripts/probe_private_sandbox.py PRIVATE_ROOT --label verified5`: exit 0.
+  Trusted independent C fixture: security/memory probes exit 0; CPU probe exit 137,
+  file-size probe 153, watchdog probe -9. Those signals are expected enforcement,
+  not successful target executions. Evidence binds wrapper/fixture and raw hashes.
+  Fork/vfork/clone/clone3, repeated execve, execveat, networking all denied; actual
+  target UID nonzero, effective caps zero, no-new-privileges, mounts read-only.
+
+Preparation/build:
+- Bounded private copy helper under `prlimit --as=268435456 --cpu=120 --core=0`
+  and `timeout --signal=KILL 120`: exit 0, exactly 32 approved native/build texts
+  plus three approved JSON/XML inputs. Full archive hash before/after, gzip CRC,
+  TAR membership, payload hashes and output paths verified; links never copied.
+  Archive is unchanged. Private locator remains only in Git metadata.
+- `python scripts/execute_private_validation.py build PRIVATE_ROOT`: configure
+  command `cmake -S /source -B /build -DSW_BUILD_COSIM=ON` exit 0; build command
+  `cmake --build /build --target sw_cosim --parallel 2` initially exit 2.
+- Cause: BLAS/LAPACK links traverse /etc/alternatives; missing/unsearchable sandbox
+  /etc caused linker dependency errors. First mount-only retry also exit 2;
+  explicit sandbox /etc traversal permission correction resolved it. No source
+  patch. `python scripts/execute_private_validation.py resume-build PRIVATE_ROOT`
+  final retry exit 0 (make exit 0). Original logs/receipts preserved.
+- All build attempts combined: 13.137115927 seconds, below cumulative 300-second
+  wall/CPU budget; one CPU affinity, per-process 1-GiB address space. Binary SHA-256
+  939c2bd50379e557936f0adb944dfe1e38fbad9428be8c738b6493b198097fd3.
+
+Runtime results (exact commands after binary; all under guarded_target):
+
+| Case | CWD | Arguments | Actual exit | Result |
+|---|---|---|---|---|
+| ABS_A | /A | --validate-config /inputs/config.json /A/city_fixture | 0 | PASS |
+| ABS_B | /B | --validate-config /inputs/config.json /A/city_fixture | 0 | PASS |
+| REL_A | /A | --validate-config /inputs/config.json city_fixture | 0 | PASS |
+| REL_B | /B | --validate-config /inputs/config.json city_fixture | 1 | expected missing-city error |
+| MISSING_CITY | /A | --validate-config /inputs/config.json | 2 | expected usage error |
+
+`python scripts/execute_private_validation.py cases PRIVATE_ROOT --attempt serialdeps`:
+exit 0. Exact five case IDs, one corrected bounded batch, not new test scope.
+Each case used 10-second root watchdog, 5-second CPU, 256-MiB address space,
+1-MiB captured-stream file limit; /tmp and /dev/shm each bounded 16 MiB. Raw stderr
+includes tracer lines and is preserved as stderr-with-trace, not misrepresented
+as target-only stderr. No host-writable target mounts. Hash checks after every
+case found all 35 copied input/source files and binary unchanged.
+
+Three successful stdout bytes are identical, SHA-256
+5ff2ec170631e7e921f468e13e0101bc55f2047ebd3fd05d3703c5318a177c32.
+Parsed status/policy/seed/map-default/bin-count/profile fields match private input
+and source-bound predictions. This tests input-to-validation-artifact flow and
+actual CWD attack; it does not test ordinary simulation dynamics or clock coupling.
+
+Failures retained (never counted as passing): initial ABS_A exited 130 because
+OpenBLAS initialization attempted denied clone3 and raised SIGINT. Set only trusted
+dependency environment OPENBLAS_NUM_THREADS=1 and OMP_NUM_THREADS=1, retained all
+denials, reran probes and the same five cases under authorized failure recovery.
+Five distinct case IDs, six total legacy invocations including the failed attempt;
+max_cases=5 per batch and every per-attempt cap unchanged. No unbounded retries.
+Earlier trusted probe found occurrence-delayed exec injection permitted an extra
+exec; removing the delay fixed it before any legacy target. Another probe exposed
+non-writable /tmp and an expected watchdog -9 misclassified by the probe checker;
+fixed namespace tmpfs permissions/explicit signal expectations, kept failed logs.
+All these are engineering findings, not scientific evidence.
+
+Evidence: public docs/audit/S011_VALIDATION_EXECUTION_SUMMARY.json contains only
+sanitized counts/status/hashes. Private Git common metadata private-evidence/S011/
+runtime20261025 holds original build/probe/case logs and receipts; runtime summary,
+copy/dependency bootstraps and regression transcript also retained privately.
+Private worktree locator codex-s011-execution.json is never committed. Hashes of
+principal receipts are in the public summary; canonical hashes prove consistency,
+not authorship, security clearance, licensing or model accuracy.
+
+Verification: `python -m unittest discover -s tests -v` exit 0, 105 tests passed
+(all prior 89 plus 16 new synthetic white-box/black-box/adversarial/generated/
+regression tests). Tests cover links/traversal/case-collision, CRC/hash corruption,
+staging/decompression limits, immutable sources, private capture, stale enforcement
+receipts and cumulative retry accounting. Actual trusted probes independently
+exercise namespace/runtime boundaries. Full archive size 487062036 and SHA-256
+reverified after execution (exit 0), unchanged. No archived binaries/scripts,
+normal simulation, ONNX/training or historical campaign replay executed.
+
+Platform Linux 7.0.0-38-generic x86_64 GNU/Linux, Python 3.11.15 (CMake finds system
+Python 3.12.3), GCC 13.3.0, CMake 3.28.3, Bubblewrap 0.9.0, strace 6.8, setpriv
+util-linux 2.39.3. Scope is tested Linux x86_64 only; Windows runtime NOT RUN and
+not advertised as validated by this audit. Scientific models remain UNVALIDATED;
+source reuse/redistribution PROHIBITED. Full-run seed replay/empirical validity,
+comprehensive malformed-input coverage and simulation metrics remain untested.
+Next sprint S012 is ineligible until S011 permitted acceptance/integration.
+
+Final governance verification: `python scripts/validate_project_docs.py`,
+`python scripts/validate_repository_boundary.py`, `python scripts/validate_evidence_ledger.py`,
+`python scripts/validate_change_control.py`, `python scripts/validate_risk_protocol.py`
+all exit 0; `git diff --check` exit 0. Self-audit checked changed-file scope,
+no source/binary/private paths/credentials, parameter separation and no scientific
+clearance claims. All mandatory S011 gates pass locally; CI/integration pending.

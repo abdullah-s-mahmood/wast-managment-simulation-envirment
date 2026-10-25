@@ -164,3 +164,11 @@ licenses and source/input/binary identity unverified. No source preparation or
 execution can follow until those separate prerequisites are demonstrated. No
 unsandboxed fallback or host security-policy changes. Actual current probe exits
 1; its restricted evidence digest and tests are in E-S011-06. S011 remains blocked.
+
+## 2026-10-25 actual execution evidence
+ADR-0007/0008 authority and actual separate results are now recorded in
+S011_VALIDATION_EXECUTION_SUMMARY.json and E-S011-07. All five validation cases
+pass after a retained OpenBLAS initialization failure/correction. The original
+static JSON remains unchanged for historical integrity. No normal simulation or
+scientific model validation occurred. See the runtime report for exact scope,
+limits, six total invocations including failure, private evidence and pending CI.
