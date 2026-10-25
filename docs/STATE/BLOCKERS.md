@@ -1,8 +1,8 @@
 # Blockers and Open Dependencies
 
 ## Current blockers
-- S011 technical gates now pass; exact-head CI/permitted integration and acceptance
-  records are pending. Do not mark complete from runtime success alone.
+- No open S011 blocker. E-S011-08 records actual gates, exact-head CI and permitted
+  integration. Next eligible S012 must be inspected before any broader execution.
 - Local GitHub CLI credential is invalid; connector works, so publication is not blocked.
 
 ## Resolved blockers
