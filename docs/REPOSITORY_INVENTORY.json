@@ -155,6 +155,7 @@
     "governance_source": [
       "scripts/audit_source_graph.py",
       "scripts/check_conventions.py",
+      "scripts/check_execution_isolation.py",
       "scripts/inventory_legacy.py",
       "scripts/validate_change_control.py",
       "scripts/validate_evidence_ledger.py",
@@ -172,6 +173,7 @@
       "tests/test_change_control.py",
       "tests/test_conventions.py",
       "tests/test_evidence_ledger.py",
+      "tests/test_execution_isolation_preflight.py",
       "tests/test_execution_review_plan.py",
       "tests/test_inventory_quarantine.py",
       "tests/test_legacy_inventory.py",
