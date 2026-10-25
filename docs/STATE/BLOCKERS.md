@@ -1,23 +1,19 @@
 # Blockers and Open Dependencies
 
 ## Current blockers
-- B-S011-02 OPEN — verified isolation unavailable for the approved S011 plan.
-  Bubblewrap 0.9.0 network namespace setup fails with `Failed RTM_NEWADDR:
-  Operation not permitted`; explicit UID/GID 0 gives the same failure. Without
-  network isolation, UID-map setup also fails. `unshare --user --map-root-user
-  --net -- /usr/bin/true` fails writing uid_map. Docker daemon socket is absent;
-  firejail/nsjail/podman/runsc are unavailable. Only trusted `/usr/bin/true` was
-  used in probes; no legacy copy/build/execution occurred. Host policy was not
-  changed. Dependency headers are also not all present/verified (JSON and SUMO).
-  Resume on a host with demonstrated plan-compliant isolation, then verify trusted
-  dependency provenance/licenses and execute only ADR-0007's approved cases.
-  Reproducible fixed trusted-tool check: scripts/check_execution_isolation.py;
-  actual rerun remains BLOCKED (E-S011-06). A passing namespace probe alone
-  cannot clear the remaining sandbox/dependency gates.
-  No unsandboxed fallback. S011 incomplete; S012 remains not_started.
+- S011 technical gates now pass; exact-head CI/permitted integration and acceptance
+  records are pending. Do not mark complete from runtime success alone.
 - Local GitHub CLI credential is invalid; connector works, so publication is not blocked.
 
 ## Resolved blockers
+- B-S011-02 CLOSED 2026-10-25 — owner enabled administrator authentication;
+  privileged namespace setup plus setpriv drops to non-root UID/zero capabilities.
+  Real trusted probes verify read-only mounts, denied networking/fork/exec and
+  CPU/address-space/file/wall limits (verified5 receipt). No host security policy
+  changes. Separately verified private trusted dependencies resolve missing headers.
+  All five actual validation cases pass after retained dependency/concurrency fixes.
+  E-S011-07 and ADR-0008 record exact scope, original failures and limitations.
+
 - B-S011-01 CLOSED 2026-10-25 — owner explicitly answered yes to the scoped
   preparation/build/five-case question. ADR-0007 records the persistent exception;
   do not request the same authorization again. New technical blocker B-S011-02

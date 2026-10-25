@@ -114,7 +114,7 @@
       "title": "Legacy execution path and data flow",
       "file": "docs/sprints/S011-legacy-execution-path-and-data-flow.md",
       "phase": "P1 — Legacy audit and evidence extraction",
-      "status": "blocked",
+      "status": "in_review",
       "depends_on": [
         "S010"
       ]

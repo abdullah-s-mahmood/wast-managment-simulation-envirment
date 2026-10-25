@@ -1,0 +1,60 @@
+{
+  "archive_identity_unchanged": true,
+  "compressed_bytes": 487062036,
+  "archive_sha256": "da08e1a78e73215ddf9d165e32a07f262a0b8379b3b04f4b17b27d5b6b525da8",
+  "binary_sha256": "939c2bd50379e557936f0adb944dfe1e38fbad9428be8c738b6493b198097fd3",
+  "copied_entries": 35,
+  "build_wall_seconds_including_failed_attempts": 13.137115927005652,
+  "first_case_failure_exit": 130,
+  "successful_batch": [
+    {
+      "id": "ABS_A",
+      "passed": true,
+      "actual_exit": 0
+    },
+    {
+      "id": "ABS_B",
+      "passed": true,
+      "actual_exit": 0
+    },
+    {
+      "id": "REL_A",
+      "passed": true,
+      "actual_exit": 0
+    },
+    {
+      "id": "REL_B",
+      "passed": true,
+      "actual_exit": 1
+    },
+    {
+      "id": "MISSING_CITY",
+      "passed": true,
+      "actual_exit": 2
+    }
+  ],
+  "distinct_case_ids": 5,
+  "total_legacy_invocations_including_failed_attempt": 6,
+  "successful_stdout_sha256": "5ff2ec170631e7e921f468e13e0101bc55f2047ebd3fd05d3703c5318a177c32",
+  "evidence_sha256": {
+    "verified5-results.json": "0d6c8a5cd624fceb7d0edf46109ff9dc74aeef95361ef4366abd1a17a45938be",
+    "prepared-copy-receipt.json": "b758f0f2388c5610732905abd1df3b48db81f460c553ac30c5757012c290c10a",
+    "build-receipt.json": "01db7a831a23e44b4a8a69224506571190ef1bcddad47da4cdea36904e77d0bb",
+    "serialdeps-cases-results.json": "f37427bb646e02f4714f68fd8b191f6ce97e0d0cda4830d5743aa62cec72473a",
+    "cases-failed.json": "dda89bb6938ac4a46e31a2fcfc1dd9a736a4b30c524427b12e50a22a3e2e52ad"
+  },
+  "no_simulation": true,
+  "scientific_validation": "UNVALIDATED",
+  "source_reuse": "PROHIBITED",
+  "schema_version": 1,
+  "sprint": "S011",
+  "status": "TECHNICAL_GATES_PASSED_PENDING_CI_INTEGRATION",
+  "authority": [
+    "ADR-0007",
+    "ADR-0008"
+  ],
+  "security_findings_present": true,
+  "archive_security_clearance": "NOT_GRANTED",
+  "inventory_status": "COMPLETED",
+  "runtime_scope": "VALIDATION_ONLY_NO_SIMULATION"
+}
