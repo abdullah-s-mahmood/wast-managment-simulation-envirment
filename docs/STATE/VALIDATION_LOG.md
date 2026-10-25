@@ -491,3 +491,32 @@ under ADR-0005 accepts S010 source-backed static graph with explicit unknowns;
   8a8139c4ddb9ef9f286553186597063189dc3eb03d5917180790d654cfd7d9f2.
   Combined evidence retained in private-evidence/S011/review-packet-evidence-20261025.json.
   Final regression repeat exit 0, 79 tests; all five validators/diff check exit 0.
+
+## E-S011-03 — Review-packet integration and pending authority (2026-10-25)
+PR #24 exact head 0b8f37da14ac8bc8b390b4f4724b78ffdf9cce09 passed CI run
+40217362016 (completed/success); permitted merge
+709ceba97c6a2c34d4d8f31fed0467dc8f93c281. Local checkpoint 523e938 and
+published tree both a2184aa687d23f1049e05ce8e414b296fccda28d, equality checked.
+79 tests/five validators passed. This integrates static tracing/plan tooling only;
+S011 remains blocked, S012+ untouched, 10/88 completed.
+
+Owner was asked for the specific exception described in the review packet:
+private disposable preparation of exactly 32 native/build source entries and
+three input references outside the implementation repository, trusted-dependency
+build of only sw_cosim, and five bounded validation/argument cases. No simulation
+or redistribution. No answer/authorization received at this checkpoint; request
+acceptance by the question UI is NOT an approval. Source preparation/build/legacy
+execution remains prohibited. The published static packet stays historically
+false/NOT_RUN even if a later separate execution authority is received.
+
+Prospective host-tool presence checked read-only: cmake, c++, bwrap, unshare and
+pkg-config are present. Versions, dependency provenance, actual sandbox behavior
+and license permissions are NOT verified by presence. Nothing was installed,
+prepared, built or executed from the archive. No unsandboxed fallback is allowed.
+
+If authority is granted later, first record its precise scope, complete prerequisite
+source/dependency/license/isolation checks, preserve the archive identity and
+execute only approved cases with separate actual execution records. A static-plan
+linter is not a permission source or runtime result. Any remaining mandatory gate
+keeps S011 incomplete. Original worktree/.vscode and private historical evidence
+remain untouched. This checkpoint needs its own exact-head CI for integration.
