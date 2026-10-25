@@ -3,9 +3,11 @@
 ## Current blockers
 - B-S011-01 OPEN — S011 mandatory different-CWD/omitted-input runtime test is
   NOT RUN: owner authorizes read-only audit, explicitly prohibits legacy execution.
-  Static source candidates/plan retained in S011 report and private evidence.
-  Action: finish source-bound entrypoint/input/stage/artifact plan, then obtain
-  specific authority for any required isolated source preparation/execution or
+  Source-bound flow map and five-case review packet now prepared; see
+  docs/audit/S011_SOURCE_FLOW_AND_EXECUTION_PLAN.md and JSON review packet.
+  Action: obtain
+  specific authority for the proposed 32-native-file/three-input private preparation,
+  reviewed-target-only build and five validation-only cases, or
   provenance-verified external evidence satisfying the gate. Do not substitute
   another source tree or run audit-tool tests as proof of legacy runtime behavior.
   Resume with resolving authorization/evidence; no S012 until S011 accepted.

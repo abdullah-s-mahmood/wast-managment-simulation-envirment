@@ -1,0 +1,291 @@
+{
+  "schema_version": 1,
+  "purpose": "STATIC_REVIEW_ONLY",
+  "archive_sha256": "da08e1a78e73215ddf9d165e32a07f262a0b8379b3b04f4b17b27d5b6b525da8",
+  "archive_bytes": 487062036,
+  "inventory_sha256": "61b494e1d921464f980714d0a916dff12856acc2058421da091ce959751c2daf",
+  "target": "sw_cosim",
+  "execution_authorized": false,
+  "working_copy_prepared": false,
+  "runtime_status": "NOT_RUN",
+  "inputs": {
+    "config": {
+      "entry_id": "entry-00011013",
+      "sha256": "a090111fc2e855962da47a809013344e5b9220044ce5e7f2de1389899c77b016"
+    },
+    "city_json": {
+      "entry_id": "entry-00000089",
+      "sha256": "bfac0fe08030f06c9f77ee6b3bad61f5747dca8d8ad06d4c3261ead9766cb6ef"
+    },
+    "road_network": {
+      "entry_id": "entry-00000088",
+      "sha256": "2d2aa68b26a1a70481d3fcafa7cea392613ab48908de836cddaee3eff8c88bc8"
+    }
+  },
+  "source_anchors": {
+    "build_target": {
+      "entry_id": "entry-00011035",
+      "sha256": "350c1afc692df6d9776e391f19384d7c50eee26772996dfd8a650b9cd624b760",
+      "line_start": 36,
+      "line_end": 48
+    },
+    "main": {
+      "entry_id": "entry-00010836",
+      "sha256": "103b125ba273f52c832c252dfdb78acbb7cdd2f62ac157f15c2048a179cb5ca7",
+      "line_start": 124,
+      "line_end": 154
+    },
+    "validation_branch": {
+      "entry_id": "entry-00010836",
+      "sha256": "103b125ba273f52c832c252dfdb78acbb7cdd2f62ac157f15c2048a179cb5ca7",
+      "line_start": 125,
+      "line_end": 149
+    },
+    "runtime_inputs": {
+      "entry_id": "entry-00010836",
+      "sha256": "103b125ba273f52c832c252dfdb78acbb7cdd2f62ac157f15c2048a179cb5ca7",
+      "line_start": 156,
+      "line_end": 184
+    },
+    "timesteps": {
+      "entry_id": "entry-00010836",
+      "sha256": "103b125ba273f52c832c252dfdb78acbb7cdd2f62ac157f15c2048a179cb5ca7",
+      "line_start": 519,
+      "line_end": 552
+    },
+    "seed_derivation": {
+      "entry_id": "entry-00010855",
+      "sha256": "1213273621577266d7d77156477dc86db8f8492da378ff6e0932b06e732b3529",
+      "line_start": 37,
+      "line_end": 46
+    },
+    "mobility_boundary": {
+      "entry_id": "entry-00010833",
+      "sha256": "28e2c1e50c39e3f9b79287c4d408b09a40654ab23081409c21c4dcb82067e65f",
+      "line_start": 10,
+      "line_end": 36
+    },
+    "network_boundary": {
+      "entry_id": "entry-00010844",
+      "sha256": "4914fe366533baa82ba32b53cac3f91908f3fc0f774042532c1af240138f2116",
+      "line_start": 54,
+      "line_end": 139
+    },
+    "event_writer": {
+      "entry_id": "entry-00011002",
+      "sha256": "e4cb206bb124dce2b9db36dd957d5b6bf216e5082865dae370c792ca62c1d696",
+      "line_start": 14,
+      "line_end": 38
+    },
+    "summary_writer": {
+      "entry_id": "entry-00010836",
+      "sha256": "103b125ba273f52c832c252dfdb78acbb7cdd2f62ac157f15c2048a179cb5ca7",
+      "line_start": 953,
+      "line_end": 973
+    }
+  },
+  "proposed_source_copy_entries": [
+    {
+      "entry_id": "entry-00000006",
+      "sha256": "e5bb4d22ff672926752c57095aaea4f41c326d0d16305de24c1a2cead81d116c"
+    },
+    {
+      "entry_id": "entry-00000007",
+      "sha256": "a84cf8de88f790ee186c5846951352bdbca85c84b1a6429baf9ff611b2366762"
+    },
+    {
+      "entry_id": "entry-00000010",
+      "sha256": "6ae9b70e26ddfc33f813d552b1b5c5a66344424f0dc9a7b729365510b1f59823"
+    },
+    {
+      "entry_id": "entry-00000013",
+      "sha256": "d23189bfe3b8fef279e64d16a5c5a2fbaa882123faadc75bac398630a11cbf59"
+    },
+    {
+      "entry_id": "entry-00000016",
+      "sha256": "d42a48cc3d643172d12efc106620d7d36f72fbb5af618f8180b3ffc29a38bd20"
+    },
+    {
+      "entry_id": "entry-00010833",
+      "sha256": "28e2c1e50c39e3f9b79287c4d408b09a40654ab23081409c21c4dcb82067e65f"
+    },
+    {
+      "entry_id": "entry-00010836",
+      "sha256": "103b125ba273f52c832c252dfdb78acbb7cdd2f62ac157f15c2048a179cb5ca7"
+    },
+    {
+      "entry_id": "entry-00010838",
+      "sha256": "b7599512d005fff615f9ba6c641031a5cde4e405ab4c64b4961cef2d9b100d54"
+    },
+    {
+      "entry_id": "entry-00010840",
+      "sha256": "644676d6f02bedbbd60851184234b35db9277361ec4fb5895892ac1e1cbfae77"
+    },
+    {
+      "entry_id": "entry-00010843",
+      "sha256": "ac922856878208061b5beae0b1841b1f6e39263afa4e92789448d38295591973"
+    },
+    {
+      "entry_id": "entry-00010844",
+      "sha256": "4914fe366533baa82ba32b53cac3f91908f3fc0f774042532c1af240138f2116"
+    },
+    {
+      "entry_id": "entry-00010845",
+      "sha256": "d8ed353718e9aba1a60e1fb2d95904b79d118200c090f742364c7c12c9063343"
+    },
+    {
+      "entry_id": "entry-00010847",
+      "sha256": "a83c14de8a8d31460df0172cd296ab0730b380aad3cca3fedf15725b3f36d23d"
+    },
+    {
+      "entry_id": "entry-00010848",
+      "sha256": "3553167f6b5a11ed89688c7a4c21dd6f3d76dfd38190db4761325afd50029934"
+    },
+    {
+      "entry_id": "entry-00010852",
+      "sha256": "96cc75a1132f41e31dd5dd37a88670e8e4ef84345d04b2d2f510db5d473baa2e"
+    },
+    {
+      "entry_id": "entry-00010853",
+      "sha256": "7046a6e1a1324c6e2ae83168eec0887393925c16259459d2666dbf49fb07f5b6"
+    },
+    {
+      "entry_id": "entry-00010855",
+      "sha256": "1213273621577266d7d77156477dc86db8f8492da378ff6e0932b06e732b3529"
+    },
+    {
+      "entry_id": "entry-00010992",
+      "sha256": "599fdf944a56023a3061f5908a59b3bf20316f206f8d8e30f4c8ba621b693d95"
+    },
+    {
+      "entry_id": "entry-00010993",
+      "sha256": "bef52231c794524bf4c24ecb11db1c039d7a97b9c1fa3caa0bd9a94dd5429a98"
+    },
+    {
+      "entry_id": "entry-00010994",
+      "sha256": "4deba6d81d51fb7813df0e1b4a57b075c298b37bae12915205765c32108c6118"
+    },
+    {
+      "entry_id": "entry-00010995",
+      "sha256": "448181f37a8422b866775beef9b25fabf9e8622c53606d124d67f90f3fa49769"
+    },
+    {
+      "entry_id": "entry-00010996",
+      "sha256": "1d15c2e25946459a48c05028a0af4b00646e3260d8a3cc5660116258b0f0fd4e"
+    },
+    {
+      "entry_id": "entry-00010997",
+      "sha256": "aaf800e171ba481c389c35c6b2183a7958c4eae7e5e1b4f6a325ecca3e60bc02"
+    },
+    {
+      "entry_id": "entry-00010998",
+      "sha256": "f41a82757270845f22b8de883db3ecd8c45e4b4d27929828bf1df256c40ad651"
+    },
+    {
+      "entry_id": "entry-00010999",
+      "sha256": "58deef1b4b819ad6caed5097d5ff643fd678c1ebcacbe258bfce8b9f4446b30a"
+    },
+    {
+      "entry_id": "entry-00011000",
+      "sha256": "018ae882ebe9e7b98c8e5fbee7f88ab6dfc14c7d049db6a64a4a5787e3ab8e33"
+    },
+    {
+      "entry_id": "entry-00011001",
+      "sha256": "4302c94b9391ba78aacfc8fb6c8fcb5bf2e68d2da4e8a1f101a504571ad612d9"
+    },
+    {
+      "entry_id": "entry-00011002",
+      "sha256": "e4cb206bb124dce2b9db36dd957d5b6bf216e5082865dae370c792ca62c1d696"
+    },
+    {
+      "entry_id": "entry-00011003",
+      "sha256": "741beea8f60f6d12314d88da8dadbf3211acd07fe1534c4b55ce7a86ff72483e"
+    },
+    {
+      "entry_id": "entry-00011004",
+      "sha256": "f0da270f4e34dc9d2c6fb0768f6c59c95a32b638d6f8cd8f54db8eef278e1362"
+    },
+    {
+      "entry_id": "entry-00011005",
+      "sha256": "a71a0fc2916d526442ef5c2b176e50f53f6fb6970a474c656fb48b57aac885ae"
+    },
+    {
+      "entry_id": "entry-00011035",
+      "sha256": "350c1afc692df6d9776e391f19384d7c50eee26772996dfd8a650b9cd624b760"
+    }
+  ],
+  "cases": [
+    {
+      "id": "ABS_A",
+      "cwd": "A",
+      "argv": [
+        "BIN_ABS",
+        "--validate-config",
+        "CFG_ABS",
+        "CITY_ABS"
+      ],
+      "expected_exit": 0,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ABS_B",
+      "cwd": "B",
+      "argv": [
+        "BIN_ABS",
+        "--validate-config",
+        "CFG_ABS",
+        "CITY_ABS"
+      ],
+      "expected_exit": 0,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "REL_A",
+      "cwd": "A",
+      "argv": [
+        "BIN_ABS",
+        "--validate-config",
+        "CFG_ABS",
+        "CITY_REL"
+      ],
+      "expected_exit": 0,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "REL_B",
+      "cwd": "B",
+      "argv": [
+        "BIN_ABS",
+        "--validate-config",
+        "CFG_ABS",
+        "CITY_REL"
+      ],
+      "expected_exit": 1,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "MISSING_CITY",
+      "cwd": "A",
+      "argv": [
+        "BIN_ABS",
+        "--validate-config",
+        "CFG_ABS"
+      ],
+      "expected_exit": 2,
+      "status": "NOT_RUN"
+    }
+  ],
+  "limits": {
+    "max_cases": 5,
+    "validation_wall_seconds": 10,
+    "validation_cpu_seconds": 5,
+    "validation_memory_bytes": 268435456,
+    "build_wall_seconds": 300,
+    "build_cpu_seconds": 300,
+    "build_memory_bytes": 1073741824
+  },
+  "network_access": "DENIED",
+  "dependency_status": "UNVERIFIED_TRUSTED_PACKAGES_REQUIRED",
+  "source_reuse": "PROHIBITED",
+  "scientific_validation": "UNVALIDATED"
+}

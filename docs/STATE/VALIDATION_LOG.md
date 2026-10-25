@@ -459,3 +459,35 @@ under ADR-0005 accepts S010 source-backed static graph with explicit unknowns;
   with resolving authority/evidence. S012+ untouched. No routine approval requested.
 - Blocked-state PR CI/integration does not accept S011. Exact PR/head/merge evidence
   remains available through focused GitHub recovery record. Original worktree intact.
+
+## E-S011-02 — Read-only trace and review-packet verification (2026-10-25)
+- Branch sprint/S011-source-bound-plan, base 401b9dd5f1f43de93f5ceb8a82fd0c5956e9a8a4.
+- Source regular-payload probes: exit 0, bytes hashed against accepted inventory,
+  in-memory source reading only. Reviewed ten source-anchor boundaries plus
+  security/dynamics/IPC and JSON input checklist; private metadata retained.
+- Packet SHA-256 6a3ee7bc8ae61c8d1060fd9a197e012d9e680f1387e2dd787988b267f2960a41.
+  32 native text/build refs, three inputs, five planned cases. No preparation,
+  extraction, execution or build; all runtime statuses NOT_RUN.
+- python -m unittest discover -s tests -p test_execution_review_plan.py -v:
+  exit 1 test-first missing module; then exit 0, seven tests. Original failure
+  class/command and source-bound scope documented in S011 report.
+- python scripts/validate_execution_review_plan.py
+  docs/audit/S011_EXECUTION_REVIEW_PLAN.json --inventory <private S009 manifest>:
+  exit 0; VALID_STATIC_PLAN only, execution_authorized=false/runtime_status=NOT_RUN.
+- python -m unittest discover -s tests -v: exit 0, 79 tests (prior 72 unchanged).
+- python scripts/validate_project_docs.py, python scripts/validate_repository_boundary.py
+  (179 approved artifacts), python scripts/validate_evidence_ledger.py,
+  python scripts/validate_change_control.py, python scripts/validate_risk_protocol.py
+  and git diff --check: each exit 0. Linux x86_64/Python 3.11.15.
+- B-S011-01 remains open; preparation/execution scope not expanded by generic
+  continuation or a metadata linter. Mandatory legacy runtime gate NOT RUN.
+  Source flow/limits/findings and exact proposed cases in S011 source-plan document.
+  No S011 completion, later sprint start or scientific/cleared source claim.
+- This focused partial-work PR still requires exact-head CI before normal merge.
+- Final full-archive verification exit 0: exact designated size/SHA-256 unchanged.
+  Private source-boundary metadata SHA-256
+  8e2cf68969c6449f2458c7a4bd4baac3a86ec33c4777a64e9af38d9d436d6cec;
+  private input-checklist SHA-256
+  8a8139c4ddb9ef9f286553186597063189dc3eb03d5917180790d654cfd7d9f2.
+  Combined evidence retained in private-evidence/S011/review-packet-evidence-20261025.json.
+  Final regression repeat exit 0, 79 tests; all five validators/diff check exit 0.

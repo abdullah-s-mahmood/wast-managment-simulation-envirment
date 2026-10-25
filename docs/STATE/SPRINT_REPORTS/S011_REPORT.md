@@ -71,3 +71,71 @@ missing gate relabeled passed. Current S011 deliverable remains incomplete.
 Only report, inventory, progress, handoff, blockers, validation and risk-status
 records change. No new behavior requiring speculative implementation/tests.
 Next safe action is the static source-bound plan above; S012 is NOT eligible.
+
+## E-S011-02 — Detailed static trace and concrete review packet (2026-10-25)
+Continued authorized work while the runtime gate remains blocked. Fetch confirmed
+origin/main at 401b9dd5f1f43de93f5ceb8a82fd0c5956e9a8a4; no competing sprint work.
+Branch sprint/S011-source-bound-plan, isolated worktree; original tree preserved.
+
+Read/hash-checked primary source entry-00010836 in memory and reviewed root build,
+event writer, mobility, network, dynamics, provenance, security and IPC bodies.
+No archive member was written to disk or executed; only audit metadata saved.
+Public source-flow map now documents exact entry/hash/line ranges for CLI/input
+validation, initialization, seed streams, clock order, callbacks/telemetry,
+policy/collection, drain, metrics and failure artifacts. The actual build target
+is sw_cosim (root build entry-00011035:46); other native mains are auxiliary tools.
+
+Material observed findings (not accepted models or runtime results):
+- Optional feeder/model and relative city/config/output paths lack uniform
+  rebasing; feeder path opened directly, city-directory parameter unused there.
+- Current network body is a local capacity queue with unused seed/run constructor
+  arguments and zero modeled drop/outage returns; inspected root build has no
+  explicit ns-3 link. Transitive/dynamic linkage remains unverified.
+- Events refuses an existing output directory and checks stream errors; summary/
+  failure writer expressions do not have the same post-write check. Exit code
+  alone cannot prove complete artifacts. Incomplete routes may write summary/exit 3.
+- Host timing diagnostics and simulated clocks are distinct. Seed identity does
+  not establish full raw-output equality, cross-platform RNG validity or physics.
+
+Prepared docs/audit/S011_EXECUTION_REVIEW_PLAN.json, SHA-256
+6a3ee7bc8ae61c8d1060fd9a197e012d9e680f1387e2dd787988b267f2960a41.
+It binds 32 native text/build entries, three immutable input references and five
+planned validation/argument cases to accepted S009 evidence. execution_authorized
+and working_copy_prepared are false; every case remains NOT_RUN. No full simulation,
+training, ONNX inference, source extraction/preparation/build or archived binary
+execution occurred. The future budget/isolation/permissions are proposals only.
+
+Private source-boundary assertions, input-static-review checklist and candidate
+metadata are retained under Git common metadata private-evidence/S011. Ten source
+anchor boundary/token assertions passed after manually reading the referenced
+bodies. An independently authored JSON checklist found required source-declared
+keys/types/profile/basic bounds in the chosen archived inputs. This is not the
+legacy validator, runtime execution or scientific validity. Config reference is
+entry-00011013, city JSON entry-00000089, road-network entry-00000088, all hashes
+in the review packet; no raw scenario values or private paths published.
+
+Independent metadata-only linter validate_execution_review_plan.py checks fixed
+argv/CWD scope, input/source identity, stale/quarantined references and false
+preparation/execution/reuse/scientific claims. It has no build/process execution
+API. A valid packet cannot authorize an action. Synthetic tests include case-order
+properties, altered-CWD/argv consistency, arbitrary/full-simulation commands,
+missing/unknown/malformed records, inventory/hash corruption and read-only CLI.
+Running this linter from another CWD is explicitly NOT the legacy runtime attack.
+
+Actual commands: python -m unittest discover -s tests -p test_execution_review_plan.py
+-v initially exit 1 (test-first FileNotFoundError: linter not implemented); after
+implementation exit 0, seven tests. No assertions weakened or legacy behavior
+reimplemented. Real packet linter with --inventory <private accepted S009 manifest>
+exit 0, reports VALID_STATIC_PLAN, execution_authorized=false/runtime_status=NOT_RUN.
+Read-only payload/hash/metadata probes exit 0. Linux x86_64, Python 3.11.15.
+python -m unittest discover -s tests -v exit 0: 79 tests, original 72 retained.
+All five governance validators plus git diff --check exit 0, 179 inventory artifacts.
+
+Files changed: this report, handoff, blockers, validation log, progress date,
+repository inventory; new source-flow review document, JSON packet, linter and
+seven-test module. No scientific/architecture decision or authority expansion.
+Runtime/working-directory/optional-input legacy test, external simulator runs,
+physical validation and Windows tests remain NOT RUN. S011 stays blocked;
+S012+ untouched. Next dependent step is specific owner authority for the reviewable
+private preparation/build/five-case exception, or suitable verified external
+runtime evidence. CI/merge of these records cannot accept S011.
