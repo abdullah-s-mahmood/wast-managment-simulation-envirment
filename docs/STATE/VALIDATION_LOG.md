@@ -520,3 +520,49 @@ execute only approved cases with separate actual execution records. A static-pla
 linter is not a permission source or runtime result. Any remaining mandatory gate
 keeps S011 incomplete. Original worktree/.vscode and private historical evidence
 remain untouched. This checkpoint needs its own exact-head CI for integration.
+
+## E-S011-04 — Owner authority recorded; isolation preflight failed (2026-10-25)
+
+Base origin/main cfcc1e0d8516ca9d1d0e8fd4d701cfbfe16dfd77; branch
+sprint/S011-authorized-validation. Original worktree and untracked settings preserved.
+Owner explicitly answered yes to the exact isolated private build/five-case plan.
+ADR-0007 resolves B-S011-01. State transition: blocked -> in_progress on authority,
+then in_progress -> blocked on B-S011-02. Completed count remains 10/88.
+
+Archive full size/SHA-256 and plan SHA-256 reverified with Python hashlib (exit 0).
+No source preparation, build, target execution or simulation occurred. All five
+legacy cases remain NOT_RUN; source reuse prohibited, models unvalidated.
+
+Trusted-host probes (no archived executable/code):
+- `bwrap --version`: exit 0, 0.9.0.
+- `bwrap --unshare-user --unshare-net --unshare-pid --unshare-ipc --unshare-uts --die-with-parent --new-session --ro-bind /usr /usr --ro-bind /bin /bin --ro-bind /lib /lib --ro-bind /lib64 /lib64 --proc /proc --dev /dev --tmpfs /tmp --chdir /tmp -- /usr/bin/true`: exit 1, loopback `Failed RTM_NEWADDR: Operation not permitted`.
+- Same probe with `--uid 0 --gid 0`: exit 1, same loopback failure.
+- Same initial probe without `--unshare-net`: exit 1, `setting up uid map: Permission denied`.
+- `unshare --user --map-root-user --net -- /usr/bin/true`: exit 1, `write failed /proc/self/uid_map: Operation not permitted`.
+- `docker version --format '{{.Server.Version}}'`: exit 1, daemon socket absent.
+- Python shutil.which for firejail/nsjail/podman/runsc: exit 0, all absent.
+- Read-only kernel metadata: unprivileged_userns_clone=1, max_user_namespaces=25657,
+  apparmor_restrict_unprivileged_userns=1; effective capabilities zero. These are
+  observations, not definitive attribution of the denial. No policy changes made.
+- Python header/library presence probe: exit 0; OpenSSL header, Catch2 CMake config
+  and sumocpp library present; nlohmann/json.hpp and libsumo/Simulation.h absent at
+  standard inspected paths. Presence does not verify versions/provenance/licenses.
+
+Platform: Linux 7.0.0-38-generic x86_64, glibc 2.39; Python 3.11.15.
+No alternative sandbox backend was found. The approved plan explicitly requires
+isolation before any target run; no unsandboxed fallback was attempted. A compliant
+execution host is required. Missing dependency provenance remains a prerequisite.
+Changed scope: ADR, decision/blocker/handoff/report/validation records and inventory.
+No runtime-test success or S011 acceptance is claimed. CI is pending this checkpoint.
+
+Checkpoint verification: `python -m unittest discover -s tests -v` exit 0,
+79 tests passed. `python scripts/validate_project_docs.py`,
+`python scripts/validate_repository_boundary.py`,
+`python scripts/validate_evidence_ledger.py`,
+`python scripts/validate_change_control.py`, and
+`python scripts/validate_risk_protocol.py` each exit 0; `git diff --check` exit 0.
+No production/test code changed; runtime legacy tests remain NOT_RUN.
+Full size/SHA-256 verification repeated after preflight, exit 0, unchanged.
+Restricted diagnostic/regression records: private-evidence/S011/
+authorized-preflight-20261025.md and authorized-preflight-regression-20261025.log.
+PROGRESS.json remains accurate: S011 blocked, 10 completed; no completion change.

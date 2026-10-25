@@ -45,6 +45,7 @@
       "docs/adr/ADR-0004-no-model-without-evidence.md",
       "docs/adr/ADR-0005-risk-based-sprint-review.md",
       "docs/adr/ADR-0006-quarantine-only-inventory.md",
+      "docs/adr/ADR-0007-bounded-private-validation-authority.md",
       "docs/audit/INTAKE_PROTOCOL.md",
       "docs/audit/S011_EXECUTION_REVIEW_PLAN.json",
       "docs/audit/S011_SOURCE_FLOW_AND_EXECUTION_PLAN.md",

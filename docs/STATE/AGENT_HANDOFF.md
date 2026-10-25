@@ -1,63 +1,30 @@
-# Agent Handoff — S011 source-bound review plan ready
+# Agent Handoff — S011 authorized, isolation unavailable
 
-Current 2026-10-25: S001–S010 completed (10/88); S011 remains blocked by B-S011-01.
-S012+ not_started. Active isolated worktree branch sprint/S011-source-bound-plan.
-Original worktree/.vscode and all checkpoints remain untouched.
+S001–S010 completed (10/88). S011 blocked by B-S011-02; S012+ not_started.
+Active branch sprint/S011-authorized-validation, base cfcc1e0d8516ca9d1d0e8fd4d701cfbfe16dfd77.
+Original worktree/.vscode and historical private evidence remain untouched.
 
-Read docs/audit/S011_SOURCE_FLOW_AND_EXECUTION_PLAN.md and the JSON review packet.
-The root build target is sw_cosim, source entry-00010836, not the two auxiliary
-native tools. Detailed source-order/input/state/clock/RNG/serializer/output map
-now has exact member/hash/line bindings. Current network is an internal service
-queue, not an inspected ns-3 adapter; no transitive/runtime linkage proof claimed.
-Relative feeder/model and city paths can depend on CWD; output-summary error checks
-and full-run host timing differences need explicit runtime artifact verification.
-These are source observations only, not physics/model or execution validation.
+Owner explicitly answered yes to isolated private build and five validation-only
+cases in the prepared plan. ADR-0007 records the exception; B-S011-01 is CLOSED.
+Do not ask for that authorization again. Read ADR-0007, the source-flow plan and
+unchanged static review packet (SHA-256 6a3ee7bc8ae61c8d1060fd9a197e012d9e680f1387e2dd787988b267f2960a41).
+Static packet false/NOT_RUN fields are historical; do not rewrite them as results.
 
-The public review packet binds 32 native text/build entries plus three input
-references to S009 hashes and proposes five validation/argument cases. It records
-execution_authorized=false, working_copy_prepared=false, all cases NOT_RUN.
-No source preparation, build, extraction, reconstruction, execution or simulation
-occurred. Metadata linter/test success is not authority or the legacy runtime test.
-Review plan SHA-256 6a3ee7bc8ae61c8d1060fd9a197e012d9e680f1387e2dd787988b267f2960a41.
-Private source review/checklist evidence: Git common metadata private-evidence/S011;
-S009 full inventory and S010 graph remain preserved privately.
+Preflight failed before copying/building/executing any legacy file. Bubblewrap
+network namespace and user mapping are denied; unshare UID-map setup denied;
+Docker daemon absent; no firejail/nsjail/podman/runsc. See E-S011-04 for exact
+commands, observed errors and dependency presence checks. No host security policy
+changed and no unsandboxed fallback. Full archive identity was reverified.
 
-Next dependent action requires specific additional owner authority for this exact
-private preparation/build/five-case plan, or suitable verified external evidence.
-Do not interpret another generic continue or a changed metadata boolean as removing
-the explicit legacy execution/extraction ban. Proposed source copies would be a
-new narrow exception outside this implementation repo; no archived binaries,
-.deps, scripts, nested archives, old results or redistribution. No full simulation.
-If authorized, record authority separately, verify dependencies/isolation and all
-source/input/executable hashes, then run only approved cases under planned caps.
-Without it, keep S011 blocked and S012 untouched. Scientific/reuse clearance stays
-ungranted. See S011 report/E-S011-02 for commands, failures, tests and CI provenance.
+Resume on a demonstrably compliant sandbox host, verify dependency versions,
+provenance/licenses, source/input identities and enforcement of every plan limit.
+Then prepare only approved 32 source/build text files plus three inputs outside
+implementation repository/archive, build fresh sw_cosim and execute exactly the
+five approved validation/argument cases. No normal simulation or redistribution.
+No source patches/reuse. All five actual cases currently NOT_RUN. Scientific
+models remain unvalidated; source reuse prohibited. No S012 until S011 accepted.
 
-## E-S011-03 — Review-packet integration and pending authority (2026-10-25)
-PR #24 exact head 0b8f37da14ac8bc8b390b4f4724b78ffdf9cce09 passed CI run
-40217362016 (completed/success); permitted merge
-709ceba97c6a2c34d4d8f31fed0467dc8f93c281. Local checkpoint 523e938 and
-published tree both a2184aa687d23f1049e05ce8e414b296fccda28d, equality checked.
-79 tests/five validators passed. This integrates static tracing/plan tooling only;
-S011 remains blocked, S012+ untouched, 10/88 completed.
-
-Owner was asked for the specific exception described in the review packet:
-private disposable preparation of exactly 32 native/build source entries and
-three input references outside the implementation repository, trusted-dependency
-build of only sw_cosim, and five bounded validation/argument cases. No simulation
-or redistribution. No answer/authorization received at this checkpoint; request
-acceptance by the question UI is NOT an approval. Source preparation/build/legacy
-execution remains prohibited. The published static packet stays historically
-false/NOT_RUN even if a later separate execution authority is received.
-
-Prospective host-tool presence checked read-only: cmake, c++, bwrap, unshare and
-pkg-config are present. Versions, dependency provenance, actual sandbox behavior
-and license permissions are NOT verified by presence. Nothing was installed,
-prepared, built or executed from the archive. No unsandboxed fallback is allowed.
-
-If authority is granted later, first record its precise scope, complete prerequisite
-source/dependency/license/isolation checks, preserve the archive identity and
-execute only approved cases with separate actual execution records. A static-plan
-linter is not a permission source or runtime result. Any remaining mandatory gate
-keeps S011 incomplete. Original worktree/.vscode and private historical evidence
-remain untouched. This checkpoint needs its own exact-head CI for integration.
+Private inventory/graph/review evidence remains under Git common metadata
+private-evidence/S009, S010 and S011. Never publish private archive paths/content.
+Current checkpoint requires local validators/regression and exact-head CI before
+integration; integration of this recovery record does not accept S011.

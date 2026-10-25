@@ -1,19 +1,25 @@
 # Blockers and Open Dependencies
 
 ## Current blockers
-- B-S011-01 OPEN — S011 mandatory different-CWD/omitted-input runtime test is
-  NOT RUN: owner authorizes read-only audit, explicitly prohibits legacy execution.
-  Source-bound flow map and five-case review packet now prepared; see
-  docs/audit/S011_SOURCE_FLOW_AND_EXECUTION_PLAN.md and JSON review packet.
-  Action: obtain
-  specific authority for the proposed 32-native-file/three-input private preparation,
-  reviewed-target-only build and five validation-only cases, or
-  provenance-verified external evidence satisfying the gate. Do not substitute
-  another source tree or run audit-tool tests as proof of legacy runtime behavior.
-  Resume with resolving authorization/evidence; no S012 until S011 accepted.
+- B-S011-02 OPEN — verified isolation unavailable for the approved S011 plan.
+  Bubblewrap 0.9.0 network namespace setup fails with `Failed RTM_NEWADDR:
+  Operation not permitted`; explicit UID/GID 0 gives the same failure. Without
+  network isolation, UID-map setup also fails. `unshare --user --map-root-user
+  --net -- /usr/bin/true` fails writing uid_map. Docker daemon socket is absent;
+  firejail/nsjail/podman/runsc are unavailable. Only trusted `/usr/bin/true` was
+  used in probes; no legacy copy/build/execution occurred. Host policy was not
+  changed. Dependency headers are also not all present/verified (JSON and SUMO).
+  Resume on a host with demonstrated plan-compliant isolation, then verify trusted
+  dependency provenance/licenses and execute only ADR-0007's approved cases.
+  No unsandboxed fallback. S011 incomplete; S012 remains not_started.
 - Local GitHub CLI credential is invalid; connector works, so publication is not blocked.
 
 ## Resolved blockers
+- B-S011-01 CLOSED 2026-10-25 — owner explicitly answered yes to the scoped
+  preparation/build/five-case question. ADR-0007 records the persistent exception;
+  do not request the same authorization again. New technical blocker B-S011-02
+  does not revoke that authority.
+
 - B-S009-02 CLOSED by explicit owner quarantine-only policy amendment (ADR-0006),
   tested continuation and complete 11049-member private inventory. Unsafe entries
   remain quarantined; no archive safety, reuse, license or scientific approval.
