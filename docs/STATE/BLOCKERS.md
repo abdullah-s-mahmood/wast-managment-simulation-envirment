@@ -11,6 +11,9 @@
   changed. Dependency headers are also not all present/verified (JSON and SUMO).
   Resume on a host with demonstrated plan-compliant isolation, then verify trusted
   dependency provenance/licenses and execute only ADR-0007's approved cases.
+  Reproducible fixed trusted-tool check: scripts/check_execution_isolation.py;
+  actual rerun remains BLOCKED (E-S011-06). A passing namespace probe alone
+  cannot clear the remaining sandbox/dependency gates.
   No unsandboxed fallback. S011 incomplete; S012 remains not_started.
 - Local GitHub CLI credential is invalid; connector works, so publication is not blocked.
 

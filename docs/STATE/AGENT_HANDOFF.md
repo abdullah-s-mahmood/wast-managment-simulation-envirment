@@ -1,7 +1,7 @@
 # Agent Handoff — S011 authorized, isolation unavailable
 
 S001–S010 completed (10/88). S011 blocked by B-S011-02; S012+ not_started.
-Active branch sprint/S011-authorized-validation, base cfcc1e0d8516ca9d1d0e8fd4d701cfbfe16dfd77.
+Active branch sprint/S011-isolation-recheck, base cc626b34bcc21dd03f39f9c7cfcfbe1ed09fb9d8.
 Original worktree/.vscode and historical private evidence remain untouched.
 
 Owner explicitly answered yes to isolated private build and five validation-only
@@ -37,3 +37,24 @@ published tree both 1c40c09e115cb90fe7548d7cd45fcf00a018b67a, equality verified.
 Self-audit accepted recovery documentation only, not S011. Owner authority under
 ADR-0007 persists. B-S011-02 remains open; all five legacy cases NOT_RUN.
 Next executable sprint remains S011 on a compliant execution host; S012 untouched.
+
+## Current continuation — E-S011-06
+Added fixed trusted-tool preflight `python scripts/check_execution_isolation.py
+--report PRIVATE_NEW_REPORT` (private parent required). Exit 0 proves only namespace
+probe success, never target readiness; current actual exit is 1/BLOCKED. Ten tests
+cover fail-closed behavior, no fallback, private reports and CLI boundaries. Full
+legacy validation is NOT_RUN. See S011 report for evidence digest and exact results.
+Private evidence parent/S011 modes tightened to 0700 after initial assertion failure;
+all individual reports remain private. No legacy source prepared/built/executed.
+PR #27 receipt was merged at cc626b3 after CI run 40219621481 succeeded.
+Continue S011 on compliant isolation; owner approval persists, do not re-ask it.
+
+Preflight implementation checkpoint: PR #28 head
+cec2c03170463197c8a063159f50a651ee21c436 passed exact-head GitHub Actions run
+40220194016 (completed/success). Local implementation checkpoint 7ebc395 and
+published tree ff3deb2afddac9591cb99518f113acd49dab480b are identical.
+Self-audit found no scope expansion or false execution/scientific claims; accepts
+preflight tooling only. This evidence update requires its own exact-head CI before
+merge. Integration status and final merge SHA are recorded by PR #28 on GitHub.
+B-S011-02 remains OPEN; next required action is a namespace-enabled execution host
+and the remaining ADR-0007 prerequisite checks. Do not repeat owner authorization.

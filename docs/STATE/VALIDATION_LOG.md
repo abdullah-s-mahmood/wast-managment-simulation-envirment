@@ -575,3 +575,76 @@ published tree both 1c40c09e115cb90fe7548d7cd45fcf00a018b67a, equality verified.
 Self-audit accepted recovery documentation only, not S011. Owner authority under
 ADR-0007 persists. B-S011-02 remains open; all five legacy cases NOT_RUN.
 Next executable sprint remains S011 on a compliant execution host; S012 untouched.
+
+## E-S011-06 — Repeatable trusted namespace preflight (2026-10-25)
+
+Base origin/main cc626b34bcc21dd03f39f9c7cfcfbe1ed09fb9d8, branch
+sprint/S011-isolation-recheck. PR #27 previously passed exact-head CI run
+40219621481 at 564884627219acbe4acd4ab60082e3763b9fbd32 and merged as this
+base. Original worktree and settings preserved. S011 remains blocked, 10/88.
+
+Gap: previous isolation failures were manual probes. Added independently authored
+scripts/check_execution_isolation.py and ten tests, inventory registrations and
+source-flow/handoff/report/validation documentation. The fixed trusted namespace
+probe never accepts a legacy target or prepares/runs archive content. A successful
+namespace probe cannot set readiness true. Raw diagnostics stay in a new private
+mode-0600 report; existing reports/symlinks are refused. All other isolation,
+dependency/license and target identity requirements remain unverified.
+
+Commands and observed results:
+- `git fetch origin`: exit 0, current main cc626b3; lowest incomplete sprint S011.
+- Repeated E-S011-04 Bubblewrap command: exit 1, loopback namespace denial persists.
+- `sudo -n -l`: exit 1, password required; no elevated action attempted.
+- `flatpak --version`: exit 0, 1.14.6; `flatpak list --columns=application,runtime`:
+  exit 0, no installed applications. Packaged flatpak-bwrap helpers absent at the
+  two inspected standard paths. No alternative sandbox ready for this plan.
+- `pkg-config --modversion nlohmann_json libsumo`: exit 1, packages not found in
+  pkg-config search path; this does not prove absence at all possible locations.
+- Initial private-parent permission assertion: FAILED before report generation;
+  evidence directories were not owner-only. Verified directory ownership/no
+  symlinks, set only private-evidence and S011 evidence directory modes to 0700,
+  then reran successfully. No archive/source permissions or host policy changed.
+- `python scripts/check_execution_isolation.py --report PRIVATE_NEW_REPORT`:
+  exit 1, namespace_probe_status BLOCKED, failure_kind NONZERO_EXIT,
+  ready_for_legacy_execution false, legacy_cases_status NOT_RUN. Raw error is
+  `bwrap: loopback: Failed RTM_NEWADDR: Operation not permitted`.
+- Restricted artifact private-evidence/S011/namespace-preflight-recheck-20261025.json,
+  SHA-256 0a32171d13d1e071f973bbf45f29f9c9b1fa405423b392c8d38e1bd9e06f515c.
+- Full archive size and SHA-256 reverified by hashlib.file_digest after probe:
+  exit 0, designated 487062036 bytes/SHA-256 unchanged.
+- `python -m unittest discover -s tests -p test_execution_isolation_preflight.py -v`:
+  exit 0, ten tests passed. White-box branch/no-fallback/readiness invariants;
+  black-box CLI from another CWD and unsupported target rejection; adversarial
+  missing/denied tool, simulated timeout/signals, invalid UTF-8/oversized diagnostic,
+  private report overwrite/symlink attacks; seeded generated nonzero-exit cases.
+  These are trusted helper tests, not the mandatory legacy runtime attack.
+
+Linux 7.0.0-38-generic x86_64/glibc 2.39, Python 3.11.15, Bubblewrap 0.9.0.
+No host security changes, source preparation/build/execution, simulation or reuse.
+All five approved actual legacy cases remain NOT_RUN. Owner's ADR-0007 authority
+persists. Resume only with demonstrated plan-compliant isolation and verified
+trusted dependencies/provenance/licenses. S012 not eligible. CI pending checkpoint;
+integration of preflight tooling is not acceptance of S011 or scientific validity.
+
+Final local verification: `python -m unittest discover -s tests -v` exit 0,
+89 tests passed, including all previous 79. All five commands
+`python scripts/validate_project_docs.py`,
+`python scripts/validate_repository_boundary.py`,
+`python scripts/validate_evidence_ledger.py`,
+`python scripts/validate_change_control.py`,
+`python scripts/validate_risk_protocol.py` exit 0; `git diff --check` exit 0.
+Restricted regression transcript: private-evidence/S011/namespace-preflight-regression-20261025.log.
+Initial assertion failure summary retained as namespace-preflight-initial-permission-failure-20261025.txt.
+The failing Python helper exited 1; its original combined shell returned 0 because
+the subsequent regression command passed. No failed preflight was treated as ready.
+PROGRESS.json remains unchanged and accurate: S011 blocked, S012 not_started.
+
+Preflight implementation checkpoint: PR #28 head
+cec2c03170463197c8a063159f50a651ee21c436 passed exact-head GitHub Actions run
+40220194016 (completed/success). Local implementation checkpoint 7ebc395 and
+published tree ff3deb2afddac9591cb99518f113acd49dab480b are identical.
+Self-audit found no scope expansion or false execution/scientific claims; accepts
+preflight tooling only. This evidence update requires its own exact-head CI before
+merge. Integration status and final merge SHA are recorded by PR #28 on GitHub.
+B-S011-02 remains OPEN; next required action is a namespace-enabled execution host
+and the remaining ADR-0007 prerequisite checks. Do not repeat owner authorization.

@@ -134,3 +134,33 @@ fail closed. Tests with synthetic metadata run the linter from another CWD;
 these are NOT the mandatory legacy runtime attack. S011 remains blocked until
 its remaining actual gates and permitted integration are evidenced. S012 is
 not eligible. Licensing, archive safety and scientific validity remain separate.
+
+## 2026-10-25 continuation — reproducible trusted-tool preflight
+The sections above and unchanged JSON packet describe the original static review.
+ADR-0007 now records the owner's narrow authorization; B-S011-01 is resolved.
+B-S011-02 remains the technical isolation blocker. Do not infer pending approval
+from the historical packet's false/NOT_RUN fields, or execution from its acceptance.
+
+Run `python scripts/check_execution_isolation.py --report PRIVATE_NEW_REPORT` on
+Linux to repeat only the fixed installed Bubblewrap namespace probe ending in
+trusted `/usr/bin/true`. No archive, source, input, build or target is accessed.
+It never accepts a target/custom command or inherited environment; wall timeout
+is 5 seconds, stdin closed, locale C. Retained diagnostics are at most 4096 bytes
+per stream, from trusted system tools only. This helper is not a bounded runner
+for untrusted code and must never be used as one. Output collection is intended
+only for these fixed trusted programs, not arbitrary or hostile producers.
+
+Report paths must have a trusted private parent directory. The helper exclusively
+creates a mode-0600 JSON report and refuses existing files/symlinks; it never
+prints raw diagnostics/private paths in ordinary status output. Preserve failed
+or partial reports instead of overwriting them. Do not commit private reports.
+Exit 0 means namespace probe passed only; exit 1 means blocked; exit 2 means
+invocation/report error. All reports retain `ready_for_legacy_execution=false`
+and `legacy_cases_status=NOT_RUN`, including a successful namespace probe.
+
+A successful probe would still leave actual network denial, read-only target/
+inputs/CWD, denial of child execution, resource enforcement, dependency provenance/
+licenses and source/input/binary identity unverified. No source preparation or
+execution can follow until those separate prerequisites are demonstrated. No
+unsandboxed fallback or host security-policy changes. Actual current probe exits
+1; its restricted evidence digest and tests are in E-S011-06. S011 remains blocked.
