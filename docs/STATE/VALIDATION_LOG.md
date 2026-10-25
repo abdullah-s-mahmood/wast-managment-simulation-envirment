@@ -566,3 +566,12 @@ Full size/SHA-256 verification repeated after preflight, exit 0, unchanged.
 Restricted diagnostic/regression records: private-evidence/S011/
 authorized-preflight-20261025.md and authorized-preflight-regression-20261025.log.
 PROGRESS.json remains accurate: S011 blocked, 10 completed; no completion change.
+
+## E-S011-05 — Authorization/preflight checkpoint integrated
+PR #26 head a049f049359dd13739bc415469590a2e1ec400a7 passed exact-head
+GitHub Actions run 40219535165 (completed/success). Permitted merge
+8b9e1176d2fff33c16cb7962f3ffb44ed58b3810. Local checkpoint bfd5fad and
+published tree both 1c40c09e115cb90fe7548d7cd45fcf00a018b67a, equality verified.
+Self-audit accepted recovery documentation only, not S011. Owner authority under
+ADR-0007 persists. B-S011-02 remains open; all five legacy cases NOT_RUN.
+Next executable sprint remains S011 on a compliant execution host; S012 untouched.

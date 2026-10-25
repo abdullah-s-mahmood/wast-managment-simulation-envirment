@@ -28,3 +28,12 @@ Private inventory/graph/review evidence remains under Git common metadata
 private-evidence/S009, S010 and S011. Never publish private archive paths/content.
 Current checkpoint requires local validators/regression and exact-head CI before
 integration; integration of this recovery record does not accept S011.
+
+## E-S011-05 — Authorization/preflight checkpoint integrated
+PR #26 head a049f049359dd13739bc415469590a2e1ec400a7 passed exact-head
+GitHub Actions run 40219535165 (completed/success). Permitted merge
+8b9e1176d2fff33c16cb7962f3ffb44ed58b3810. Local checkpoint bfd5fad and
+published tree both 1c40c09e115cb90fe7548d7cd45fcf00a018b67a, equality verified.
+Self-audit accepted recovery documentation only, not S011. Owner authority under
+ADR-0007 persists. B-S011-02 remains open; all five legacy cases NOT_RUN.
+Next executable sprint remains S011 on a compliant execution host; S012 untouched.
