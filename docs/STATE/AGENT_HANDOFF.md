@@ -48,3 +48,13 @@ Private evidence parent/S011 modes tightened to 0700 after initial assertion fai
 all individual reports remain private. No legacy source prepared/built/executed.
 PR #27 receipt was merged at cc626b3 after CI run 40219621481 succeeded.
 Continue S011 on compliant isolation; owner approval persists, do not re-ask it.
+
+Preflight implementation checkpoint: PR #28 head
+cec2c03170463197c8a063159f50a651ee21c436 passed exact-head GitHub Actions run
+40220194016 (completed/success). Local implementation checkpoint 7ebc395 and
+published tree ff3deb2afddac9591cb99518f113acd49dab480b are identical.
+Self-audit found no scope expansion or false execution/scientific claims; accepts
+preflight tooling only. This evidence update requires its own exact-head CI before
+merge. Integration status and final merge SHA are recorded by PR #28 on GitHub.
+B-S011-02 remains OPEN; next required action is a namespace-enabled execution host
+and the remaining ADR-0007 prerequisite checks. Do not repeat owner authorization.
