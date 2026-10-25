@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "purpose": "S012_BASELINE_REVIEW_ONLY",
+  "execution_authorized": false,
+  "runtime_status": "NOT_RUN",
+  "archive_sha256": "da08e1a78e73215ddf9d165e32a07f262a0b8379b3b04f4b17b27d5b6b525da8",
+  "archive_bytes": 487062036,
+  "binary_sha256": "939c2bd50379e557936f0adb944dfe1e38fbad9428be8c738b6493b198097fd3",
+  "inputs": {
+    "config": {
+      "entry_id": "entry-00011013",
+      "sha256": "a090111fc2e855962da47a809013344e5b9220044ce5e7f2de1389899c77b016"
+    },
+    "city_json": {
+      "entry_id": "entry-00000089",
+      "sha256": "bfac0fe08030f06c9f77ee6b3bad61f5747dca8d8ad06d4c3261ead9766cb6ef"
+    },
+    "road_network": {
+      "entry_id": "entry-00000088",
+      "sha256": "2d2aa68b26a1a70481d3fcafa7cea392613ab48908de836cddaee3eff8c88bc8"
+    }
+  },
+  "input_role": "OWNER_ARCHIVED_SCENARIO_INPUT_NOT_CALIBRATION",
+  "seed": "UNCHANGED_FROM_BOUND_CONFIG",
+  "scenario_shape": {
+    "bins": 12,
+    "trucks": 2,
+    "horizon_seconds": 600,
+    "step_seconds": 0.1
+  },
+  "namespace_cwd": "/A",
+  "runs": [
+    {
+      "id": "BASELINE_A",
+      "argv": [
+        "/build/sw_cosim",
+        "/inputs/config.json",
+        "/A/city_fixture",
+        "/outputs/baseline"
+      ],
+      "output_storage": "SEPARATE_FRESH_PRIVATE_TMPFS",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "BASELINE_B",
+      "argv": [
+        "/build/sw_cosim",
+        "/inputs/config.json",
+        "/A/city_fixture",
+        "/outputs/baseline"
+      ],
+      "output_storage": "SEPARATE_FRESH_PRIVATE_TMPFS",
+      "status": "NOT_RUN"
+    }
+  ],
+  "limits": {
+    "max_distinct_runs": 2,
+    "max_total_invocations_including_one_corrective_retry_each": 4,
+    "target_wall_seconds": 120,
+    "target_cpu_seconds": 60,
+    "target_address_space_bytes": 1073741824,
+    "output_tmpfs_bytes": 67108864,
+    "max_export_entries": 64,
+    "max_export_bytes": 67108864,
+    "max_artifact_file_bytes": 16777216
+  },
+  "execution_prerequisites": [
+    "OWNER_ACCEPTS_ADR_0009_AND_THIS_HASH_BOUND_PLAN",
+    "ARCHIVE_INPUT_BINARY_DEPENDENCY_IDENTITIES_VERIFIED",
+    "TRUSTED_SANDBOX_PROBES_FOR_BASELINE_LIMITS_AND_BOUNDED_EXPORT_PASS",
+    "NO_WRITABLE_HOST_TARGET_MOUNTS",
+    "NO_NETWORK_NO_CHILD_EXECUTION_NONROOT_NO_CAPABILITIES",
+    "RAW_LOGS_AND_OUTPUT_HASHES_RETAINED"
+  ],
+  "expected_outputs": [
+    "events.jsonl",
+    "run_summary.json"
+  ],
+  "success_requires": [
+    "ACTUAL_EXIT_ZERO",
+    "ROUTE_COMPLETE_TRUE",
+    "VALIDATION_ONLY_FALSE",
+    "NONEMPTY_VALID_EVENTS_WITH_EXPECTED_SEED_RUN_ID_AND_TIME_REPRESENTATION",
+    "NO_FAILURE_ARTIFACT",
+    "ALL_RAW_OUTPUTS_HASHED",
+    "RAW_EVENTS_IDENTICAL_ACROSS_RUNS",
+    "SUMMARY_PROJECTION_IDENTICAL_ACROSS_RUNS"
+  ],
+  "comparison": {
+    "raw_bytes": "RETAIN_HASHES_AND_REPORT_ALL_DIFFERENCES",
+    "summary_projection_excluded_pointers": [
+      "/simulation_runtime_seconds"
+    ],
+    "exclusion_source": "entry-00010836:27-28,197,950 (steady-clock microsecond helper / 1e6 => host seconds)",
+    "other_fields": "NO_REMOVALS_OR_TOLERANCES",
+    "optional_host_timing_artifacts": "RETAIN_RAW_AND_REPORT_DIFFERENCES_SEPARATELY"
+  },
+  "source_changes": "PROHIBITED",
+  "source_reuse": "PROHIBITED",
+  "redistribution": "PROHIBITED",
+  "scientific_validation": "UNVALIDATED"
+}

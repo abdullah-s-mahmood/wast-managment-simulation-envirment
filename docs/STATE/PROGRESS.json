@@ -124,7 +124,7 @@
       "title": "Legacy baseline reproduction",
       "file": "docs/sprints/S012-legacy-baseline-reproduction.md",
       "phase": "P1 — Legacy audit and evidence extraction",
-      "status": "not_started",
+      "status": "blocked",
       "depends_on": [
         "S011"
       ]

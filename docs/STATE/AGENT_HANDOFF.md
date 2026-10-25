@@ -1,54 +1,37 @@
-# Agent Handoff — S011 accepted; S012 is next
+# Agent Handoff — S011 accepted; S012 needs expanded execution scope
 
-Current 2026-10-25: S001–S011 completed (11/88); S012+ not_started.
-Branch sprint/S011-acceptance, base 4339fae73884632126303e1a520fc27847f87182.
-Original worktree/.vscode and all historical checkpoints preserved.
+S001–S011 completed (11/88), S012 blocked B-S012-01, S013+ not_started.
+Branch sprint/S012-baseline-review, base 7bfa6c45afe1058bf6c2e99156f88f73ac7c7e30.
+Original worktree/.vscode and all checkpoints preserved.
 
-Owner authority ADR-0007 persists; administrator authentication enabled privileged
-namespace setup (ADR-0008) without any host security policy changes. No credentials
-saved anywhere. Legacy compiler/target executes only after non-root UID, cleared
-capabilities/groups and no-new-privileges. B-S011-01 and B-S011-02 resolved.
+S011 is accepted: implementation PR #29 CI 40224316143 at head 6b198976a62be198ad6265012024c98cc0ed94e6,
+merge 4339fae73884632126303e1a520fc27847f87182; acceptance PR #30 CI 40224443484
+at head 979fb80ddc14227e4b3d15ab3831ff62f3199de1, merge current base. 105 tests,
+five actual validation cases, trusted sandbox probes and archive integrity passed.
+See E-S011-07/08 and sanitized execution summary; do not repeat that work.
 
-Read E-S011-07 in S011 report/validation log and public sanitized execution summary.
-Approved 35 private file copies are verified; fresh sw_cosim built; five actual
-validation-only cases now PASS with expected exits 0,0,0,1,2. Successful stdout
-byte-identical. Initial OpenBLAS clone3/SIGINT failure (exit130) retained; serial
-dependency environment fixed it without relaxing denials or source patches. Five
-case IDs, six invocations including failed attempt; one retained corrected batch.
-Build linker failures and pre-target enforcement probe bugs retained and fixed.
-105 regression tests and exact-head CI pass; E-S011-08 records integration.
-No normal simulation/ONNX/training/historical campaign replay. All models unvalidated,
-source reuse/redistribution prohibited. Archive SHA-256 unchanged before/after.
+Owner supplied administrator authentication only for the disclosed sandbox setup;
+no credential stored. Use privileged trusted setup then drop UID/caps, never legacy
+code as root. No host security policy changed. Existing S011 private build/input
+locator codex-s011-execution.json and legacy locator remain Git common metadata
+only. Durable evidence under private-evidence/S011/runtime20261025. No private
+paths, source copies, binaries or old campaign data go into public repo.
 
-Private locator codex-s011-execution.json in Git common metadata identifies the
-restricted disposable audit root (do not print/commit it). Durable raw logs/receipts
-are copied to private-evidence/S011/runtime20261025; summary/copy/dependency
-bootstraps and regression transcript under private-evidence/S011. No source or
-binary goes into implementation repo. Original review JSON stays historically
-false/NOT_RUN, unchanged; actual execution has separate evidence.
+S012 full contract has been read. Current authority ADR-0007 excludes normal
+simulation. Proposed ADR-0009 and docs/audit/S012_BASELINE_REVIEW.md plus exact
+JSON review plan are concrete, NOT execution authority/readiness. Plan SHA-256
+5a8ef0be672f616bd9c40e68db4ea431e82dbb54c7dcea3ac31dd18bfb893187.
+Two same-input baseline runs proposed, each 120s wall/60s CPU/1GiB address space,
+64MiB output tmpfs; at most one retained corrective retry each. All identities and
+exclusions stated. Owner authorization for this additional scope is REQUIRED and
+not received. Do not ask again for already-approved S011 work.
 
-Do not repeat S011 cases: immutable passing evidence exists. PR #29 passed
-exact-head CI run 40224316143 and merged as 4339fae73884632126303e1a520fc27847f87182.
-S011 is accepted under ADR-0005. Fetch and read full S012 contract. ADR-0007 authorizes validation
-only and excludes normal simulation; any needed broader baseline execution must
-have a concrete reviewable plan and appropriate authority before running it.
-
-## E-S011-08 — Sole-maintainer acceptance after CI/integration (2026-10-25)
-PR #29 exact head 6b198976a62be198ad6265012024c98cc0ed94e6 passed GitHub
-Actions run 40224316143 (completed/success), including 105 tests and mandatory
-repository checks. Permitted merge 4339fae73884632126303e1a520fc27847f87182.
-Local checkpoint 5b0bc99eb3db6c798194894fafb20e342d9e2edf and published tree
-695345cbb28ec2a06c167cbd6366f8ac1cb65a59 verified equal before merge.
-Author self-audit under ADR-0005 accepts S011's source execution/data-flow map and
-bounded actual validation contracts. No independent-person review is claimed.
-
-Acceptance: source/hash/line-bound entry/input/state/clock/RNG/serializer/writer
-map reviewed; actual deterministic fixture output matches source/input predictions;
-ABS_A/B exercises different CWD with invariant absolute inputs, REL_B exposes
-relative-path failure; usage error observable. Synthetic negative/property and
-actual security/resource tests pass. Original failures and residual risks remain
-in E-S011-07. Full archive and 35 copied files/binary unchanged. No source reuse,
-redistribution, normal simulation or physical/scientific validation accepted.
-All applicable S011 gates satisfied; in_review -> completed; 11/88 completed.
-Next eligible sprint S012 (not_started); fetch and read its complete contract.
-This acceptance-record commit still needs its own exact-head CI before integration.
+Independent baseline-result checker plus eleven synthetic tests now developed;
+116 tests pass. It rejects false success for nonattempt/nonzero/missing dependency/
+absent artifacts and checks bounded regular JSON outputs. It never launches code.
+No actual S012 normal baseline attempted: NOT_RUN, not failed reproduction.
+Technical prerequisites also remain: tested bounded exporter and real enforcement
+probes for new baseline caps. Never substitute validation tests for these gates.
+Do not run S013 or mark S012 completed. Resume by obtaining exact new scope,
+then finish technical guards and perform only authorized baseline attempts.
+This recovery checkpoint needs exact-head CI and permitted integration; see report.
