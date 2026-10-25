@@ -48,7 +48,7 @@
   "source_reuse": "PROHIBITED",
   "schema_version": 1,
   "sprint": "S011",
-  "status": "TECHNICAL_GATES_PASSED_PENDING_CI_INTEGRATION",
+  "status": "ACCEPTED",
   "authority": [
     "ADR-0007",
     "ADR-0008"
@@ -56,5 +56,13 @@
   "security_findings_present": true,
   "archive_security_clearance": "NOT_GRANTED",
   "inventory_status": "COMPLETED",
-  "runtime_scope": "VALIDATION_ONLY_NO_SIMULATION"
+  "runtime_scope": "VALIDATION_ONLY_NO_SIMULATION",
+  "acceptance": {
+    "pr": 29,
+    "head_sha": "6b198976a62be198ad6265012024c98cc0ed94e6",
+    "ci_run_id": 40224316143,
+    "ci_conclusion": "success",
+    "merge_sha": "4339fae73884632126303e1a520fc27847f87182",
+    "review_method": "OWNER_AUTHORIZED_SELF_AUDIT_ADR_0005"
+  }
 }

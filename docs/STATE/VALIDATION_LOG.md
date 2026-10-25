@@ -767,3 +767,23 @@ Final governance verification: `python scripts/validate_project_docs.py`,
 all exit 0; `git diff --check` exit 0. Self-audit checked changed-file scope,
 no source/binary/private paths/credentials, parameter separation and no scientific
 clearance claims. All mandatory S011 gates pass locally; CI/integration pending.
+
+## E-S011-08 — Sole-maintainer acceptance after CI/integration (2026-10-25)
+PR #29 exact head 6b198976a62be198ad6265012024c98cc0ed94e6 passed GitHub
+Actions run 40224316143 (completed/success), including 105 tests and mandatory
+repository checks. Permitted merge 4339fae73884632126303e1a520fc27847f87182.
+Local checkpoint 5b0bc99eb3db6c798194894fafb20e342d9e2edf and published tree
+695345cbb28ec2a06c167cbd6366f8ac1cb65a59 verified equal before merge.
+Author self-audit under ADR-0005 accepts S011's source execution/data-flow map and
+bounded actual validation contracts. No independent-person review is claimed.
+
+Acceptance: source/hash/line-bound entry/input/state/clock/RNG/serializer/writer
+map reviewed; actual deterministic fixture output matches source/input predictions;
+ABS_A/B exercises different CWD with invariant absolute inputs, REL_B exposes
+relative-path failure; usage error observable. Synthetic negative/property and
+actual security/resource tests pass. Original failures and residual risks remain
+in E-S011-07. Full archive and 35 copied files/binary unchanged. No source reuse,
+redistribution, normal simulation or physical/scientific validation accepted.
+All applicable S011 gates satisfied; in_review -> completed; 11/88 completed.
+Next eligible sprint S012 (not_started); fetch and read its complete contract.
+This acceptance-record commit still needs its own exact-head CI before integration.

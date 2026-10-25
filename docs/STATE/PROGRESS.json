@@ -5,10 +5,10 @@
   "updated_at": "2026-10-25",
   "current_phase": "P1 — Legacy audit and evidence extraction",
   "total_sprints": 88,
-  "completed_sprints": 10,
-  "current_sprint_id": "S011",
-  "next_sprint_id": "S011",
-  "last_completed_sprint_id": "S010",
+  "completed_sprints": 11,
+  "current_sprint_id": "S012",
+  "next_sprint_id": "S012",
+  "last_completed_sprint_id": "S011",
   "rule": "Strict sequential execution; complete and verify one sprint before starting the next.",
   "sprints": [
     {
@@ -114,7 +114,7 @@
       "title": "Legacy execution path and data flow",
       "file": "docs/sprints/S011-legacy-execution-path-and-data-flow.md",
       "phase": "P1 — Legacy audit and evidence extraction",
-      "status": "in_review",
+      "status": "completed",
       "depends_on": [
         "S010"
       ]
