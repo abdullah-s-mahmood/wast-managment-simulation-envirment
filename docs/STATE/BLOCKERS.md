@@ -1,8 +1,8 @@
 # Blockers and Open Dependencies
 
 ## Current blockers
-- No S013 material/source blocker found; static inventory is in_review pending
-  checks/CI/permitted integration. Historical trust unknowns are retained explicitly
+- S013 bounded inventory accepted after CI/integration (E-S013-02); no open
+  inventory blocker. Historical trust unknowns are retained explicitly
   (E-S013-01); they are not scientifically validated or silently reproduced.
 - No unresolved scope/sandbox blocker for the two authorized S012 attempts.
   S012 failed-report deliverable accepted after exact-head CI/integration
