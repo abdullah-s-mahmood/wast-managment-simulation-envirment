@@ -1,8 +1,7 @@
-# Agent Handoff — S013 test/result inventory in review
+# Agent Handoff — S013 accepted; S014 next
 
-2026-10-26: S001–S012 audit deliverables completed (12/88); S013 in_review,
-S014+ not_started. Branch sprint/S013-test-result-inventory, base
-06bd1b37cd79acb0140979e01f99291fbccd08d5. Original worktree/.vscode/history preserved.
+2026-10-26: S001–S013 audit deliverables completed (13/88); S014+ not_started. Branch sprint/S013-acceptance, base
+f6c124ab6503ddda3a2975d51fc4cf07820bb2cc. Original worktree/.vscode/history preserved.
 
 S012 accepted failed-report alternative only. PR #32 exact head cdafda62f5106a621fa958c7e02e094761b39c68
 passed CI40369769249, merge2cdc1b8d4bf69d7197b59975cdee38a63be8f33a; acceptance
@@ -27,8 +26,23 @@ member extraction, nested archive opening, legacy test/script/binary execution o
 raw historical output/source/credential/private path published. All models remain
 UNVALIDATED and source reuse prohibited. S011/S012 private evidence preserved.
 
-Finish governance checks, exact-head CI and permitted integration/self-audit before
-S013 completed. Then fetch/read S014 in full. Do not run archived tests/scripts:
+S013 accepted after PR #34 exact-head CI40379607640 and permitted integration;
+E-S013-02 records self-audit. Fetch/read S014 in full before starting. Do not run archived tests/scripts:
 current exceptions only authorize prior specific native build/validation/baseline
 cases, not arbitrary legacy execution. Read-only in-memory audit authority persists.
 Owner approval for S012 already received and recorded ADR-0009; do not re-ask it.
+
+## E-S013-02 — Sole-maintainer inventory acceptance (2026-10-26)
+PR #34 exact head c3bd2ebb69629b48a1daa2de38e0fe5739eb72dd passed CI run
+40379607640 (completed/success; 140 tests/mandatory checks), permitted merge
+f6c124ab6503ddda3a2975d51fc4cf07820bb2cc. Local checkpoint
+5206372ea2af1703c05b0e39b9a69937944ed486 and published tree
+d6016c710bd617a62f6b01cc8e38ba1dc3a29967 verified equal before integration.
+Owner-authorized self-audit under ADR-0005 accepts bounded candidate inventory,
+assertion/execution-status distinctions and explicit historical trust labels.
+No legacy test pass, historical reproduction, provenance authentication, empirical
+validation or source reuse is accepted. No independent reviewer claimed. All
+unknown/retired/dynamic coverage limits and F-S012-01 remain carried forward.
+S013 in_review -> completed, 13/88 audit deliverables; next S014 not_started.
+Acceptance record needs its own exact-head CI/integration. Fetch/read full S014
+before starting; no arbitrary legacy execution is authorized by this acceptance.

@@ -175,5 +175,14 @@
     "v6",
     "v7"
   ],
-  "final_repeated_scans_byte_identical": true
+  "final_repeated_scans_byte_identical": true,
+  "audit_status": "ACCEPTED_BOUNDED_INVENTORY",
+  "acceptance": {
+    "pr": 34,
+    "head_sha": "c3bd2ebb69629b48a1daa2de38e0fe5739eb72dd",
+    "ci_run_id": 40379607640,
+    "ci_conclusion": "success",
+    "merge_sha": "f6c124ab6503ddda3a2975d51fc4cf07820bb2cc",
+    "method": "OWNER_AUTHORIZED_SELF_AUDIT_ADR_0005"
+  }
 }

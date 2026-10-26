@@ -5,10 +5,10 @@
   "updated_at": "2026-10-26",
   "current_phase": "P1 — Legacy audit and evidence extraction",
   "total_sprints": 88,
-  "completed_sprints": 12,
-  "current_sprint_id": "S013",
-  "next_sprint_id": "S013",
-  "last_completed_sprint_id": "S012",
+  "completed_sprints": 13,
+  "current_sprint_id": "S014",
+  "next_sprint_id": "S014",
+  "last_completed_sprint_id": "S013",
   "rule": "Strict sequential execution; complete and verify one sprint before starting the next.",
   "sprints": [
     {
@@ -134,7 +134,7 @@
       "title": "Legacy tests and results inventory",
       "file": "docs/sprints/S013-legacy-tests-and-results-inventory.md",
       "phase": "P1 — Legacy audit and evidence extraction",
-      "status": "in_review",
+      "status": "completed",
       "depends_on": [
         "S012"
       ]

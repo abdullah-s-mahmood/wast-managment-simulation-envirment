@@ -1125,3 +1125,18 @@ checks. `python scripts/validate_project_docs.py`,
 all exit 0; `git diff --check` exit 0. Scope/privacy/units/false-trust self-audit
 found no published legacy source/raw outputs/credentials/private paths or claims
 of scientific validity. Exact-head CI/permitted integration still pending.
+
+## E-S013-02 — Sole-maintainer inventory acceptance (2026-10-26)
+PR #34 exact head c3bd2ebb69629b48a1daa2de38e0fe5739eb72dd passed CI run
+40379607640 (completed/success; 140 tests/mandatory checks), permitted merge
+f6c124ab6503ddda3a2975d51fc4cf07820bb2cc. Local checkpoint
+5206372ea2af1703c05b0e39b9a69937944ed486 and published tree
+d6016c710bd617a62f6b01cc8e38ba1dc3a29967 verified equal before integration.
+Owner-authorized self-audit under ADR-0005 accepts bounded candidate inventory,
+assertion/execution-status distinctions and explicit historical trust labels.
+No legacy test pass, historical reproduction, provenance authentication, empirical
+validation or source reuse is accepted. No independent reviewer claimed. All
+unknown/retired/dynamic coverage limits and F-S012-01 remain carried forward.
+S013 in_review -> completed, 13/88 audit deliverables; next S014 not_started.
+Acceptance record needs its own exact-head CI/integration. Fetch/read full S014
+before starting; no arbitrary legacy execution is authorized by this acceptance.
