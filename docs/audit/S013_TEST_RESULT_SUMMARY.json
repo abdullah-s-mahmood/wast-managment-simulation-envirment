@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "sprint": "S013",
+  "inventory_complete": true,
+  "archive_sha256": "da08e1a78e73215ddf9d165e32a07f262a0b8379b3b04f4b17b27d5b6b525da8",
+  "intake_manifest_sha256": "61b494e1d921464f980714d0a916dff12856acc2058421da091ce959751c2daf",
+  "private_manifest_canonical_sha256": "4339e6a6bd5a1a614d3f7cc5b88fc8ba4de9dd7eb26408c51bb92d348b29e987",
+  "private_json_sha256": "fdfcda01e86815299da2671827c31c38470214b4a1193b1afd36a14fd20af275",
+  "candidate_records": 9035,
+  "active_source_candidate_count": 83,
+  "active_source_coverage": {
+    "hash_verified_text": 83
+  },
+  "active_test_path_files": 18,
+  "retired_test_path_files": 4,
+  "active_test_classification": {
+    "behavioral_assertion_syntax_unexecuted": 17,
+    "no_assertion_observed": 1
+  },
+  "active_test_assertion_bearing_line_count": 299,
+  "active_fixture_literal_bearing_line_count": 20,
+  "historical_result_candidates": 2369,
+  "result_states": {
+    "unverifiable": 2369
+  },
+  "result_content_status": {
+    "hash_verified_text": 34,
+    "retired_context_metadata_only": 2335
+  },
+  "historical_results_reproduced": 0,
+  "legacy_tests_executed": false,
+  "scientific_validation": "UNVALIDATED",
+  "source_reuse": "PROHIBITED",
+  "source_text_bytes": 615078,
+  "result_text_bytes": 375040,
+  "repeated_scan_bytes_identical": true,
+  "scope_notice": "PATH_SCOPES_ARE_CANDIDATES_NOT_AUTHORSHIP_OR_SCIENTIFIC_PROVENANCE",
+  "retired_scope_notice": "METADATA_ONLY_EXCEPT_STATIC_TEST_SOURCE; NOT_A_DECISION_TO_DISCARD_APPROVED_MODEL_SOURCES",
+  "active_test_entries": [
+    {
+      "entry_id": "entry-00000003",
+      "sha256": "288314ad60ce3e0644a3c18b131a7dc4d31aaf729fb1bbcef3355128bd46936d",
+      "assertion_bearing_lines": 29,
+      "classification": "behavioral_assertion_syntax_unexecuted",
+      "runtime_status": "NOT_RUN"
+    },
+    {
+      "entry_id": "entry-00000004",
+      "sha256": "c4787660bfd96cc1e34be214153fe8f90e9c1d35d8d7402fa3c747cef60d430e",
+      "assertion_bearing_lines": 3,
+      "classification": "behavioral_assertion_syntax_unexecuted",
+      "runtime_status": "NOT_RUN"
+    },
+    {
+      "entry_id": "entry-00000005",
+      "sha256": "d47b006b58b32507a75b82e92f6c37660368caa544a82f738bf4479d0b2af64a",
+      "assertion_bearing_lines": 1,
+      "classification": "behavioral_assertion_syntax_unexecuted",
+      "runtime_status": "NOT_RUN"
+    },
+    {
+      "entry_id": "entry-00000006",
+      "sha256": "e5bb4d22ff672926752c57095aaea4f41c326d0d16305de24c1a2cead81d116c",
+      "assertion_bearing_lines": 0,
+      "classification": "no_assertion_observed",
+      "runtime_status": "NOT_RUN"
+    },
+    {
+      "entry_id": "entry-00000007",
+      "sha256": "a84cf8de88f790ee186c5846951352bdbca85c84b1a6429baf9ff611b2366762",
+      "assertion_bearing_lines": 10,
+      "classification": "behavioral_assertion_syntax_unexecuted",
+      "runtime_status": "NOT_RUN"
+    },
+    {
+      "entry_id": "entry-00000008",
+      "sha256": "dbf008acd8b17253c0acab7c57da1f558962d6a0ba79fab662ef688de586b267",
+      "assertion_bearing_lines": 8,
+      "classification": "behavioral_assertion_syntax_unexecuted",
+      "runtime_status": "NOT_RUN"
+    },
+    {
+      "entry_id": "entry-00000009",
+      "sha256": "574a898fcd456fbd4f30a79ec38d35765b7a79443660cc4249dbb4815db00aa6",
+      "assertion_bearing_lines": 15,
+      "classification": "behavioral_assertion_syntax_unexecuted",
+      "runtime_status": "NOT_RUN"
+    },
+    {
+      "entry_id": "entry-00000010",
+      "sha256": "6ae9b70e26ddfc33f813d552b1b5c5a66344424f0dc9a7b729365510b1f59823",
+      "assertion_bearing_lines": 92,
+      "classification": "behavioral_assertion_syntax_unexecuted",
+      "runtime_status": "NOT_RUN"
+    },
+    {
+      "entry_id": "entry-00000011",
+      "sha256": "c1bb4b194f251ee9fbcea248bfa797dcee20eb15084cf118c4d9646d46792744",
+      "assertion_bearing_lines": 20,
+      "classification": "behavioral_assertion_syntax_unexecuted",
+      "runtime_status": "NOT_RUN"
+    },
+    {
+      "entry_id": "entry-00000012",
+      "sha256": "2c0bec6edf34a6199da9d60ac380141b2c85240dbdf59884dba9ce3e1c723c09",
+      "assertion_bearing_lines": 10,
+      "classification": "behavioral_assertion_syntax_unexecuted",
+      "runtime_status": "NOT_RUN"
+    },
+    {
+      "entry_id": "entry-00000013",
+      "sha256": "d23189bfe3b8fef279e64d16a5c5a2fbaa882123faadc75bac398630a11cbf59",
+      "assertion_bearing_lines": 11,
+      "classification": "behavioral_assertion_syntax_unexecuted",
+      "runtime_status": "NOT_RUN"
+    },
+    {
+      "entry_id": "entry-00000014",
+      "sha256": "3c3d16b06a4fe4621bb807873bedd7848ceabb2376c4617ca780b0409f47076c",
+      "assertion_bearing_lines": 3,
+      "classification": "behavioral_assertion_syntax_unexecuted",
+      "runtime_status": "NOT_RUN"
+    },
+    {
+      "entry_id": "entry-00000015",
+      "sha256": "2f182601f7511c8f2c0dda72f5fb4f2378ecfddd151dd6d7e5a2def9ee55b843",
+      "assertion_bearing_lines": 21,
+      "classification": "behavioral_assertion_syntax_unexecuted",
+      "runtime_status": "NOT_RUN"
+    },
+    {
+      "entry_id": "entry-00000016",
+      "sha256": "d42a48cc3d643172d12efc106620d7d36f72fbb5af618f8180b3ffc29a38bd20",
+      "assertion_bearing_lines": 28,
+      "classification": "behavioral_assertion_syntax_unexecuted",
+      "runtime_status": "NOT_RUN"
+    },
+    {
+      "entry_id": "entry-00000017",
+      "sha256": "9eac5c1b95233fd31d19f6de05fad863d37c2dc2267b75c51f4f98201a28778e",
+      "assertion_bearing_lines": 9,
+      "classification": "behavioral_assertion_syntax_unexecuted",
+      "runtime_status": "NOT_RUN"
+    },
+    {
+      "entry_id": "entry-00000018",
+      "sha256": "2f0d45dc0dc0a495f68daeed148fa3288ebe4da4d3485b1a03b1d695d09204a0",
+      "assertion_bearing_lines": 9,
+      "classification": "behavioral_assertion_syntax_unexecuted",
+      "runtime_status": "NOT_RUN"
+    },
+    {
+      "entry_id": "entry-00000019",
+      "sha256": "955caba4b1a12e292acaa74c79f510606a62c8ad3a6dd5c940f4d4d41ecdb848",
+      "assertion_bearing_lines": 3,
+      "classification": "behavioral_assertion_syntax_unexecuted",
+      "runtime_status": "NOT_RUN"
+    },
+    {
+      "entry_id": "entry-00000020",
+      "sha256": "5e18276e68122c2f43fb901ffeee7800c7b54b84fa9d4007884dfbe69d3a6058",
+      "assertion_bearing_lines": 27,
+      "classification": "behavioral_assertion_syntax_unexecuted",
+      "runtime_status": "NOT_RUN"
+    }
+  ],
+  "root_build_test_registration_lines": [
+    19,
+    24,
+    35,
+    45,
+    53
+  ],
+  "final_inventory_versions": [
+    "v6",
+    "v7"
+  ],
+  "final_repeated_scans_byte_identical": true
+}
