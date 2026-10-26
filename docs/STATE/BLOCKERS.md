@@ -1,18 +1,16 @@
 # Blockers and Open Dependencies
 
 ## Current blockers
-- B-S012-01 OPEN — normal baseline simulation is outside ADR-0007's exact
-  validation-only execution exception. Owner administrator authentication resolves
-  sandbox setup, not simulation scope. Two bounded same-input runs and failure
-  policy are concretely proposed in docs/audit/S012_BASELINE_REVIEW.md and JSON
-  plan (SHA-256 5a8ef0be672f616bd9c40e68db4ea431e82dbb54c7dcea3ac31dd18bfb893187).
-  Action: explicit owner scope authority for proposed ADR-0009. Before actual
-  execution, also implement/test bounded output export and baseline-limit probes;
-  plan approval alone is not readiness. No normal baseline attempted; NOT_RUN
-  is neither failure evidence nor success. S012 blocked, S013 not_started.
+- No unresolved scope/sandbox blocker for the two authorized S012 attempts.
+  S012 is in_review for its contractually permitted explicit failed-reproduction
+  report. Neither attempt is accepted as a successful baseline. See F-S012-01.
 - Local GitHub CLI credential is invalid; connector works, so publication is not blocked.
 
 ## Resolved blockers
+- B-S012-01 CLOSED — owner explicitly answered yes to the exact two-run plan
+  (120s wall/60 CPU seconds/1GiB address space/64MiB outputs per attempt, one
+  corrective retry each). ADR-0009 accepted; technical gates remain mandatory.
+
 - B-S011-02 CLOSED 2026-10-25 — owner enabled administrator authentication;
   privileged namespace setup plus setpriv drops to non-root UID/zero capabilities.
   Real trusted probes verify read-only mounts, denied networking/fork/exec and
@@ -34,6 +32,16 @@
 - B-S009-01 CLOSED: owner designation/read-only handling authorization plus exact
   size/SHA-256 verification resolve original selection ambiguity. B-S009-02 is new.
 - B-S001-01 — CLOSED 2026-10-22. Sole owner waived independent-person review by accepted ADR-0005. Exact-head GitHub Actions passed for PR #1; PR #1 merged as `7aaa0b8ee76fb276506bbaf0a97b65101583901b`. S001 technical gate accepted. This does not waive later scientific/technical gates.
+
+## Known baseline findings
+- F-S012-01 — both unchanged normal runs exit 3 with route_complete=false;
+  successful baseline NOT reproduced. Source emits validation_only=true literally
+  even on normal path (entry-00010836:952), contradicting a prepared criterion.
+  Raw event files differ only at observed host-time fields; raw replay criterion
+  fails and is NOT weakened. Summaries match only under the already declared
+  host-runtime exclusion. See E-S012-03 and sanitized outcome JSON. These are
+  retained negative audit findings, not physical-model validation or a waiver of
+  future scientific/model gates. Read-only audit must not patch the baseline.
 
 ## Future evidence gates
 1. Legacy source bundle required for S009–S016; do not infer code behavior from chat summaries.

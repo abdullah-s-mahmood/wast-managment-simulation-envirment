@@ -2,7 +2,7 @@
   "project": "wast-managment-simulation-envirment",
   "display_name": "Waste Management Simulation Environment",
   "state_version": 1,
-  "updated_at": "2026-10-25",
+  "updated_at": "2026-10-26",
   "current_phase": "P1 — Legacy audit and evidence extraction",
   "total_sprints": 88,
   "completed_sprints": 11,
@@ -124,7 +124,7 @@
       "title": "Legacy baseline reproduction",
       "file": "docs/sprints/S012-legacy-baseline-reproduction.md",
       "phase": "P1 — Legacy audit and evidence extraction",
-      "status": "blocked",
+      "status": "in_review",
       "depends_on": [
         "S011"
       ]
