@@ -869,3 +869,127 @@ presented for the exact plan, but no owner answer at this checkpoint; a queued
 question is not approval. ADR-0009 remains Proposed and all normal runs NOT_RUN.
 This receipt needs its own exact-head CI before integration; final status/merge
 SHA is recorded on PR #31. Integrating preparation does not accept S012.
+
+## E-S012-03 — Authorized attempts; explicit failed-reproduction report (2026-10-26)
+
+Base 4865de107d4e4be3b77e2e07240b2769de8e18f0, branch
+sprint/S012-authorized-baseline. PR #31 final head
+9cef239ed7c087d57551dcf02e1da8d3d7f2b454 passed exact-head CI run 40225464063,
+then merged as this base. Owner explicitly answered yes to two bounded private
+baseline runs/one corrective retry each; ADR-0009 Accepted, D-0013/B-S012-01
+resolved. Approval persists; static review JSON remains historically false/NOT_RUN.
+S012 blocked -> in_progress -> in_review; completed count stays 11 pending CI and
+integration. Original worktree/settings and historical evidence remain preserved.
+
+Deliverable selection: S012 explicitly permits a “Baseline reproduction record or
+explicit failed-reproduction report.” This checkpoint supplies the latter. A normal
+baseline has NOT passed. No route, determinism or scientific acceptance is claimed.
+The original success criteria/checker remain unchanged despite failing outcomes.
+
+Files changed: accepted ADR-0009; independently authored baseline_commands.py,
+baseline_supervisor.py, baseline_transport.py, run_private_baseline.py; synthetic
+C fixture and transport/runner tests; sanitized S012_BASELINE_OUTCOME.json; progress,
+handoff/blockers/decision/report/validation/inventory records. No legacy source,
+binary, raw events/metrics, private paths or credential is published.
+
+Execution mechanism: unchanged S011 read-only input/source/binary and trusted
+private dependencies. Privileged trusted timeout/Bubblewrap setup then nonroot UID,
+zero capabilities, cleared groups/no-new-privileges. No host security policy or
+service changes. Target cannot network/fork/exec/create threads, use ptrace,
+unshare/setns/io_uring setup. Only /outputs (64MiB tmpfs), /tmp and /dev/shm (16MiB
+each) are writable; no writable host target mounts. Target AS 1GiB, CPU 60s, file
+16MiB. Supervisor child deadline 100s leaves export reserve under outer 120s wall
+watchdog. One CPU affinity inherited. Address-space bounds are not aggregate
+cgroup RSS guarantees. Export has 64-entry/64MiB data bounds; encoded packet cap
+90,000,000 bytes accounts for base64 metadata overhead, never additional target
+data. Private regular-file capture prevents unbounded parent pipe-memory growth.
+
+Trusted exporter waits for target termination, rejects traversal/duplicates/case
+collisions/links/special files/changed members/oversized data, checks hashes, and
+exclusively publishes into a fresh owner-only evidence directory. Complete export
+is separate from successful target exit/artifact validation. All raw failures stay.
+
+Commands/results (PRIVATE_ROOT resolves only through Git common metadata locator):
+- `python -m unittest discover -s tests -p 'test_baseline*.py' -v`: exit 0, 21 tests.
+  New transport/runner tests plus existing eleven baseline-result negatives.
+- `cc -O0 -Wall -Wextra -Werror ... tests/fixtures/baseline_fixture.c`: exit 0.
+  Trusted fixture only; no legacy implementation copied into tests.
+- `python scripts/run_private_baseline.py probes PRIVATE_ROOT`: initial exit 1;
+  quota actually enforced but final marker could not be written into full tmpfs.
+  A mistakenly zero-size last-file cleanup freed no space. Readiness packet absent.
+  Initial BASELINE_A CLI preflight then failed before attempt marker/legacy launch;
+  this is NOT a normal simulation attempt. Full original failed probe/code retained.
+- Corrected fixture frees its known 8MiB quota0 file after ENOSPC before marking
+  success, without weakening the quota or expected outcome. Rerun with new labels,
+  preserving originals: seven probes pass. Fixture/security/memory/quota target
+  exits 0; CPU/file signals -9/-25 and inner timeout -9 are expected enforcement,
+  not successful baseline results. Corrected readiness packet binds all tool and
+  fixture hashes. Actual namespace and raw-export round trip exercised.
+- Preflight full archive size/SHA-256 verified before normal attempts (exit 0).
+  S011 source/input/binary and trusted package digests checked before/after each.
+  129 actually loaded shared-library hashes captured and unchanged after both.
+- `python scripts/run_private_baseline.py run PRIVATE_ROOT --run-id BASELINE_A`:
+  runner exit 1; actual normal target exit 3, termination exited; complete export;
+  wall 0.465345662s. `... --run-id BASELINE_B`: runner exit 1, target exit 3,
+  complete export, wall 0.365409602s. Exact argv for each:
+  `/build/sw_cosim /inputs/config.json /A/city_fixture /outputs/baseline`, CWD /A.
+  Separate fresh output tmpfs, same namespace basename/run ID and configured seed.
+- Exactly two normal invocations, zero corrective retries. No input/source patch,
+  changed horizon/fleet, rebuilt target, expanded resource limit or campaign replay.
+
+Observed failed outcomes:
+Both return route_complete=false and emit run_summary.json/events.jsonl. No
+failure.json; this is source-declared noncompletion exit 3, not a hidden successful
+run. The prepared validation_only=false criterion was an incorrect assumption:
+normal source entry-00010836:952 emits true literally. Keep this conflict recorded;
+actual normal CLI/loop execution is distinct from that summary label. Never change
+the output/test merely to fit the assumption. Scientific models remain UNVALIDATED.
+
+Each event file contains 2261 JSON rows. Raw bytes/hashes differ. Row-aligned JSON
+diff found only /signing_wall_us (25 transmissions), /crypto_verification_wall_us
+(25 receives), and /simulation_runtime_seconds (one summary event). Source anchors
+entry-00010836:498,394,950 respectively identify host timing fields. Raw-event
+replay criterion FAILED; no post-hoc event normalization was introduced. Summary
+raw hashes differ only at simulation_runtime_seconds; the preregistered projection
+matches (cc96a4022ec4214d594216f977210049e46fce0f74219b70f80f17bfdcb11606).
+This explains bounded software differences, not physical accuracy or robustness.
+
+Raw event hashes A de3031373087b688c6344d61aad1f3ee63da33eebb99275589a134222b3a52f4,
+B a8eb0e2a232b099971f0de52466c5f57628c1068243deec5162d48edddcb12e3.
+Full sanitized hashes/status/difference inventory: docs/audit/S012_BASELINE_OUTCOME.json.
+Raw packets/streams/source fixtures/results are restricted under Git common
+metadata private-evidence/S012/runtime20261026; root locator remains private.
+Hash/diff/dependency manifests also private-evidence/S012. Never commit raw outputs.
+
+Failure/report integrity: actual checker returns false for both nonzero targets,
+so their complete exports are NOT accepted as successful simulations. Synthetic
+negative tests also reject missing dependencies, absent outputs, nonattempts,
+malformed/duplicate/nonfinite JSON, invalid identifiers, links and size budgets.
+No fake second operator/reviewer; documented protocol lets a second operator attempt
+independently if supplied the private designated inputs and same approved authority.
+
+`python -m unittest discover -s tests -v`: exit 0, 128 tests passed (all prior 116
+plus twelve new transport/runner/property tests). Actual trusted enforcement probes supplement
+unit tests. Normal success/replay criteria failed as above; the failed-report
+alternative remains subject to self-audit, exact-head CI and permitted integration.
+Archive after normal runs: full 487062036-byte SHA-256 unchanged (exit 0); source,
+inputs and binary unchanged. Existing package provenance/license constraints stay;
+no source reuse or redistribution authorization. Linux x86_64 only; Windows actual
+baseline NOT RUN. Python 3.11.15 supervisor system Python3.12.3; compiled S011 GCC
+13.3.0/SUMO1.28.0-1/OpenSSL3.0.13; tool versions retained from S011 and private logs.
+
+Known findings F-S012-01 must carry to later audit/model gates. S012 is not a
+successful-model acceptance. Next S013 only after this sprint's report gates and
+integration; do not run archived tests/scripts or historical campaigns under the
+baseline-only exception. No new approval needed for already authorized work.
+
+Final scope/self-audit: tests now include seeded arbitrary-byte transport/member
+order invariance and parent-directory case collisions. All 128 tests pass; both
+normal baseline attempts remain failed, not reclassified. Five governance commands
+`python scripts/validate_project_docs.py`, `python scripts/validate_repository_boundary.py`,
+`python scripts/validate_evidence_ledger.py`, `python scripts/validate_change_control.py`,
+`python scripts/validate_risk_protocol.py` exit 0; `git diff --check` exit 0.
+No source copy/patch, secret, private path, raw legacy output or false scientific
+claim found in publication scope. Accept only the contract's failed-report
+alternative after exact-head CI/permitted integration. Successful-baseline/model
+acceptance remains absent. Final regression transcript retained separately.

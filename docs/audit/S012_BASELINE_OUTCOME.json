@@ -1,0 +1,69 @@
+{
+  "outcome": "FAILED_REPRODUCTION_RECORDED",
+  "actual_exits": [
+    3,
+    3
+  ],
+  "route_complete": [
+    false,
+    false
+  ],
+  "validation_only_flags": [
+    true,
+    true
+  ],
+  "validation_marker_is_literal_true_in_source": true,
+  "raw_output_sha256": [
+    {
+      "events.jsonl": "de3031373087b688c6344d61aad1f3ee63da33eebb99275589a134222b3a52f4",
+      "run_summary.json": "61e0fe85d1d717b8707815e4d2fd18f8ae45fb173b0b3021a19584989c8cdb5d"
+    },
+    {
+      "events.jsonl": "a8eb0e2a232b099971f0de52466c5f57628c1068243deec5162d48edddcb12e3",
+      "run_summary.json": "142f706643c3382ed9ecb42f38864f894024a5c7023fa0f6f465de172bb49281"
+    }
+  ],
+  "raw_event_bytes_identical": false,
+  "raw_summary_different_keys": [
+    "simulation_runtime_seconds"
+  ],
+  "summary_projection_sha256": [
+    "cc96a4022ec4214d594216f977210049e46fce0f74219b70f80f17bfdcb11606",
+    "cc96a4022ec4214d594216f977210049e46fce0f74219b70f80f17bfdcb11606"
+  ],
+  "summary_projection_identical": true,
+  "successful_baseline": false,
+  "normal_invocations": 2,
+  "corrective_retries_used": 0,
+  "source_changes": false,
+  "scientific_validation": "UNVALIDATED",
+  "schema_version": 1,
+  "sprint": "S012",
+  "deliverable": "EXPLICIT_FAILED_REPRODUCTION_REPORT",
+  "archive_identity_unchanged": true,
+  "archive_sha256": "da08e1a78e73215ddf9d165e32a07f262a0b8379b3b04f4b17b27d5b6b525da8",
+  "security_probes_passed": true,
+  "event_difference_inventory": {
+    "event_counts": [
+      2261,
+      2261
+    ],
+    "different_field_paths": {
+      "/signing_wall_us": 25,
+      "/crypto_verification_wall_us": 25,
+      "/simulation_runtime_seconds": 1
+    },
+    "different_event_kind_counts": {
+      "message_transmitted": 25,
+      "message_received": 25,
+      "run_summary": 1
+    }
+  },
+  "private_evidence_receipts": {
+    "baseline-probes-passed.json": "22ae7030478dc1fe34248599e7a28928d53ea6d37227a75ff784a5b0e5cee2d8",
+    "BASELINE_A-1.result.json": "c22abe78a64b5155cba7e5bac2813e2f8e7a71b913dd6c711bb5a6cd41e1d55b",
+    "BASELINE_B-1.result.json": "c22abe78a64b5155cba7e5bac2813e2f8e7a71b913dd6c711bb5a6cd41e1d55b",
+    "BASELINE_A-1.export.json": "6465327cea056312e6bea7a86dbd8682b1059e311725be8dfbaab67d337d671f",
+    "BASELINE_B-1.export.json": "f5005a736874ceb084e72c1183655d16bd2b8b817cf447104d785689bf6b9e70"
+  }
+}
