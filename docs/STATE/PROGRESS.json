@@ -5,10 +5,10 @@
   "updated_at": "2026-10-26",
   "current_phase": "P1 — Legacy audit and evidence extraction",
   "total_sprints": 88,
-  "completed_sprints": 11,
-  "current_sprint_id": "S012",
-  "next_sprint_id": "S012",
-  "last_completed_sprint_id": "S011",
+  "completed_sprints": 12,
+  "current_sprint_id": "S013",
+  "next_sprint_id": "S013",
+  "last_completed_sprint_id": "S012",
   "rule": "Strict sequential execution; complete and verify one sprint before starting the next.",
   "sprints": [
     {
@@ -124,7 +124,7 @@
       "title": "Legacy baseline reproduction",
       "file": "docs/sprints/S012-legacy-baseline-reproduction.md",
       "phase": "P1 — Legacy audit and evidence extraction",
-      "status": "in_review",
+      "status": "completed",
       "depends_on": [
         "S011"
       ]

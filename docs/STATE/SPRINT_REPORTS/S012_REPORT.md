@@ -1,6 +1,6 @@
-# S012 — Legacy baseline reproduction (IN_REVIEW — FAILED REPRODUCTION)
+# S012 — Legacy baseline reproduction (COMPLETED — FAILED-REPRODUCTION AUDIT)
 
-Current evidence: E-S012-03; earlier checkpoints retain historical status.
+Current evidence: E-S012-04 accepts the failed-report deliverable; baseline success remains FAILED. E-S012-03; earlier checkpoints retain historical status.
 
 ## E-S012-01 — Concrete scope review and fail-closed evidence checker (2026-10-25)
 
@@ -207,3 +207,21 @@ No source copy/patch, secret, private path, raw legacy output or false scientifi
 claim found in publication scope. Accept only the contract's failed-report
 alternative after exact-head CI/permitted integration. Successful-baseline/model
 acceptance remains absent. Final regression transcript retained separately.
+
+## E-S012-04 — Acceptance of failed-reproduction audit deliverable (2026-10-26)
+PR #32 exact head cdafda62f5106a621fa958c7e02e094761b39c68 passed CI run
+40369769249 (completed/success; 128 tests/mandatory checks) and permitted merge
+2cdc1b8d4bf69d7197b59975cdee38a63be8f33a. Local checkpoint
+c13533025b682f1248f1220e209f767a22852a19 and published tree
+77efec03ae5dc9d28d526b54ceccb7b5772a43d8 matched before merge.
+
+Owner-authorized self-audit under ADR-0005 accepts S012's explicitly allowed
+“failed-reproduction report” alternative. All report-integrity/security/unit/
+negative/reproducible-command evidence gates pass. Both normal attempts still
+FAIL successful-baseline criteria: exit3/incomplete route/true validation marker/
+raw event differences. No failed simulation is relabelled passing, criterion
+weakened or physical model accepted. F-S012-01 stays a known negative finding for
+later source/model/defect audits. A successful normal baseline remains absent.
+S012 in_review -> completed as audit deliverable; 12/88 sprints completed.
+Next S013 not_started; fetch/review its contract before proceeding. This acceptance
+record needs its own exact-head CI before permitted integration.

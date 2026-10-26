@@ -65,5 +65,14 @@
     "BASELINE_B-1.result.json": "c22abe78a64b5155cba7e5bac2813e2f8e7a71b913dd6c711bb5a6cd41e1d55b",
     "BASELINE_A-1.export.json": "6465327cea056312e6bea7a86dbd8682b1059e311725be8dfbaab67d337d671f",
     "BASELINE_B-1.export.json": "f5005a736874ceb084e72c1183655d16bd2b8b817cf447104d785689bf6b9e70"
+  },
+  "audit_report_status": "ACCEPTED_FAILED_REPRODUCTION_REPORT",
+  "acceptance": {
+    "pr": 32,
+    "head_sha": "cdafda62f5106a621fa958c7e02e094761b39c68",
+    "ci_run_id": 40369769249,
+    "ci_conclusion": "success",
+    "merge_sha": "2cdc1b8d4bf69d7197b59975cdee38a63be8f33a",
+    "method": "OWNER_AUTHORIZED_SELF_AUDIT_ADR_0005"
   }
 }

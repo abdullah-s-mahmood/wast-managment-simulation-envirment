@@ -2,8 +2,8 @@
 
 ## Current blockers
 - No unresolved scope/sandbox blocker for the two authorized S012 attempts.
-  S012 is in_review for its contractually permitted explicit failed-reproduction
-  report. Neither attempt is accepted as a successful baseline. See F-S012-01.
+  S012 failed-report deliverable accepted after exact-head CI/integration
+  (E-S012-04). Neither attempt is a successful baseline. See F-S012-01.
 - Local GitHub CLI credential is invalid; connector works, so publication is not blocked.
 
 ## Resolved blockers
