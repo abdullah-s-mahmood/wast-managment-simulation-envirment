@@ -1,55 +1,34 @@
-# Agent Handoff — S012 failed-report audit accepted; S013 next
+# Agent Handoff — S013 test/result inventory in review
 
-Current 2026-10-26: S001–S012 audit deliverables completed (12/88); S013+ not_started.
-Branch sprint/S012-acceptance, base 2cdc1b8d4bf69d7197b59975cdee38a63be8f33a.
-Original worktree/.vscode/history preserved. No competing remote progress found.
+2026-10-26: S001–S012 audit deliverables completed (12/88); S013 in_review,
+S014+ not_started. Branch sprint/S013-test-result-inventory, base
+06bd1b37cd79acb0140979e01f99291fbccd08d5. Original worktree/.vscode/history preserved.
 
-Owner explicitly authorized exact two-run plan with one corrective retry each;
-ADR-0009 Accepted, B-S012-01 closed. Do not ask that authority again. Review JSON
-is historical metadata and stays false/NOT_RUN; actual outcomes are separate.
+S012 accepted failed-report alternative only. PR #32 exact head cdafda62f5106a621fa958c7e02e094761b39c68
+passed CI40369769249, merge2cdc1b8d4bf69d7197b59975cdee38a63be8f33a; acceptance
+PR #33 head5fa6035eb48fee3081e8786f1086712ab5ffdf2b passed CI40370154763, mergebaseabove.
+Two normal invocations remain failed exit3/incomplete route; raw event replay
+fails at host timing fields, summary projection matches. Source validation_only
+marker literaltrue conflicts with prepared criterion. No rule weakened, no successful
+baseline/model acceptance. Carry F-S012-01; never rerun normal cases unnecessarily.
 
-Two actual unchanged normal invocations ran under verified private guards. Both
-exit 3, route_complete=false. Their exports are intact but baseline checker rejects
-both; NO successful baseline reproduced. 2261 event rows each, raw bytes differ
-only at observed host timing fields. Summary differs only at preregistered excluded
-host runtime and its projection matches. Normal source emits validation_only=true
-literally, contradicting a prepared criterion. Neither criterion/test was weakened.
-See E-S012-03, F-S012-01 and docs/audit/S012_BASELINE_OUTCOME.json.
+S013 static inventory now ready: 9,035 candidate records, 83 active sources read,
+18 active/four retired test-path files, 299 assertion-bearing line candidates.
+All 2,369 historical result candidates unverifiable (34 active texts inspected,
+2,335 retired context metadata-only). No source assertion was executed or counted
+as passing. No screenshot/old result/self-reported passed status gains validation.
+No PLC source-set change; retired is only path context, not scientific exclusion.
 
-128 unit/regression tests pass; seven actual trusted resource/export probes pass.
-Initial quota-probe evidence bug and denied preflight preserved; no legacy launch
-until corrected probes produced readiness proof. Exactly two normal executions,
-zero retries; no source/input/binary changes or bigger budgets. Archive full hash
-unchanged before/after; 129 loaded library hashes unchanged. No credentials stored
-or host security policy changes; targets nonroot, no caps/network/fork/exec.
+140 regression tests pass. Real bounded scans v3–v7 byte-identical, full archive
+identity/CRC/trailer/member/payload checks pass. Private manifests/stderr/transcripts
+under Git common metadata private-evidence/S013; public sanitized summary/protocol
+and E-S013-01 explain source vs runtime/trust/units/coverage limits. No archive
+member extraction, nested archive opening, legacy test/script/binary execution or
+raw historical output/source/credential/private path published. All models remain
+UNVALIDATED and source reuse prohibited. S011/S012 private evidence preserved.
 
-S012 contract permits an explicit failed-reproduction report as alternative to a
-baseline reproduction record. Self-audit/CI/integration recorded in E-S012-04 accepts only
-that failed-report deliverable. Do NOT call the failed baseline successful, loosen
-raw-event comparison or mark scientific models validated. Then select S013 only
-after acceptance, read full contract and preserve these negative findings.
-
-Private root locator codex-s011-execution.json in Git common metadata only. Durable
-raw evidence under private-evidence/S012/runtime20261026; comparison/dependency
-manifests alongside. Existing S011 evidence intact. No legacy source/binary/raw
-campaign outputs/private paths enter public repo. Current run plan authorizes only
-these two normal cases and bounded correction, not archived test/script execution.
-No further normal runs needed: retain actual outcomes, complete report gates next.
-
-## E-S012-04 — Acceptance of failed-reproduction audit deliverable (2026-10-26)
-PR #32 exact head cdafda62f5106a621fa958c7e02e094761b39c68 passed CI run
-40369769249 (completed/success; 128 tests/mandatory checks) and permitted merge
-2cdc1b8d4bf69d7197b59975cdee38a63be8f33a. Local checkpoint
-c13533025b682f1248f1220e209f767a22852a19 and published tree
-77efec03ae5dc9d28d526b54ceccb7b5772a43d8 matched before merge.
-
-Owner-authorized self-audit under ADR-0005 accepts S012's explicitly allowed
-“failed-reproduction report” alternative. All report-integrity/security/unit/
-negative/reproducible-command evidence gates pass. Both normal attempts still
-FAIL successful-baseline criteria: exit3/incomplete route/true validation marker/
-raw event differences. No failed simulation is relabelled passing, criterion
-weakened or physical model accepted. F-S012-01 stays a known negative finding for
-later source/model/defect audits. A successful normal baseline remains absent.
-S012 in_review -> completed as audit deliverable; 12/88 sprints completed.
-Next S013 not_started; fetch/review its contract before proceeding. This acceptance
-record needs its own exact-head CI before permitted integration.
+Finish governance checks, exact-head CI and permitted integration/self-audit before
+S013 completed. Then fetch/read S014 in full. Do not run archived tests/scripts:
+current exceptions only authorize prior specific native build/validation/baseline
+cases, not arbitrary legacy execution. Read-only in-memory audit authority persists.
+Owner approval for S012 already received and recorded ADR-0009; do not re-ask it.

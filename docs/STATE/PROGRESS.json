@@ -134,7 +134,7 @@
       "title": "Legacy tests and results inventory",
       "file": "docs/sprints/S013-legacy-tests-and-results-inventory.md",
       "phase": "P1 — Legacy audit and evidence extraction",
-      "status": "not_started",
+      "status": "in_review",
       "depends_on": [
         "S012"
       ]

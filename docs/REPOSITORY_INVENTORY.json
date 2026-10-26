@@ -37,6 +37,7 @@
       "docs/STATE/SPRINT_REPORTS/S010_REPORT.md",
       "docs/STATE/SPRINT_REPORTS/S011_REPORT.md",
       "docs/STATE/SPRINT_REPORTS/S012_REPORT.md",
+      "docs/STATE/SPRINT_REPORTS/S013_REPORT.md",
       "docs/STATE/VALIDATION_LOG.md",
       "docs/STATISTICAL_ANALYSIS_PLAN.md",
       "docs/TESTING_STRATEGY.md",
@@ -56,6 +57,8 @@
       "docs/audit/S012_BASELINE_EXECUTION_REVIEW.json",
       "docs/audit/S012_BASELINE_OUTCOME.json",
       "docs/audit/S012_BASELINE_REVIEW.md",
+      "docs/audit/S013_TEST_RESULT_PROTOCOL.md",
+      "docs/audit/S013_TEST_RESULT_SUMMARY.json",
       "docs/audit/STATIC_MODULE_GRAPH.md",
       "docs/audit/intake_limits.json",
       "docs/audit/static_graph_policy.json",
@@ -168,6 +171,7 @@
       "scripts/check_execution_isolation.py",
       "scripts/execute_private_validation.py",
       "scripts/inventory_legacy.py",
+      "scripts/inventory_test_evidence.py",
       "scripts/prepare_validation_copy.py",
       "scripts/private_validation_commands.py",
       "scripts/probe_private_sandbox.py",
@@ -205,7 +209,8 @@
       "tests/test_risk_protocol.py",
       "tests/test_s001_charter.py",
       "tests/test_source_graph.py",
-      "tests/test_study_separation.py"
+      "tests/test_study_separation.py",
+      "tests/test_test_evidence_inventory.py"
     ],
     "reserved_layout": [
       "examples/README.md",
