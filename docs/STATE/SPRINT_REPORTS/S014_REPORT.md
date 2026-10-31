@@ -148,3 +148,89 @@ not assume those tools contain no defaults/assumptions either. Their classificat
 and relevant model extraction remain S014 work. Whole-project extraction remains
 false. Current changes need exact-head CI; draft PR stays unmerged. S014 stays
 in_progress; no S015 work and no external authorization blocker invented.
+
+## E-S014-03 — bounded active-source extraction verified (2026-10-31)
+
+Source checkpoint PR36 head8aa101033564007dc5221cc1376c09ebe9544077
+passed exact-head CI41149768875. Local89d2a2aef24c89617366e2076f72d5607c98df68
+and published tree2aa2d6f19c185808e5c13f4345fb1c95b0ccc096 verified equal.
+Main remains e8b356bae3bc6a6bf197bbd54c1644ddb25fd909; fetched before continuing.
+Original worktree/uncommitted .vscode preserved. No competing completion found.
+
+Resolved gap: previously remaining61 file contexts now classified; added exact
+scenario/geometry/sampling/statistical ranges, remaining native interfaces/tools,
+build/default gates, all shell wrappers and embedded monitoring formulas. New
+independent audit_auxiliary_models.py parses Python as AST data, retaining exact
+expression source hashes/byte ranges, original names, E4/UNVALIDATED labels and
+unresolved intention/units/calls. No import/eval/unparse/legacy execution. Captures
+all calls as well as assignments/defaults/returns/guards, so configuration arguments
+in unassigned calls are traceable. Added validate_model_coverage.py to reject
+missing/duplicate/unbound sources, plan/hash disagreement and model-as-test hiding.
+
+Scope/result:83 hash-verified active-path source files classified,18 test/probe
+files retained as S013 evidence,28 non-test Python files parsed,7769 source syntax
+expressions. All26 native source/interface files,10 shell files and one build file
+have selected reviewed ranges. Final114 reviewed ranges across45 files (overlaps
+with Python AST scope explicit). The ledger defines exact source anchors, original
+spellings, defaults/time/seed/protocol and provisional assumptions without claiming
+scientific equations are accepted. Dynamic calls/imports/external inputs/native
+preprocessing/arbitrary shell semantics and retired context remain explicit limits;
+whole-archive semantic analysis is false. No previously unclassified active file
+is silently excluded or counted as an independently validated physical model.
+
+Files added/changed: auxiliary audit + ten tests; coverage validator + four tests;
+expanded review plan/summary and public auxiliary/coverage summaries; extraction
+ledger/protocol; inventory, progress/handoff/blockers/report/validation records.
+No source implementation, raw dataset/campaign output, private path or secret
+published. Approved PLC source set unchanged; no scientific evidence promoted.
+
+Actual evidence (same Linux7.0.0-38-generic x86_64/Python3.11.15):
+
+- `python -m unittest discover -s tests -p test_auxiliary_model_audit.py -v`:
+  exit0, final10 tests. Static defaults/multiline expressions/unassigned calls,
+  UTF-8 AST byte columns with CRLF/CR and Unicode separators in strings; malformed
+  syntax/hash and10001-expression budget reject; no side effects/imports executed.
+  Public CLI from another CWD preserves archive bytes, skips unsafe link, emits
+  no partial success on malformed source.100 generated expression fixtures replay,
+  IDs unique and span hashes agree with direct independent byte slicing/hashlib.
+- `python -m unittest discover -s tests -p test_model_coverage.py -v`: exit0,
+  four tests. Complete fixture remains UNVALIDATED/prohibited reuse; missing,
+  duplicate, hash/plan mismatch, scientific promotion and test-scope substitution
+  rejected. These tests prove extraction/accounting properties, not physics.
+- `python -m unittest discover -s tests -v`: final168 tests exit0 (all prior154
+  plus14). Earlier163/167 runs also pass; private transcripts retained.
+- Actual auxiliary CLI: `timeout --signal=KILL 120 python
+  scripts/audit_auxiliary_models.py PRIVATE_ARCHIVE PRIVATE_INTAKE
+  docs/audit/S014_REVIEW_PLAN.json --project-root PRIVATE_PREFIX`.
+  Runs v1–v6 exit0. v1/v2 classify83 files/2841 expressions; v3/v4 bind expanded
+  plan; v5/v6 add all calls, yield7769 expressions and are byte-identical.
+  Final canonical346503350542089998e4fd6a5e2c82a6c0a78ee10e3e107fc3dcb32ad5ab7b34;
+  rawd4edada659d20448c7e2456df5117907a1b2b2741dc46b9d5dcff19fee471de6.
+- Actual reviewed-range CLI same as E-S014-02: v5/v6 exit0, final114 ranges,
+  byte-identical. Canonical11df147fa11dc385ddc3e99bb42987ad6fdf5d9f3fef543187acb17ddf8ac25e;
+  raw4072dc52c58f55128862e007dca40d2a874cfe49190024835f35ad5fac62223a.
+- Three additional bounded source-inspection passes exit0/TRAVERSAL_COMPLETE;
+  scenario/statistics, native wrappers/build, shell data reviewed only in memory.
+- Every real scan retains256MiB AS/120CPU/120wall limits plus accepted full archive,
+  member/metadata/count/text/cumulative decompression limits. Full designated
+  487062036-byte archive SHA-256 unchanged before/after; CRC/termination checks
+  pass. No unsafe link dereference, extraction, recursive archive opening or run.
+- `python scripts/validate_model_coverage.py PRIVATE_CANDIDATE PRIVATE_AUXILIARY
+  PRIVATE_REVIEWED docs/audit/S014_REVIEW_PLAN.json`: exit0, scope_coverage_complete
+  true for explicitly bounded active-path source audit; whole_archive_semantic_analysis
+  false, dynamic_call_resolution UNAVAILABLE. Public sanitized result retained.
+
+Private Git metadata private-evidence/S014 holds all original manifests/stderr,
+coverage-validation.json and regression transcripts, owner-only permissions. Exact
+private locators remain there. Public ledger/plan/summary expose only sanitized
+source observations, opaque IDs and hashes. No physical model implemented or
+validated; primary-paper calibration/reference/empirical tests NOT RUN (no such
+model accepted in this extraction sprint); Windows audit NOT RUN/not advertised.
+S012 remains a failed-reproduction report; F-S012-01 and historical trust limits
+persist. No new failure hidden; the original boolean-coordinate regression remains.
+
+Local self-audit accepts the extraction artifact's declared scope/traceability,
+not program-semantic completeness or physical validity. Required local validators
+and final CI/integration remain acceptance gates. S014 -> in_review only after
+local coverage/tests/docs pass; remains13/88 until permitted integration. S015
+not_started. No independent reviewer claimed and no GitHub protection bypass.

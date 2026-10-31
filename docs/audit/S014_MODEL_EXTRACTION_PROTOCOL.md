@@ -1,7 +1,8 @@
 # S014 model extraction — working protocol
 
-Status: candidate indexing verified; expression-level review INCOMPLETE. This is
-not S014 acceptance, source reuse authorization or scientific validation.
+Status: bounded active-path source extraction verified (E-S014-03); acceptance
+requires exact-head CI and permitted integration. No source reuse or scientific
+validation is authorized. Historical checkpoint notes below retain their dates.
 
 The independent extractor reuses the S013 bounded read-only TAR/GZIP traversal.
 Only hash-verified UTF-8 source payloads reach a trusted observer. Nothing from
@@ -87,3 +88,28 @@ scenario generators, campaign/analysis/tool scripts and their hidden parameters
 need classification and review before claiming whole-project model extraction.
 Retired-context models retain S009/S013 pointers, not silent exclusion from future
 scientific review. No currently approved PLC source set is changed.
+
+## Final bounded coverage (E-S014-03)
+
+The previously remaining source contexts are now classified: all83 inspected
+active-path source files have records. Eighteen test/probe files remain S013 test
+evidence;28 non-test Python files have static AST expression extraction. All26
+native source/interface files,10 shell files and one build file have selected
+reviewed ranges. Together the artifacts cover65 non-test files without treating
+tests, infrastructure or scenario settings as physical models.
+
+The reviewed ledger has114 ranges across45 files. Static Python extraction adds
+7769 expressions, including4928 calls so unassigned configuration-call arguments
+are not silently omitted. These are counts of syntax evidence, not independent
+equations or empirically validated models. Function/keyword defaults, assignments,
+returns, guards and calls retain exact UTF-8 source references. Imported code,
+dynamic call targets and external input values remain unresolved.
+
+validate_model_coverage.py cross-checks source IDs/hashes, test scope, plan hashes,
+selected ranges and expression-source bindings across the three private manifests.
+The actual invocation passes; public S014_COVERAGE.json records bounded coverage.
+It cannot authenticate a maliciously re-signed manifest or prove a reviewer's
+interpretation; real bounded archive scans establish source identity separately.
+Whole-archive/program semantic completeness remains false. This is an explicit
+limitation of static source auditing, not a claim that the audit is still awaiting
+classification of the previously remaining61 candidate files.

@@ -51,3 +51,23 @@ constant imputation or comment-as-validation. All E4 observations; intended beha
 UNAVAILABLE, scientific support UNVALIDATED, source reuse PROHIBITED. No new
 legacy execution or scope approval requested. Current expanded head needs CI;
 PR36 must remain draft/unmerged until actual S014 acceptance gates pass.
+
+## E-S014-03 — current resume point: in_review
+
+Read the final ledger/protocol/report and S014_COVERAGE.json. Classification of
+all83 active files is now complete;18 test/probes remain S013 evidence.28 non-test
+Python files yield7769 static expressions;114 reviewed ranges across45 files
+cover all native/interface/shell/build source and selected Python observations.
+Final repeat scans and real cross-coverage CLI pass.168 regression tests pass.
+Private auxiliary-v5/v6 and reviewed-ranges-v5/v6 plus coverage-validation.json
+and regression-168.log retain exact evidence. Earlier artifacts stay historical.
+No remaining61-file classification task: E-S014-03 supersedes that earlier note.
+
+S014 in_review,13/88 completed. Next action: final required validators, publish
+focused PR36 head, verify local/published tree equality and exact-head CI, then
+honest self-audit/permitted merge and acceptance-record PR. Do not mark completed
+before integration. After durable acceptance, fetch/read S015 in full and continue.
+Source extraction is E4 only, no scientific model accepted, unknown units/intention
+and dynamic/imported/external behavior unresolved. All reuse prohibited. Original
+worktree preserved; no new legacy execution. Prior PR36 head8aa1010 CI41149768875
+passed; expanded current head still needs CI. See private receipt for later CI.

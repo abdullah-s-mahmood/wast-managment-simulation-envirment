@@ -1163,3 +1163,14 @@ in S014_REPORT.md. Expressions remain immutable-source references, no legacy
 implementation copied or executed. Defaults, distributions, time/seed/admission
 rules separate from model validation. Remaining source classification/review
 keeps S014 in_progress; current new head CI/integration not claimed yet.
+
+## E-S014-03 — bounded source extraction, 2026-10-31
+
+All83 active-source contexts classified;18 test/probes retained in S013;28 Python
+files parsed as data,7769 expressions;114 reviewed ranges across45 files. Final
+actual repeat scans byte-identical, full archive integrity/identity unchanged.
+Cross-artifact coverage CLI exit0; no missing/test-hidden/unbound source accepted.
+Full168 tests exit0, all prior regressions retained. Exact commands/limits/hashes
+and scientific/platform NOT_RUN distinctions in S014_REPORT.md. Prior expanded
+PR36 head8aa1010 passed CI41149768875; this final head needs its own CI/integration.
+S014 in_review,13/88 accepted; no S015 work or physical model acceptance.

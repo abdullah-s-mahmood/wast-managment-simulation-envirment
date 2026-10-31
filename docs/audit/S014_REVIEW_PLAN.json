@@ -774,6 +774,258 @@
       "line_end": 952,
       "category": "protocol",
       "observation": "Summary quantities and literal validation-only marker; retain known baseline finding."
+    },
+    {
+      "id": "S014_R087",
+      "entry_id": "entry-00000154",
+      "source_sha256": "de084f3933fadca539afcfe4eadde7ef4edee70096e2a5083781eed29f95fd00",
+      "line_start": 6,
+      "line_end": 16,
+      "category": "distribution",
+      "observation": "Synthetic grid defaults, seeded edge/offset placement, area conversion and declared experiment-scope label."
+    },
+    {
+      "id": "S014_R088",
+      "entry_id": "entry-00000165",
+      "source_sha256": "1b8d37f1a4e2b509ef234a7dc76786edddb1cc4bfa6262150e77c16b1af7a26e",
+      "line_start": 9,
+      "line_end": 9,
+      "category": "default",
+      "observation": "Fixed synthetic branch-anchor fractions."
+    },
+    {
+      "id": "S014_R089",
+      "entry_id": "entry-00000165",
+      "source_sha256": "1b8d37f1a4e2b509ef234a7dc76786edddb1cc4bfa6262150e77c16b1af7a26e",
+      "line_start": 16,
+      "line_end": 38,
+      "category": "equation",
+      "observation": "Central gateway, geometric nearest-anchor assignment and explicitly non-electrical topology metadata."
+    },
+    {
+      "id": "S014_R090",
+      "entry_id": "entry-00000168",
+      "source_sha256": "234fa403f4c9086ed42c33242fe59d7d3bc43e1cf9284a2fa8cb84f54dcc405d",
+      "line_start": 8,
+      "line_end": 9,
+      "category": "default",
+      "observation": "Placement algorithm identity and bounded candidate-draw budget."
+    },
+    {
+      "id": "S014_R091",
+      "entry_id": "entry-00000168",
+      "source_sha256": "234fa403f4c9086ed42c33242fe59d7d3bc43e1cf9284a2fa8cb84f54dcc405d",
+      "line_start": 19,
+      "line_end": 47,
+      "category": "distribution",
+      "observation": "Seeded uniform edge/offset draws with strict square rejection and exhaustion failure."
+    },
+    {
+      "id": "S014_R092",
+      "entry_id": "entry-00011031",
+      "source_sha256": "4ad21b9e010d1e172910d921262c41a9b7353a4963aeaee2972a8ccce2fad5e1",
+      "line_start": 8,
+      "line_end": 17,
+      "category": "boundary",
+      "observation": "Analysis grouping and exclusion of validation-only/incomplete observations."
+    },
+    {
+      "id": "S014_R093",
+      "entry_id": "entry-00011032",
+      "source_sha256": "a633de8590f1e2b9fe1e1db434f0de01df442784dbbbed80fc25939d5482897e",
+      "line_start": 6,
+      "line_end": 11,
+      "category": "equation",
+      "observation": "Run-count/seed/finite guards, sample statistics and t-interval implementation; assumptions not empirically established."
+    },
+    {
+      "id": "S014_R094",
+      "entry_id": "entry-00011032",
+      "source_sha256": "a633de8590f1e2b9fe1e1db434f0de01df442784dbbbed80fc25939d5482897e",
+      "line_start": 13,
+      "line_end": 15,
+      "category": "equation",
+      "observation": "Paired-seed difference summary and standardized effect-size implementation."
+    },
+    {
+      "id": "S014_R095",
+      "entry_id": "entry-00010852",
+      "source_sha256": "96cc75a1132f41e31dd5dd37a88670e8e4ef84345d04b2d2f510db5d473baa2e",
+      "line_start": 18,
+      "line_end": 60,
+      "category": "protocol",
+      "observation": "Hardware-message helper arguments, fixed envelope defaults and acceptance exit code; underlying identity/admission rules referenced separately."
+    },
+    {
+      "id": "S014_R096",
+      "entry_id": "entry-00010853",
+      "source_sha256": "7046a6e1a1324c6e2ae83168eec0887393925c16259459d2666dbf49fb07f5b6",
+      "line_start": 8,
+      "line_end": 36,
+      "category": "boundary",
+      "observation": "Estimator CLI input parsing, original unit-labelled output fields and delegated model calls."
+    },
+    {
+      "id": "S014_R097",
+      "entry_id": "entry-00010998",
+      "source_sha256": "f41a82757270845f22b8de883db3ecd8c45e4b4d27929828bf1df256c40ad651",
+      "line_start": 7,
+      "line_end": 29,
+      "category": "default",
+      "observation": "Mobility state flags and public adapter interface; no unit normalization introduced."
+    },
+    {
+      "id": "S014_R098",
+      "entry_id": "entry-00011000",
+      "source_sha256": "018ae882ebe9e7b98c8e5fbee7f88ab6dfc14c7d049db6a64a4a5787e3ab8e33",
+      "line_start": 5,
+      "line_end": 8,
+      "category": "protocol",
+      "observation": "Routing cost and selection interfaces; equations remain in reviewed implementation."
+    },
+    {
+      "id": "S014_R099",
+      "entry_id": "entry-00011001",
+      "source_sha256": "4302c94b9391ba78aacfc8fb6c8fcb5bf2e68d2da4e8a1f101a504571ad612d9",
+      "line_start": 6,
+      "line_end": 13,
+      "category": "protocol",
+      "observation": "Optional inference ownership, state/action interface and input shape."
+    },
+    {
+      "id": "S014_R100",
+      "entry_id": "entry-00011002",
+      "source_sha256": "e4cb206bb124dce2b9db36dd957d5b6bf216e5082865dae370c792ca62c1d696",
+      "line_start": 14,
+      "line_end": 38,
+      "category": "protocol",
+      "observation": "Output uniqueness, event time/seed metadata and write/flush failure semantics."
+    },
+    {
+      "id": "S014_R101",
+      "entry_id": "entry-00011004",
+      "source_sha256": "f0da270f4e34dc9d2c6fb0768f6c59c95a32b638d6f8cd8f54db8eef278e1362",
+      "line_start": 9,
+      "line_end": 30,
+      "category": "protocol",
+      "observation": "Chunked provenance digest, buffer/digest widths and hex formatting."
+    },
+    {
+      "id": "S014_R102",
+      "entry_id": "entry-00011035",
+      "source_sha256": "350c1afc692df6d9776e391f19384d7c50eee26772996dfd8a650b9cd624b760",
+      "line_start": 1,
+      "line_end": 15,
+      "category": "default",
+      "observation": "Build language/version/dependency and core-target settings."
+    },
+    {
+      "id": "S014_R103",
+      "entry_id": "entry-00011035",
+      "source_sha256": "350c1afc692df6d9776e391f19384d7c50eee26772996dfd8a650b9cd624b760",
+      "line_start": 28,
+      "line_end": 48,
+      "category": "protocol",
+      "observation": "Auxiliary field-trial and co-simulation target membership and build option default."
+    },
+    {
+      "id": "S014_R104",
+      "entry_id": "entry-00011035",
+      "source_sha256": "350c1afc692df6d9776e391f19384d7c50eee26772996dfd8a650b9cd624b760",
+      "line_start": 49,
+      "line_end": 66,
+      "category": "boundary",
+      "observation": "Conditional tests and optional inference dependency/feature gate."
+    },
+    {
+      "id": "S014_R105",
+      "entry_id": "entry-00000143",
+      "source_sha256": "c35f42ce7118b7d85542e49f5a15cf6b69589b9ba057cabe3b6588364cb5abb8",
+      "line_start": 1,
+      "line_end": 5,
+      "category": "protocol",
+      "observation": "Shell orchestration/dependency/gating settings, reviewed as data only; no execution authorized by inspection."
+    },
+    {
+      "id": "S014_R106",
+      "entry_id": "entry-00000144",
+      "source_sha256": "9f525addc18a7d21984bd1dbdc6fa433557922c8cf54436688b9695cfa84be28",
+      "line_start": 1,
+      "line_end": 10,
+      "category": "protocol",
+      "observation": "Shell orchestration/dependency/gating settings, reviewed as data only; no execution authorized by inspection."
+    },
+    {
+      "id": "S014_R107",
+      "entry_id": "entry-00000150",
+      "source_sha256": "65d672842bc5c28eb530db7e884f5da04648b8553ccc947c90b2c69ae1e1dca0",
+      "line_start": 1,
+      "line_end": 19,
+      "category": "protocol",
+      "observation": "Shell orchestration/dependency/gating settings, reviewed as data only; no execution authorized by inspection."
+    },
+    {
+      "id": "S014_R108",
+      "entry_id": "entry-00000151",
+      "source_sha256": "3e3fa69e9e2e9c94973d5b499019280b3d414b4903a2513159c70027a1479ce4",
+      "line_start": 1,
+      "line_end": 4,
+      "category": "protocol",
+      "observation": "Shell orchestration/dependency/gating settings, reviewed as data only; no execution authorized by inspection."
+    },
+    {
+      "id": "S014_R109",
+      "entry_id": "entry-00000156",
+      "source_sha256": "593382bba09feb36d1e9e27cefad2cd2988b3402fd27104b4cd36a55de9303fb",
+      "line_start": 1,
+      "line_end": 3,
+      "category": "protocol",
+      "observation": "Shell orchestration/dependency/gating settings, reviewed as data only; no execution authorized by inspection."
+    },
+    {
+      "id": "S014_R110",
+      "entry_id": "entry-00000159",
+      "source_sha256": "83df95d691ce2345693d5b4ee9908b6ef28f127649f1ff397c0ed45fdc90a3e8",
+      "line_start": 1,
+      "line_end": 3,
+      "category": "protocol",
+      "observation": "Shell orchestration/dependency/gating settings, reviewed as data only; no execution authorized by inspection."
+    },
+    {
+      "id": "S014_R111",
+      "entry_id": "entry-00000160",
+      "source_sha256": "fb789accd43093c1aca4ce00b48ed6bedfab6bf27ec38f08f771ad0a7fbdca41",
+      "line_start": 1,
+      "line_end": 15,
+      "category": "protocol",
+      "observation": "Shell orchestration/dependency/gating settings, reviewed as data only; no execution authorized by inspection."
+    },
+    {
+      "id": "S014_R112",
+      "entry_id": "entry-00000166",
+      "source_sha256": "595da975c0cf3cf529bb0a1a584f8a06e07361791230822c58561346ae8d13c8",
+      "line_start": 1,
+      "line_end": 7,
+      "category": "protocol",
+      "observation": "Shell orchestration/dependency/gating settings, reviewed as data only; no execution authorized by inspection."
+    },
+    {
+      "id": "S014_R113",
+      "entry_id": "entry-00000167",
+      "source_sha256": "78c9f025f179258392120ffb4a9e7789eb27fc16b7b463060bc990d8f3a1d441",
+      "line_start": 1,
+      "line_end": 8,
+      "category": "protocol",
+      "observation": "Shell orchestration/dependency/gating settings, reviewed as data only; no execution authorized by inspection."
+    },
+    {
+      "id": "S014_R114",
+      "entry_id": "entry-00011033",
+      "source_sha256": "b659860abfc7d2f9c5a6ef378cffe0f2737b634f2d6fec83410ab926a4c3b838",
+      "line_start": 6,
+      "line_end": 76,
+      "category": "equation",
+      "observation": "Embedded monitoring percentage/speed/ETA formulas, not simulation truth or measured performance validation."
     }
   ]
 }
