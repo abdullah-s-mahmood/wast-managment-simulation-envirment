@@ -1,38 +1,23 @@
-# Agent Handoff — S014 accepted; S015 next
+# Agent Handoff — S015 register in review;14/88 accepted
 
-2026-10-31: S001–S014 completed (14/88 audit deliverables); S015+ not_started.
-PR36 exact head f982766ffe254f04735ac499cbb8ddf77fba8db2 passed CI41153333228,
-merged1c95db52c589bdac1a4aa77e812465e7f54d2e2f. Current acceptance record branch
-sprint/S014-acceptance based on that merge; needs its own CI/integration before
-S015 starts. Original worktree/.vscode preserved; locate audit worktree using
-`git worktree list`. Earlier branches/checkpoints/private evidence retained.
+2026-10-31: S001–S014 completed. S014 PR36 source/PR37 acceptance passed exact-head
+CI41153333228/41153450867 and merged1c95db5/3d351b44910baa9d2846a3eba10c0d34838ec824.
+Current branch sprint/S015-discrepancy-register based on final S014 acceptance.
+Original worktree/.vscode/history/archive preserved; no new legacy execution.
 
-S014 source ledger: all83 inspected active-source contexts classified;18 tests
-remain S013 evidence;28 non-test Python files yield7769 static expressions;
-114 reviewed ranges across45 files cover native/interface/shell/build and selected
-Python behavior. Final actual repeats byte-identical; coverage CLI passes;
-168 regression tests pass. All exact commands/hashes/failures/limits and accepted
-scope are in S014_REPORT.md, ledger/protocol/plan/public summaries. Private Git
-common metadata private-evidence/S014 holds candidate/auxiliary/review manifests,
-coverage validation and transcripts, owner-only. No archived source reconstructed,
-extracted, imported, evaluated or executed; archive identity unchanged.
+Read full S015 contract/report/register/protocol. Three prioritized observed
+issues: failed baseline reproduction, normal-run metadata/criterion conflict,
+raw replay mismatch at host-time fields. Source/test/impact/minimal-reproducer
+links explicit. Unknown intent/root causes/geometry/science not promoted to defects.
+Three actual hash-bound retained-S012 rechecks pass/byte-identical;175 tests pass.
+Checker cannot repair legacy or import historical validated results. Private
+Git common metadata private-evidence/S015 holds receipts, outputs and logs.
+Archive remains original487062036-byte SHA256da08e1a...b525da8 (full in report).
 
-Source extraction only is accepted: E4 observations, intended behavior UNAVAILABLE,
-scientific support UNVALIDATED, original units not inferred, reuse PROHIBITED.
-Dynamic calls/imported definitions/external inputs and retired-context semantics
-remain explicit limitations; no physical model/calibration or license cleared.
-No PLC source-set substitution. Tests establish software properties only.
-
-Next safe action after acceptance integration: fetch, verify progress, read full
-S015 contract and execute discrepancy/defect register using source anchors and
-retained negative evidence. No need to request routine permission. Do not guess
-scientific constants or execute unknown legacy code. Prior specific execution
-exceptions do not authorize arbitrary training/campaigns/tests.
-
-Carry F-S012-01: both normal baseline attempts exit3/incomplete route, raw event
-replay differs at host-time fields, summary agrees only declared projection,
-normal source literal validation_only=true conflicts with prepared criterion.
-S012 accepted failed-reproduction report only, not a successful baseline. S013
-all2369 historical candidates unverifiable, no archived test pass claimed.
-ADR-0005 allows honest self-audit/normal merge after actual exact-head checks;
-no fake independent approval or branch-protection bypass.
+Next: final local validators, publish focused S015 PR, exact-head CI/tree equality,
+self-audit/permitted integration and acceptance records. Then fetch/read S016.
+No S016 work before acceptance. No routine permission or new simulation needed.
+Scientific validation UNVALIDATED, reuse PROHIBITED; S014 source/unit/dynamic and
+S013 historical-trust limitations remain. S012 is an accepted FAILED-reproduction
+report, not a successful baseline. Keep original raw failures and frozen criteria.
+No physical model or library/source reuse accepted; no fake independent approval.

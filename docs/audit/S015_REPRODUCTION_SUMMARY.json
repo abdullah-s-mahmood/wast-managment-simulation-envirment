@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "evidence_origin": "HASH_BOUND_RETAINED_S012_AUDIT_NOT_NEW_RUN",
+  "normal_runs_executed_now": 0,
+  "legacy_changes": false,
+  "historical_results_imported": false,
+  "findings": {
+    "D-S015-001": true,
+    "D-S015-002": true,
+    "D-S015-003": true
+  },
+  "actual_exits": [
+    3,
+    3
+  ],
+  "route_complete": [
+    false,
+    false
+  ],
+  "validation_only_flags": [
+    true,
+    true
+  ],
+  "event_count": 2261,
+  "different_field_paths": {
+    "/crypto_verification_wall_us": 25,
+    "/signing_wall_us": 25,
+    "/simulation_runtime_seconds": 1
+  },
+  "summary_different_paths": [
+    "/simulation_runtime_seconds"
+  ],
+  "scientific_validation": "UNVALIDATED",
+  "source_reuse": "PROHIBITED"
+}

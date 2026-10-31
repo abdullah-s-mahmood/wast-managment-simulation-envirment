@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "mode": "AUDIT_ONLY",
+  "legacy_action": "NO_CHANGE",
+  "historical_results_use": "PROHIBITED_AS_VALIDATED_RESULTS",
+  "scientific_validation": "UNVALIDATED",
+  "archive_sha256": "da08e1a78e73215ddf9d165e32a07f262a0b8379b3b04f4b17b27d5b6b525da8",
+  "issues": [
+    {
+      "id": "D-S015-001",
+      "priority": "P1",
+      "status": "OBSERVED_OPEN",
+      "classification": "failed_reproduction",
+      "expected_basis": "S012 preregistered successful-baseline gate; not proof that the finite scenario must complete.",
+      "observed": "Both authorized normal attempts exit3 with incomplete route.",
+      "minimal_reproducer": "python scripts/audit_discrepancies.py reproduce PRIVATE_RETAINED_S012_ROOT (reads accepted hash-bound artifacts; executes no legacy code)",
+      "observable_consequence": "Baseline success not established; retain negative audit result.",
+      "source_reference": "entry-00010836:519-525,735-751; E-S012-03",
+      "test_reference": "tests/test_discrepancy_audit.py; retained S012 frozen checker and failed outcomes",
+      "reproduction": "RECHECKED_RETAINED_S012_EVIDENCE",
+      "impacts": {
+        "state": "Incomplete collection observed; root cause or code defect not established.",
+        "random_streams": "Not directly observed; no RNG state claim or new legacy execution.",
+        "outputs": "Baseline success not established; retain negative audit result.",
+        "metrics": "No physical validity or valid historical aggregate inferred; scientific support remains UNVALIDATED."
+      },
+      "resolution_boundary": "Do not extend horizon/fleet, patch source or rerun under this audit; a future bounded investigation needs an evidence-backed plan."
+    },
+    {
+      "id": "D-S015-002",
+      "priority": "P1",
+      "status": "OBSERVED_OPEN",
+      "classification": "metadata_contract_conflict",
+      "expected_basis": "Prepared normal-run metadata criterion and analysis eligibility differ from observed source/output; intention remains unresolved.",
+      "observed": "Both normal outputs carry validation_only=true; source literal and analysis guard are recorded in S014.",
+      "minimal_reproducer": "python scripts/audit_discrepancies.py reproduce PRIVATE_RETAINED_S012_ROOT (reads accepted hash-bound artifacts; executes no legacy code)",
+      "observable_consequence": "Normal-run metadata conflicts with prepared criterion and would trigger the source analysis exclusion guard.",
+      "source_reference": "entry-00010836:934-952; entry-00011031:8-17; E-S014-03",
+      "test_reference": "tests/test_discrepancy_audit.py; retained S012 frozen checker and failed outcomes",
+      "reproduction": "RECHECKED_RETAINED_S012_EVIDENCE",
+      "impacts": {
+        "state": "Simulation path is normal per retained invocation, metadata says validation-only; do not relabel it silently.",
+        "random_streams": "Not directly observed; no RNG state claim or new legacy execution.",
+        "outputs": "Normal-run metadata conflicts with prepared criterion and would trigger the source analysis exclusion guard.",
+        "metrics": "No physical validity or valid historical aggregate inferred; scientific support remains UNVALIDATED."
+      },
+      "resolution_boundary": "Record compatibility conflict, not an invented intended requirement or a source patch."
+    },
+    {
+      "id": "D-S015-003",
+      "priority": "P2",
+      "status": "OBSERVED_OPEN",
+      "classification": "raw_replay_mismatch",
+      "expected_basis": "S012 frozen raw event-byte equality gate; summary exclusion applies only to the predeclared host-runtime field.",
+      "observed": "Same-seed raw event streams differ at retained host-time fields; summary differs at host duration.",
+      "minimal_reproducer": "python scripts/audit_discrepancies.py reproduce PRIVATE_RETAINED_S012_ROOT (reads accepted hash-bound artifacts; executes no legacy code)",
+      "observable_consequence": "Raw replay gate fails; no post-hoc event normalization can make it pass.",
+      "source_reference": "entry-00010836:27-28,394,498,950; E-S012-03",
+      "test_reference": "tests/test_discrepancy_audit.py; retained S012 frozen checker and failed outcomes",
+      "reproduction": "RECHECKED_RETAINED_S012_EVIDENCE",
+      "impacts": {
+        "state": "No simulated-state divergence established by these host-time differences.",
+        "random_streams": "Not directly observed; no RNG state claim or new legacy execution.",
+        "outputs": "Raw replay gate fails; no post-hoc event normalization can make it pass.",
+        "metrics": "No physical validity or valid historical aggregate inferred; scientific support remains UNVALIDATED."
+      },
+      "resolution_boundary": "Keep raw artifacts and the failed criterion; do not import historical metrics or rewrite events."
+    }
+  ],
+  "open_questions": [
+    {
+      "id": "Q-S015-001",
+      "status": "NOT_ACCEPTED_AS_DEFECT",
+      "question": "Default synthetic generator geometry versus declared area/scope label merits a separate static reproducer; do not generalize it to official campaign maps.",
+      "source_reference": "entry-00000154:6-16; S014 review plan"
+    },
+    {
+      "id": "Q-S015-002",
+      "status": "NOT_ACCEPTED_AS_DEFECT",
+      "question": "Unknown units, calibration, dynamic inputs and intended behavior remain evidence gaps, not confirmed software defects.",
+      "source_reference": "S014_MODEL_EXTRACTION_LEDGER.md"
+    }
+  ],
+  "source_reuse": "PROHIBITED"
+}
