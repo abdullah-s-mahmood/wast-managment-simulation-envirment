@@ -1211,3 +1211,19 @@ all three reproduced without a new legacy invocation or source/result repair.
 required legacy-repair/import attacks. Archive full hash/size unchanged. Exact
 commands, provenance, impacts, limits and NOT_RUN distinctions in S015_REPORT.md.
 Local final validators/CI/integration remain gates;14/88 accepted, S016 untouched.
+
+## E-S015-02 — sole-maintainer register acceptance, 2026-10-31
+
+PR38 exact head d8a71ce6a61eeafec2abdf7c9b2c0c327727902f passed
+CI41154180994 (completed/success;175 tests/required checks), permitted merge
+8c7c815b0bf73164a40f956ccb62d0fd8c15b704. Local6e3ff7065686632d9af71efa418f5475da451a0c
+and published treebfbe480ffcfec25382e5b3795ab6c6aa8fcce01c verified equal.
+ADR-0005 self-audit accepts the prioritized register, actual retained-evidence
+reproducers, explicit impact mappings and prohibition on repair/import. No
+independent reviewer claimed, no protections bypassed. Three discrepancies remain
+OBSERVED_OPEN; geometry/scientific questions remain unconfirmed. No successful
+baseline, fixed code, physical validation or source reuse accepted.
+
+S015 in_review -> completed,15/88 audit deliverables. S016 next/not_started.
+This durable acceptance record needs its own exact-head CI/integration before
+fetching/reading/executing S016. Open register issues are not silently resolved.

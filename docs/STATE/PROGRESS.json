@@ -5,10 +5,10 @@
   "updated_at": "2026-10-31",
   "current_phase": "P1 — Legacy audit and evidence extraction",
   "total_sprints": 88,
-  "completed_sprints": 14,
-  "current_sprint_id": "S015",
-  "next_sprint_id": "S015",
-  "last_completed_sprint_id": "S014",
+  "completed_sprints": 15,
+  "current_sprint_id": "S016",
+  "next_sprint_id": "S016",
+  "last_completed_sprint_id": "S015",
   "rule": "Strict sequential execution; complete and verify one sprint before starting the next.",
   "sprints": [
     {
@@ -154,7 +154,7 @@
       "title": "Legacy discrepancy and defect register",
       "file": "docs/sprints/S015-legacy-discrepancy-and-defect-register.md",
       "phase": "P1 — Legacy audit and evidence extraction",
-      "status": "in_review",
+      "status": "completed",
       "depends_on": [
         "S014"
       ]
