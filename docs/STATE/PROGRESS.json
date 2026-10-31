@@ -154,7 +154,7 @@
       "title": "Legacy discrepancy and defect register",
       "file": "docs/sprints/S015-legacy-discrepancy-and-defect-register.md",
       "phase": "P1 — Legacy audit and evidence extraction",
-      "status": "not_started",
+      "status": "in_review",
       "depends_on": [
         "S014"
       ]

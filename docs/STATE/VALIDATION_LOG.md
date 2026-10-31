@@ -1199,3 +1199,15 @@ remains UNVALIDATED; unit/intention/retired/dynamic and F-S012-01 limitations re
 S014 in_review -> completed,14/88 audit deliverables. S015 is next/not_started.
 This acceptance record needs its own exact-head CI and permitted integration;
 fetch/read S015 fully only after that durable state is integrated.
+
+## E-S015-01 — 2026-10-31 prioritized discrepancy register
+
+S014 acceptance PR37 exact headd6e49e96ea802f50ba87929d6a1253619b815147
+passed CI41153450867, merged3d351b44910baa9d2846a3eba10c0d34838ec824.
+S015 register carries three observed negative-audit issues, not guessed scientific
+defects. Three real read-only rechecks of accepted S012 artifacts exit0/identical;
+all three reproduced without a new legacy invocation or source/result repair.
+175 tests pass; seven new tests include100 generated difference/path cases and
+required legacy-repair/import attacks. Archive full hash/size unchanged. Exact
+commands, provenance, impacts, limits and NOT_RUN distinctions in S015_REPORT.md.
+Local final validators/CI/integration remain gates;14/88 accepted, S016 untouched.
