@@ -1,9 +1,9 @@
 # Blockers and Open Dependencies
 
 ## Current blockers
-- S015 discrepancy register locally reproduced; no external audit blocker.
-  Exact-head CI/integration and acceptance records pending. Three observed issues
-  remain open in S015_DISCREPANCY_REGISTER.json; audit acceptance will not fix them.
+- S015 prioritized discrepancy register accepted after exact-head CI/integration
+  (E-S015-02). No external audit blocker. Its three observed issues remain open;
+  successful baseline/physical validation/source repair are not accepted.
 - S014 bounded source-extraction artifact accepted after exact-head CI/permitted
   integration (E-S014-04). No open S014 blocker. Scientific/reuse/dynamic limits
   remain explicit and do not constitute physical model acceptance.
