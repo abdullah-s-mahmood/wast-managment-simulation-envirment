@@ -1238,3 +1238,25 @@ version/clearance promotion attacks rejected; working-file drift does not replac
 pinned blobs; standalone source manifest must agree. Archive full identity unchanged.
 Exact commands, source manifests, limits, retained failures and scientific/platform
 NOT_RUN distinctions in S016_REPORT.md. Final CI/integration pending;15/88 accepted.
+
+## E-S016-02 — sole-maintainer audit-freeze acceptance, 2026-10-31
+
+PR40 exact head0b45478cf6b5ca4359352f86138c7fb9bb1f0805 passed
+CI41155020470 (completed/success;185 tests and actual immutable-freeze check),
+permitted merge0d8fd9ba54a73dc1c4c19b62adf4f26360dd8a0d.
+Local9bc23016caf02e1126beb8d73d176b88e89f1edb and published tree
+97a53411316abcecd68af09c6a2b34c584c43aa8 verified equal. Final local185
+regression run3.506 seconds; initial185 run3.691 seconds, both exit0.
+
+Owner-authorized self-audit under ADR-0005 accepts versioned report/source manifest/
+freeze reference, evidence-or-unresolved conclusions, recovery without chat and
+anti-promotion tests. No independent reviewer fabricated, no protection bypass.
+AUDIT-FREEZE-001 canonical1f436ea5d7273b73621d64db9d542810b48bbdfc2103683b0e55b462a5a6ddc0
+remains unchanged. Source state607683953e3f28ccd35f2183f6b211cf286e9f74 is
+historical; mutable future state does not replace its evidence.
+
+No scientific model, platform version, security/license clearance, source reuse,
+successful baseline or closed legacy discrepancy accepted. Source/runtime unknowns
+remain unresolved, three S015 issues open and old failures retained. S016
+in_review -> completed,16/88 audit deliverables. S017 next/not_started, phaseP2.
+This acceptance record requires its own exact-head CI/integration before S017.

@@ -3,12 +3,12 @@
   "display_name": "Waste Management Simulation Environment",
   "state_version": 1,
   "updated_at": "2026-10-31",
-  "current_phase": "P1 — Legacy audit and evidence extraction",
+  "current_phase": "P2 — Runtime and simulator integration",
   "total_sprints": 88,
-  "completed_sprints": 15,
-  "current_sprint_id": "S016",
-  "next_sprint_id": "S016",
-  "last_completed_sprint_id": "S015",
+  "completed_sprints": 16,
+  "current_sprint_id": "S017",
+  "next_sprint_id": "S017",
+  "last_completed_sprint_id": "S016",
   "rule": "Strict sequential execution; complete and verify one sprint before starting the next.",
   "sprints": [
     {
@@ -164,7 +164,7 @@
       "title": "Legacy audit freeze",
       "file": "docs/sprints/S016-legacy-audit-freeze.md",
       "phase": "P1 — Legacy audit and evidence extraction",
-      "status": "in_review",
+      "status": "completed",
       "depends_on": [
         "S015"
       ]
