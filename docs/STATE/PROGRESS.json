@@ -5,10 +5,10 @@
   "updated_at": "2026-10-31",
   "current_phase": "P1 — Legacy audit and evidence extraction",
   "total_sprints": 88,
-  "completed_sprints": 13,
-  "current_sprint_id": "S014",
-  "next_sprint_id": "S014",
-  "last_completed_sprint_id": "S013",
+  "completed_sprints": 14,
+  "current_sprint_id": "S015",
+  "next_sprint_id": "S015",
+  "last_completed_sprint_id": "S014",
   "rule": "Strict sequential execution; complete and verify one sprint before starting the next.",
   "sprints": [
     {
@@ -144,7 +144,7 @@
       "title": "Legacy model and parameter extraction",
       "file": "docs/sprints/S014-legacy-model-and-parameter-extraction.md",
       "phase": "P1 — Legacy audit and evidence extraction",
-      "status": "in_review",
+      "status": "completed",
       "depends_on": [
         "S013"
       ]
