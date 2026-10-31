@@ -1150,3 +1150,16 @@ without weakening it. Two bounded real archive scans exit0, byte-identical
 extraction/review explicitly incomplete, scientific validation UNVALIDATED,
 source reuse PROHIBITED. Required validators pass before final state rerun.
 S014 in_progress; no S015 work, no sprint acceptance or exact-head CI claimed.
+
+## E-S014-02 — 2026-10-31 reviewed source ranges (not acceptance)
+
+Previous draft PR36 exact head8b00cbb6081e10ff273930c38d027ed33e83d75a passed
+CI41148905449. New independent reviewed-range resolver and six synthetic tests:
+full154 tests exit0. Four actual bounded reviews exit0; final v3/v4 byte-identical
+86-range/22-source private ledgers, canonical digest
+540aff926902fc9e3632f90e9cbf7e60e1941f8aa3b11e564a899f21ff526a84.
+Full archive identity/integrity unchanged. Exact commands/limits/coverage/unknowns
+in S014_REPORT.md. Expressions remain immutable-source references, no legacy
+implementation copied or executed. Defaults, distributions, time/seed/admission
+rules separate from model validation. Remaining source classification/review
+keeps S014 in_progress; current new head CI/integration not claimed yet.

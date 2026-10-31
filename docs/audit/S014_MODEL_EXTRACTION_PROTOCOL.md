@@ -52,3 +52,38 @@ primary references before any claim about what they report; code comments are
 E4 observations, not scientific evidence. Retain the approved PLC source set.
 No model is accepted for implementation by this protocol. S015 cannot start
 until the actual S014 ledger review, tests, exact-head CI and integration pass.
+
+## Reviewed ranges (E-S014-02)
+
+The separate S014_REVIEW_PLAN.json selects multiline source ranges by immutable
+entry ID/source hash and one-based inclusive lines. review_model_spans.py binds
+each range to zero-based UTF-8 byte offsets, a span hash, original identifier
+spellings and numeric lexical spellings. Apostrophe/underscore digit separators
+and scientific notation are preserved. No expression is evaluated or normalized;
+exact formulas remain addressable in the designated archive rather than copied
+into executable source. Source unit spellings remain in identifiers/ranges;
+physical units are not inferred from names or comments.
+
+The plan's English observations are reviewer interpretations of E4 source. Hash
+verification establishes which bytes were inspected, not the truth of a reviewer's
+interpretation. Intended behavior remains UNAVAILABLE and scientific support
+UNVALIDATED. Source-defined input boundaries are software observations, not
+established scientific applicability domains. RNG seed/source replay is separate
+from distribution calibration and cross-library stochastic reproducibility.
+
+Every selected range must resolve. Invalid schemas, duplicate IDs, guessed units,
+extra trust/normalization fields, changed sources, boolean/out-of-range coordinates,
+and spans over8KiB fail closed. Plans allow at most1024 ranges, each under80 lines.
+CLI budgets inherit the candidate scanner's archive/CPU/address-space policy.
+The public plan and summary contain only sanitized observations and opaque source
+anchors. Private manifests retain original names/numeric spellings and exact
+source-range hashes. There is no executable legacy implementation in this project.
+
+Coverage now includes reviewed core dynamics/collection/encoding/masks, network
+capacity/packet outcomes, auxiliary field-trial interpolation, mobility/routing,
+SLA/reward, runtime scheduling/defaults, admission/identity rules, optional ONNX
+and training/export formulas. It remains a partial review: remaining active-path
+scenario generators, campaign/analysis/tool scripts and their hidden parameters
+need classification and review before claiming whole-project model extraction.
+Retired-context models retain S009/S013 pointers, not silent exclusion from future
+scientific review. No currently approved PLC source set is changed.

@@ -29,3 +29,25 @@ at host timing, summary matches only declared projection, normal-path literal
 validation_only=true conflicts with prepared criterion. Do not rerun arbitrarily.
 S013 all2369 historical candidates unverifiable; no archived test pass claimed.
 ADR-0005 permits honest self-audit/merge after required checks, no fake review.
+
+## E-S014-02 — latest working checkpoint
+
+Prior draft PR36 head8b00cbb6081e10ff273930c38d027ed33e83d75a passed
+CI41148905449; local951c420/published tree equality verified. Audit worktree
+moved to persistent sibling directory; use `git worktree list` for actual locator.
+Original worktree still preserved. New trusted reviewed-range resolver, public
+sanitized plan and six tests now implemented;154 regression tests pass.
+86 reviewed ranges/22 files resolve to exact byte/span hashes with original name/
+numeric spellings retained only privately. Two final actual scans v3/v4 identical;
+see report/summary for hashes. Prior52-range outputs retained too.
+
+Next S014 task: private-evidence/S014/coverage-next.json lists61 active candidate
+source files without selected ranges (including18 tests). Classify tool/build/
+scenario/analysis context and inspect relevant remaining defaults/assumptions;
+do not equate61 files with61 missing physical models or silently exclude them.
+Core models/runtime/optional training/export now have reviewed ranges, not
+scientific acceptance. Original units unresolved where not stated; no normalization,
+constant imputation or comment-as-validation. All E4 observations; intended behavior
+UNAVAILABLE, scientific support UNVALIDATED, source reuse PROHIBITED. No new
+legacy execution or scope approval requested. Current expanded head needs CI;
+PR36 must remain draft/unmerged until actual S014 acceptance gates pass.

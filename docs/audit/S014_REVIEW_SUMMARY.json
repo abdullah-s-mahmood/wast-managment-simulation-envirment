@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "status": "PARTIAL_REVIEW_NOT_SPRINT_ACCEPTANCE",
+  "selected_source_files": 22,
+  "reviewed_ranges": 86,
+  "category_counts": {
+    "boundary": 14,
+    "default": 20,
+    "distribution": 7,
+    "equation": 18,
+    "protocol": 11,
+    "seed_rule": 3,
+    "time_rule": 13
+  },
+  "archive_sha256": "da08e1a78e73215ddf9d165e32a07f262a0b8379b3b04f4b17b27d5b6b525da8",
+  "canonical_private_manifest_sha256": "540aff926902fc9e3632f90e9cbf7e60e1941f8aa3b11e564a899f21ff526a84",
+  "raw_private_manifest_sha256": "026879ce319fca9fbe3aec1ec1d24ebbcfdb4ecda1b90651be02525e3d70cf73",
+  "byte_identical_repeats": 2,
+  "whole_project_extraction_complete": false,
+  "source_reuse": "PROHIBITED",
+  "scientific_validation": "UNVALIDATED"
+}

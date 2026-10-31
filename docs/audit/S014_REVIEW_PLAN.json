@@ -1,0 +1,779 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "id": "S014_R001",
+      "entry_id": "entry-00010995",
+      "source_sha256": "448181f37a8422b866775beef9b25fabf9e8622c53606d124d67f90f3fa49769",
+      "line_start": 10,
+      "line_end": 12,
+      "category": "seed_rule",
+      "observation": "Independent named stochastic streams."
+    },
+    {
+      "id": "S014_R002",
+      "entry_id": "entry-00010995",
+      "source_sha256": "448181f37a8422b866775beef9b25fabf9e8622c53606d124d67f90f3fa49769",
+      "line_start": 13,
+      "line_end": 15,
+      "category": "distribution",
+      "observation": "Initial fill distribution, distinct from repeated dynamics."
+    },
+    {
+      "id": "S014_R003",
+      "entry_id": "entry-00010995",
+      "source_sha256": "448181f37a8422b866775beef9b25fabf9e8622c53606d124d67f90f3fa49769",
+      "line_start": 16,
+      "line_end": 18,
+      "category": "equation",
+      "observation": "Capped stochastic accumulation scaled by elapsed update time."
+    },
+    {
+      "id": "S014_R004",
+      "entry_id": "entry-00010995",
+      "source_sha256": "448181f37a8422b866775beef9b25fabf9e8622c53606d124d67f90f3fa49769",
+      "line_start": 19,
+      "line_end": 20,
+      "category": "distribution",
+      "observation": "Temperature and humidity redraws; empirical calibration unavailable."
+    },
+    {
+      "id": "S014_R005",
+      "entry_id": "entry-00010995",
+      "source_sha256": "448181f37a8422b866775beef9b25fabf9e8622c53606d124d67f90f3fa49769",
+      "line_start": 21,
+      "line_end": 23,
+      "category": "time_rule",
+      "observation": "Motion draw and first-full timestamp update."
+    },
+    {
+      "id": "S014_R006",
+      "entry_id": "entry-00010855",
+      "source_sha256": "1213273621577266d7d77156477dc86db8f8492da378ff6e0932b06e732b3529",
+      "line_start": 6,
+      "line_end": 19,
+      "category": "equation",
+      "observation": "Energy gating, scripted hazard, motion and heartbeat thresholds."
+    },
+    {
+      "id": "S014_R007",
+      "entry_id": "entry-00010855",
+      "source_sha256": "1213273621577266d7d77156477dc86db8f8492da378ff6e0932b06e732b3529",
+      "line_start": 21,
+      "line_end": 30,
+      "category": "equation",
+      "observation": "Collection mass conversion, capacity tolerance and state reset."
+    },
+    {
+      "id": "S014_R008",
+      "entry_id": "entry-00010855",
+      "source_sha256": "1213273621577266d7d77156477dc86db8f8492da378ff6e0932b06e732b3529",
+      "line_start": 32,
+      "line_end": 35,
+      "category": "equation",
+      "observation": "Distance-only fuel proxy, not a validated vehicle fuel model."
+    },
+    {
+      "id": "S014_R009",
+      "entry_id": "entry-00010855",
+      "source_sha256": "1213273621577266d7d77156477dc86db8f8492da378ff6e0932b06e732b3529",
+      "line_start": 37,
+      "line_end": 45,
+      "category": "seed_rule",
+      "observation": "Hash-derived stream seed, separate from physical stochastic validity."
+    },
+    {
+      "id": "S014_R010",
+      "entry_id": "entry-00010855",
+      "source_sha256": "1213273621577266d7d77156477dc86db8f8492da378ff6e0932b06e732b3529",
+      "line_start": 47,
+      "line_end": 73,
+      "category": "equation",
+      "observation": "State features, capacity/fill/time/distance normalization and guards."
+    },
+    {
+      "id": "S014_R011",
+      "entry_id": "entry-00010855",
+      "source_sha256": "1213273621577266d7d77156477dc86db8f8492da378ff6e0932b06e732b3529",
+      "line_start": 75,
+      "line_end": 95,
+      "category": "boundary",
+      "observation": "Action mask eligibility, authentication, capacity and reachability."
+    },
+    {
+      "id": "S014_R012",
+      "entry_id": "entry-00010993",
+      "source_sha256": "bef52231c794524bf4c24ecb11db1c039d7a97b9c1fa3caa0bd9a94dd5429a98",
+      "line_start": 8,
+      "line_end": 15,
+      "category": "default",
+      "observation": "Position and sensor initialization defaults; unit spelling retained without inference."
+    },
+    {
+      "id": "S014_R013",
+      "entry_id": "entry-00010993",
+      "source_sha256": "bef52231c794524bf4c24ecb11db1c039d7a97b9c1fa3caa0bd9a94dd5429a98",
+      "line_start": 41,
+      "line_end": 48,
+      "category": "default",
+      "observation": "Bin mass and state declarations."
+    },
+    {
+      "id": "S014_R014",
+      "entry_id": "entry-00010993",
+      "source_sha256": "bef52231c794524bf4c24ecb11db1c039d7a97b9c1fa3caa0bd9a94dd5429a98",
+      "line_start": 64,
+      "line_end": 67,
+      "category": "default",
+      "observation": "Truck state initialization."
+    },
+    {
+      "id": "S014_R015",
+      "entry_id": "entry-00010993",
+      "source_sha256": "bef52231c794524bf4c24ecb11db1c039d7a97b9c1fa3caa0bd9a94dd5429a98",
+      "line_start": 72,
+      "line_end": 85,
+      "category": "default",
+      "observation": "Encoder dimensions and mask argument defaults."
+    },
+    {
+      "id": "S014_R016",
+      "entry_id": "entry-00010838",
+      "source_sha256": "b7599512d005fff615f9ba6c641031a5cde4e405ab4c64b4961cef2d9b100d54",
+      "line_start": 5,
+      "line_end": 25,
+      "category": "time_rule",
+      "observation": "Monotone clock, collection reset and fullness breach rule."
+    },
+    {
+      "id": "S014_R017",
+      "entry_id": "entry-00010838",
+      "source_sha256": "b7599512d005fff615f9ba6c641031a5cde4e405ab4c64b4961cef2d9b100d54",
+      "line_start": 26,
+      "line_end": 41,
+      "category": "protocol",
+      "observation": "Consecutive readings, candidate and challenge transitions."
+    },
+    {
+      "id": "S014_R018",
+      "entry_id": "entry-00010838",
+      "source_sha256": "b7599512d005fff615f9ba6c641031a5cde4e405ab4c64b4961cef2d9b100d54",
+      "line_start": 43,
+      "line_end": 64,
+      "category": "time_rule",
+      "observation": "Collection, authenticated appeal and timeout enforcement."
+    },
+    {
+      "id": "S014_R019",
+      "entry_id": "entry-00010844",
+      "source_sha256": "4914fe366533baa82ba32b53cac3f91908f3fc0f774042532c1af240138f2116",
+      "line_start": 14,
+      "line_end": 18,
+      "category": "protocol",
+      "observation": "Nominal capacity constant with source-comment scope, not field throughput validation."
+    },
+    {
+      "id": "S014_R020",
+      "entry_id": "entry-00010844",
+      "source_sha256": "4914fe366533baa82ba32b53cac3f91908f3fc0f774042532c1af240138f2116",
+      "line_start": 55,
+      "line_end": 80,
+      "category": "boundary",
+      "observation": "Construction guards, branch defaults and endpoint placement."
+    },
+    {
+      "id": "S014_R021",
+      "entry_id": "entry-00010844",
+      "source_sha256": "4914fe366533baa82ba32b53cac3f91908f3fc0f774042532c1af240138f2116",
+      "line_start": 82,
+      "line_end": 95,
+      "category": "time_rule",
+      "observation": "Shared feeder queue service scheduling, no physical-channel inference."
+    },
+    {
+      "id": "S014_R022",
+      "entry_id": "entry-00010844",
+      "source_sha256": "4914fe366533baa82ba32b53cac3f91908f3fc0f774042532c1af240138f2116",
+      "line_start": 97,
+      "line_end": 115,
+      "category": "equation",
+      "observation": "Constant-rate or piecewise rate-interpolated serialization service interval."
+    },
+    {
+      "id": "S014_R023",
+      "entry_id": "entry-00010844",
+      "source_sha256": "4914fe366533baa82ba32b53cac3f91908f3fc0f774042532c1af240138f2116",
+      "line_start": 117,
+      "line_end": 129,
+      "category": "time_rule",
+      "observation": "Monotone event advancement and dispatch boundary."
+    },
+    {
+      "id": "S014_R024",
+      "entry_id": "entry-00010844",
+      "source_sha256": "4914fe366533baa82ba32b53cac3f91908f3fc0f774042532c1af240138f2116",
+      "line_start": 181,
+      "line_end": 183,
+      "category": "protocol",
+      "observation": "Channel-drop and outage reporting stubs."
+    },
+    {
+      "id": "S014_R025",
+      "entry_id": "entry-00010997",
+      "source_sha256": "aaf800e171ba481c389c35c6b2183a7958c4eae7e5e1b4f6a325ecca3e60bc02",
+      "line_start": 16,
+      "line_end": 20,
+      "category": "default",
+      "observation": "Public nominal network rate and optional knot defaults."
+    },
+    {
+      "id": "S014_R026",
+      "entry_id": "entry-00010843",
+      "source_sha256": "ac922856878208061b5beae0b1841b1f6e39263afa4e92789448d38295591973",
+      "line_start": 9,
+      "line_end": 31,
+      "category": "protocol",
+      "observation": "Embedded packet-error/loss tables; source transcription and applicability require separate review."
+    },
+    {
+      "id": "S014_R027",
+      "entry_id": "entry-00010843",
+      "source_sha256": "ac922856878208061b5beae0b1841b1f6e39263afa4e92789448d38295591973",
+      "line_start": 46,
+      "line_end": 70,
+      "category": "distribution",
+      "observation": "Noise/payload bounds, seeded packet outcomes and draw mapping."
+    },
+    {
+      "id": "S014_R028",
+      "entry_id": "entry-00010996",
+      "source_sha256": "1d15c2e25946459a48c05028a0af4b00646e3260d8a3cc5660116258b0f0fd4e",
+      "line_start": 14,
+      "line_end": 24,
+      "category": "default",
+      "observation": "Outcome interpretation and measured-payload/noise-domain declarations."
+    },
+    {
+      "id": "S014_R029",
+      "entry_id": "entry-00010845",
+      "source_sha256": "d8ed353718e9aba1a60e1fb2d95904b79d118200c090f742364c7c12c9063343",
+      "line_start": 8,
+      "line_end": 20,
+      "category": "default",
+      "observation": "Rounded digitized field-trial endpoint estimates, not original raw measurements."
+    },
+    {
+      "id": "S014_R030",
+      "entry_id": "entry-00010845",
+      "source_sha256": "d8ed353718e9aba1a60e1fb2d95904b79d118200c090f742364c7c12c9063343",
+      "line_start": 25,
+      "line_end": 29,
+      "category": "boundary",
+      "observation": "Supported payload interval and positive endpoint guards."
+    },
+    {
+      "id": "S014_R031",
+      "entry_id": "entry-00010845",
+      "source_sha256": "d8ed353718e9aba1a60e1fb2d95904b79d118200c090f742364c7c12c9063343",
+      "line_start": 31,
+      "line_end": 46,
+      "category": "equation",
+      "observation": "Service-equivalent interpolation, distinct from measured packet latency."
+    },
+    {
+      "id": "S014_R032",
+      "entry_id": "entry-00010845",
+      "source_sha256": "d8ed353718e9aba1a60e1fb2d95904b79d118200c090f742364c7c12c9063343",
+      "line_start": 47,
+      "line_end": 51,
+      "category": "equation",
+      "observation": "Declared digitization perturbation propagation, not a validated confidence interval."
+    },
+    {
+      "id": "S014_R033",
+      "entry_id": "entry-00010845",
+      "source_sha256": "d8ed353718e9aba1a60e1fb2d95904b79d118200c090f742364c7c12c9063343",
+      "line_start": 53,
+      "line_end": 58,
+      "category": "equation",
+      "observation": "Direct-goodput interpolation as a sensitivity alternative."
+    },
+    {
+      "id": "S014_R034",
+      "entry_id": "entry-00010999",
+      "source_sha256": "58deef1b4b819ad6caed5097d5ff643fd678c1ebcacbe258bfce8b9f4446b30a",
+      "line_start": 8,
+      "line_end": 15,
+      "category": "default",
+      "observation": "Source-comment provenance and default digitization uncertainty assumption."
+    },
+    {
+      "id": "S014_R035",
+      "entry_id": "entry-00010999",
+      "source_sha256": "58deef1b4b819ad6caed5097d5ff643fd678c1ebcacbe258bfce8b9f4446b30a",
+      "line_start": 18,
+      "line_end": 30,
+      "category": "protocol",
+      "observation": "Original output-unit spellings and distinct communication-band context."
+    },
+    {
+      "id": "S014_R036",
+      "entry_id": "entry-00010833",
+      "source_sha256": "28e2c1e50c39e3f9b79287c4d408b09a40654ab23081409c21c4dcb82067e65f",
+      "line_start": 10,
+      "line_end": 19,
+      "category": "default",
+      "observation": "SUMO startup time/seed and vehicle length/acceleration/speed settings."
+    },
+    {
+      "id": "S014_R037",
+      "entry_id": "entry-00010833",
+      "source_sha256": "28e2c1e50c39e3f9b79287c4d408b09a40654ab23081409c21c4dcb82067e65f",
+      "line_start": 25,
+      "line_end": 29,
+      "category": "time_rule",
+      "observation": "Initial route, departure and stopping settings."
+    },
+    {
+      "id": "S014_R038",
+      "entry_id": "entry-00010833",
+      "source_sha256": "28e2c1e50c39e3f9b79287c4d408b09a40654ab23081409c21c4dcb82067e65f",
+      "line_start": 73,
+      "line_end": 78,
+      "category": "equation",
+      "observation": "Travel-time difference and road-distance adapter call."
+    },
+    {
+      "id": "S014_R039",
+      "entry_id": "entry-00010833",
+      "source_sha256": "28e2c1e50c39e3f9b79287c4d408b09a40654ab23081409c21c4dcb82067e65f",
+      "line_start": 80,
+      "line_end": 116,
+      "category": "boundary",
+      "observation": "Legal return-loop selection, stopping and arrival tolerance."
+    },
+    {
+      "id": "S014_R040",
+      "entry_id": "entry-00010848",
+      "source_sha256": "3553167f6b5a11ed89688c7a4c21dd6f3d76dfd38190db4761325afd50029934",
+      "line_start": 5,
+      "line_end": 17,
+      "category": "boundary",
+      "observation": "Greedy eligible nearest-bin selection; not a physical model."
+    },
+    {
+      "id": "S014_R041",
+      "entry_id": "entry-00010848",
+      "source_sha256": "3553167f6b5a11ed89688c7a4c21dd6f3d76dfd38190db4761325afd50029934",
+      "line_start": 19,
+      "line_end": 25,
+      "category": "equation",
+      "observation": "Deterministic modulo-style fleet assignment."
+    },
+    {
+      "id": "S014_R042",
+      "entry_id": "entry-00010848",
+      "source_sha256": "3553167f6b5a11ed89688c7a4c21dd6f3d76dfd38190db4761325afd50029934",
+      "line_start": 27,
+      "line_end": 41,
+      "category": "boundary",
+      "observation": "Masked finite-score argmax and first-index tie behavior."
+    },
+    {
+      "id": "S014_R043",
+      "entry_id": "entry-00011005",
+      "source_sha256": "a71a0fc2916d526442ef5c2b176e50f53f6fb6970a474c656fb48b57aac885ae",
+      "line_start": 8,
+      "line_end": 19,
+      "category": "equation",
+      "observation": "Weighted incremental reward; objective weights have no empirical calibration here."
+    },
+    {
+      "id": "S014_R044",
+      "entry_id": "entry-00010836",
+      "source_sha256": "103b125ba273f52c832c252dfdb78acbb7cdd2f62ac157f15c2048a179cb5ca7",
+      "line_start": 34,
+      "line_end": 49,
+      "category": "boundary",
+      "observation": "Runtime scenario bounds and supported policy set."
+    },
+    {
+      "id": "S014_R045",
+      "entry_id": "entry-00010836",
+      "source_sha256": "103b125ba273f52c832c252dfdb78acbb7cdd2f62ac157f15c2048a179cb5ca7",
+      "line_start": 55,
+      "line_end": 87,
+      "category": "protocol",
+      "observation": "Nominal versus exploratory PLC profile and rate-knot-domain guards."
+    },
+    {
+      "id": "S014_R046",
+      "entry_id": "entry-00010836",
+      "source_sha256": "103b125ba273f52c832c252dfdb78acbb7cdd2f62ac157f15c2048a179cb5ca7",
+      "line_start": 90,
+      "line_end": 92,
+      "category": "default",
+      "observation": "Observation freshness default and positivity guard."
+    },
+    {
+      "id": "S014_R047",
+      "entry_id": "entry-00010836",
+      "source_sha256": "103b125ba273f52c832c252dfdb78acbb7cdd2f62ac157f15c2048a179cb5ca7",
+      "line_start": 170,
+      "line_end": 179,
+      "category": "default",
+      "observation": "Required time/scenario settings and topology-distance fallback."
+    },
+    {
+      "id": "S014_R048",
+      "entry_id": "entry-00010836",
+      "source_sha256": "103b125ba273f52c832c252dfdb78acbb7cdd2f62ac157f15c2048a179cb5ca7",
+      "line_start": 221,
+      "line_end": 244,
+      "category": "default",
+      "observation": "Validator count, bin mass default and initial observation availability."
+    },
+    {
+      "id": "S014_R049",
+      "entry_id": "entry-00010836",
+      "source_sha256": "103b125ba273f52c832c252dfdb78acbb7cdd2f62ac157f15c2048a179cb5ca7",
+      "line_start": 525,
+      "line_end": 551,
+      "category": "time_rule",
+      "observation": "Clock/position tolerances, dynamics cadence and scripted hazard activation."
+    },
+    {
+      "id": "S014_R050",
+      "entry_id": "entry-00010836",
+      "source_sha256": "103b125ba273f52c832c252dfdb78acbb7cdd2f62ac157f15c2048a179cb5ca7",
+      "line_start": 724,
+      "line_end": 751,
+      "category": "time_rule",
+      "observation": "Telemetry cadence and collection-completion snapshot rules."
+    },
+    {
+      "id": "S014_R051",
+      "entry_id": "entry-00011003",
+      "source_sha256": "741beea8f60f6d12314d88da8dadbf3211acd07fe1534c4b55ce7a86ff72483e",
+      "line_start": 53,
+      "line_end": 65,
+      "category": "time_rule",
+      "observation": "Host elapsed/exclusive timing accounting, distinct from simulated time."
+    },
+    {
+      "id": "S014_R052",
+      "entry_id": "entry-00011003",
+      "source_sha256": "741beea8f60f6d12314d88da8dadbf3211acd07fe1534c4b55ce7a86ff72483e",
+      "line_start": 95,
+      "line_end": 105,
+      "category": "equation",
+      "observation": "Host timing percentages and unit conversion."
+    },
+    {
+      "id": "S014_R053",
+      "entry_id": "entry-00000149",
+      "source_sha256": "79a5cddbf5bbd1afc78f92ecad148cfe815674c4618fe43153984934e82383a3",
+      "line_start": 11,
+      "line_end": 26,
+      "category": "boundary",
+      "observation": "Auxiliary field-trial pairing and payload-domain constants."
+    },
+    {
+      "id": "S014_R054",
+      "entry_id": "entry-00000149",
+      "source_sha256": "79a5cddbf5bbd1afc78f92ecad148cfe815674c4618fe43153984934e82383a3",
+      "line_start": 30,
+      "line_end": 41,
+      "category": "equation",
+      "observation": "Auxiliary service-equivalent and direct-goodput interpolation alternatives."
+    },
+    {
+      "id": "S014_R055",
+      "entry_id": "entry-00000149",
+      "source_sha256": "79a5cddbf5bbd1afc78f92ecad148cfe815674c4618fe43153984934e82383a3",
+      "line_start": 44,
+      "line_end": 67,
+      "category": "default",
+      "observation": "Sensitivity profile domain, reference rate and terminal rank selection."
+    },
+    {
+      "id": "S014_R056",
+      "entry_id": "entry-00000149",
+      "source_sha256": "79a5cddbf5bbd1afc78f92ecad148cfe815674c4618fe43153984934e82383a3",
+      "line_start": 70,
+      "line_end": 90,
+      "category": "boundary",
+      "observation": "Full source-domain integer-byte knot generation and terminal uniqueness guards."
+    },
+    {
+      "id": "S014_R057",
+      "entry_id": "entry-00010840",
+      "source_sha256": "644676d6f02bedbbd60851184234b35db9277361ec4fb5895892ac1e1cbfae77",
+      "line_start": 30,
+      "line_end": 37,
+      "category": "seed_rule",
+      "observation": "Deterministic simulation identity derivation; not a secure source of secret randomness."
+    },
+    {
+      "id": "S014_R058",
+      "entry_id": "entry-00010840",
+      "source_sha256": "644676d6f02bedbbd60851184234b35db9277361ec4fb5895892ac1e1cbfae77",
+      "line_start": 46,
+      "line_end": 62,
+      "category": "protocol",
+      "observation": "Canonical payload hash and signature envelope construction."
+    },
+    {
+      "id": "S014_R059",
+      "entry_id": "entry-00010840",
+      "source_sha256": "644676d6f02bedbbd60851184234b35db9277361ec4fb5895892ac1e1cbfae77",
+      "line_start": 63,
+      "line_end": 84,
+      "category": "boundary",
+      "observation": "Telemetry allow-list, type checks and range checks."
+    },
+    {
+      "id": "S014_R060",
+      "entry_id": "entry-00010840",
+      "source_sha256": "644676d6f02bedbbd60851184234b35db9277361ec4fb5895892ac1e1cbfae77",
+      "line_start": 85,
+      "line_end": 108,
+      "category": "protocol",
+      "observation": "Enrollment/signature/freshness/nonce admission order."
+    },
+    {
+      "id": "S014_R061",
+      "entry_id": "entry-00010847",
+      "source_sha256": "a83c14de8a8d31460df0172cd296ab0730b380aad3cca3fedf15725b3f36d23d",
+      "line_start": 12,
+      "line_end": 25,
+      "category": "default",
+      "observation": "Single-thread inference options and fixed tensor dimensions."
+    },
+    {
+      "id": "S014_R062",
+      "entry_id": "entry-00010847",
+      "source_sha256": "a83c14de8a8d31460df0172cd296ab0730b380aad3cca3fedf15725b3f36d23d",
+      "line_start": 28,
+      "line_end": 39,
+      "category": "boundary",
+      "observation": "Inference input shape and output tensor interpretation."
+    },
+    {
+      "id": "S014_R063",
+      "entry_id": "entry-00011025",
+      "source_sha256": "996b8b020acdf2d69e0f9833c7ddfbb7c4a400d319f8ebd700119be89e59d556",
+      "line_start": 8,
+      "line_end": 20,
+      "category": "distribution",
+      "observation": "Balanced per-scenario replay allocation and random sampling."
+    },
+    {
+      "id": "S014_R064",
+      "entry_id": "entry-00011025",
+      "source_sha256": "996b8b020acdf2d69e0f9833c7ddfbb7c4a400d319f8ebd700119be89e59d556",
+      "line_start": 23,
+      "line_end": 37,
+      "category": "default",
+      "observation": "Training gate, deterministic seed configuration and neural architecture."
+    },
+    {
+      "id": "S014_R065",
+      "entry_id": "entry-00011025",
+      "source_sha256": "996b8b020acdf2d69e0f9833c7ddfbb7c4a400d319f8ebd700119be89e59d556",
+      "line_start": 40,
+      "line_end": 48,
+      "category": "distribution",
+      "observation": "Shuffled scenario schedule, episode seeds and epsilon schedule."
+    },
+    {
+      "id": "S014_R066",
+      "entry_id": "entry-00011025",
+      "source_sha256": "996b8b020acdf2d69e0f9833c7ddfbb7c4a400d319f8ebd700119be89e59d556",
+      "line_start": 51,
+      "line_end": 61,
+      "category": "equation",
+      "observation": "Terminal handling, target updates and squared Bellman loss."
+    },
+    {
+      "id": "S014_R067",
+      "entry_id": "entry-00011025",
+      "source_sha256": "996b8b020acdf2d69e0f9833c7ddfbb7c4a400d319f8ebd700119be89e59d556",
+      "line_start": 63,
+      "line_end": 67,
+      "category": "distribution",
+      "observation": "Masked epsilon-greedy action selection."
+    },
+    {
+      "id": "S014_R068",
+      "entry_id": "entry-00011025",
+      "source_sha256": "996b8b020acdf2d69e0f9833c7ddfbb7c4a400d319f8ebd700119be89e59d556",
+      "line_start": 70,
+      "line_end": 80,
+      "category": "boundary",
+      "observation": "Moving statistics and convergence rule, not empirical model validation."
+    },
+    {
+      "id": "S014_R069",
+      "entry_id": "entry-00010836",
+      "source_sha256": "103b125ba273f52c832c252dfdb78acbb7cdd2f62ac157f15c2048a179cb5ca7",
+      "line_start": 314,
+      "line_end": 345,
+      "category": "protocol",
+      "observation": "Runtime capacity-knot construction, profile bounds and observation freshness."
+    },
+    {
+      "id": "S014_R070",
+      "entry_id": "entry-00010836",
+      "source_sha256": "103b125ba273f52c832c252dfdb78acbb7cdd2f62ac157f15c2048a179cb5ca7",
+      "line_start": 441,
+      "line_end": 449,
+      "category": "default",
+      "observation": "Traffic seed mapping, truck capacity fallback and depot offsets."
+    },
+    {
+      "id": "S014_R071",
+      "entry_id": "entry-00010836",
+      "source_sha256": "103b125ba273f52c832c252dfdb78acbb7cdd2f62ac157f15c2048a179cb5ca7",
+      "line_start": 500,
+      "line_end": 503,
+      "category": "equation",
+      "observation": "Logged service-equivalent rate and nonnegative queue-delay proxy."
+    },
+    {
+      "id": "S014_R072",
+      "entry_id": "entry-00010836",
+      "source_sha256": "103b125ba273f52c832c252dfdb78acbb7cdd2f62ac157f15c2048a179cb5ca7",
+      "line_start": 519,
+      "line_end": 525,
+      "category": "time_rule",
+      "observation": "Rounded horizon tick count and ordered network advancement."
+    },
+    {
+      "id": "S014_R073",
+      "entry_id": "entry-00010836",
+      "source_sha256": "103b125ba273f52c832c252dfdb78acbb7cdd2f62ac157f15c2048a179cb5ca7",
+      "line_start": 579,
+      "line_end": 608,
+      "category": "time_rule",
+      "observation": "Observation staleness, hazard-hour accumulation and unload delay fallback."
+    },
+    {
+      "id": "S014_R074",
+      "entry_id": "entry-00010836",
+      "source_sha256": "103b125ba273f52c832c252dfdb78acbb7cdd2f62ac157f15c2048a179cb5ca7",
+      "line_start": 618,
+      "line_end": 624,
+      "category": "equation",
+      "observation": "Collected/verified mass and phantom-service counter definition."
+    },
+    {
+      "id": "S014_R075",
+      "entry_id": "entry-00010836",
+      "source_sha256": "103b125ba273f52c832c252dfdb78acbb7cdd2f62ac157f15c2048a179cb5ca7",
+      "line_start": 754,
+      "line_end": 789,
+      "category": "time_rule",
+      "observation": "Post-collection network drain condition, deadline and clock barrier."
+    },
+    {
+      "id": "S014_R076",
+      "entry_id": "entry-00010993",
+      "source_sha256": "bef52231c794524bf4c24ecb11db1c039d7a97b9c1fa3caa0bd9a94dd5429a98",
+      "line_start": 17,
+      "line_end": 31,
+      "category": "protocol",
+      "observation": "Hazard interface and scripted activation, not a mechanistic physical model."
+    },
+    {
+      "id": "S014_R077",
+      "entry_id": "entry-00010993",
+      "source_sha256": "bef52231c794524bf4c24ecb11db1c039d7a97b9c1fa3caa0bd9a94dd5429a98",
+      "line_start": 49,
+      "line_end": 60,
+      "category": "default",
+      "observation": "Nonce and observation initialization, with separate freshness/authentication state."
+    },
+    {
+      "id": "S014_R078",
+      "entry_id": "entry-00010994",
+      "source_sha256": "4deba6d81d51fb7813df0e1b4a57b075c298b37bae12915205765c32108c6118",
+      "line_start": 19,
+      "line_end": 27,
+      "category": "default",
+      "observation": "Verifier freshness constructor default and enrollment state."
+    },
+    {
+      "id": "S014_R079",
+      "entry_id": "entry-00010992",
+      "source_sha256": "599fdf944a56023a3061f5908a59b3bf20316f206f8d8e30f4c8ba621b693d95",
+      "line_start": 13,
+      "line_end": 18,
+      "category": "default",
+      "observation": "Initial SLA state, counters and clock sentinel."
+    },
+    {
+      "id": "S014_R080",
+      "entry_id": "entry-00011023",
+      "source_sha256": "11041fb4d11eaad5a2976641050864aa11d06e04bc67d58150308c307e737eb3",
+      "line_start": 8,
+      "line_end": 11,
+      "category": "default",
+      "observation": "Checkpoint/convergence gate, export architecture and ONNX format setting."
+    },
+    {
+      "id": "S014_R081",
+      "entry_id": "entry-00011023",
+      "source_sha256": "11041fb4d11eaad5a2976641050864aa11d06e04bc67d58150308c307e737eb3",
+      "line_start": 12,
+      "line_end": 14,
+      "category": "boundary",
+      "observation": "Seeded numerical parity fixture and comparison tolerances; not physical validation."
+    },
+    {
+      "id": "S014_R082",
+      "entry_id": "entry-00010836",
+      "source_sha256": "103b125ba273f52c832c252dfdb78acbb7cdd2f62ac157f15c2048a179cb5ca7",
+      "line_start": 456,
+      "line_end": 468,
+      "category": "distribution",
+      "observation": "Seeded attack subset selection, rounding rule, initial heartbeat and sensor-period default."
+    },
+    {
+      "id": "S014_R083",
+      "entry_id": "entry-00010836",
+      "source_sha256": "103b125ba273f52c832c252dfdb78acbb7cdd2f62ac157f15c2048a179cb5ca7",
+      "line_start": 640,
+      "line_end": 685,
+      "category": "time_rule",
+      "observation": "Service delay and policy dispatch/normalization into the authoritative world."
+    },
+    {
+      "id": "S014_R084",
+      "entry_id": "entry-00010836",
+      "source_sha256": "103b125ba273f52c832c252dfdb78acbb7cdd2f62ac157f15c2048a179cb5ca7",
+      "line_start": 687,
+      "line_end": 711,
+      "category": "boundary",
+      "observation": "Whole-bin capacity return decision, target reservation and final depot return."
+    },
+    {
+      "id": "S014_R085",
+      "entry_id": "entry-00010836",
+      "source_sha256": "103b125ba273f52c832c252dfdb78acbb7cdd2f62ac157f15c2048a179cb5ca7",
+      "line_start": 791,
+      "line_end": 798,
+      "category": "equation",
+      "observation": "Post-collection unresolved accounting and nonnegative drain duration."
+    },
+    {
+      "id": "S014_R086",
+      "entry_id": "entry-00010836",
+      "source_sha256": "103b125ba273f52c832c252dfdb78acbb7cdd2f62ac157f15c2048a179cb5ca7",
+      "line_start": 934,
+      "line_end": 952,
+      "category": "protocol",
+      "observation": "Summary quantities and literal validation-only marker; retain known baseline finding."
+    }
+  ]
+}
