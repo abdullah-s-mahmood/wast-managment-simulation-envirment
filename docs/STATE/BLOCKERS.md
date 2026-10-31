@@ -1,6 +1,9 @@
 # Blockers and Open Dependencies
 
 ## Current blockers
+- S014 is in progress (E-S014-01), without an external authorization blocker.
+  Candidate indexing verified; semantic extraction/review and acceptance gates
+  remain pending. S015 must not start.
 - S013 bounded inventory accepted after CI/integration (E-S013-02); no open
   inventory blocker. Historical trust unknowns are retained explicitly
   (E-S013-01); they are not scientifically validated or silently reproduced.

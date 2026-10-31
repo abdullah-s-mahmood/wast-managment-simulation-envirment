@@ -2,7 +2,7 @@
   "project": "wast-managment-simulation-envirment",
   "display_name": "Waste Management Simulation Environment",
   "state_version": 1,
-  "updated_at": "2026-10-26",
+  "updated_at": "2026-10-31",
   "current_phase": "P1 — Legacy audit and evidence extraction",
   "total_sprints": 88,
   "completed_sprints": 13,
@@ -144,7 +144,7 @@
       "title": "Legacy model and parameter extraction",
       "file": "docs/sprints/S014-legacy-model-and-parameter-extraction.md",
       "phase": "P1 — Legacy audit and evidence extraction",
-      "status": "not_started",
+      "status": "in_progress",
       "depends_on": [
         "S013"
       ]

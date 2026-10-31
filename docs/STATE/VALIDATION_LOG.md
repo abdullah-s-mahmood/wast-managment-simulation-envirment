@@ -1140,3 +1140,13 @@ unknown/retired/dynamic coverage limits and F-S012-01 remain carried forward.
 S013 in_review -> completed, 13/88 audit deliverables; next S014 not_started.
 Acceptance record needs its own exact-head CI/integration. Fetch/read full S014
 before starting; no arbitrary legacy execution is authorized by this acceptance.
+
+## E-S014-01 — 2026-10-31 source-anchor checkpoint (not acceptance)
+
+See S014_REPORT.md for exact commands/failure/limits and private evidence locators.
+148 regression tests pass; first boolean-coordinate attack failed and was fixed
+without weakening it. Two bounded real archive scans exit0, byte-identical
+4024 candidate-line/83-source ledgers; full archive identity unchanged. Semantic
+extraction/review explicitly incomplete, scientific validation UNVALIDATED,
+source reuse PROHIBITED. Required validators pass before final state rerun.
+S014 in_progress; no S015 work, no sprint acceptance or exact-head CI claimed.
