@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "scope": "BOUNDED_ACTIVE_PATH_STATIC_EXTRACTION",
+  "source_files": 83,
+  "test_evidence_files_in_S013": 18,
+  "python_files_parsed": 28,
+  "reviewed_source_ranges": 114,
+  "static_python_expressions": 7769,
+  "scope_coverage_complete": true,
+  "scientific_validation": "UNVALIDATED",
+  "source_reuse": "PROHIBITED",
+  "whole_archive_semantic_analysis": false,
+  "dynamic_call_resolution": "UNAVAILABLE"
+}

@@ -1140,3 +1140,37 @@ unknown/retired/dynamic coverage limits and F-S012-01 remain carried forward.
 S013 in_review -> completed, 13/88 audit deliverables; next S014 not_started.
 Acceptance record needs its own exact-head CI/integration. Fetch/read full S014
 before starting; no arbitrary legacy execution is authorized by this acceptance.
+
+## E-S014-01 — 2026-10-31 source-anchor checkpoint (not acceptance)
+
+See S014_REPORT.md for exact commands/failure/limits and private evidence locators.
+148 regression tests pass; first boolean-coordinate attack failed and was fixed
+without weakening it. Two bounded real archive scans exit0, byte-identical
+4024 candidate-line/83-source ledgers; full archive identity unchanged. Semantic
+extraction/review explicitly incomplete, scientific validation UNVALIDATED,
+source reuse PROHIBITED. Required validators pass before final state rerun.
+S014 in_progress; no S015 work, no sprint acceptance or exact-head CI claimed.
+
+## E-S014-02 — 2026-10-31 reviewed source ranges (not acceptance)
+
+Previous draft PR36 exact head8b00cbb6081e10ff273930c38d027ed33e83d75a passed
+CI41148905449. New independent reviewed-range resolver and six synthetic tests:
+full154 tests exit0. Four actual bounded reviews exit0; final v3/v4 byte-identical
+86-range/22-source private ledgers, canonical digest
+540aff926902fc9e3632f90e9cbf7e60e1941f8aa3b11e564a899f21ff526a84.
+Full archive identity/integrity unchanged. Exact commands/limits/coverage/unknowns
+in S014_REPORT.md. Expressions remain immutable-source references, no legacy
+implementation copied or executed. Defaults, distributions, time/seed/admission
+rules separate from model validation. Remaining source classification/review
+keeps S014 in_progress; current new head CI/integration not claimed yet.
+
+## E-S014-03 — bounded source extraction, 2026-10-31
+
+All83 active-source contexts classified;18 test/probes retained in S013;28 Python
+files parsed as data,7769 expressions;114 reviewed ranges across45 files. Final
+actual repeat scans byte-identical, full archive integrity/identity unchanged.
+Cross-artifact coverage CLI exit0; no missing/test-hidden/unbound source accepted.
+Full168 tests exit0, all prior regressions retained. Exact commands/limits/hashes
+and scientific/platform NOT_RUN distinctions in S014_REPORT.md. Prior expanded
+PR36 head8aa1010 passed CI41149768875; this final head needs its own CI/integration.
+S014 in_review,13/88 accepted; no S015 work or physical model acceptance.

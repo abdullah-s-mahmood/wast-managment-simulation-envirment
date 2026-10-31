@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "status": "STATIC_AUXILIARY_EXTRACTION_NOT_SCIENTIFIC_VALIDATION",
+  "classified_inspected_active_files": 83,
+  "context_counts": {
+    "auxiliary_tool_or_scenario": 23,
+    "build_registration": 1,
+    "experiment_or_analysis": 3,
+    "native_interface_or_inline_behavior": 14,
+    "native_runtime_or_tool": 12,
+    "shell_orchestration": 10,
+    "test_fixture_or_probe": 18,
+    "training_or_export": 2
+  },
+  "python_files_parsed": 28,
+  "static_expressions": 7769,
+  "syntax_role_counts": {
+    "assignment_value": 1927,
+    "augmented_assignment": 67,
+    "call_expression": 4928,
+    "guard": 603,
+    "keyword_default": 24,
+    "parameter_default": 42,
+    "return_value": 178
+  },
+  "canonical_private_manifest_sha256": "346503350542089998e4fd6a5e2c82a6c0a78ee10e3e107fc3dcb32ad5ab7b34",
+  "raw_private_manifest_sha256": "d4edada659d20448c7e2456df5117907a1b2b2741dc46b9d5dcff19fee471de6",
+  "byte_identical_repeats": 2,
+  "source_reuse": "PROHIBITED",
+  "scientific_validation": "UNVALIDATED"
+}

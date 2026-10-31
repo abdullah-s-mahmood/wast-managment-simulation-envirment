@@ -1,6 +1,9 @@
 # Blockers and Open Dependencies
 
 ## Current blockers
+- S014 bounded active-source extraction locally verified (E-S014-03), in_review.
+  No external blocker. Required exact-head CI/permitted integration and durable
+  acceptance records remain pending; S015 must not start before acceptance.
 - S013 bounded inventory accepted after CI/integration (E-S013-02); no open
   inventory blocker. Historical trust unknowns are retained explicitly
   (E-S013-01); they are not scientifically validated or silently reproduced.

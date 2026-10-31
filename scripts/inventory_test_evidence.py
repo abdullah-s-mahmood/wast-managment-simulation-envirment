@@ -147,10 +147,12 @@ This inventory can never grant reproduced status or scientific validation.
     return out
 
 
-def audit(path,manifest,prefix):
+def audit(path,manifest,prefix,source_observer=None):
     """Inventory candidates and bounded text; caller must enforce process limits.
 
 The Linux CLI supplies address-space/CPU limits. Unknown coverage is retained.
+    Optional trusted source_observer receives hash-verified UTF-8 data only; it
+    must not execute source. Exceptions abort before a completed artifact exists.
 """
     if (not intake.verify_manifest(manifest) or type(manifest.get('schema_version')) is not int
             or manifest['schema_version']!=2 or manifest.get('complete') is not True
@@ -217,7 +219,9 @@ The Linux CLI supplies address-space/CPU limits. Unknown coverage is retained.
                     except UnicodeError:record['content_status']='non_utf8_not_parsed';continue
                     record['content_status']='hash_verified_text'
                     suffix=PurePosixPath(member.name).suffix.lower()
-                    if source:record['test_syntax']=test_syntax(text,'.cmake' if PurePosixPath(member.name).name=='CMakeLists.txt' else suffix)
+                    if source:
+                        record['test_syntax']=test_syntax(text,'.cmake' if PurePosixPath(member.name).name=='CMakeLists.txt' else suffix)
+                        if source_observer is not None:source_observer(item,text,scope)
                     if 'historical_result_candidate' in scope:record.update(result_syntax(text,suffix))
                 end=archive.offset
                 if any(bounded.suffix_at(end)):raise ValueError('nonzero tar trailer')
