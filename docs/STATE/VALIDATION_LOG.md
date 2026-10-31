@@ -1174,3 +1174,28 @@ Full168 tests exit0, all prior regressions retained. Exact commands/limits/hashe
 and scientific/platform NOT_RUN distinctions in S014_REPORT.md. Prior expanded
 PR36 head8aa1010 passed CI41149768875; this final head needs its own CI/integration.
 S014 in_review,13/88 accepted; no S015 work or physical model acceptance.
+
+## E-S014-04 — sole-maintainer extraction acceptance, 2026-10-31
+
+PR36 final exact head f982766ffe254f04735ac499cbb8ddf77fba8db2 passed
+CI41153333228 (completed/success;168 tests/required checks), permitted merge
+1c95db52c589bdac1a4aa77e812465e7f54d2e2f. Local9b979f15b210f9f90820ceb7c03216211dce9bde
+and published tree85d35bc3d765a556d36ada48db5d69eaac9c722b verified equal.
+Changed-file scope reproducible with `git diff --name-only
+ e8b356bae3bc6a6bf197bbd54c1644ddb25fd909 1c95db52c589bdac1a4aa77e812465e7f54d2e2f`:
+21 files covering independent audit/validation utilities, synthetic tests, sanitized
+ledger/plan/summaries, inventory and state records. No implementation reuse or
+private source/raw campaign data published. Original worktree preserved.
+
+Honest self-audit under ADR-0005 accepts the bounded active-path source extraction
+ledger: exact provenance/original spellings, defaults/distributions/time/protocol
+observations, explicit unknowns and cross-artifact coverage. All applicable WB/BB/
+adversarial/property/regression/reference extraction checks pass. Original failure
+and all intermediate manifests retained. No independent review fabricated. No
+physical/calibration validation, source reuse, license clearance, source-comment
+verification or exhaustive dynamic program semantics accepted. Scientific support
+remains UNVALIDATED; unit/intention/retired/dynamic and F-S012-01 limitations remain.
+
+S014 in_review -> completed,14/88 audit deliverables. S015 is next/not_started.
+This acceptance record needs its own exact-head CI and permitted integration;
+fetch/read S015 fully only after that durable state is integrated.
