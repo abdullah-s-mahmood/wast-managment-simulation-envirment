@@ -1227,3 +1227,14 @@ baseline, fixed code, physical validation or source reuse accepted.
 S015 in_review -> completed,15/88 audit deliverables. S016 next/not_started.
 This durable acceptance record needs its own exact-head CI/integration before
 fetching/reading/executing S016. Open register issues are not silently resolved.
+
+## E-S016-01 — 2026-10-31 audit freeze in review
+
+Freeze AUDIT-FREEZE-001 pins24 artifacts/nine observed-or-unresolved conclusions
+to source state607683953e3f28ccd35f2183f6b211cf286e9f74. Canonical manifest
+1f436ea5d7273b73621d64db9d542810b48bbdfc2103683b0e55b462a5a6ddc0.
+185 tests pass (175 prior plus10); actual freeze CLI exit0. Required equation/
+version/clearance promotion attacks rejected; working-file drift does not replace
+pinned blobs; standalone source manifest must agree. Archive full identity unchanged.
+Exact commands, source manifests, limits, retained failures and scientific/platform
+NOT_RUN distinctions in S016_REPORT.md. Final CI/integration pending;15/88 accepted.

@@ -1,6 +1,9 @@
 # Blockers and Open Dependencies
 
 ## Current blockers
+- S016 versioned audit freeze locally verified, in_review (E-S016-01). No external
+  freeze blocker; exact-head CI/integration and acceptance records pending.
+  Scientific/license/platform unknowns remain unresolved, not promoted to proceed.
 - S015 prioritized discrepancy register accepted after exact-head CI/integration
   (E-S015-02). No external audit blocker. Its three observed issues remain open;
   successful baseline/physical validation/source repair are not accepted.

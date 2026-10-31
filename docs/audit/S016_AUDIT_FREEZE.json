@@ -1,0 +1,262 @@
+{
+  "schema_version": 1,
+  "freeze_id": "AUDIT-FREEZE-001",
+  "source_state_commit": "607683953e3f28ccd35f2183f6b211cf286e9f74",
+  "source_manifest": {
+    "schema_version": 1,
+    "source_id": "LEGACY-CANDIDATE-001",
+    "compressed_bytes": 487062036,
+    "archive_sha256": "da08e1a78e73215ddf9d165e32a07f262a0b8379b3b04f4b17b27d5b6b525da8",
+    "inventory_manifest_sha256": "61b494e1d921464f980714d0a916dff12856acc2058421da091ce959751c2daf",
+    "inventory_complete": true,
+    "members": 11049,
+    "quarantined_entries": 1130,
+    "security_findings_present": true,
+    "security_clearance": "NOT_GRANTED",
+    "license_status": "UNRESOLVED",
+    "source_reuse": "PROHIBITED",
+    "scientific_validation": "UNVALIDATED",
+    "private_locator_reference": "Git common metadata codex-legacy-candidates.json; never publish its values"
+  },
+  "source_manifest_sha256": "99be4f15e2644c5cf5c5be867814495e0b1f8a14a8f94a4d9a728ad9aa94d69e",
+  "frozen_sprints": [
+    "S009",
+    "S010",
+    "S011",
+    "S012",
+    "S013",
+    "S014",
+    "S015"
+  ],
+  "artifacts": [
+    {
+      "id": "A01",
+      "path": "README.md",
+      "sha256": "0e9bb562a56aa05ff3809af5e318ffb3a8ba9890869fb86abd3d92620355ef8c"
+    },
+    {
+      "id": "A02",
+      "path": "AGENTS.md",
+      "sha256": "35c9dc2b7415533d61f371671056fe1035ebf8784d18f9117d573823bcdfe015"
+    },
+    {
+      "id": "A03",
+      "path": "docs/STATE/PROGRESS.json",
+      "sha256": "8dc3e9d2e3d3aca15551ec6f60880ed10d00cac4fe90aad57f0e2e16aebac3fe"
+    },
+    {
+      "id": "A04",
+      "path": "docs/STATE/SPRINT_REPORTS/S009_REPORT.md",
+      "sha256": "48cdabe007fb0e257d66eaaa6f49923dc87403c6063cb122a05478cc22c29cd3"
+    },
+    {
+      "id": "A05",
+      "path": "docs/STATE/SPRINT_REPORTS/S010_REPORT.md",
+      "sha256": "87d266bcecbee78ddeebba9619f130839db5ae0528e1ce037ab1a9aab2c125e6"
+    },
+    {
+      "id": "A06",
+      "path": "docs/STATE/SPRINT_REPORTS/S011_REPORT.md",
+      "sha256": "4d888d252a80eb22b7a81d8f514f865a87f6d3588b9c30d17271030feacab719"
+    },
+    {
+      "id": "A07",
+      "path": "docs/STATE/SPRINT_REPORTS/S012_REPORT.md",
+      "sha256": "7fb046ff833188d5b0c176e0cbb304706eda261dfe22c4bd65c4e6d19e147fb2"
+    },
+    {
+      "id": "A08",
+      "path": "docs/STATE/SPRINT_REPORTS/S013_REPORT.md",
+      "sha256": "d409bf08916640f637d3cc6d67dca3e2078cc6f092026be1a07de7d8efb41e9c"
+    },
+    {
+      "id": "A09",
+      "path": "docs/STATE/SPRINT_REPORTS/S014_REPORT.md",
+      "sha256": "657006ab08453a87a3e40c07b84d03346dc6287f3913bf8cade2b20ef6fa4d2b"
+    },
+    {
+      "id": "A10",
+      "path": "docs/STATE/SPRINT_REPORTS/S015_REPORT.md",
+      "sha256": "86b9f4c56a7665fd6358c2372f2dabbaf249572e2c14a147702169c4052bf147"
+    },
+    {
+      "id": "A11",
+      "path": "docs/audit/INTAKE_PROTOCOL.md",
+      "sha256": "06252e2e040b753696620bb3de142301452a5b26c0a5afd9d8d187a70ac903b1"
+    },
+    {
+      "id": "A12",
+      "path": "docs/audit/STATIC_MODULE_GRAPH.md",
+      "sha256": "a5ed9aa5f46e3f4e3bca35b7cf52a8b393b6e7a4fb9d9b99f77d320931fefe99"
+    },
+    {
+      "id": "A13",
+      "path": "docs/audit/S011_VALIDATION_EXECUTION_SUMMARY.json",
+      "sha256": "703880db57e35d9357de4c1cd49a3277efc7dd22e3b4b80059d24d1ade540867"
+    },
+    {
+      "id": "A14",
+      "path": "docs/audit/S012_BASELINE_OUTCOME.json",
+      "sha256": "bd674a121b9b910f3fed5a4c4195ea6dee4a46f72d780f0a8a5ddd380daf7a90"
+    },
+    {
+      "id": "A15",
+      "path": "docs/audit/S013_TEST_RESULT_SUMMARY.json",
+      "sha256": "9953fc8253a8ecec0b8934d2c888e9646793cbbbce718bf9f0c905cadfbf6bb5"
+    },
+    {
+      "id": "A16",
+      "path": "docs/audit/S014_MODEL_EXTRACTION_LEDGER.md",
+      "sha256": "dfcb8cc97681e396686b93ff40ed709bd015b52c310e69213fbef51eb03a9121"
+    },
+    {
+      "id": "A17",
+      "path": "docs/audit/S014_COVERAGE.json",
+      "sha256": "ad27e340bf616550fac76e624788531525069c324e318b661009912b44a8ad46"
+    },
+    {
+      "id": "A18",
+      "path": "docs/audit/S014_REVIEW_PLAN.json",
+      "sha256": "0c2559b8058954b5f647f23a77f1d1512c19cd8a678acf31f1d6d98af35ee6ac"
+    },
+    {
+      "id": "A19",
+      "path": "docs/audit/S014_REVIEW_SUMMARY.json",
+      "sha256": "07f90140251bc0f02d5b0bef57dd2d3dfef3e2529088dd7cdab6775cfb610c53"
+    },
+    {
+      "id": "A20",
+      "path": "docs/audit/S014_AUXILIARY_SUMMARY.json",
+      "sha256": "db4ffdb0774af8b482418225b5bf882ec64af68065359256390298973a39393b"
+    },
+    {
+      "id": "A21",
+      "path": "docs/audit/S015_DISCREPANCY_REGISTER.json",
+      "sha256": "d94f906098fc9585480b88a2585fee0781b21a973379fdc680157eadb1ce24e5"
+    },
+    {
+      "id": "A22",
+      "path": "docs/audit/S015_REPRODUCTION_SUMMARY.json",
+      "sha256": "c6f6b709fd99cbe3f2a28474d5242ab3d6f4c3f1aa2a95ba959d03b37c7abbc4"
+    },
+    {
+      "id": "A23",
+      "path": "docs/evidence/ledger.json",
+      "sha256": "246f867f77cfbe61fd392297925d4f498946eff28bcf3d66f62a6e22ed3c8209"
+    },
+    {
+      "id": "A24",
+      "path": "docs/adr/ADR-0005-risk-based-sprint-review.md",
+      "sha256": "735e915fca0bd4b8ad312bf8cf5a5555201b857327b802a873d5981181c622f8"
+    }
+  ],
+  "conclusions": [
+    {
+      "id": "C01",
+      "topic": "identity",
+      "status": "OBSERVED",
+      "claim": "Designated archive identity and complete quarantined inventory recorded.",
+      "evidence": [
+        "A04"
+      ]
+    },
+    {
+      "id": "C02",
+      "topic": "execution",
+      "status": "OBSERVED",
+      "claim": "Scoped build/config validation and two failed normal attempts recorded; no arbitrary legacy execution authorized.",
+      "evidence": [
+        "A06",
+        "A14"
+      ]
+    },
+    {
+      "id": "C03",
+      "topic": "historical_trust",
+      "status": "OBSERVED",
+      "claim": "Historical candidates remain unverifiable; assertions are not executed passes.",
+      "evidence": [
+        "A15"
+      ]
+    },
+    {
+      "id": "C04",
+      "topic": "model_extraction",
+      "status": "OBSERVED",
+      "claim": "Bounded active-path static source extraction and explicit limitations retained.",
+      "evidence": [
+        "A16",
+        "A17"
+      ]
+    },
+    {
+      "id": "C05",
+      "topic": "discrepancies",
+      "status": "OBSERVED",
+      "claim": "Three evidence-linked discrepancies remain observed/open, not fixed.",
+      "evidence": [
+        "A21",
+        "A22"
+      ]
+    },
+    {
+      "id": "C06",
+      "topic": "scientific_models",
+      "status": "UNRESOLVED",
+      "claim": "No physical equation or calibration accepted by source audit.",
+      "evidence": [
+        "A23"
+      ],
+      "remaining_evidence": "Apply the later source/units/domain/calibration/platform/reuse gates; never promote this unknown merely to advance."
+    },
+    {
+      "id": "C07",
+      "topic": "licensing",
+      "status": "UNRESOLVED",
+      "claim": "Read-only private audit authority does not authorize reuse/redistribution.",
+      "evidence": [
+        "A04"
+      ],
+      "remaining_evidence": "Apply the later source/units/domain/calibration/platform/reuse gates; never promote this unknown merely to advance."
+    },
+    {
+      "id": "C08",
+      "topic": "platform_versions",
+      "status": "UNRESOLVED",
+      "claim": "Private audit versions do not freeze new-platform dependencies; Windows not verified.",
+      "evidence": [
+        "A06"
+      ],
+      "remaining_evidence": "Apply the later source/units/domain/calibration/platform/reuse gates; never promote this unknown merely to advance."
+    },
+    {
+      "id": "C09",
+      "topic": "dynamic_semantics",
+      "status": "UNRESOLVED",
+      "claim": "Dynamic/imported/external/retired semantics and unavailable disposable runtime remain unresolved.",
+      "evidence": [
+        "A16"
+      ],
+      "remaining_evidence": "Apply the later source/units/domain/calibration/platform/reuse gates; never promote this unknown merely to advance."
+    }
+  ],
+  "observed_versions": [
+    {
+      "name": "private-audit SUMO",
+      "version": "1.28.0-1",
+      "decision": "AUDIT_OBSERVATION_ONLY",
+      "evidence": "A06"
+    },
+    {
+      "name": "audit Python",
+      "version": "3.11.15",
+      "decision": "AUDIT_OBSERVATION_ONLY",
+      "evidence": "A09"
+    }
+  ],
+  "accepted_models": [],
+  "accepted_platform_versions": [],
+  "source_reuse": "PROHIBITED",
+  "scientific_validation": "UNVALIDATED",
+  "manifest_sha256": "1f436ea5d7273b73621d64db9d542810b48bbdfc2103683b0e55b462a5a6ddc0"
+}

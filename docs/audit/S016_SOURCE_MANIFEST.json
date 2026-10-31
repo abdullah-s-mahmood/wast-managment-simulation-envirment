@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "source_id": "LEGACY-CANDIDATE-001",
+  "compressed_bytes": 487062036,
+  "archive_sha256": "da08e1a78e73215ddf9d165e32a07f262a0b8379b3b04f4b17b27d5b6b525da8",
+  "inventory_manifest_sha256": "61b494e1d921464f980714d0a916dff12856acc2058421da091ce959751c2daf",
+  "inventory_complete": true,
+  "members": 11049,
+  "quarantined_entries": 1130,
+  "security_findings_present": true,
+  "security_clearance": "NOT_GRANTED",
+  "license_status": "UNRESOLVED",
+  "source_reuse": "PROHIBITED",
+  "scientific_validation": "UNVALIDATED",
+  "private_locator_reference": "Git common metadata codex-legacy-candidates.json; never publish its values"
+}
