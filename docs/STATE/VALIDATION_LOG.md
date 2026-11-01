@@ -1358,3 +1358,25 @@ real API smoke. Expected-head merge2b4d61acc279e2cd85257ecaad275cac6a297be2.
 ADR0005 author self-audit accepts installation scope only;229 tests/lint/strict
 types/governance/failures/NOT_RUN limits preserved in S019_REPORT.19/88 completed,
 S020 next after acceptance-record CI/integration; no physical/Windows/replay claim.
+
+
+## E-S020-01/03 — verified source and real core build/linkage smoke
+
+S019 acceptance PR47 CI41288653151 success/merge deb41307; fetch/read S020 contract.
+Independent ns-3.47 source full42929716byte/SHA256 verified against observed official
+release/publisher SHA1. Actual fresh core-only Release build69.474s/68 steps with
+GCC13.3.0/CMake3.28.3/Ninja1.11.1, compile and exact1ns probe twice all exit0.
+Missing compiler/stale cache reject1, linked negative probe7 surfaced; cache/options/
+source rechecks pass.241 regressions/Ruff/strict mypy3 files pass. Only owned
+regenerable caches cleaned; no archive/environment/evidence/user data removed.
+Commands/results/hash/limits in S020_REPORT/profile/receipt, full logs private.
+Final governance/CI/integration pending; S020 in_progress19/88, no model/S021 claim.
+
+
+## E-S020-04 — final242 regressions and local gates
+
+Global-Python orchestration fails closed; final242 tests/Ruff/strict mypy3 files
+pass, all prior229 retained. All seven governance validators/ADR0013 material-change/
+diff checks pass. Scope excludes binary/legacy/private data and physical claims.
+Final guarded positive build still requires exact-head CI; source/fixture/compile
+behavior unchanged. S020 in_review19/88, S021 untouched. Details in S020_REPORT.

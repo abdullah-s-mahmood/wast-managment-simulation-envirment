@@ -14,7 +14,7 @@ default-groups = ["dev"]
 
 [tool.ruff]
 target-version = "py312"
-include = ["scripts/python_environment.py", "tests/test_python_environment.py", "scripts/sumo_smoke.py", "tests/test_sumo_smoke.py"]
+include = ["scripts/python_environment.py", "tests/test_python_environment.py", "scripts/sumo_smoke.py", "tests/test_sumo_smoke.py", "scripts/ns3_smoke.py", "tests/test_ns3_smoke.py"]
 
 [tool.ruff.lint]
 select = ["E4", "E7", "E9", "F", "I", "UP"]
@@ -22,4 +22,4 @@ select = ["E4", "E7", "E9", "F", "I", "UP"]
 [tool.mypy]
 python_version = "3.12"
 strict = true
-files = ["scripts/python_environment.py", "scripts/sumo_smoke.py"]
+files = ["scripts/python_environment.py", "scripts/sumo_smoke.py", "scripts/ns3_smoke.py"]

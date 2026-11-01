@@ -1,9 +1,12 @@
 # Blockers and Open Dependencies
 
 ## Current blockers
+- S020 in_review: actual core-only build/repeated1ns probe and242 tests plus
+  governance gates pass; exact-head CI/integration pending. Disk headroom limited;
+  task-owned caches cleaned, user/evidence files preserved. No external blocker.
 - S019 installation/API smoke accepted after229 tests, governance gates and
   exact-head CI41288509798 including fresh install. PR46 merged2b4d61ac
-  (E-S019-05); acceptance-record CI/integration required before S020.
+  (E-S019-05); acceptance PR47 passed CI41288653151/merged deb41307.
   No S019 external blocker; platform/scientific gates remain separate.
 - S018 development tooling accepted after fresh-clone proof,212 tests/all checks
   and exact-head CI41287396239; source PR44 merged (E-S018-04). No S018 blocker.

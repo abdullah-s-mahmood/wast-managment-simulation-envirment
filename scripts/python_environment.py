@@ -60,9 +60,9 @@ def settings(root: Path = ROOT) -> Settings:
         tools[match[1]] = match[2]
     if set(tools) != {"uv", "ruff", "mypy"} or tools.get("uv") != manager[2:]:
         raise EnvironmentRejected("unreviewed development tool set")
-    if type(data["tool"]["mypy"].get("strict")) is not bool or data["tool"]["mypy"] != {"python_version": "3.12", "strict": True, "files": ["scripts/python_environment.py", "scripts/sumo_smoke.py"]}:
+    if type(data["tool"]["mypy"].get("strict")) is not bool or data["tool"]["mypy"] != {"python_version": "3.12", "strict": True, "files": ["scripts/python_environment.py", "scripts/sumo_smoke.py", "scripts/ns3_smoke.py"]}:
         raise EnvironmentRejected("type-check scope/strictness changed without a contract revision")
-    if data["tool"]["ruff"] != {"target-version": "py312", "include": ["scripts/python_environment.py", "tests/test_python_environment.py", "scripts/sumo_smoke.py", "tests/test_sumo_smoke.py"], "lint": {"select": ["E4", "E7", "E9", "F", "I", "UP"]}}:
+    if data["tool"]["ruff"] != {"target-version": "py312", "include": ["scripts/python_environment.py", "tests/test_python_environment.py", "scripts/sumo_smoke.py", "tests/test_sumo_smoke.py", "scripts/ns3_smoke.py", "tests/test_ns3_smoke.py"], "lint": {"select": ["E4", "E7", "E9", "F", "I", "UP"]}}:
         raise EnvironmentRejected("lint scope/rules changed without a contract revision")
     return Settings(root, pin, manager[2:], tools)
 
@@ -214,7 +214,7 @@ def checks(config: Settings) -> bool:
     """Run scoped lint/types and every existing test without ambient import paths."""
     env = clean_environment(dict(os.environ))
     commands = [
-        [sys.executable, "-I", "-m", "ruff", "check", "--no-cache", "scripts/python_environment.py", "tests/test_python_environment.py", "scripts/sumo_smoke.py", "tests/test_sumo_smoke.py"],
+        [sys.executable, "-I", "-m", "ruff", "check", "--no-cache", "scripts/python_environment.py", "tests/test_python_environment.py", "scripts/sumo_smoke.py", "tests/test_sumo_smoke.py", "scripts/ns3_smoke.py", "tests/test_ns3_smoke.py"],
         [sys.executable, "-I", "-m", "mypy", "--config-file", "pyproject.toml"],
     ]
     for command in commands:

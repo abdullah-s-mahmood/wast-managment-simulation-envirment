@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "release": "3.47",
+  "archive": {
+    "url": "https://www.nsnam.org/releases/ns-3.47.tar.bz2",
+    "size_bytes": 42929716,
+    "sha256": "8b3adca956c834ea436b915986ab8fd053e90041acae7426895d595aaa3ccc39",
+    "publisher_sha1": "897c3f2db2c6de6a8291e46b3020dbeb1af75269"
+  },
+  "toolchain_minimums": {
+    "gcc": "11.1",
+    "cmake": "3.20",
+    "ninja": "1.10"
+  },
+  "build": {
+    "type": "Release",
+    "modules": [
+      "core"
+    ],
+    "parallel_jobs": 2,
+    "examples": false,
+    "upstream_tests": false,
+    "python_bindings": false
+  },
+  "budgets": {
+    "archive_members": 20000,
+    "member_bytes": 33554432,
+    "uncompressed_bytes": 536870912,
+    "configure_seconds": 120,
+    "build_seconds": 600,
+    "command_seconds": 10,
+    "minimum_free_bytes": 536870912
+  },
+  "expected": {
+    "status": "NS3_CORE_SMOKE_PASS",
+    "event_time_ns": 1
+  },
+  "fixture_sha256": "c00d6c341b1bfcfa20aae601077179f1b95db6894a48b6f188a50cfa0dd61e54",
+  "scientific_validation": "UNVALIDATED",
+  "simulator_support_verified": false
+}

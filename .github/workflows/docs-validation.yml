@@ -41,3 +41,8 @@ jobs:
         run: |
           wm_sumo_parent=$(mktemp -d)
           .venv/bin/python -I scripts/sumo_smoke.py --install --prefix "$wm_sumo_parent/venv" --work-dir "$wm_sumo_parent/installation-evidence"
+      - name: Verify fresh ns-3 core build and minimal execution
+        run: |
+          wm_ns3_parent=$(mktemp -d)
+          curl --fail --location --proto '=https' --max-time 180 --max-filesize 67108864 https://www.nsnam.org/releases/ns-3.47.tar.bz2 --output "$wm_ns3_parent/ns-3.47.tar.bz2"
+          .venv/bin/python -I scripts/ns3_smoke.py --archive "$wm_ns3_parent/ns-3.47.tar.bz2" --work-dir "$wm_ns3_parent/build-evidence"
