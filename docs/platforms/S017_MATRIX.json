@@ -1,0 +1,372 @@
+{
+  "schema_version": 1,
+  "claim": "TARGET_PLAN_NOT_VERIFIED_RUNTIME",
+  "decision_id": "ADR-0010",
+  "accepted_dependency_versions": [],
+  "platforms": [
+    {
+      "id": "LINUX_UBUNTU2404_X86_64",
+      "support_level": "required",
+      "host_os": "Linux",
+      "runtime_os": "Ubuntu 24.04",
+      "runtime_kind": "linux",
+      "architecture": "x86_64",
+      "simulator_support_verified": false,
+      "host_setup_route": "No Windows-host inference from this Linux environment.",
+      "host_setup_source": "https://www.nsnam.org/docs/installation/html/linux.html",
+      "dependencies": [
+        {
+          "id": "git",
+          "install_route": "Ubuntu distribution git package",
+          "verification": [
+            "git --version"
+          ],
+          "source_url": "https://git-scm.com/install/",
+          "source_access_date": "2026-11-01",
+          "version_pin": null,
+          "verification_status": "NOT_RUN"
+        },
+        {
+          "id": "python",
+          "install_route": "Ubuntu Python and venv packages; select interpreter in S018",
+          "verification": [
+            "python3 --version",
+            "python3 -m venv --help"
+          ],
+          "source_url": "https://docs.python.org/3/using/unix.html",
+          "source_access_date": "2026-11-01",
+          "version_pin": null,
+          "verification_status": "NOT_RUN"
+        },
+        {
+          "id": "cpp_compiler",
+          "install_route": "Ubuntu g++ package per ns-3 release requirements",
+          "verification": [
+            "c++ --version"
+          ],
+          "source_url": "https://www.nsnam.org/docs/installation/html/linux.html",
+          "source_access_date": "2026-11-01",
+          "version_pin": null,
+          "verification_status": "NOT_RUN"
+        },
+        {
+          "id": "cmake",
+          "install_route": "Ubuntu cmake package",
+          "verification": [
+            "cmake --version"
+          ],
+          "source_url": "https://www.nsnam.org/docs/installation/html/linux.html",
+          "source_access_date": "2026-11-01",
+          "version_pin": null,
+          "verification_status": "NOT_RUN"
+        },
+        {
+          "id": "build_driver",
+          "install_route": "Ubuntu ninja-build package",
+          "verification": [
+            "ninja --version"
+          ],
+          "source_url": "https://www.nsnam.org/docs/installation/html/linux.html",
+          "source_access_date": "2026-11-01",
+          "version_pin": null,
+          "verification_status": "NOT_RUN"
+        },
+        {
+          "id": "sumo",
+          "install_route": "Official Ubuntu package or documented source build; later validate required binding",
+          "verification": [
+            "sumo --version",
+            "S019 minimal version-bound smoke and binding probe"
+          ],
+          "source_url": "https://eclipse.dev/sumo/docs/Installing/index.html",
+          "source_access_date": "2026-11-01",
+          "version_pin": null,
+          "verification_status": "NOT_RUN"
+        },
+        {
+          "id": "ns3",
+          "install_route": "Release-specific source build using Linux prerequisites",
+          "verification": [
+            "S020 configure/build/test selected source release",
+            "S020 record build options and source checksums"
+          ],
+          "source_url": "https://www.nsnam.org/docs/installation/html/linux.html",
+          "source_access_date": "2026-11-01",
+          "version_pin": null,
+          "verification_status": "NOT_RUN"
+        }
+      ],
+      "gates": {
+        "host_probe": {
+          "status": "PASS",
+          "evidence_id": "E-S017-HOST-01"
+        },
+        "governance": {
+          "status": "NOT_RUN",
+          "evidence_id": null
+        },
+        "dependency_smoke": {
+          "status": "NOT_RUN",
+          "evidence_id": null
+        },
+        "adapter_integration": {
+          "status": "NOT_RUN",
+          "evidence_id": null
+        },
+        "deterministic_replay": {
+          "status": "NOT_RUN",
+          "evidence_id": null
+        }
+      }
+    },
+    {
+      "id": "WIN11_WSL2_UBUNTU2404_X86_64",
+      "support_level": "required",
+      "host_os": "Windows 11",
+      "runtime_os": "Ubuntu 24.04",
+      "runtime_kind": "wsl2_linux_guest",
+      "architecture": "x86_64",
+      "simulator_support_verified": false,
+      "host_setup_route": "Microsoft WSL installation and distro/version verification; host setup not executed here.",
+      "host_setup_source": "https://learn.microsoft.com/en-us/windows/wsl/install",
+      "dependencies": [
+        {
+          "id": "git",
+          "install_route": "Ubuntu distribution git package",
+          "verification": [
+            "git --version"
+          ],
+          "source_url": "https://git-scm.com/install/",
+          "source_access_date": "2026-11-01",
+          "version_pin": null,
+          "verification_status": "NOT_RUN"
+        },
+        {
+          "id": "python",
+          "install_route": "Ubuntu Python and venv packages; select interpreter in S018",
+          "verification": [
+            "python3 --version",
+            "python3 -m venv --help"
+          ],
+          "source_url": "https://docs.python.org/3/using/unix.html",
+          "source_access_date": "2026-11-01",
+          "version_pin": null,
+          "verification_status": "NOT_RUN"
+        },
+        {
+          "id": "cpp_compiler",
+          "install_route": "Ubuntu g++ package per ns-3 release requirements",
+          "verification": [
+            "c++ --version"
+          ],
+          "source_url": "https://www.nsnam.org/docs/installation/html/linux.html",
+          "source_access_date": "2026-11-01",
+          "version_pin": null,
+          "verification_status": "NOT_RUN"
+        },
+        {
+          "id": "cmake",
+          "install_route": "Ubuntu cmake package",
+          "verification": [
+            "cmake --version"
+          ],
+          "source_url": "https://www.nsnam.org/docs/installation/html/linux.html",
+          "source_access_date": "2026-11-01",
+          "version_pin": null,
+          "verification_status": "NOT_RUN"
+        },
+        {
+          "id": "build_driver",
+          "install_route": "Ubuntu ninja-build package",
+          "verification": [
+            "ninja --version"
+          ],
+          "source_url": "https://www.nsnam.org/docs/installation/html/linux.html",
+          "source_access_date": "2026-11-01",
+          "version_pin": null,
+          "verification_status": "NOT_RUN"
+        },
+        {
+          "id": "sumo",
+          "install_route": "Official Ubuntu package or documented source build; later validate required binding",
+          "verification": [
+            "sumo --version",
+            "S019 minimal version-bound smoke and binding probe"
+          ],
+          "source_url": "https://eclipse.dev/sumo/docs/Installing/index.html",
+          "source_access_date": "2026-11-01",
+          "version_pin": null,
+          "verification_status": "NOT_RUN"
+        },
+        {
+          "id": "ns3",
+          "install_route": "Release-specific source build using Linux prerequisites",
+          "verification": [
+            "S020 configure/build/test selected source release",
+            "S020 record build options and source checksums"
+          ],
+          "source_url": "https://www.nsnam.org/docs/installation/html/linux.html",
+          "source_access_date": "2026-11-01",
+          "version_pin": null,
+          "verification_status": "NOT_RUN"
+        }
+      ],
+      "gates": {
+        "host_probe": {
+          "status": "NOT_RUN",
+          "evidence_id": null
+        },
+        "governance": {
+          "status": "NOT_RUN",
+          "evidence_id": null
+        },
+        "dependency_smoke": {
+          "status": "NOT_RUN",
+          "evidence_id": null
+        },
+        "adapter_integration": {
+          "status": "NOT_RUN",
+          "evidence_id": null
+        },
+        "deterministic_replay": {
+          "status": "NOT_RUN",
+          "evidence_id": null
+        }
+      }
+    },
+    {
+      "id": "WIN11_MSYS2_X86_64",
+      "support_level": "best_effort",
+      "host_os": "Windows 11",
+      "runtime_os": "Windows 11 / MSYS2 MinGW64",
+      "runtime_kind": "native_msys2",
+      "architecture": "x86_64",
+      "simulator_support_verified": false,
+      "host_setup_route": "Native Windows and MSYS2 MinGW64 setup, not executed here.",
+      "host_setup_source": "https://www.nsnam.org/docs/installation/html/windows.html",
+      "dependencies": [
+        {
+          "id": "git",
+          "install_route": "Official Git Windows installation",
+          "verification": [
+            "git --version"
+          ],
+          "source_url": "https://git-scm.com/install/",
+          "source_access_date": "2026-11-01",
+          "version_pin": null,
+          "verification_status": "NOT_RUN"
+        },
+        {
+          "id": "python",
+          "install_route": "MSYS2 MinGW64 Python per selected ns-3 release prerequisites; validate any separate tooling interpreter explicitly",
+          "verification": [
+            "python --version",
+            "python -m venv --help"
+          ],
+          "source_url": "https://www.nsnam.org/docs/installation/html/windows.html",
+          "source_access_date": "2026-11-01",
+          "version_pin": null,
+          "verification_status": "NOT_RUN"
+        },
+        {
+          "id": "cpp_compiler",
+          "install_route": "Documented MSYS2 MinGW64 GCC; not MSVC",
+          "verification": [
+            "c++ --version"
+          ],
+          "source_url": "https://www.nsnam.org/docs/installation/html/windows.html",
+          "source_access_date": "2026-11-01",
+          "version_pin": null,
+          "verification_status": "NOT_RUN"
+        },
+        {
+          "id": "cmake",
+          "install_route": "MSYS2 MinGW64 CMake",
+          "verification": [
+            "cmake --version"
+          ],
+          "source_url": "https://www.nsnam.org/docs/installation/html/windows.html",
+          "source_access_date": "2026-11-01",
+          "version_pin": null,
+          "verification_status": "NOT_RUN"
+        },
+        {
+          "id": "build_driver",
+          "install_route": "MSYS2 MinGW64 Ninja or make",
+          "verification": [
+            "ninja --version"
+          ],
+          "source_url": "https://www.nsnam.org/docs/installation/html/windows.html",
+          "source_access_date": "2026-11-01",
+          "version_pin": null,
+          "verification_status": "NOT_RUN"
+        },
+        {
+          "id": "sumo",
+          "install_route": "Official Windows package or documented source build; later validate required binding",
+          "verification": [
+            "sumo --version",
+            "S019 minimal version-bound smoke and binding probe"
+          ],
+          "source_url": "https://eclipse.dev/sumo/docs/Installing/index.html",
+          "source_access_date": "2026-11-01",
+          "version_pin": null,
+          "verification_status": "NOT_RUN"
+        },
+        {
+          "id": "ns3",
+          "install_route": "Release-specific source build in MSYS2 MinGW64",
+          "verification": [
+            "S020 configure/build/test selected source release",
+            "S020 record build options and source checksums"
+          ],
+          "source_url": "https://www.nsnam.org/docs/installation/html/windows.html",
+          "source_access_date": "2026-11-01",
+          "version_pin": null,
+          "verification_status": "NOT_RUN"
+        }
+      ],
+      "gates": {
+        "host_probe": {
+          "status": "NOT_RUN",
+          "evidence_id": null
+        },
+        "governance": {
+          "status": "NOT_RUN",
+          "evidence_id": null
+        },
+        "dependency_smoke": {
+          "status": "NOT_RUN",
+          "evidence_id": null
+        },
+        "adapter_integration": {
+          "status": "NOT_RUN",
+          "evidence_id": null
+        },
+        "deterministic_replay": {
+          "status": "NOT_RUN",
+          "evidence_id": null
+        }
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E-S017-HOST-01",
+      "artifact": "docs/platforms/S017_LINUX_PROBE.json",
+      "sha256": "3133d5c6daebf4f2c480d88f5dfe5fead32187df289bdc4969976e01c5ca57f9"
+    }
+  ],
+  "unsupported_until_new_decision": [
+    "32-bit runtimes",
+    "ARM64 runtime builds",
+    "macOS runtime",
+    "native Windows MSVC ns-3 integration"
+  ],
+  "acceptance_plan": [
+    "S018 select and lock Python tooling separately.",
+    "S019 and S020 select/install/verify SUMO and ns-3 per required target.",
+    "S021-S024 execute target-specific adapter/replay checks; no Linux-to-Windows inference.",
+    "Keep unavailable platform gates NOT_RUN; no supported-runtime claim until their actual evidence passes."
+  ]
+}

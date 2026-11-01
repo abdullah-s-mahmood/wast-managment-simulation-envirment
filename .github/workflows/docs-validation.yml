@@ -27,3 +27,5 @@ jobs:
         run: python scripts/validate_evidence_ledger.py
       - name: Verify immutable source-audit freeze
         run: python scripts/validate_audit_freeze.py docs/audit/S016_AUDIT_FREEZE.json
+      - name: Validate platform target planning and evidence boundaries
+        run: python scripts/validate_platform_matrix.py check docs/platforms/S017_MATRIX.json

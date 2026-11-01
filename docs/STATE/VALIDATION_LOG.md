@@ -1260,3 +1260,15 @@ successful baseline or closed legacy discrepancy accepted. Source/runtime unknow
 remain unresolved, three S015 issues open and old failures retained. S016
 in_review -> completed,16/88 audit deliverables. S017 next/not_started, phaseP2.
 This acceptance record requires its own exact-head CI/integration before S017.
+
+## E-S017-01 — 2026-11-01 platform planning, not verified runtime
+
+Required Linux Ubuntu24.04/x86_64 and Windows11 WSL2 Ubuntu24.04 targets; native
+Windows/MSYS2 best effort. ADR0010 accepts planning only. Seven dependency routes
+per target with vendor sources/verification plan, versions unselected and runtime
+gates NOT_RUN. Sanitized actual Linux host probe only. Required parity attack
+found a receipt-relabel gap: ten tests/one failure, then corrected OS-tuple checks,
+same ten pass; full195 regressions exit0. Original failure retained privately.
+Actual matrix CLI passes with zero verified simulators; target-specific Windows/
+install/adapter/replay tests NOT_RUN and gates remain open. Sources/commands/limits
+and qualified acceptance scope in S017_REPORT.md. Exact-head CI/integration pending.
