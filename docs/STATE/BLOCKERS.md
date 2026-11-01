@@ -1,9 +1,10 @@
 # Blockers and Open Dependencies
 
 ## Current blockers
-- S018 development environment implementation/checkpoint exists; fresh-clone proof and
-  final checks pass; exact-head CI/integration remain mandatory before acceptance.
-  This is work in progress, not an external authorization blocker.
+- S018 development tooling accepted after fresh-clone proof,212 tests/all checks
+  and exact-head CI41287396239; source PR44 merged (E-S018-04). No S018 blocker.
+  Acceptance-record CI/integration still required before S019 work. Windows/runtime
+  platform gates remain separate and OPEN/NOT_RUN.
 - S017 target/acceptance PLAN accepted after exact-head CI/integration (E-S017-02).
   Runtime readiness is not accepted: Windows/WSL/native, dependency smoke and
   adapter/replay gates remain NOT_RUN/OPEN. Version locks belong to later sprints.

@@ -5,10 +5,10 @@
   "updated_at": "2026-11-01",
   "current_phase": "P2 \u2014 Runtime and simulator integration",
   "total_sprints": 88,
-  "completed_sprints": 17,
-  "current_sprint_id": "S018",
-  "next_sprint_id": "S018",
-  "last_completed_sprint_id": "S017",
+  "completed_sprints": 18,
+  "current_sprint_id": "S019",
+  "next_sprint_id": "S019",
+  "last_completed_sprint_id": "S018",
   "rule": "Strict sequential execution; complete and verify one sprint before starting the next.",
   "sprints": [
     {
@@ -184,7 +184,7 @@
       "title": "Python tooling and environment lock",
       "file": "docs/sprints/S018-python-tooling-and-environment-lock.md",
       "phase": "P2 \u2014 Runtime and simulator integration",
-      "status": "in_review",
+      "status": "completed",
       "depends_on": [
         "S017"
       ]
