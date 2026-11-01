@@ -1348,3 +1348,13 @@ files pass, final real clean-profile smoke exits0. All seven governance validato
 ADR0012 material-change declaration and diff check pass. Private full logs/commands
 and public sanitized receipt/report distinguish engine/wrapper hashes and model
 limits. S019 in_review18/88; exact-head CI/integration pending, S020 untouched.
+
+
+## E-S019-05 — exact-head CI/integration and qualified acceptance
+
+PR46 head05f2f7620586694e89086be6bb99d2c2a6f4b20c equals tested treec61c62cd
+(local961c609), exact-head CI41288509798 success including fresh hash-pinned install/
+real API smoke. Expected-head merge2b4d61acc279e2cd85257ecaad275cac6a297be2.
+ADR0005 author self-audit accepts installation scope only;229 tests/lint/strict
+types/governance/failures/NOT_RUN limits preserved in S019_REPORT.19/88 completed,
+S020 next after acceptance-record CI/integration; no physical/Windows/replay claim.

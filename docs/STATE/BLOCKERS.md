@@ -1,9 +1,10 @@
 # Blockers and Open Dependencies
 
 ## Current blockers
-- S019 in_review: manual/fresh one-command installation/API smoke and229 tests
-  plus governance gates pass; exact-head CI/integration pending. No external
-  authorization blocker; platform/scientific gates remain separate.
+- S019 installation/API smoke accepted after229 tests, governance gates and
+  exact-head CI41288509798 including fresh install. PR46 merged2b4d61ac
+  (E-S019-05); acceptance-record CI/integration required before S020.
+  No S019 external blocker; platform/scientific gates remain separate.
 - S018 development tooling accepted after fresh-clone proof,212 tests/all checks
   and exact-head CI41287396239; source PR44 merged (E-S018-04). No S018 blocker.
   Acceptance PR45 also passed CI41287499046 and merged b5cff0f9. Windows/runtime
