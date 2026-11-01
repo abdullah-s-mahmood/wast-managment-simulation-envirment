@@ -2,7 +2,7 @@
   "project": "wast-managment-simulation-envirment",
   "display_name": "Waste Management Simulation Environment",
   "state_version": 1,
-  "updated_at": "2026-10-31",
+  "updated_at": "2026-11-01",
   "current_phase": "P2 — Runtime and simulator integration",
   "total_sprints": 88,
   "completed_sprints": 16,
@@ -174,7 +174,7 @@
       "title": "Supported platform matrix",
       "file": "docs/sprints/S017-supported-platform-matrix.md",
       "phase": "P2 — Runtime and simulator integration",
-      "status": "not_started",
+      "status": "in_review",
       "depends_on": [
         "S016"
       ]

@@ -1,6 +1,10 @@
 # Blockers and Open Dependencies
 
 ## Current blockers
+- S017 target plan locally verified/in_review (E-S017-01). No external blocker to
+  defining the plan. Windows/WSL/native runtime, dependency smoke and adapter/replay
+  gates remain NOT_RUN/OPEN; no supported-runtime or dependency-version claim.
+  Plan CI/integration and durable acceptance records remain pending.
 - S016 versioned audit freeze accepted after exact-head CI/permitted integration
   (E-S016-02). No source-audit blocker. S017 platform/scientific/version evidence
   gates remain real; none are accepted from private audit versions or this freeze.

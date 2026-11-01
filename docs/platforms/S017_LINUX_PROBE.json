@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "platform_id": "LINUX_UBUNTU2404_X86_64",
+  "scope": "host_probe",
+  "status": "PASS",
+  "command": [
+    "python",
+    "scripts/validate_platform_matrix.py",
+    "probe"
+  ],
+  "exit_code": 0,
+  "observed_at_utc": "2026-11-01T07:10:26.386123+00:00",
+  "observed": {
+    "system": "Linux",
+    "machine": "x86_64",
+    "kernel": "7.0.0-38-generic",
+    "distribution_id": "ubuntu",
+    "distribution_version": "24.04",
+    "python": "3.11.15"
+  },
+  "support_claim": "HOST_OBSERVATION_ONLY",
+  "accepted_dependency_versions": [],
+  "simulator_support_verified": false
+}
