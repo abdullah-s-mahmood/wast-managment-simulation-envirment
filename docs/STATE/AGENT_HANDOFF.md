@@ -1,33 +1,28 @@
-# Agent Handoff — S020 in review;19/88 accepted
+# Agent Handoff — S020 accepted;20/88 complete
 
-2026-11-01: S019 PR46/47 exact-head CI41288509798/41288653151 passed; final
-main deb41307de0627e9fbaef268da4a852771ff2283. Original IDE worktree safely
-ff-synced there; one .vscode file hash preserved. Active isolated worktree branch
-sprint/S020-ns3-installation-smoke. No future work done.
+2026-11-01: S001–S020 completed. PR48 initial5bc7efb3 failed CI41289914827 at
+missing default tool path; retained/corrected. Final3351c47e01f1342c652b55c3e23ee17254d1e872
+matches local7d940041 tree65c206b9f4be38a937b040e6ad7666dc73d7373b.
+Exact-head CI41290178155 all steps success including actual fresh core build and
+both1ns runs; expected-head merge3559650a1102ec8cbc27c36b92a416741476cd8d.
+Acceptance records still require own CI/integration before starting S021.
 
-Read S020 contract/ADR0013/profile/setup/receipt/S020_REPORT. Independent official
-ns-3.47 source42929716bytes/SHA2568b3adca9.. matches publisher SHA1; source/license/
-requirements verified. Private fresh Unicode/space build: GCC13.3.0/CMake3.28.3/
-Ninja1.11.1, core only Release, all declared exclusions OFF;68 steps69.474s, independent
-C++ probe compiles/runs twice with exact1ns. Missing compiler/stale cache reject1;
-actual probe exit7 surfaced. Final242 tests/Ruff/strict mypy3 files pass; all229
-previous tests retained. S018 versions/app deps and uv.lock unchanged.
+Read S020_REPORT/ADR0013/profile/setup/receipt. Independent ns-3.47 archive hash/
+size verified; fresh core-only Release build with explicit tool/cache/disabled
+feature checks and independent C++ reference probe.242 tests/Ruff/strict mypy3
+files pass; all229 prior tests retained. Local GCC13.3.0/CMake3.28.3/Ninja1.11.1;
+CI GCC13.3.0/CMake3.31.6/Ninja1.13.2 via explicit installed paths. Native library
+hashes differ; root cause unknown, no binary-replay claim. Source/fixture hashes
+match and exact1ns software outputs pass. No physical/network model validated.
 
-Task-owned regenerable caches only cleaned to relieve disk pressure; all installed
-environments/archives/failure evidence/user data preserved. Current free space is
-limited; avoid unnecessary duplicate builds/simulations. Git common private-evidence/
-S020 retains source/download/build/negative/cache-cleanup logs, and locator
-codex-s020-toolchain.json. Never publish locator/private path values.
+Original IDE worktree ff-synced through accepted S019, .vscode file hash unchanged;
+all checkpoint branches preserved. Task-owned regenerable caches only cleaned;
+installed environments/archives/evidence/user data preserved. Disk headroom limited;
+avoid unnecessary duplicate builds/simulations. Private Git common metadata
+private-evidence/S020 stores full source/build/negative/failed+passed CI logs and
+integration receipt; codex-s020-toolchain.json locator, never publish path values.
 
-All seven governance validators/diff/ADR0013 material-change checks pass.
-Next: focused S020 PR, mandatory exact-head CI/permitted integration and durable
-tested acceptance records. S020 in_review19/88, S021 not started. Prior platform/model/scientific/replay gates
-remain OPEN/NOT_RUN; upstream test suites/Python bindings explicitly NOT_RUN.
-Source reuse PROHIBITED/science UNVALIDATED. No legacy archive/source/run touched.
-
-
-CI correction E-S020-05: PR48 initial5bc7efb3 fails CI41289914827 at a missing
-/usr/bin default tool path before build; all242 tests/previous gates pass but whole
-CI failed. Full log private. CI now pins Ubuntu24.04, resolves/logs its installed
-build tools and passes explicit paths; helper stays fail-closed/names missing tool.
-242 local checks pass after fix; new exact-head CI required. No weakening or merge.
+Next: integrate acceptance records after exact-head CI, fetch/read complete S021,
+then execute it alone. Upstream suites/Python bindings/other modules/Windows/WSL/
+native/adapter/full simulator/scientific/replay gates OPEN/NOT_RUN. Science
+UNVALIDATED/source reuse PROHIBITED. No legacy archive/source/run touched.

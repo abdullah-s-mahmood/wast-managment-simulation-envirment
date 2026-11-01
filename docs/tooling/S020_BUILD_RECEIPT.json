@@ -89,5 +89,35 @@
     "Core-only build and1ns linkage reference, not physical/network model validation.",
     "Upstream test suite/Python bindings/other modules not executed.",
     "No bitwise reproducibility or hostile-host attestation claim."
-  ]
+  ],
+  "github_ci": {
+    "head": "3351c47e01f1342c652b55c3e23ee17254d1e872",
+    "run_id": 41290178155,
+    "conclusion": "success",
+    "observation": {
+      "status": "NS3_CORE_INSTALLATION_SMOKE_PASS",
+      "release": "3.47",
+      "source_sha256": "8b3adca956c834ea436b915986ab8fd053e90041acae7426895d595aaa3ccc39",
+      "tool_versions": {
+        "gcc": "13.3.0",
+        "cmake": "3.31.6",
+        "ninja": "1.13.2"
+      },
+      "core_library_sha256": "6888f176f7f3383c5145b6cabb7096538ad9ee8852bc4085d6bf6166c1196279",
+      "fixture_sha256": "c00d6c341b1bfcfa20aae601077179f1b95db6894a48b6f188a50cfa0dd61e54",
+      "repeat_runs": 2,
+      "expected_event_time_ns": 1,
+      "upstream_test_suite": "NOT_RUN",
+      "python_bindings": "NOT_RUN",
+      "scientific_validation": "UNVALIDATED",
+      "simulator_support_verified": false
+    },
+    "explicit_runner_tool_paths": [
+      "/usr/bin/g++",
+      "/usr/local/bin/cmake",
+      "/usr/local/bin/ninja"
+    ],
+    "binary_hash_matches_local": false,
+    "binary_hash_difference_root_cause": "NOT_ESTABLISHED_NOT_A_BITWISE_REPLAY_GATE"
+  }
 }

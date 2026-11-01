@@ -1391,3 +1391,14 @@ log. CI pins Ubuntu24.04 and supplies explicitly discovered installed tool paths
 helper retains strict path/version/cache behavior, improves missing basename error.
 Local242 checks pass; in_progress investigation -> in_review, new head CI needed.
 No source/fixture/build-budget/test weakening, no acceptance/merge claimed.
+
+
+## E-S020-06 — corrected exact-head CI/integration and acceptance
+
+PR48 final3351c47e01f1342c652b55c3e23ee17254d1e872 matches tested local7d940041
+tree65c206b9. CI41290178155 all steps success, including242 tests and actual fresh
+core build/linkage/two1ns runs; expected-head merge3559650a1102ec8cbc27c36b92a416741476cd8d.
+CI explicit tools13.3.0/3.31.6/1.13.2 recorded. Source/fixture hashes match local;
+library hash differs, root cause not established, no bitwise/physical claim. Full
+failed/passed logs and public sanitized receipt retained; no gate waived.20/88
+complete, S021 after acceptance-record CI/integration. Detailed limits in report.

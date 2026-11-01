@@ -1,4 +1,4 @@
-# S020 — ns-3 installation and version smoke test (IN REVIEW)
+# S020 — ns-3 installation and version smoke test (COMPLETED)
 
 ## E-S020-01 — recovery, requirements and independent source
 
@@ -141,3 +141,36 @@ local rebuild. Local `.venv/bin/python -I scripts/python_environment.py check`
 again exits0/242 tests/Ruff/strict mypy3 files after correction. State returns to
 in_review for new exact-head CI; old failed head is not accepted or silently rerun.
 ADR0013/setup/handoff/log document the correction. Source PR remains unmerged.
+
+## E-S020-06 — corrected exact-head CI, integration and qualified acceptance
+
+PR48 final head3351c47e01f1342c652b55c3e23ee17254d1e872 matches local
+7d940041c559ed4f8b1ef5499a5c04bbd9df64cb at tree
+65c206b9f4be38a937b040e6ad7666dc73d7373b (fetched/verified). Exact-head
+CI41290178155 completes success, all242 tests/lint/strict types/governance/SUMO
+smoke plus real fresh ns-3 core build/compile/two1ns runs. Source PR48 permitted
+expected-head merge3559650a1102ec8cbc27c36b92a416741476cd8d.
+
+CI logs actual explicit tool paths /usr/bin/g++, /usr/local/bin/cmake,
+/usr/local/bin/ninja and versions GCC13.3.0/CMake3.31.6/Ninja1.13.2. This confirms
+why assuming all runner tools lived under /usr/bin was unsound; the original generic
+failure log remains uninterpreted as to which check first failed. Full corrected
+job log124799607348 retained as ci-41290178155-success.log and sanitized receipt.
+CI source/fixture SHA256 match local, reference runs pass. CI core-library hash
+6888f176f7f3383c5145b6cabb7096538ad9ee8852bc4085d6bf6166c1196279 differs from
+local4b66465a...; root cause NOT_ESTABLISHED, no causal attribution or normalization
+invented. Bitwise binary equivalence is not this gate; different actual tool versions
+are recorded, functional software probe only. No replay/physics acceptance inferred.
+
+Author self-audit accepts S020 installation/compiler/build/minimal-run scope under
+ADR0005, not an independent review. No protection bypass/fake approval. All objective,
+WB/BB/adversarial/property/reference/integration/regression and documentation gates
+have evidence; no hidden critical blocker. Failed initial CI preserved and corrected,
+not waived. Upstream suite/Python bindings/other modules/platforms and full simulator/
+scientific/replay gates remain NOT_RUN/OPEN. Source reuse PROHIBITED.
+
+20/88 completed; next S021 only after this focused acceptance-record PR also passes
+exact-head CI/permitted integration.18 source files changed: CI, inventory/state/
+report/decision, ADR0013/setup/profile/receipt, tooling coverage contract/guards,
+new ns-3 helper/13 Python tests/independent C++ fixture. No runtime model, source
+reuse, global tool replacement or tool version/application dependency change.

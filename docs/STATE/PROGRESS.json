@@ -5,10 +5,10 @@
   "updated_at": "2026-11-01",
   "current_phase": "P2 \u2014 Runtime and simulator integration",
   "total_sprints": 88,
-  "completed_sprints": 19,
-  "current_sprint_id": "S020",
-  "next_sprint_id": "S020",
-  "last_completed_sprint_id": "S019",
+  "completed_sprints": 20,
+  "current_sprint_id": "S021",
+  "next_sprint_id": "S021",
+  "last_completed_sprint_id": "S020",
   "rule": "Strict sequential execution; complete and verify one sprint before starting the next.",
   "sprints": [
     {
@@ -204,7 +204,7 @@
       "title": "ns-3 installation and version smoke test",
       "file": "docs/sprints/S020-ns3-installation-and-version-smoke-test.md",
       "phase": "P2 \u2014 Runtime and simulator integration",
-      "status": "in_review",
+      "status": "completed",
       "depends_on": [
         "S019"
       ]
