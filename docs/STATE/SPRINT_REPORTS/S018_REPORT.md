@@ -1,4 +1,4 @@
-# S018 — Python tooling and environment lock (IN REVIEW)
+# S018 — Python tooling and environment lock (COMPLETED)
 
 ## E-S018-01 — exact tooling and isolated preparation, 2026-11-01
 
@@ -131,3 +131,30 @@ Declared adds_dependency=true, changes_public_contract=true, changes_science=fal
 irreversible=false under accepted ADR-0011. No second-human approval claimed.
 Windows/WSL/native setup NOT_RUN, no simulator support/physical validation accepted.
 S018 enters in_review only; exact-head CI/permitted integration still required.
+
+## E-S018-04 — owner-authorized acceptance and permitted integration
+
+Source PR44 head d7909dd5bed464d33916fcbd472490724769dc59 matches local
+c0bf27781f790832e346f252cdc168b2c48d75d5 at tree
+5ff66f772ece1b5bce35294b21240965b5bb1e85 (fetched/verified). Exact-head GitHub
+CI41287396239 completes success; actual steps include pinned manager, clean exact
+setup, lint/types/all regressions, all governance validators/freeze/platform plan.
+PR44 merged c87a8697cd8073e1de6b463885b782077bc7972a with expected-head check.
+No fake review or branch protection bypass. Self-audit accepts only development
+contract/evidence, not simulator/Windows/scientific readiness or legacy reuse.
+
+Both original fresh clones fetched/checked out final c0bf277 source and reran full
+check plus isolated risk CLI: each exit0,212 regressions/lint/strict types PASS.
+Private final-clone-validation.json records commands/logs. Full runtime/lock
+fingerprints remain as E-S018-03. No source code change after these checks.
+
+One local fast-forward attempt rejected128 because connector-authored source has
+different commit ancestry despite identical tree; no history rewritten or data
+lost. Local checkpoint branches retained, acceptance branch created explicitly
+from fetched origin/main. Private integration-receipt.json records this recovery.
+
+Acceptance criteria: version/venv/pins/lint/type/test/setup contract documented;
+WB/BB/adversarial/property/regression and independent fresh setup pass; failures
+retained, no global fallback, scientific/platform limits explicit, no critical
+blocker. S018 completed18/88; next executable sprint S019 after acceptance-record
+CI/integration. Acceptance-document PR itself still requires exact-head CI.

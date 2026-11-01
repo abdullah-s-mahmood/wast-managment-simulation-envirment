@@ -1315,3 +1315,15 @@ seven governance validators exit0. Validator argument/mypy fixture CLI misuse an
 corrections retained rather than counted as passes. Exact commands/results/limits
 in S018_REPORT and sanitized tooling receipt; private logs in Git metadata.
 S018 in_review17/88; exact-head CI/integration pending, no S019/Windows/science claim.
+
+
+## E-S018-04 — exact-head CI/integration and acceptance
+
+PR44 head d7909dd5bed464d33916fcbd472490724769dc59/tree5ff66f7 matches tested
+local c0bf277 tree; CI41287396239 all actual steps success; expected-head merge
+c87a8697cd8073e1de6b463885b782077bc7972a. Both fresh clones rerun final212 tests,
+lint/types/isolated risk CLI exit0. Source accepted under ADR0005 self-audit; no
+independent review claimed. Local FF rejection due equivalent-tree/different-author
+ancestry preserved; new acceptance branch from fetched main, no rewrite/data loss.
+S018 completed18/88, S019 next after acceptance-record CI/integration. Platform and
+science limits unchanged; see S018_REPORT and private integration receipt.
