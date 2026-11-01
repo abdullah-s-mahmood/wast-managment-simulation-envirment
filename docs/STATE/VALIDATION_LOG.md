@@ -1292,3 +1292,26 @@ versions UNSELECTED. No scientific model accepted, legacy source reused or archi
 executed. Existing freeze and open baseline/discrepancy findings remain intact.
 S017 in_review -> completed,17/88 planning/audit deliverables. S018 next/not_started.
 Acceptance record needs its own exact-head CI/integration before S018 execution.
+
+## E-S018-01 — 2026-11-01 isolated tooling checkpoint
+
+Pinned CPython3.12.16/uv0.13.6/Ruff0.17.3/mypy2.4.1; hashed public lock and
+bootstrap artifacts, no application dependencies. Private setup succeeds, strict
+lint/type and211 tests pass. Original installer user-bin shim was detected, moved
+only after target/ownership verification, and system command resolution restored.
+An overlapping doctor rejected incomplete preparation; not counted as readiness.
+Exact evidence/correction/pending clean-clone gates in S018_REPORT.md. S018 in_progress,
+17/88 accepted; no Windows/simulator/scientific readiness or S019 work claimed.
+
+
+## E-S018-02/03 — fresh setup, isolation attacks and final local gates
+
+2026-11-01: two independent full fresh clones/empty caches, separately hash-checked
+manager bootstrap; clean/polluted Unicode-path setup/doctor/check exit0 each.
+Identical interpreter/lock/tool fingerprints,211 tests per clone, Ruff/strict mypy
+pass. Final isolated-validator run finds risk CLI implicit sys.path dependency;
+failing regression retained, explicit trusted import fixed; final212 tests and all
+seven governance validators exit0. Validator argument/mypy fixture CLI misuse and
+corrections retained rather than counted as passes. Exact commands/results/limits
+in S018_REPORT and sanitized tooling receipt; private logs in Git metadata.
+S018 in_review17/88; exact-head CI/integration pending, no S019/Windows/science claim.

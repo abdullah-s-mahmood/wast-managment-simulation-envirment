@@ -1,33 +1,21 @@
-# Agent Handoff — S017 plan accepted; S018 next
+# Agent Handoff — S018 in review;17/88 accepted
 
-2026-11-01: S001–S017 completed (17/88 planning/audit deliverables); S018+ not_started.
-S017 PR42 exact head065551c64504000de089461056db84284129b192 passed
-CI41284148273, mergedf3ab84b08f115bbf7e4ae76edf8eb1ded6d4d462. Current
-sprint/S017-acceptance record needs its own CI/integration before S018 starts.
-Original checkout/.vscode/private evidence retained; no new legacy source/run touched.
+2026-11-01: S001–S017 accepted; base47b77eff7ee8e4acfece228c1ab162248a4ed8e1.
+Branch sprint/S018-python-environment-lock, checkpoint73fd00c4a2433a2b306dc09632783a981e45b73f.
+Python3.12.16/uv0.13.6/Ruff0.17.3/mypy2.4.1 pinned; application deps empty.
+Read ADR0011, setup contract/receipt and S018_REPORT. Two independent fresh clones
+(clean and polluted Unicode/space path) pass setup/doctor/lint/types/all211 tests
+with matching interpreter/lock fingerprints. Final isolated governance exercise
+found risk CLI implicit-path import bug; retained failing regression and narrow fix.
+Final full212 tests/lint/strict types and seven governance validators pass.
+Original .vscode/worktree preserved. No legacy archive/source/run touched.
 
-ADR0010 accepts target PLANNING only: required Ubuntu24.04/x86_64 Linux and
-Windows11 WSL2/Ubuntu24.04; native Windows11/MSYS2 MinGW64 best effort. Version1
-matrix has seven dependency routes per target, primary vendor sources/access dates,
-one sanitized local Linux host receipt, zero verified simulator platforms. All
-Windows/runtime install/smoke/adapter/replay gates NOT_RUN/OPEN; no version locks.
-Do not infer support or parity from this plan or Linux governance CI.
+Next: final scope/secret/dependency self-audit and exact-head CI/permitted source
+integration, then durable acceptance records through tested PR. S018 in_review,
+17/88; do not start S019 until accepted. Private logs/locators under Git common
+private-evidence/S018; never publish absolute private path values. Installer shim
+side effect corrected/retained, original Python3.12.3/uv0.11.14 resolution restored.
+Doctor is read-only; sync mutates only fresh/marked project .venv. No global fallback.
 
-195 tests pass. Stronger synthetic receipt-relabel attack initially failed, then
-schema/observed-tuple checks fixed it without weakening tests. Failure/final logs
-in Git common metadata private-evidence/S017. Report/matrix/ADR/README contain
-exact commands, references, qualified scope, risks and installation/verification
-routes. Historical version1 stays planning-only; future readiness gets a qualified
-new evidence/schema record with actual per-platform observations.
-
-Next after acceptance integration: fetch/read full S018 Python tooling/environment
-lock contract, inspect existing tooling and choose versions/dependencies with
-current evidence. Do not inherit private audit Python/SUMO as a lock. No routine
-approval required; runtime platform gaps remain real and must not be waved away.
-No Windows execution/native portability established; POSIX audit tests unchanged.
-
-AUDIT-FREEZE-001 remains valid; science UNVALIDATED, legacy reuse PROHIBITED,
-S015 findings open and S012 baseline failed. Original archive/locators/private
-records preserved; missing disposable S011 target must not be silently rebuilt or
-launched. ADR0005 permits honest self-audit/permitted merge after exact-head checks;
-no fake independent approval or protection bypass.
+S017 runtime platform gates remain OPEN/NOT_RUN; zero verified simulator targets.
+Science UNVALIDATED, source reuse PROHIBITED, prior baseline discrepancies remain.

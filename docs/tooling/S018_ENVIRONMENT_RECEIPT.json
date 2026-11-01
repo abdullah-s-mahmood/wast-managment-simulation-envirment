@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "evidence_id": "E-S018-03",
+  "checkpoint": "73fd00c4a2433a2b306dc09632783a981e45b73f",
+  "observed_platform": "Linux x86_64 Ubuntu24.04.5",
+  "completed_utc": "2026-11-01T08:03:31.283906+00:00",
+  "status": "REPRODUCIBLE_ISOLATED_DEVELOPMENT_ENVIRONMENT",
+  "environment": {
+    "python_executable_sha256": "23bc148d2b48964b621c5561ff2b81c1d9c7b717967a7491efbf12f4304882b5",
+    "status": "VALID_ISOLATED_DEVELOPMENT_ENVIRONMENT",
+    "python": "3.12.16",
+    "uv": "0.13.6",
+    "development_tools": {
+      "uv": "0.13.6",
+      "ruff": "0.17.3",
+      "mypy": "2.4.1"
+    },
+    "lock_sha256": "92b7b5ebb2e68f88c271719a9db4ed61eaaf4893bf67e671f3a8f845118bde72",
+    "global_site_packages": false,
+    "isolated_startup": true,
+    "scientific_validation": "UNVALIDATED",
+    "simulator_support_verified": false
+  },
+  "cases": [
+    {
+      "id": "clean",
+      "fresh_clone": true,
+      "empty_initial_project_cache": true,
+      "independent_hash_checked_bootstrap": true,
+      "all_setup_doctor_check_exit_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "regression_tests_passed": 211,
+      "ruff": "PASS",
+      "mypy_strict_source_files": 1
+    },
+    {
+      "id": "polluted-unicode-path",
+      "fresh_clone": true,
+      "empty_initial_project_cache": true,
+      "independent_hash_checked_bootstrap": true,
+      "all_setup_doctor_check_exit_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "regression_tests_passed": 211,
+      "ruff": "PASS",
+      "mypy_strict_source_files": 1
+    }
+  ],
+  "matching_environment_fingerprints": true,
+  "inherited_foreign_environment_target_created": false,
+  "global_python312_restored_version": "3.12.3",
+  "global_uv_unchanged_version": "0.11.14",
+  "scientific_validation": "UNVALIDATED",
+  "simulator_support_verified": false,
+  "other_platform_setup": "NOT_RUN",
+  "limitations": [
+    "Development tooling only; Windows/WSL/native setup not executed.",
+    "Scoped lint/type rollout; not package-file attestation or a host sandbox.",
+    "Subsequent isolated risk-validator regression increases final suite to212; final validation recorded in sprint report."
+  ]
+}
