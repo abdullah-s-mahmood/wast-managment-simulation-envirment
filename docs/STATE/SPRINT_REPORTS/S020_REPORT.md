@@ -119,3 +119,25 @@ legacy implementation committed. No physical parameter/model or application
 runtime dependency introduced. Source-only tested installation controls, NOT_RUN
 limits preserved. S020 in_review19/88; exact-head CI/permitted integration and
 acceptance records remain mandatory before S021.
+
+## E-S020-05 — retained CI failure and explicit runner tool paths
+
+PR48 initial head5bc7efb3b349df6a9c3bbf328d8892a2d9d7d9ce/tree7c60f746 matches
+local9124c180. Exact-head CI41289914827 fails at ns-3 step exit1 before extraction/
+configure/build: a requested default /usr/bin build-tool path is absent. All242
+regressions (4.394s), lint/strict types/governance/SUMO smoke passed on that run;
+this partial success is NOT overall CI acceptance. Original generic diagnostic
+does not identify which tool, so no specific missing tool is invented. Full75,174byte
+job log retained privately as ci-41289914827-failed.log, job124798829671.
+Runner observation Ubuntu24.04.5/image20261025.353.1, not a platform mismatch claim.
+
+Moved in_review -> in_progress for investigation. Correction: CI pins ubuntu-24.04
+consistent with S017 and explicitly resolves/logs installed g++/cmake/ninja with
+command -v, passing those paths through existing --cxx/--cmake/--ninja contract.
+The helper retains fail-closed requested/default paths; missing-tool error now
+names the basename without leaking private path. No compiler/version/source/budget/
+warning/test gate relaxed. Source/fixture/build flags unchanged; no unnecessary
+local rebuild. Local `.venv/bin/python -I scripts/python_environment.py check`
+again exits0/242 tests/Ruff/strict mypy3 files after correction. State returns to
+in_review for new exact-head CI; old failed head is not accepted or silently rerun.
+ADR0013/setup/handoff/log document the correction. Source PR remains unmerged.

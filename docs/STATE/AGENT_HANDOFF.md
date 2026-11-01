@@ -24,3 +24,10 @@ Next: focused S020 PR, mandatory exact-head CI/permitted integration and durable
 tested acceptance records. S020 in_review19/88, S021 not started. Prior platform/model/scientific/replay gates
 remain OPEN/NOT_RUN; upstream test suites/Python bindings explicitly NOT_RUN.
 Source reuse PROHIBITED/science UNVALIDATED. No legacy archive/source/run touched.
+
+
+CI correction E-S020-05: PR48 initial5bc7efb3 fails CI41289914827 at a missing
+/usr/bin default tool path before build; all242 tests/previous gates pass but whole
+CI failed. Full log private. CI now pins Ubuntu24.04, resolves/logs its installed
+build tools and passes explicit paths; helper stays fail-closed/names missing tool.
+242 local checks pass after fix; new exact-head CI required. No weakening or merge.

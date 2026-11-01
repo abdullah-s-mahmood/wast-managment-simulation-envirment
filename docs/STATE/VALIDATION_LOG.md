@@ -1380,3 +1380,14 @@ pass, all prior229 retained. All seven governance validators/ADR0013 material-ch
 diff checks pass. Scope excludes binary/legacy/private data and physical claims.
 Final guarded positive build still requires exact-head CI; source/fixture/compile
 behavior unchanged. S020 in_review19/88, S021 untouched. Details in S020_REPORT.
+
+
+## E-S020-05 — CI failure preserved; explicit tool-path correction
+
+PR48 initial5bc7efb3 CI41289914827 fails1 before ns-3 build at absent default
+/usr/bin tool path; which tool not identified by old generic error.242 tests/
+lint/types/earlier gates passed but not overall CI. Retained full job124798829671
+log. CI pins Ubuntu24.04 and supplies explicitly discovered installed tool paths;
+helper retains strict path/version/cache behavior, improves missing basename error.
+Local242 checks pass; in_progress investigation -> in_review, new head CI needed.
+No source/fixture/build-budget/test weakening, no acceptance/merge claimed.

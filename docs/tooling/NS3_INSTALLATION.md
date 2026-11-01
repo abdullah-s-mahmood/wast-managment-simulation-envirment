@@ -34,6 +34,9 @@ curl --fail --location --proto '=https' --max-time 180 --max-filesize 67108864 h
 
 Explicit --cxx/--cmake/--ninja paths are available; defaults are the standard
 /usr/bin paths above. Missing tools fail actionably without selecting alternatives.
+GitHub CI pins Ubuntu24.04, discovers its installed g++/cmake/ninja paths with
+command -v and passes --cxx/--cmake/--ninja explicitly. The helper never changes
+a missing requested/default path into a silent PATH fallback.
 Existing/dangling/symlinked work locations and stale caches are refused, not cleaned.
 An ambient home .ns3rc is refused pending review; no user config is deleted.
 Child Python/build/include/library/NS3 override variables are stripped, tool argv

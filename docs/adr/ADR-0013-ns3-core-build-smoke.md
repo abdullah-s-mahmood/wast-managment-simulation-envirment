@@ -30,6 +30,8 @@ Keep dependency source/build/logs private, and extract only that verified indepe
 release using Python's data filter plus path/resource preflight. This is unrelated
 to the designated legacy archive, which remains untouched/prohibited for reuse.
 
+Pin CI to the S017 Ubuntu24.04 target. Discover its installed build-tool paths
+and pass them explicitly; helper defaults remain fail-closed standard /usr/bin.
 Build core only, Release, Ninja/two parallel jobs, explicit compiler and output
 paths, no examples/tests/Python bindings/optional scientific libraries/ccache/PCH.
 Document those exclusions; do not claim upstream test suites were executed.

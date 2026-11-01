@@ -2,7 +2,8 @@
 
 ## Current blockers
 - S020 in_review: actual core-only build/repeated1ns probe and242 tests plus
-  governance gates pass; exact-head CI/integration pending. Disk headroom limited;
+  governance gates pass. Initial CI41289914827 fails at default tool path;
+  explicit CI tool paths corrected, new exact-head CI/integration pending. Disk headroom limited;
   task-owned caches cleaned, user/evidence files preserved. No external blocker.
 - S019 installation/API smoke accepted after229 tests, governance gates and
   exact-head CI41288509798 including fresh install. PR46 merged2b4d61ac

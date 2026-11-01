@@ -95,7 +95,7 @@ def reserve_work(path: Path) -> None:
 def require_tool(path: Path) -> Path:
     """Require explicit installed tool path; do not silently select a fallback."""
     if not path.is_file() or not os.access(path, os.X_OK):
-        raise BuildRejected("missing tool; install supported compiler/CMake/Ninja or pass its explicit path")
+        raise BuildRejected("missing tool (" + path.name + "); install supported compiler/CMake/Ninja or pass its explicit path")
     return path.resolve()
 
 
