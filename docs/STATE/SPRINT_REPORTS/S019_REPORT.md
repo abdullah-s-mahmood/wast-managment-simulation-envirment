@@ -1,4 +1,4 @@
-# S019 — SUMO installation and version smoke test (IN REVIEW)
+# S019 — SUMO installation and version smoke test (COMPLETED)
 
 ## E-S019-01 — scoped installation choice and contract
 
@@ -112,3 +112,27 @@ No binary/legacy implementation/private path/secret committed, no prior tests we
 Generated diagnostics/private dependencies excluded by repository boundary. No
 platform simulator readiness or scientific accuracy inferred. Status in_review;
 exact-head GitHub CI/permitted integration mandatory before acceptance. S020 untouched.
+
+## E-S019-05 — exact-head CI, self-audit acceptance and integration
+
+Focused PR46 head05f2f7620586694e89086be6bb99d2c2a6f4b20c matches tested local
+961c609245b1c4aeddc9614c3c40eb5933f8059f at tree
+c61c62cdc98d26bb21af05afaf88687c9525f4ee (fetched/verified). Exact-head GitHub
+CI41288509798 completes success, including actual fresh hash-pinned SUMO install,
+real API smoke, lint/strict types/all tests and all seven governance validators.
+Permitted expected-head merge2b4d61acc279e2cd85257ecaad275cac6a297be2. No fake
+review or protection bypass; owner-authorized author self-audit under ADR0005.
+
+Acceptance scope: documented/observable installation and matching bindings,
+WB/BB/adversarial/property/regression/reference/integration checks pass, explicit
+SI diagnostic fixture/time semantics/provenance, retained failures, no hidden
+critical blocker.19/88 completed. NOT_RUN Windows/WSL/native installation remains
+a later platform gate, not an installation claim. No scientific/traffic/model,
+legacy reuse, coupling, replay or full simulator target accepted.
+
+Changed18 files: CI; inventory; handoff/blockers/decision/progress/validation/report;
+ADR0012; S018 tooling coverage contract; S019 profile/requirements/receipt/setup;
+pyproject lint/type scopes; environment coverage guard; SUMO helper and17 tests.
+No project tool versions/uv.lock/application deps changed. Private integration
+receipt records source evidence. Next S020 only after this focused acceptance
+record's own exact-head CI/permitted integration.

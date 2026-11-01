@@ -1,24 +1,23 @@
-# Agent Handoff — S019 in review;18/88 accepted
+# Agent Handoff — S019 accepted;19/88 complete
 
-2026-11-01: S018 fully accepted after PR44/45 CI41287396239/41287499046 and merges
-c87a8697/b5cff0f9b2711814ec9923002b29134f7831077d. Current branch
-sprint/S019-sumo-installation-smoke from fetched final main; original .vscode and
-all local checkpoints preserved. No future sprint implemented.
+2026-11-01: S001–S019 completed. S019 PR46 head
+05f2f7620586694e89086be6bb99d2c2a6f4b20c matches local961c609 at tree
+c61c62cdc98d26bb21af05afaf88687c9525f4ee. Exact-head CI41288509798 passes all
+steps including fresh SUMO installation/API smoke; merge
+2b4d61acc279e2cd85257ecaad275cac6a297be2. Acceptance-record PR still needs own
+CI/integration before S020 starts. Original worktree/.vscode/checkpoints preserved.
 
-Read S019 contract, ADR0012, SUMO_INSTALLATION.md, profile/receipt and S019_REPORT.
-Separate hash-pinned SUMO1.28.0/traci/sumolib/sumo-data profile; real manual and
-fresh one-command/polluted/Unicode-path setup pass executable/import/protocol22/
-getVersion/clean close, zero simulation steps. Native engine hashes match; console
-wrapper hashes vary with prefix (not engine reproducibility failure). Wrong system
-1.27.1/missing executable reject1. Final229 tests/Ruff/strict mypy2 files pass.
-Original212 retained; no tests weakened. All seven governance validators/diff/material-change checks pass. Status in_review;
-exact-head CI/integration required before acceptance.
-Git common private-evidence/S019 retains logs/failures; codex-s019-toolchain.json
-locates dedicated environments privately. Never publish private path values.
-S018 packages stay separate; only lint/type coverage extended by ADR0012.
+Read S019_REPORT, ADR0012 and docs/tooling setup/profile/receipt. Separate hashed
+SUMO1.28.0/traci/sumolib/sumo-data venv, executable/import/protocol22/getVersion/
+clean close with zero simulation steps. Manual and fresh polluted/Unicode-path
+installs pass; native engine hashes match, wrapper hashes path-dependent.229 tests,
+Ruff/strict mypy2 files and seven validators pass. All212 previous tests retained.
+S018 tooling versions/app deps unchanged; lint/type scope explicitly extended.
+Failures/negative version/path/budget/fixture/import/inventory corrections retained
+privately in Git common private-evidence/S019. Locator codex-s019-toolchain.json;
+never publish its path values. Existing prefixes/evidence refused, including links.
 
-Next: final validators/scope/secret/dependency audit, focused S019 PR, exact-head
-CI/permitted integration and tested acceptance records. No S020 until accepted.
-Platform/scientific/replay gates OPEN/NOT_RUN; source reuse PROHIBITED, science
-UNVALIDATED. No legacy archive/source/run touched. Setup refuses existing prefixes;
-keep incomplete installation artifacts and choose new owned paths only after audit.
+Next: integrate acceptance records after exact-head CI; fetch state and read full
+S020 contract, then execute only that sprint. Source reuse PROHIBITED/science
+UNVALIDATED; Windows/WSL/native/adapter/replay and full simulator readiness remain
+OPEN/NOT_RUN. No legacy archive/source/run changed or executed this sprint.
