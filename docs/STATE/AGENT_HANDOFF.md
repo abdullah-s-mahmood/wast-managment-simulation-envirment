@@ -1,23 +1,33 @@
-# Agent Handoff — S019 accepted;19/88 complete
+# Agent Handoff — S020 in review;19/88 accepted
 
-2026-11-01: S001–S019 completed. S019 PR46 head
-05f2f7620586694e89086be6bb99d2c2a6f4b20c matches local961c609 at tree
-c61c62cdc98d26bb21af05afaf88687c9525f4ee. Exact-head CI41288509798 passes all
-steps including fresh SUMO installation/API smoke; merge
-2b4d61acc279e2cd85257ecaad275cac6a297be2. Acceptance-record PR still needs own
-CI/integration before S020 starts. Original worktree/.vscode/checkpoints preserved.
+2026-11-01: S019 PR46/47 exact-head CI41288509798/41288653151 passed; final
+main deb41307de0627e9fbaef268da4a852771ff2283. Original IDE worktree safely
+ff-synced there; one .vscode file hash preserved. Active isolated worktree branch
+sprint/S020-ns3-installation-smoke. No future work done.
 
-Read S019_REPORT, ADR0012 and docs/tooling setup/profile/receipt. Separate hashed
-SUMO1.28.0/traci/sumolib/sumo-data venv, executable/import/protocol22/getVersion/
-clean close with zero simulation steps. Manual and fresh polluted/Unicode-path
-installs pass; native engine hashes match, wrapper hashes path-dependent.229 tests,
-Ruff/strict mypy2 files and seven validators pass. All212 previous tests retained.
-S018 tooling versions/app deps unchanged; lint/type scope explicitly extended.
-Failures/negative version/path/budget/fixture/import/inventory corrections retained
-privately in Git common private-evidence/S019. Locator codex-s019-toolchain.json;
-never publish its path values. Existing prefixes/evidence refused, including links.
+Read S020 contract/ADR0013/profile/setup/receipt/S020_REPORT. Independent official
+ns-3.47 source42929716bytes/SHA2568b3adca9.. matches publisher SHA1; source/license/
+requirements verified. Private fresh Unicode/space build: GCC13.3.0/CMake3.28.3/
+Ninja1.11.1, core only Release, all declared exclusions OFF;68 steps69.474s, independent
+C++ probe compiles/runs twice with exact1ns. Missing compiler/stale cache reject1;
+actual probe exit7 surfaced. Final242 tests/Ruff/strict mypy3 files pass; all229
+previous tests retained. S018 versions/app deps and uv.lock unchanged.
 
-Next: integrate acceptance records after exact-head CI; fetch state and read full
-S020 contract, then execute only that sprint. Source reuse PROHIBITED/science
-UNVALIDATED; Windows/WSL/native/adapter/replay and full simulator readiness remain
-OPEN/NOT_RUN. No legacy archive/source/run changed or executed this sprint.
+Task-owned regenerable caches only cleaned to relieve disk pressure; all installed
+environments/archives/failure evidence/user data preserved. Current free space is
+limited; avoid unnecessary duplicate builds/simulations. Git common private-evidence/
+S020 retains source/download/build/negative/cache-cleanup logs, and locator
+codex-s020-toolchain.json. Never publish locator/private path values.
+
+All seven governance validators/diff/ADR0013 material-change checks pass.
+Next: focused S020 PR, mandatory exact-head CI/permitted integration and durable
+tested acceptance records. S020 in_review19/88, S021 not started. Prior platform/model/scientific/replay gates
+remain OPEN/NOT_RUN; upstream test suites/Python bindings explicitly NOT_RUN.
+Source reuse PROHIBITED/science UNVALIDATED. No legacy archive/source/run touched.
+
+
+CI correction E-S020-05: PR48 initial5bc7efb3 fails CI41289914827 at a missing
+/usr/bin default tool path before build; all242 tests/previous gates pass but whole
+CI failed. Full log private. CI now pins Ubuntu24.04, resolves/logs its installed
+build tools and passes explicit paths; helper stays fail-closed/names missing tool.
+242 local checks pass after fix; new exact-head CI required. No weakening or merge.

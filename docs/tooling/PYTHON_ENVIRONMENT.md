@@ -65,7 +65,8 @@ against arbitrary host/venv tampering.
 
 At S018 acceptance, Ruff covered scripts/python_environment.py and its tests;
 strict mypy covered that tooling module only. ADR-0012/S019 extends Ruff to the
-SUMO smoke module/tests and strict mypy to that smoke module (two source files). Scope and rules are checked as contract data;
+SUMO smoke module/tests and strict mypy to that smoke module. ADR-0013/S020 adds
+ns-3 smoke module/tests to Ruff and its module to strict mypy (three source files). Scope and rules are checked as contract data;
 weakening them requires an explicit revision. No old regression is skipped or
 weakened. This is a declared initial lint/type rollout, not a claim that older
 untyped governance code or future simulation modules have full static coverage.

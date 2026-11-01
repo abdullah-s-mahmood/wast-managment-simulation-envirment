@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "evidence_id": "E-S020-03",
+  "observed_utc": "2026-11-01T08:39:03.316331+00:00",
+  "platform": "Linux x86_64 Ubuntu24.04.5 glibc2.39",
+  "observation": {
+    "status": "NS3_CORE_INSTALLATION_SMOKE_PASS",
+    "release": "3.47",
+    "source_sha256": "8b3adca956c834ea436b915986ab8fd053e90041acae7426895d595aaa3ccc39",
+    "tool_versions": {
+      "gcc": "13.3.0",
+      "cmake": "3.28.3",
+      "ninja": "1.11.1"
+    },
+    "core_library_sha256": "4b66465a69590ef14e652d17e276457489606ada1dbd34ab2c539eb90ee23ca1",
+    "fixture_sha256": "c00d6c341b1bfcfa20aae601077179f1b95db6894a48b6f188a50cfa0dd61e54",
+    "repeat_runs": 2,
+    "expected_event_time_ns": 1,
+    "upstream_test_suite": "NOT_RUN",
+    "python_bindings": "NOT_RUN",
+    "scientific_validation": "UNVALIDATED",
+    "simulator_support_verified": false
+  },
+  "profile_sha256": "f1f88f0ebfd7a9f783e6fa0eb3a45894d7e0d6cef4fc64e4bedd2d9db190be8d",
+  "archive_preflight": {
+    "members": 3878,
+    "declared_uncompressed_bytes": 99928794,
+    "links": 2,
+    "filter": "data"
+  },
+  "command_results": [
+    {
+      "step": "build",
+      "exit_code": 0,
+      "wall_seconds": 69.474
+    },
+    {
+      "step": "cmake-version",
+      "exit_code": 0,
+      "wall_seconds": 0.016
+    },
+    {
+      "step": "compiler-identity",
+      "exit_code": 0,
+      "wall_seconds": 0.002
+    },
+    {
+      "step": "configure",
+      "exit_code": 0,
+      "wall_seconds": 5.331
+    },
+    {
+      "step": "gcc-version",
+      "exit_code": 0,
+      "wall_seconds": 0.002
+    },
+    {
+      "step": "ninja-version",
+      "exit_code": 0,
+      "wall_seconds": 0.004
+    },
+    {
+      "step": "probe-compile",
+      "exit_code": 0,
+      "wall_seconds": 1.267
+    },
+    {
+      "step": "run-1",
+      "exit_code": 0,
+      "wall_seconds": 0.004
+    },
+    {
+      "step": "run-2",
+      "exit_code": 0,
+      "wall_seconds": 0.004
+    }
+  ],
+  "post_build_stronger_cache_check": "PASS",
+  "negative_missing_compiler_exit_code": 1,
+  "negative_stale_work_exit_code": 1,
+  "negative_linked_fixture_exit_code": 7,
+  "negative_nonzero_surfaced": true,
+  "regression_tests_passed": 242,
+  "ruff": "PASS",
+  "strict_mypy_source_files": 3,
+  "other_platforms": "NOT_RUN",
+  "legacy_source_reuse": "PROHIBITED",
+  "limitations": [
+    "Core-only build and1ns linkage reference, not physical/network model validation.",
+    "Upstream test suite/Python bindings/other modules not executed.",
+    "No bitwise reproducibility or hostile-host attestation claim."
+  ]
+}

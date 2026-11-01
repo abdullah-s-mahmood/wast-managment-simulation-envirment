@@ -21,3 +21,5 @@
 | D-0015 | Isolated development Python/uv/Ruff/mypy under ADR0011. | Accepted qualified tooling scope,2026-11-01 | Exact runtime/direct/transitive pins, no global-package fallback; lint/type rollout scoped, runtime dependencies empty. | Release/toolchain/platform evidence, new domain modules or dependency changes. |
 
 | D-0016 | Isolated SUMO1.28.0 installation/profile and protocol22 handshake, ADR-0012. | Accepted qualified setup scope,2026-11-01 | Separate hashed simulator venv; no simulation time steps, model/replay/platform certification or legacy reuse. Extend scoped lint/types only. | Upstream release/API/platform evidence or future adapter requirements. |
+
+| D-0017 | Pinned ns-3.47 core-only build/1ns linkage smoke, ADR-0013. | Accepted qualified installation scope,2026-11-01 | Independent upstream source, explicit compiler/cache/build checks; no network physics/bindings/replay or full-platform acceptance. | Release/toolchain/module/platform evidence or scope change. |
