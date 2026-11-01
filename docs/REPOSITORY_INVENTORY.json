@@ -44,6 +44,7 @@
       "docs/STATE/SPRINT_REPORTS/S016_REPORT.md",
       "docs/STATE/SPRINT_REPORTS/S017_REPORT.md",
       "docs/STATE/SPRINT_REPORTS/S018_REPORT.md",
+      "docs/STATE/SPRINT_REPORTS/S019_REPORT.md",
       "docs/STATE/VALIDATION_LOG.md",
       "docs/STATISTICAL_ANALYSIS_PLAN.md",
       "docs/TESTING_STRATEGY.md",
@@ -58,6 +59,7 @@
       "docs/adr/ADR-0009-private-baseline-reproduction.md",
       "docs/adr/ADR-0010-platform-target-planning.md",
       "docs/adr/ADR-0011-python-development-toolchain.md",
+      "docs/adr/ADR-0012-sumo-installation-smoke.md",
       "docs/audit/INTAKE_PROTOCOL.md",
       "docs/audit/S011_EXECUTION_REVIEW_PLAN.json",
       "docs/audit/S011_SOURCE_FLOW_AND_EXECUTION_PLAN.md",
@@ -186,6 +188,10 @@
       "docs/templates/SPRINT_TEMPLATE.md",
       "docs/tooling/PYTHON_ENVIRONMENT.md",
       "docs/tooling/S018_ENVIRONMENT_RECEIPT.json",
+      "docs/tooling/S019_SMOKE_RECEIPT.json",
+      "docs/tooling/S019_SUMO_PROFILE.json",
+      "docs/tooling/SUMO_INSTALLATION.md",
+      "docs/tooling/requirements-sumo-linux.txt",
       "pyproject.toml",
       "requirements-bootstrap.txt",
       "uv.lock"
@@ -209,6 +215,7 @@
       "scripts/python_environment.py",
       "scripts/review_model_spans.py",
       "scripts/run_private_baseline.py",
+      "scripts/sumo_smoke.py",
       "scripts/validate_audit_freeze.py",
       "scripts/validate_baseline_result.py",
       "scripts/validate_change_control.py",
@@ -254,6 +261,7 @@
       "tests/test_s001_charter.py",
       "tests/test_source_graph.py",
       "tests/test_study_separation.py",
+      "tests/test_sumo_smoke.py",
       "tests/test_test_evidence_inventory.py"
     ],
     "reserved_layout": [

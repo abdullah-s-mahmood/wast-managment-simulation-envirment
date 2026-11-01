@@ -1,23 +1,24 @@
-# Agent Handoff — S018 accepted;18/88 complete
+# Agent Handoff — S019 in review;18/88 accepted
 
-2026-11-01: S001–S018 completed. S018 source PR44 head
- d7909dd5bed464d33916fcbd472490724769dc59, exact-head CI41287396239 success,
-merge c87a8697cd8073e1de6b463885b782077bc7972a. Local c0bf277 and remote head
-share exact tree5ff66f772ece1b5bce35294b21240965b5bb1e85. Acceptance records
-require their own CI/integration before starting S019. No user permission needed.
+2026-11-01: S018 fully accepted after PR44/45 CI41287396239/41287499046 and merges
+c87a8697/b5cff0f9b2711814ec9923002b29134f7831077d. Current branch
+sprint/S019-sumo-installation-smoke from fetched final main; original .vscode and
+all local checkpoints preserved. No future sprint implemented.
 
-Read S018_REPORT, ADR0011, docs/tooling setup/receipt. CPython3.12.16/uv0.13.6/
-Ruff0.17.3/mypy2.4.1 locked; app deps empty. Two independent fresh clones pass
-clean/polluted setup with matching fingerprints, final212 tests/lint/strict types
-and isolated risk CLI; seven validators pass. Original195 tests retained. Scoped
-lint/types only, no global packages. Doctor read-only; sync fresh/marked .venv only.
-Installer shim/command misuse/import regression/rejected fast-forward all retained
-with corrections. Local checkpoint branches preserved; acceptance branch explicitly
-from origin/main. Original .vscode/worktree preserved. No legacy files/runs touched.
-Private evidence/locators live in Git common metadata private-evidence/S018;
-never publish private paths. Original Python3.12.3/uv0.11.14 resolution restored.
+Read S019 contract, ADR0012, SUMO_INSTALLATION.md, profile/receipt and S019_REPORT.
+Separate hash-pinned SUMO1.28.0/traci/sumolib/sumo-data profile; real manual and
+fresh one-command/polluted/Unicode-path setup pass executable/import/protocol22/
+getVersion/clean close, zero simulation steps. Native engine hashes match; console
+wrapper hashes vary with prefix (not engine reproducibility failure). Wrong system
+1.27.1/missing executable reject1. Final229 tests/Ruff/strict mypy2 files pass.
+Original212 retained; no tests weakened. All seven governance validators/diff/material-change checks pass. Status in_review;
+exact-head CI/integration required before acceptance.
+Git common private-evidence/S019 retains logs/failures; codex-s019-toolchain.json
+locates dedicated environments privately. Never publish private path values.
+S018 packages stay separate; only lint/type coverage extended by ADR0012.
 
-Next: integrate acceptance records after exact-head CI, fetch and read complete
-S019 contract; execute only that sprint. S017 platform runtime gates OPEN/NOT_RUN,
-zero simulator platforms verified. Science UNVALIDATED, source reuse PROHIBITED,
-baseline discrepancy findings remain open; tooling does not accept any model.
+Next: final validators/scope/secret/dependency audit, focused S019 PR, exact-head
+CI/permitted integration and tested acceptance records. No S020 until accepted.
+Platform/scientific/replay gates OPEN/NOT_RUN; source reuse PROHIBITED, science
+UNVALIDATED. No legacy archive/source/run touched. Setup refuses existing prefixes;
+keep incomplete installation artifacts and choose new owned paths only after audit.

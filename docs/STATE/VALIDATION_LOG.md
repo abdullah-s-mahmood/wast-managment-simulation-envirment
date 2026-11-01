@@ -1327,3 +1327,24 @@ independent review claimed. Local FF rejection due equivalent-tree/different-aut
 ancestry preserved; new acceptance branch from fetched main, no rewrite/data loss.
 S018 completed18/88, S019 next after acceptance-record CI/integration. Platform and
 science limits unchanged; see S018_REPORT and private integration receipt.
+
+
+## E-S019-01/03 — isolated SUMO installation and API smoke
+
+S018 acceptance PR45 CI41287499046 passed/merged b5cff0f9. S019 separate public
+hash-pinned four-wheel1.28.0 profile: manual and actual clean one-command polluted/
+Unicode-path setup pass, real protocol22/version/import/close, zero simulation steps.
+Wrong1.27.1/missing executable reject1. Final228 tests/Ruff/strict mypy2 files pass;
+fixture/import-order/inventory-helper errors retained/corrected, not hidden.
+Native engine hashes match across installs; wrapper hashes path-dependent. Detailed
+commands/exit codes/receipt/private log references in S019_REPORT. Final governance,
+exact-head CI/integration pending; S019 in_progress18/88, no S020/science acceptance.
+
+
+## E-S019-04 — final229 regressions and local acceptance gates
+
+Dangling-prefix/evidence symlink guards retained; final229 tests/Ruff/strict mypy2
+files pass, final real clean-profile smoke exits0. All seven governance validators,
+ADR0012 material-change declaration and diff check pass. Private full logs/commands
+and public sanitized receipt/report distinguish engine/wrapper hashes and model
+limits. S019 in_review18/88; exact-head CI/integration pending, S020 untouched.

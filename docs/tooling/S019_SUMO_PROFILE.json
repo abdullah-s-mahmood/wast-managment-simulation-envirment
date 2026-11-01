@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "profile_id": "SUMO128_LINUX_X86_64",
+  "release": "1.28.0",
+  "python": "3.12.16",
+  "platform": {
+    "system": "Linux",
+    "machine": "x86_64",
+    "minimum_glibc": "2.28"
+  },
+  "traci_protocol": 22,
+  "packages": [
+    {
+      "name": "eclipse-sumo",
+      "version": "1.28.0",
+      "filename": "eclipse_sumo-1.28.0-py3-none-manylinux_2_28_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/0d/12/b37bcb407bdfe811e1a38179b4abc3142290e589104a33a8f88a3e661eb0/eclipse_sumo-1.28.0-py3-none-manylinux_2_28_x86_64.whl",
+      "size_bytes": 148526232,
+      "sha256": "ec7042794e5ab1d806b90a5983aeda4a978dc4224141b94c0ff3affeeb4ec977",
+      "license_expression": "EPL-2.0 OR GPL-2.0-or-later"
+    },
+    {
+      "name": "sumo-data",
+      "version": "1.28.0",
+      "filename": "sumo_data-1.28.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/35/69/5272a2b8a88034fe2adea6869a04eb555695f257292c68593dd6226f5e01/sumo_data-1.28.0-py3-none-any.whl",
+      "size_bytes": 16345159,
+      "sha256": "1f934259d328ed42d12ae0852bae654c79457debbf68b51406aa817c2088b037",
+      "license_expression": "EPL-2.0 OR GPL-2.0-or-later"
+    },
+    {
+      "name": "traci",
+      "version": "1.28.0",
+      "filename": "traci-1.28.0-py2.py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/9a/a1/a95328ff82da409b46d5ed2723b70dff6a5445776ad95c34b5d1a84de7f2/traci-1.28.0-py2.py3-none-any.whl",
+      "size_bytes": 139433,
+      "sha256": "cbc88b5b38b60c0dba4939f9171615a97bd12dd113c5bc7730d76dfe2db73881",
+      "license_expression": "EPL-2.0 OR GPL-2.0-or-later"
+    },
+    {
+      "name": "sumolib",
+      "version": "1.28.0",
+      "filename": "sumolib-1.28.0-py2.py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/97/3c/bb2ba08247793748be59bf93759d1452ed1201e6f143dc98fc51511c87d4/sumolib-1.28.0-py2.py3-none-any.whl",
+      "size_bytes": 236390,
+      "sha256": "eda134defdcc39b966756cc00828ecbabfc35e0631326971f2fe1dea8acd9239",
+      "license_expression": "EPL-2.0 OR GPL-2.0-or-later"
+    }
+  ],
+  "budgets": {
+    "command_timeout_seconds": 10,
+    "worker_timeout_seconds": 20,
+    "socket_timeout_seconds": 3,
+    "installation_timeout_seconds": 300
+  },
+  "fixture": {
+    "grid_number": 2,
+    "grid_length_m": 100,
+    "lane_count": 1,
+    "speed_m_per_s": 10,
+    "seed": 19
+  },
+  "scientific_validation": "UNVALIDATED",
+  "simulator_support_verified": false
+}

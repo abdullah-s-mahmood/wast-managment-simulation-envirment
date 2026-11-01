@@ -1,9 +1,12 @@
 # Blockers and Open Dependencies
 
 ## Current blockers
+- S019 in_review: manual/fresh one-command installation/API smoke and229 tests
+  plus governance gates pass; exact-head CI/integration pending. No external
+  authorization blocker; platform/scientific gates remain separate.
 - S018 development tooling accepted after fresh-clone proof,212 tests/all checks
   and exact-head CI41287396239; source PR44 merged (E-S018-04). No S018 blocker.
-  Acceptance-record CI/integration still required before S019 work. Windows/runtime
+  Acceptance PR45 also passed CI41287499046 and merged b5cff0f9. Windows/runtime
   platform gates remain separate and OPEN/NOT_RUN.
 - S017 target/acceptance PLAN accepted after exact-head CI/integration (E-S017-02).
   Runtime readiness is not accepted: Windows/WSL/native, dependency smoke and

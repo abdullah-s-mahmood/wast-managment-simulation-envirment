@@ -63,8 +63,9 @@ package gets installed or removed by doctor. The venv must disable system sites.
 This is dependency/isolation verification, not a sandbox or package-file attestation
 against arbitrary host/venv tampering.
 
-Ruff currently covers scripts/python_environment.py and its tests; strict mypy
-covers that new tooling module only. Scope and rules are checked as contract data;
+At S018 acceptance, Ruff covered scripts/python_environment.py and its tests;
+strict mypy covered that tooling module only. ADR-0012/S019 extends Ruff to the
+SUMO smoke module/tests and strict mypy to that smoke module (two source files). Scope and rules are checked as contract data;
 weakening them requires an explicit revision. No old regression is skipped or
 weakened. This is a declared initial lint/type rollout, not a claim that older
 untyped governance code or future simulation modules have full static coverage.
