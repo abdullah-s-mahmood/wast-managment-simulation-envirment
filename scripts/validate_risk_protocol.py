@@ -7,7 +7,9 @@ import sys
 if __package__:
     from .validate_evidence_ledger import read_json, relative_file
 else:
-    from validate_evidence_ledger import read_json, relative_file
+    # Isolated startup omits the script directory; trust only this repository root.
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+    from scripts.validate_evidence_ledger import read_json, relative_file
 
 ROOT=Path(__file__).resolve().parents[1]
 FACTS=('scientific_evidence_available','guessed_scientific_value','irreversible',

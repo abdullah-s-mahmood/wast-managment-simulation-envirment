@@ -1,0 +1,25 @@
+[project]
+name = "wast-managment-simulation-envirment"
+version = "0.0.0"
+requires-python = ">=3.12,<3.13"
+dependencies = []
+
+[dependency-groups]
+dev = ["uv==0.13.6", "ruff==0.17.3", "mypy==2.4.1"]
+
+[tool.uv]
+package = false
+required-version = "==0.13.6"
+default-groups = ["dev"]
+
+[tool.ruff]
+target-version = "py312"
+include = ["scripts/python_environment.py", "tests/test_python_environment.py"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "UP"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+files = ["scripts/python_environment.py"]

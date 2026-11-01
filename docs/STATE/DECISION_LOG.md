@@ -17,3 +17,5 @@
 | D-0013 | Exact private baseline execution plan under accepted ADR-0009. | Accepted by explicit owner yes; recorded 2026-10-26 | Two baseline runs, bounded retained retries and private outputs; unchanged archive/source/binary. | Any new identity, execution scope or budget requires a documented decision. |
 
 | D-0014 | Required Linux/Windows-WSL2 targets and best-effort native Windows under ADR-0010. | Accepted planning scope,2026-11-01 | Separate target choice from verified runtime support; no dependency release locked and unavailable platform gates stay open. | Actual target/toolchain/binding evidence or changed requirements. |
+
+| D-0015 | Isolated development Python/uv/Ruff/mypy under ADR0011. | Accepted qualified tooling scope,2026-11-01 | Exact runtime/direct/transitive pins, no global-package fallback; lint/type rollout scoped, runtime dependencies empty. | Release/toolchain/platform evidence, new domain modules or dependency changes. |

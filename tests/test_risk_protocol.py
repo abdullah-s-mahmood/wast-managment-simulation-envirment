@@ -17,6 +17,10 @@ class RiskTests(unittest.TestCase):
         result=subprocess.run([sys.executable,str(ROOT/'scripts/validate_risk_protocol.py')],capture_output=True,text=True)
         self.assertEqual(result.returncode,0,result.stderr)
 
+    def test_isolated_cli_from_unrelated_directory(self):
+        result=subprocess.run([sys.executable,'-I',str(ROOT/'scripts/validate_risk_protocol.py')],cwd='/',capture_output=True,text=True)
+        self.assertEqual(result.returncode,0,result.stderr)
+
     def test_all_flag_combinations_never_bypass_critical_stop(self):
         for values in itertools.product((False,True),repeat=len(r.FACTS)):
             facts=dict(zip(r.FACTS,values)); action=r.next_action(facts)
