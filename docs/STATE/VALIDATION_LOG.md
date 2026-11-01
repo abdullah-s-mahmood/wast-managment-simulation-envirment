@@ -1272,3 +1272,23 @@ same ten pass; full195 regressions exit0. Original failure retained privately.
 Actual matrix CLI passes with zero verified simulators; target-specific Windows/
 install/adapter/replay tests NOT_RUN and gates remain open. Sources/commands/limits
 and qualified acceptance scope in S017_REPORT.md. Exact-head CI/integration pending.
+
+## E-S017-02 — qualified platform-plan acceptance, 2026-11-01
+
+PR42 exact head065551c64504000de089461056db84284129b192 passed
+CI41284148273 (completed/success;195 tests/actual plan and freeze checks),
+permitted mergef3ab84b08f115bbf7e4ae76edf8eb1ded6d4d462.
+Local6754b3f6ed10044d741df4a2e297b064bd1b9d66 and published tree
+fc3120d2f8f8ec5116889ee8b3278447ae601d47 verified equal.
+
+ADR0005 owner-authorized self-audit accepts S017's target priorities/install routes/
+independent evidence contract and platform acceptance plan under ADR0010. No
+independent reviewer fabricated or protection bypass. The initial relabel failure
+is preserved with its corrected regression; all prior tests retained.
+
+Acceptance does NOT certify runtime support: zero simulator targets verified,
+Windows/WSL/native execution and dependency/adapter/replay gates NOT_RUN/OPEN,
+versions UNSELECTED. No scientific model accepted, legacy source reused or archive
+executed. Existing freeze and open baseline/discrepancy findings remain intact.
+S017 in_review -> completed,17/88 planning/audit deliverables. S018 next/not_started.
+Acceptance record needs its own exact-head CI/integration before S018 execution.

@@ -5,10 +5,10 @@
   "updated_at": "2026-11-01",
   "current_phase": "P2 — Runtime and simulator integration",
   "total_sprints": 88,
-  "completed_sprints": 16,
-  "current_sprint_id": "S017",
-  "next_sprint_id": "S017",
-  "last_completed_sprint_id": "S016",
+  "completed_sprints": 17,
+  "current_sprint_id": "S018",
+  "next_sprint_id": "S018",
+  "last_completed_sprint_id": "S017",
   "rule": "Strict sequential execution; complete and verify one sprint before starting the next.",
   "sprints": [
     {
@@ -174,7 +174,7 @@
       "title": "Supported platform matrix",
       "file": "docs/sprints/S017-supported-platform-matrix.md",
       "phase": "P2 — Runtime and simulator integration",
-      "status": "in_review",
+      "status": "completed",
       "depends_on": [
         "S016"
       ]

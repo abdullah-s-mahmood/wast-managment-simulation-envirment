@@ -1,4 +1,4 @@
-# S017 — Supported platform matrix (IN REVIEW)
+# S017 — Supported platform matrix (COMPLETED)
 
 ## E-S017-01 — platform targets and scoped acceptance plan, 2026-11-01
 
@@ -89,3 +89,23 @@ S017 not_started -> in_progress on planning -> in_review after local plan/test/
 governance checks. Count stays16 until exact-head CI/permitted integration and
 acceptance records. Final validators/change declaration and head CI still need
 recording. S018 not_started; no dependency-lock work begun out of order.
+
+## E-S017-02 — qualified platform-plan acceptance, 2026-11-01
+
+PR42 exact head065551c64504000de089461056db84284129b192 passed
+CI41284148273 (completed/success;195 tests/actual plan and freeze checks),
+permitted mergef3ab84b08f115bbf7e4ae76edf8eb1ded6d4d462.
+Local6754b3f6ed10044d741df4a2e297b064bd1b9d66 and published tree
+fc3120d2f8f8ec5116889ee8b3278447ae601d47 verified equal.
+
+ADR0005 owner-authorized self-audit accepts S017's target priorities/install routes/
+independent evidence contract and platform acceptance plan under ADR0010. No
+independent reviewer fabricated or protection bypass. The initial relabel failure
+is preserved with its corrected regression; all prior tests retained.
+
+Acceptance does NOT certify runtime support: zero simulator targets verified,
+Windows/WSL/native execution and dependency/adapter/replay gates NOT_RUN/OPEN,
+versions UNSELECTED. No scientific model accepted, legacy source reused or archive
+executed. Existing freeze and open baseline/discrepancy findings remain intact.
+S017 in_review -> completed,17/88 planning/audit deliverables. S018 next/not_started.
+Acceptance record needs its own exact-head CI/integration before S018 execution.
