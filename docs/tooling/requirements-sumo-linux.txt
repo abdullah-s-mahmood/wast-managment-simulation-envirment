@@ -1,0 +1,5 @@
+# S019 Linux x86_64 profile; independently fetched public PyPI wheel hashes.
+eclipse-sumo==1.28.0 --hash=sha256:ec7042794e5ab1d806b90a5983aeda4a978dc4224141b94c0ff3affeeb4ec977
+sumo-data==1.28.0 --hash=sha256:1f934259d328ed42d12ae0852bae654c79457debbf68b51406aa817c2088b037
+traci==1.28.0 --hash=sha256:cbc88b5b38b60c0dba4939f9171615a97bd12dd113c5bc7730d76dfe2db73881
+sumolib==1.28.0 --hash=sha256:eda134defdcc39b966756cc00828ecbabfc35e0631326971f2fe1dea8acd9239

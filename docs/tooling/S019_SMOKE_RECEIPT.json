@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "evidence_id": "E-S019-03",
+  "observed_utc": "2026-11-01T08:19:37.615951+00:00",
+  "platform": "Linux x86_64 Ubuntu24.04.5 glibc2.39",
+  "status": "SUMO_INSTALLATION_SMOKE_PASS",
+  "profile_sha256": "1a80904955f0d9353bf84af45d50ce01f9e9d4b4d0db440fb7aa481df70a0044",
+  "release": "1.28.0",
+  "packages": {
+    "eclipse-sumo": "1.28.0",
+    "sumo-data": "1.28.0",
+    "traci": "1.28.0",
+    "sumolib": "1.28.0"
+  },
+  "traci_protocol": 22,
+  "simulation_steps": 0,
+  "cases": [
+    {
+      "id": "isolated-manual-setup",
+      "exit_code": 0,
+      "executable_entry_sha256": "880816ef0bf166da67ab41d539b41e7b7735caca2ffa2e56e49485fe61d6298a"
+    },
+    {
+      "id": "fresh-one-command-polluted-unicode-path",
+      "exit_code": 0,
+      "executable_entry_sha256": "3e6158c8983a34f1b6e81b39c793f2d3ee8463ab9241b7666714d15ce1183fb3"
+    }
+  ],
+  "native_engine": {
+    "native_engine_sha256": "450cb887af6a08dac1f9bd0454effa6dea2bb4e9f19e67adcb64ca36ce490c3a",
+    "size_bytes": 13174280
+  },
+  "native_engine_hashes_match": true,
+  "console_wrappers_path_dependent": true,
+  "negative_wrong_system_release_exit_code": 1,
+  "negative_missing_executable_exit_code": 1,
+  "regression_tests_passed": 229,
+  "ruff": "PASS",
+  "strict_mypy_source_files": 2,
+  "scientific_validation": "UNVALIDATED",
+  "simulator_support_verified": false,
+  "other_platform_installations": "NOT_RUN",
+  "source_reuse": "PROHIBITED",
+  "limitations": [
+    "Installation/import/protocol/close only, no traffic steps or physical-model validation.",
+    "Wheel metadata/pins are not a redistribution decision or hostile-host attestation.",
+    "Platform adapters, empirical accuracy and replay remain separate gates."
+  ]
+}

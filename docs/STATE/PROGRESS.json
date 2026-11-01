@@ -194,7 +194,7 @@
       "title": "SUMO installation and version smoke test",
       "file": "docs/sprints/S019-sumo-installation-and-version-smoke-test.md",
       "phase": "P2 \u2014 Runtime and simulator integration",
-      "status": "not_started",
+      "status": "in_review",
       "depends_on": [
         "S018"
       ]

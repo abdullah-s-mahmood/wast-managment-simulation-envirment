@@ -19,3 +19,5 @@
 | D-0014 | Required Linux/Windows-WSL2 targets and best-effort native Windows under ADR-0010. | Accepted planning scope,2026-11-01 | Separate target choice from verified runtime support; no dependency release locked and unavailable platform gates stay open. | Actual target/toolchain/binding evidence or changed requirements. |
 
 | D-0015 | Isolated development Python/uv/Ruff/mypy under ADR0011. | Accepted qualified tooling scope,2026-11-01 | Exact runtime/direct/transitive pins, no global-package fallback; lint/type rollout scoped, runtime dependencies empty. | Release/toolchain/platform evidence, new domain modules or dependency changes. |
+
+| D-0016 | Isolated SUMO1.28.0 installation/profile and protocol22 handshake, ADR-0012. | Accepted qualified setup scope,2026-11-01 | Separate hashed simulator venv; no simulation time steps, model/replay/platform certification or legacy reuse. Extend scoped lint/types only. | Upstream release/API/platform evidence or future adapter requirements. |

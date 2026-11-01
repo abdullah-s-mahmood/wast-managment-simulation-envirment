@@ -37,3 +37,7 @@ jobs:
         run: .venv/bin/python -I scripts/validate_audit_freeze.py docs/audit/S016_AUDIT_FREEZE.json
       - name: Validate platform target planning and evidence boundaries
         run: .venv/bin/python -I scripts/validate_platform_matrix.py check docs/platforms/S017_MATRIX.json
+      - name: Verify independently installed SUMO and matching TraCI API
+        run: |
+          wm_sumo_parent=$(mktemp -d)
+          .venv/bin/python -I scripts/sumo_smoke.py --install --prefix "$wm_sumo_parent/venv" --work-dir "$wm_sumo_parent/installation-evidence"
